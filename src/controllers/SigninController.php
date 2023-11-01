@@ -28,16 +28,25 @@ class SigninController extends Controller
             return header('location: /');
         }
 
-        $user = new User($email, $password);
+        $isValidUser = User::findByEmail($email);
 
-        $isValidUser = $user->getUserByEmail();
+        var_dump($isValidUser->name);
+        die();
 
-        if (!$isValidUser || !$user->verifyPassword($isValidUser->password)) {
+        if (!$isValidUser || !User::verifyPassword($password, $isValidUser->id)) {
             $this->setMessage('El usuario o contraseña no son validos');
             return header('location: /');
         }
 
-        $this::createSession($user);
-        header('location: /auth');
+        var_dump($isValidUser);
+        die();
+
+        // if (!$isValidUser || !$user->verifyPassword($isValidUser->password)) {
+        //     $this->setMessage('El usuario o contraseña no son validos');
+        //     return header('location: /');
+        // }
+
+        // $this::createSession($user);
+        // header('location: /auth');
     }
 }

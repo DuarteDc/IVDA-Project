@@ -20,12 +20,16 @@ $this->authLayout();
       Generar Inventario
     </a>
   </div>
-  <!-- <div class="mt-40 grid grid-cols-3 gap-10 transition-all duration-500 ease-in">
-    <div class="bg-white w-full border-blue-600/80 border-4 rounded-xl flex flex-col items-center py-10 text-2xl">
-      Inventarios Creados
-      <p class="text-4xl py-10">40</p>
+  <div class="mt-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 transition-all duration-500 ease-in">
+  <div class="text-white w-full shadow-lg rounded-2xl flex flex-col justify-center items-center px-1 text-center md:px-4 lg:py-10 lg:text-2xl py-5 bg-rose-700/90 transition-all duration-200 ease-in hover:scale-[1.02]">
+      <p class="text-4xl font-bold">1</p>
+      <span class="text-sm md:text-base lg:text-xl xl:text-2xl">Inventarios Pendientes</span>
     </div>
-  </div> -->
+    <div class="text-white w-full shadow-lg rounded-2xl flex flex-col justify-center items-center px-1 text-center md:px-4 lg:py-10 lg:text-2xl py-5 bg-blue-700/90 transition-all duration-200 ease-in hover:scale-[1.02]">
+      <p class="text-4xl font-bold">40</p>
+      <span class="text-sm md:text-base lg:text-xl xl:text-2xl">Inventarios Creados</span>
+    </div>
+  </div>
 <?php $this->endAuthLayout() ?>
 <?php $this->scripts('"./js/dashboard.js"') ?>
 <?php $this->endSection(); ?>

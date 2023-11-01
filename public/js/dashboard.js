@@ -12,7 +12,7 @@
                     aside.classList.add('absolute', '-left-[600px]', 'z-50');
                     return nav.setAttribute('aria-toggle', !navbarStatus);
                 }
-                aside.classList.remove('-left-[600px]', 'absolute');
+                aside.classList.remove('-left-[600px]', 'absolute', 'z-50');
                 nav.setAttribute('aria-toggle', !navbarStatus);
             })
     });

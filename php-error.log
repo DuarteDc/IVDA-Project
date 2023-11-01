@@ -737,3 +737,66 @@ Stack trace:
 #7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
 #8 {main}
   thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 11
+[01-Nov-2023 20:43:59 UTC] PHP Fatal error:  Uncaught Error: Cannot modify readonly property App\models\User::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:52
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(18): App\models\User->setUser()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(40): App\lib\Controller::createSession()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 52
+[01-Nov-2023 20:44:30 UTC] PHP Fatal error:  Uncaught Error: Typed property App\models\User::$id must not be accessed before initialization in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:48
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(18): App\models\User->setUser()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(40): App\lib\Controller::createSession()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 48
+[01-Nov-2023 20:44:43 UTC] PHP Fatal error:  Uncaught Error: Typed property App\models\User::$id must not be accessed before initialization in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:48
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(18): App\models\User->setUser()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(40): App\lib\Controller::createSession()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 48
+[01-Nov-2023 20:44:54 UTC] PHP Fatal error:  Uncaught Error: Cannot modify readonly property App\models\User::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:52
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(18): App\models\User->setUser()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(40): App\lib\Controller::createSession()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 52
+[01-Nov-2023 20:45:04 UTC] PHP Parse error:  syntax error, unexpected identifier "string", expecting "function" or "const" in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 11
+[01-Nov-2023 21:02:40 UTC] PHP Warning:  Undefined property: App\models\User::$password in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 33
+[01-Nov-2023 21:02:40 UTC] PHP Fatal error:  Uncaught TypeError: App\models\User::verifyPassword(): Argument #2 ($hashedPassword) must be of type string, null given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 33 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:45
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(33): App\models\User::verifyPassword()
+#1 [internal function]: App\controllers\SigninController->signin()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 45
+[01-Nov-2023 21:03:08 UTC] PHP Deprecated:  Creation of dynamic property App\models\User::$password is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 11
+[01-Nov-2023 21:03:08 UTC] PHP Deprecated:  Creation of dynamic property App\models\User::$password is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 11

@@ -11,7 +11,6 @@ class HomeController extends Controller
         parent::__construct();
     }
 
-
     public function index()
     {
         return $this->render('home/index');

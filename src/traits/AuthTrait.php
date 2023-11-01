@@ -14,6 +14,10 @@ trait AuthTrait {
     }
 
     public static function createSession(User $user) {
+        var_dump($user);
+        $user->setUser($user);
+        var_dump($user->id);
+        die();
         return $_SESSION['user'] = serialize($user);
     }
 
