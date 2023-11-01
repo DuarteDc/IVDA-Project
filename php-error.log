@@ -1,0 +1,739 @@
+[31-Oct-2023 17:32:16 UTC] PHP Deprecated:  Calling static trait method App\traits\AuthTrait::auth is deprecated, it should only be called on a class using the trait in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php on line 10
+[31-Oct-2023 17:34:37 UTC] PHP Fatal error:  Uncaught Error: Non-static method App\middlewares\AuthMiddleware::checkAuth() cannot be called statically in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php:16
+Stack trace:
+#0 [internal function]: {closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(29): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php on line 16
+[31-Oct-2023 17:34:55 UTC] PHP Fatal error:  Uncaught Error: Non-static method App\middlewares\AuthMiddleware::checkAuth() cannot be called statically in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php:16
+Stack trace:
+#0 [internal function]: {closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(29): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php on line 16
+[31-Oct-2023 17:34:56 UTC] PHP Fatal error:  Uncaught Error: Non-static method App\middlewares\AuthMiddleware::checkAuth() cannot be called statically in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php:16
+Stack trace:
+#0 [internal function]: {closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(29): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php on line 16
+[31-Oct-2023 17:34:56 UTC] PHP Fatal error:  Uncaught Error: Non-static method App\middlewares\AuthMiddleware::checkAuth() cannot be called statically in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php:16
+Stack trace:
+#0 [internal function]: {closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(29): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php on line 16
+[31-Oct-2023 17:35:18 UTC] PHP Fatal error:  Uncaught Error: Non-static method App\middlewares\AuthMiddleware::checkAuth() cannot be called statically in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php:16
+Stack trace:
+#0 [internal function]: {closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(29): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php on line 16
+[31-Oct-2023 17:42:53 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:42:53 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:42:58 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:42:58 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:39 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:41 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:46 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:46 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:46 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:46 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:43:47 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:18 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:18 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:18 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:18 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:18 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:44:18 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:17 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:19 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:20 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:20 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:20 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:20 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:20 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:20 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:20 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:20 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:20 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:20 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:45:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:46:06 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:46:06 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:53:08 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:53:08 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:53:51 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:54:06 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:54:06 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 11
+[31-Oct-2023 17:54:10 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:55:07 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:55:15 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:55:47 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:56:08 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:56:34 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 17:56:34 UTC] PHP Deprecated:  unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 15
+[31-Oct-2023 17:56:39 UTC] PHP Warning:  Undefined array key "user" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 10
+[31-Oct-2023 18:20:25 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\lib\View::Head(), 0 passed in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/signin/index.php on line 2 and exactly 1 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php:6
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/views/signin/index.php(2): App\lib\View->Head()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require('...')
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(18): App\lib\Controller->render()
+#4 [internal function]: App\controllers\SigninController->index()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(35): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 6
+[31-Oct-2023 18:29:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::head() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/signin/index.php:2
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(18): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SigninController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(35): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/signin/index.php on line 2
+[31-Oct-2023 18:40:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::script() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/signin/index.php:39
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(18): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SigninController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(35): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/signin/index.php on line 39
+[31-Oct-2023 18:40:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::script() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/signin/index.php:39
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(18): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SigninController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(35): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/signin/index.php on line 39
+[31-Oct-2023 20:22:05 UTC] PHP Fatal error:  Cannot declare class GrahamCampbell\ResultType\Result, because the name is already in use in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Result.php on line 20
+[31-Oct-2023 20:22:06 UTC] PHP Fatal error:  Cannot declare class GrahamCampbell\ResultType\Result, because the name is already in use in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Result.php on line 20
+[31-Oct-2023 20:37:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:39:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:40:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(17): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 5
+[31-Oct-2023 20:40:41 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:11
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(10): App\lib\Middleware->auth()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(21): App\middlewares\AuthMiddleware->checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 11
+[31-Oct-2023 20:40:57 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:11
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(10): App\lib\Middleware->auth()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(21): App\middlewares\AuthMiddleware->checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 11
+[31-Oct-2023 20:40:59 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:11
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(10): App\lib\Middleware->auth()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(21): App\middlewares\AuthMiddleware->checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 11
+[31-Oct-2023 20:40:59 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:11
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(10): App\lib\Middleware->auth()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(21): App\middlewares\AuthMiddleware->checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(33): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 11

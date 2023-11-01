@@ -1,0 +1,18 @@
+{
+    "name": "eduardo/ivda",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DuarteDc",
+            "email": "al221910409@gmail.com"
+        }
+    ],
+    "require": {
+        "bramus/router": "~1.6",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
