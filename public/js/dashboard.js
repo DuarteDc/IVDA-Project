@@ -9,10 +9,10 @@
         icon.addEventListener('click', () => {
                 const navbarStatus = JSON.parse(nav.getAttribute('aria-toggle')) || false;
                 if ( navbarStatus ) {
-                    aside.classList.add('hidden')
+                    aside.classList.add('absolute', '-left-[600px]', 'z-50');
                     return nav.setAttribute('aria-toggle', !navbarStatus);
                 }
-                aside.classList.remove('hidden')
+                aside.classList.remove('-left-[600px]', 'absolute');
                 nav.setAttribute('aria-toggle', !navbarStatus);
             })
     });

@@ -38,6 +38,6 @@ class SigninController extends Controller
         }
 
         $this::createSession($user);
-        header('location: /home');
+        header('location: /auth');
     }
 }

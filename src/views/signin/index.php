@@ -28,6 +28,7 @@
                         class="placeholder:text-zinc-400 w-full border border-1 rounded-md px-5 py-5 lg:py-6 focus:outline-none focus:border-blue-500 focus:ring-blue-500 focus:ring-0 bg-slate-800"
                         placeholder="Contraseña"
                         name="password"
+                        autocomplete="current-passowrd"
                     >
                 </div>
                 <p class="text-right text-gray-500 font-bold mb-3">olvide mi contraseña</p>
