@@ -6,7 +6,7 @@ use App\lib\Database;
 class Model
 {
 
-    private Database $db;
+    private readonly Database $db;
 
     public function __construct()
     {
@@ -22,4 +22,10 @@ class Model
     {
         return $this->db->connect()->prepare($query);
     }
+
+    // protected function returnInstanceOf($instanceOf) {
+    //     $arr = json_decode(json_encode ( $instanceOf ));
+    //     return json_decode(json_encode($arr));
+    // }   
+
 }

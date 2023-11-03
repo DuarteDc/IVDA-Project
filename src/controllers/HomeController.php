@@ -3,6 +3,7 @@
 namespace App\controllers;
 
 use App\lib\Controller;
+use App\models\User;
 
 class HomeController extends Controller
 {
@@ -13,6 +14,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        return $this->render('home/index');
+        $users = User::findAll();
+        return $this->render('home/index', ['userCount' => $users]);
     }
 }

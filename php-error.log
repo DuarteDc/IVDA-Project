@@ -800,3 +800,855 @@ Stack trace:
   thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 45
 [01-Nov-2023 21:03:08 UTC] PHP Deprecated:  Creation of dynamic property App\models\User::$password is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 11
 [01-Nov-2023 21:03:08 UTC] PHP Deprecated:  Creation of dynamic property App\models\User::$password is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 11
+[03-Nov-2023 16:06:46 UTC] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 33
+[03-Nov-2023 16:56:59 UTC] PHP Deprecated:  Creation of dynamic property App\models\User::$created_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 31
+[03-Nov-2023 16:56:59 UTC] PHP Deprecated:  Creation of dynamic property App\models\User::$status is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 31
+[03-Nov-2023 16:56:59 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\models\User::__construct(), 0 passed and exactly 5 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:12
+Stack trace:
+#0 [internal function]: App\models\User->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(31): PDOStatement->fetchObject()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 12
+[03-Nov-2023 16:57:32 UTC] PHP Deprecated:  Creation of dynamic property App\models\User::$status is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 32
+[03-Nov-2023 16:57:32 UTC] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\models\User::$created_at of type DateTime in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:32
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(32): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 32
+[03-Nov-2023 16:57:56 UTC] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\models\User::$created_at of type DateTime in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:32
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(32): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 32
+[03-Nov-2023 16:58:12 UTC] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\models\User::$created_at of type DateTimeZone in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:33
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(33): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 33
+[03-Nov-2023 16:58:27 UTC] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\models\User::$created_at of type DatePeriod in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:33
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(33): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 33
+[03-Nov-2023 16:58:28 UTC] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\models\User::$created_at of type DatePeriod in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:33
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(33): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 33
+[03-Nov-2023 16:59:34 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\models\User::__construct(), 0 passed and exactly 7 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:14
+Stack trace:
+#0 [internal function]: App\models\User->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(33): PDOStatement->fetchObject()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 14
+[03-Nov-2023 17:00:25 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\models\User::__construct(), 0 passed and exactly 7 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:14
+Stack trace:
+#0 [internal function]: App\models\User->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(33): PDOStatement->fetchObject()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 14
+[03-Nov-2023 17:00:59 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\models\User::__construct(), 0 passed and exactly 7 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:14
+Stack trace:
+#0 [internal function]: App\models\User->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(33): PDOStatement->fetchObject()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 14
+[03-Nov-2023 17:01:00 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\models\User::__construct(), 0 passed and exactly 7 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:14
+Stack trace:
+#0 [internal function]: App\models\User->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(33): PDOStatement->fetchObject()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 14
+[03-Nov-2023 17:02:56 UTC] PHP Deprecated:  Creation of dynamic property App\models\User::$id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 33
+[03-Nov-2023 17:02:56 UTC] PHP Deprecated:  Creation of dynamic property App\models\User::$email is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 33
+[03-Nov-2023 17:02:56 UTC] PHP Deprecated:  Creation of dynamic property App\models\User::$password is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 33
+[03-Nov-2023 17:02:56 UTC] PHP Deprecated:  Creation of dynamic property App\models\User::$created_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 33
+[03-Nov-2023 17:02:56 UTC] PHP Deprecated:  Creation of dynamic property App\models\User::$name is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 33
+[03-Nov-2023 17:02:56 UTC] PHP Deprecated:  Creation of dynamic property App\models\User::$last_name is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 33
+[03-Nov-2023 17:02:56 UTC] PHP Deprecated:  Creation of dynamic property App\models\User::$status is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 33
+[03-Nov-2023 17:03:06 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\models\User::__construct(), 0 passed and exactly 7 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:14
+Stack trace:
+#0 [internal function]: App\models\User->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(33): PDOStatement->fetchObject()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 14
+[03-Nov-2023 17:04:13 UTC] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetchObject(): Argument #1 ($class) must be a valid class name, App\models\FETCH_ASSOC given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:33
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(33): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 33
+[03-Nov-2023 17:10:20 UTC] PHP Parse error:  syntax error, unexpected token "{", expecting "function" or "const" in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 26
+[03-Nov-2023 17:10:28 UTC] PHP Fatal error:  Uncaught TypeError: App\models\User::findByEmail(): Return value must be of type App\models\User|bool, array returned in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:35
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#1 [internal function]: App\controllers\SigninController->signin()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 35
+[03-Nov-2023 17:10:29 UTC] PHP Fatal error:  Uncaught TypeError: App\models\User::findByEmail(): Return value must be of type App\models\User|bool, array returned in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:35
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#1 [internal function]: App\controllers\SigninController->signin()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 35
+[03-Nov-2023 17:10:40 UTC] PHP Fatal error:  Uncaught TypeError: App\models\User::findByEmail(): Return value must be of type App\models\User|bool, array returned in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:35
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#1 [internal function]: App\controllers\SigninController->signin()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 35
+[03-Nov-2023 17:10:41 UTC] PHP Fatal error:  Uncaught TypeError: App\models\User::findByEmail(): Return value must be of type App\models\User|bool, array returned in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:35
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#1 [internal function]: App\controllers\SigninController->signin()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 35
+[03-Nov-2023 17:11:57 UTC] PHP Fatal error:  Uncaught TypeError: App\models\User::findByEmail(): Return value must be of type App\models\User|bool, array returned in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:35
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#1 [internal function]: App\controllers\SigninController->signin()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 35
+[03-Nov-2023 17:12:08 UTC] PHP Fatal error:  Uncaught TypeError: App\models\User::findByEmail(): Return value must be of type App\models\User|bool, array returned in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:35
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#1 [internal function]: App\controllers\SigninController->signin()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 35
+[03-Nov-2023 17:12:10 UTC] PHP Fatal error:  Uncaught TypeError: App\models\User::findByEmail(): Return value must be of type App\models\User|bool, array returned in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:35
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#1 [internal function]: App\controllers\SigninController->signin()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 35
+[03-Nov-2023 17:15:26 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\models\User::__construct(), 0 passed and exactly 7 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:15
+Stack trace:
+#0 [internal function]: App\models\User->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(33): PDOStatement->fetchObject()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 15
+[03-Nov-2023 17:15:27 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\models\User::__construct(), 0 passed and exactly 7 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:15
+Stack trace:
+#0 [internal function]: App\models\User->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(33): PDOStatement->fetchObject()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 15
+[03-Nov-2023 17:15:27 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\models\User::__construct(), 0 passed and exactly 7 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:15
+Stack trace:
+#0 [internal function]: App\models\User->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(33): PDOStatement->fetchObject()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 15
+[03-Nov-2023 17:25:16 UTC] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetch(): Argument #2 ($cursorOrientation) must be of type int, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:41
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(41): PDOStatement->fetch()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 41
+[03-Nov-2023 17:25:17 UTC] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetch(): Argument #2 ($cursorOrientation) must be of type int, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:41
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(41): PDOStatement->fetch()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 41
+[03-Nov-2023 17:25:18 UTC] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetch(): Argument #2 ($cursorOrientation) must be of type int, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:41
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(41): PDOStatement->fetch()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 41
+[03-Nov-2023 17:25:26 UTC] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetch(): Argument #2 ($cursorOrientation) must be of type int, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:41
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(41): PDOStatement->fetch()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 41
+[03-Nov-2023 17:26:06 UTC] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetch(): Argument #2 ($cursorOrientation) must be of type int, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:41
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(41): PDOStatement->fetch()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 41
+[03-Nov-2023 17:26:07 UTC] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetch(): Argument #2 ($cursorOrientation) must be of type int, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:41
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(41): PDOStatement->fetch()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 41
+[03-Nov-2023 17:29:42 UTC] PHP Fatal error:  Uncaught TypeError: Cannot assign Reflection to property App\models\User::$reflect of type ReflectionClass in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:29
+Stack trace:
+#0 [internal function]: App\models\User->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(46): PDOStatement->fetchObject()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 29
+[03-Nov-2023 17:39:09 UTC] PHP Fatal error:  Uncaught TypeError: ReflectionClass::getAttributes(): Argument #1 ($name) must be of type ?string, App\models\User given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:31
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(31): ReflectionClass->getAttributes()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(44): App\lib\Model->returnInstanceOf()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 31
+[03-Nov-2023 17:39:24 UTC] PHP Fatal error:  Uncaught TypeError: ReflectionClass::getAttributes(): Argument #1 ($name) must be of type ?string, App\models\User given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:31
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(31): ReflectionClass->getAttributes()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(44): App\lib\Model->returnInstanceOf()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 31
+[03-Nov-2023 17:47:56 UTC] PHP Warning:  Attempt to read property "password" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 34
+[03-Nov-2023 17:47:56 UTC] PHP Fatal error:  Uncaught TypeError: App\models\User::verifyPassword(): Argument #2 ($hashedPassword) must be of type string, null given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 34 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:51
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(34): App\models\User::verifyPassword()
+#1 [internal function]: App\controllers\SigninController->signin()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 51
+[03-Nov-2023 17:48:35 UTC] PHP Warning:  Attempt to read property "id" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 33
+[03-Nov-2023 17:49:53 UTC] PHP Warning:  Attempt to read property "id" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 33
+[03-Nov-2023 17:49:54 UTC] PHP Warning:  Attempt to read property "id" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 33
+[03-Nov-2023 17:51:16 UTC] PHP Warning:  Attempt to read property "id" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 33
+[03-Nov-2023 17:51:17 UTC] PHP Warning:  Attempt to read property "id" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 33
+[03-Nov-2023 17:57:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getName() on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:34
+Stack trace:
+#0 [internal function]: App\lib\Model->App\lib\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(34): array_reduce()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#4 [internal function]: App\controllers\SigninController->signin()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 34
+[03-Nov-2023 17:58:30 UTC] PHP Warning:  Array to string conversion in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 34
+[03-Nov-2023 17:58:40 UTC] PHP Warning:  Array to string conversion in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 34
+[03-Nov-2023 18:00:06 UTC] PHP Parse error:  syntax error, unexpected token "::", expecting ":" in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 33
+[03-Nov-2023 18:00:13 UTC] PHP Warning:  Undefined variable $instance in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 33
+[03-Nov-2023 18:00:13 UTC] PHP Fatal error:  Uncaught TypeError: Cannot use "::class" on value of type null in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:33
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 33
+[03-Nov-2023 18:08:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method ReflectionProperty::getAtrributes() in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:34
+Stack trace:
+#0 [internal function]: App\lib\Model->App\lib\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(34): array_map()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#4 [internal function]: App\controllers\SigninController->signin()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 34
+[03-Nov-2023 18:11:15 UTC] PHP Fatal error:  Uncaught ArgumentCountError: ReflectionProperty::__construct() expects exactly 2 arguments, 1 given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:32
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(32): ReflectionProperty->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 32
+[03-Nov-2023 18:13:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method ReflectionProperty::Attributes() in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:34
+Stack trace:
+#0 [internal function]: App\lib\Model->App\lib\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(34): array_map()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#4 [internal function]: App\controllers\SigninController->signin()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 34
+[03-Nov-2023 18:19:47 UTC] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, App\models\User given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:31
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(31): array_filter()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 31
+[03-Nov-2023 18:20:41 UTC] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, App\models\User given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:31
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(31): array_filter()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 31
+[03-Nov-2023 18:20:42 UTC] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, App\models\User given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:31
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(31): array_filter()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 31
+[03-Nov-2023 18:20:47 UTC] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, App\models\User given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:31
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(31): array_filter()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 31
+[03-Nov-2023 18:20:48 UTC] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, App\models\User given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:31
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(31): array_filter()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 31
+[03-Nov-2023 18:20:52 UTC] PHP Fatal error:  Uncaught TypeError: array_filter(): Argument #1 ($array) must be of type array, App\models\User given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:31
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(31): array_filter()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 31
+[03-Nov-2023 18:21:40 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type App\models\User as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:31
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 31
+[03-Nov-2023 18:21:41 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type App\models\User as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:31
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 31
+[03-Nov-2023 18:21:42 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type App\models\User as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:31
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 31
+[03-Nov-2023 18:23:28 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type App\models\User as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:31
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 31
+[03-Nov-2023 18:23:29 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type App\models\User as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:31
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 31
+[03-Nov-2023 18:23:29 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type App\models\User as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:31
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(43): App\lib\Model->returnInstanceOf()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 31
+[03-Nov-2023 18:33:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:6
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(16): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 6
+[03-Nov-2023 18:34:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:6
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(16): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 6
+[03-Nov-2023 18:34:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:6
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(16): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 6
+[03-Nov-2023 18:34:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::auth() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:6
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(14): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(16): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 6
+[03-Nov-2023 18:37:38 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:8
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(15): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(16): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 8
+[03-Nov-2023 18:41:16 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php:3
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(15): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(16): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 3
+[03-Nov-2023 18:41:52 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\lib\View::authLayout(), 0 passed in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 3 and exactly 1 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php:41
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php(3): App\lib\View->authLayout()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(15): require('...')
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(16): App\lib\Controller->render()
+#4 [internal function]: App\controllers\InventoryController->index()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 41
+[03-Nov-2023 18:43:15 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php:93
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php(3): App\lib\View->authLayout()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(15): require('...')
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(16): App\lib\Controller->render()
+#4 [internal function]: App\controllers\HomeController->index()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 93
+[03-Nov-2023 19:20:09 UTC] PHP Warning:  Undefined property: App\lib\View::$data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 57
+[03-Nov-2023 19:20:23 UTC] PHP Warning:  Undefined property: App\lib\View::$data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 57
+[03-Nov-2023 19:20:37 UTC] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php:15
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(15): json_decode()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(18): App\lib\Controller->render()
+#3 [internal function]: App\controllers\HomeController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php on line 15
+[03-Nov-2023 19:20:44 UTC] PHP Warning:  Undefined property: App\lib\View::$data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 57
+[03-Nov-2023 20:06:46 UTC] PHP Fatal error:  Uncaught Error: Class "App\models\inventory" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:19
+Stack trace:
+#0 [internal function]: App\controllers\InventoryController->index()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 19
+[03-Nov-2023 20:06:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\models\inventory" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:19
+Stack trace:
+#0 [internal function]: App\controllers\InventoryController->index()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 19
+[03-Nov-2023 20:07:13 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, bool given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php:24
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(16): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(20): App\lib\Controller->render()
+#3 [internal function]: App\controllers\InventoryController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 24
+[03-Nov-2023 20:09:37 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, int given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php:24
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(16): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(21): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(20): App\lib\Controller->render()
+#3 [internal function]: App\controllers\InventoryController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 24
+[03-Nov-2023 20:16:56 UTC] PHP Warning:  Undefined property: stdClass::$invetories in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 27
+[03-Nov-2023 20:16:56 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 27
+[03-Nov-2023 20:24:58 UTC] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\models\Inventory::$start_date of type DateTime in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(19): App\models\Inventory::find()
+#2 [internal function]: App\controllers\InventoryController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 42
+[03-Nov-2023 20:25:14 UTC] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property App\models\Inventory::$end_date of type string in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(19): App\models\Inventory::find()
+#2 [internal function]: App\controllers\InventoryController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(32): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 42
+[03-Nov-2023 20:25:43 UTC] PHP Warning:  Undefined property: stdClass::$invetories in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 27
+[03-Nov-2023 20:25:43 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 27
+[03-Nov-2023 20:26:04 UTC] PHP Warning:  Undefined property: stdClass::$inventories in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 24
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "id" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 30
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "name" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 31
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "start_date" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 32
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "status" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 33
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "end_date" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 34
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "id" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 30
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "name" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 31
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "start_date" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 32
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "status" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 33
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "end_date" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 34
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "id" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 30
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "name" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 31
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "start_date" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 32
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "status" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 33
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "end_date" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 34
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "id" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 30
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "name" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 31
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "start_date" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 32
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "status" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 33
+[03-Nov-2023 20:26:14 UTC] PHP Warning:  Attempt to read property "end_date" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 34
+[03-Nov-2023 20:27:21 UTC] PHP Parse error:  syntax error, unexpected token ")" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 19
+[03-Nov-2023 20:27:29 UTC] PHP Parse error:  syntax error, unexpected token ")" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 19
+[03-Nov-2023 20:27:37 UTC] PHP Warning:  Undefined property: stdClass::$inventories in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 25
+[03-Nov-2023 20:29:24 UTC] PHP Warning:  Attempt to read property "id" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 25
+[03-Nov-2023 20:29:39 UTC] PHP Warning:  Undefined property: stdClass::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 34
+[03-Nov-2023 20:29:39 UTC] PHP Warning:  Undefined property: stdClass::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 34
+[03-Nov-2023 20:58:33 UTC] PHP Parse error:  syntax error, unexpected token "echo" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 39
+[03-Nov-2023 20:58:46 UTC] PHP Parse error:  syntax error, unexpected double-quote mark, expecting "," or ";" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/index.php on line 39

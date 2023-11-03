@@ -4,31 +4,45 @@ namespace App\models;
 
 use App\lib\Database;
 use App\lib\Model;
+use DatePeriod;
+use DateTime;
+use PDO;
 use PDOException;
+use Reflection;
+use ReflectionClass;
 
 class User extends Model
 {
+    public readonly string $id;
+    public readonly string $name;
+    public readonly string $last_name;
+    public readonly string $email;
+    public readonly string $password;
+    public readonly string $created_at;
+    public readonly bool $status;
 
-    public string $id;
-    public string $name;
-    public string $lastname;
-    public string $role;
-
-    public function __construct(private readonly string $email)
+    public function __construct()
     {
         parent::__construct();
-        $this->id = '';
-        $this->name = '';
-        $this->lastname = '';
-        $this->role = '';
     }
 
-    private function getHashedPassword(String $password)
+    private function getHashedPassword(string $password)
     {
         return password_hash($password, 'PASSWORD_DEFAULT', ['cost' => 10]);
     }
 
-    public static function findByEmail(String $email)
+
+    public static function findAll() {
+        try {
+            $db = new Model();
+            $query = $db->query('SELECT * FROM users Where status = true');
+            return $query->rowCount();
+        } catch (PDOException $e) {
+            return 0;
+        }
+    }
+
+    public static function findByEmail(string $email)
     {
         try {
             $db = new Model();
@@ -36,7 +50,10 @@ class User extends Model
             $query->execute([
                 'email' => $email
             ]);
-            return $query->rowCount() > 0 ? new User($query->fetchObject()->id) : false;
+
+            if ( $query->rowCount() > 0 ) return $query->fetchObject(__CLASS__);
+
+            return false;
         } catch (PDOException $e) {
             return false;
         }
@@ -51,23 +68,11 @@ class User extends Model
     {
         try {
             $query = $this->prepare('SELECT * FROM users Where email = :email');
-            $query->execute([
-                'email' => $this->email
-            ]);
+            $query->execute(['email' => $this->email]);
             return $query->fetchObject();
         } catch (PDOException $e) {
             echo $e;
         }
     }
 
-    public function setUser($user)
-    {
-
-        $this->id = $user->id;
-        $this->name = $user->id;
-        $this->lastname = $user->id;
-        $this->role = $user->id;
-
-        return $this;
-    }
 }

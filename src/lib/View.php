@@ -3,14 +3,16 @@
 namespace App\lib;
 
 use App\traits\AlertTrait;
+use App\traits\AuthTrait;
 use App\traits\LayoutTrait;
 
 class View
 {
-    use AlertTrait, LayoutTrait;
+    use AlertTrait, LayoutTrait, AuthTrait;
 
-    public function render(String $name, $data = [])
+    public function render(String $name, $data)
     {
+        if (!empty($data)) $data = json_decode(json_encode($data));
         require __DIR__ . '/../views/' . $name . '.php';
     }
 

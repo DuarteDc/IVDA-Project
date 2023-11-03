@@ -90,7 +90,7 @@ trait LayoutTrait
         </span>
         <div class="flex items-center">
             <div class="rounded-full overflow-hidden w-12 h-12 ml-4">
-            <img src="https://ui-avatars.com/api/?name=EduardoDuarte" alt="user" loading="lazy">
+            <img src="https://ui-avatars.com/api/?name='.$this->auth()->name . $this->auth()->last_name.'" alt="user" loading="lazy">
             </div>
         </div>
         </nav>';
