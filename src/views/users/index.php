@@ -1,45 +1,35 @@
 <?php
-$this->section('Inventario');
+$this->section('Dashboard');
 $this->authLayout();
 ?>
 
-<h1 class="pt-5 text-center">
-    Lista de inventarios
-</h1>
-<div class="container-fluid mx-auto px-2">
-    <div class="mt-2 md:mt-5 lg:mt-10 w-full d-flex justify-content-end py-4">
-        <a href="/auth/inventario" class="btn btn-success">
-            Generar Inventario
-        </a>
-    </div>
+<section>
     <div class="overflow-x-auto">
         <table class="table table-striped">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nombre</th>
-                    <th scope="col">Fecha de inicio</th>
+                    <th scope="col">Apellido</th>
                     <th scope="col">Estatus</th>
-                    <th scope="col">Fecha de termino</th>
                     <th scope="col">Acciones</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                if (!$data->invetories) {
-                    echo '<tr><td colspan="6" class="py-5"> No hay inventarios disponibles </td></tr>';
+                if (isset($data->users)) {
+                    echo '<tr><td colspan="6" class="py-4 text-center"> No hay usuarios disponibles </td></tr>';
                 } else {
-                    foreach ($data->invetories as $inventory) {
+                    foreach ($data->users as $user) {
                         echo "<tr class='hover:bg-gray-100'>
-                            <td>{$inventory->id}</td>
-                            <td>{$inventory->name}</td>
-                            <td>{$inventory->start_date}</td>
+                            <td>{$user->id}</td>
+                            <td>{$user->name}</td>
+                            <td>{$user->last_name}</td>
                             <td class='[&>span]:px-4 [&>span]:rounded-full [&>span]:text-white'>
-                            <span class=" . ($inventory->status ? 'bg-emerald-700' : 'bg-amber-600') . ">
-                                " . ($inventory->status ?  "Completado" : "Finalizado") .
+                            <span class=" . ($user->status ? 'bg-emerald-700' : 'bg-amber-600') . ">
+                                " . ($user->status ?  "Completado" : "Finalizado") .
                             "</span>
                             </td>
-                            <td>{$inventory->end_date}</td>
                             <td class='flex items-center justify-center'>
                             <div class='btn btn-danger' title='Generar reporte'>
                                 <svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-file-type-pdf' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'>
@@ -59,28 +49,29 @@ $this->authLayout();
                 ?>
             </tbody>
         </table>
-
-        <div class="d-flex justify-content-end">
+        <!-- <?php  if(isset($data->users)) {
+            echo `<div class="d-flex justify-content-end">
             <ul class="pagination">
-                <li class="page-item <?php echo($data->page <= 1) ?  'disabled' : ''; ?>">
+                <li class="page-item <?php echo ($data->page <= 1 ?  'disabled' : ''); ?>">
                     <a class="page-link" href="?page=<?php echo $data->page - 1   ?>" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                     </a>
                 </li>
                 <?php
-                    for ($i=1; $i <= $data->totalPages ; $i++) { 
-                        echo '<li class="page-item '. ($data->page == $i ? "active" : "").'"><a class="page-link" href="?page='.$i.'">'.$i.'</a></li>';
-                    }
+                for ($i = 1; $i <= $data->totalPages; $i++) {
+                    echo '<li class="page-item ' . ($data->page == $i ? "active" : "") . '"><a class="page-link" href="?page=' . $i . '">' . $i . '</a></li>';
+                }
                 ?>
-                <li class="page-item <?php echo($data->page >= $data->totalPages) ?  'disabled' : ''; ?>">
-                    <a class="page-link" href="?page=<?php echo $data->page + 1   ?>"  aria-label="Next">
+                <li class="page-item <?php echo ($data->page >= $data->totalPages) ?  'disabled' : ''; ?>">
+                    <a class="page-link" href="?page=<?php echo $data->page + 1   ?>" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                     </a>
                 </li>
             </ul>
         </div>
-    </div>
-</div>
+    </div>`;
+        } ?> -->
+</section>
 <?php $this->endAuthLayout() ?>
-<?php $this->scripts('"./../js/dashboard.js"') ?>
+<?php $this->scripts('"./js/dashboard.js"') ?>
 <?php $this->endSection(); ?>

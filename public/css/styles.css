@@ -1,3 +1,94 @@
 body {
   font-family: 'Montserrat', 'sans-serif';
 }
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 25rem;
+}
+
+.home-card {
+  background-color: rgb(14, 134, 225);
+  font-weight: bold;
+  position: relative;
+  border-radius: 10px;
+  color: white;
+  margin: 40px 0;
+}
+
+.home-card>div {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.card-container>div {
+  flex: auto;
+}
+
+.home-img {
+  position: absolute;
+  width: 32rem;
+  height: 32rem;
+  z-index: 100;
+  right: 10px;
+  top: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .home-img {
+    display: none;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  h2 {
+    font-size: 38px;
+  }
+
+  .home-img {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 38px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h2 {
+    font-size: 38px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  h2 {
+    font-size: 60px;
+  }
+}

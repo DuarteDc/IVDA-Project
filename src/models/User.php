@@ -31,6 +31,23 @@ class User extends Model
         return password_hash($password, 'PASSWORD_DEFAULT', ['cost' => 10]);
     }
 
+    public static function find($page = 1)
+    {
+        try {
+            $db = new Model();
+
+            $totalRecordPerPage = 10;
+            $count = $db->query('SELECT count(*) FROM users')->fetchColumn();
+            $totalPages = ceil($count / $totalRecordPerPage);
+            $startingLimit = ($page - 1) * $totalRecordPerPage;
+
+            $query = $db->query("SELECT * FROM users ORDER BY id ASC LIMIT $totalRecordPerPage OFFSET $startingLimit");
+            if ($query->rowCount() > 0) return ['users' => $query->fetchAll(PDO::FETCH_CLASS, self::class), 'totalPages' =>  $totalPages];
+            return false;
+        } catch (PDOException $e) {
+            return false;
+        }
+    }
 
     public static function findAll() {
         try {

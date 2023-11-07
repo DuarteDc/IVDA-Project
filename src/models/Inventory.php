@@ -35,15 +35,22 @@ class Inventory extends Model
             return false;
         }
     }
-    public static function find()
+    public static function find($page = 1)
     {
         try {
             $db = new Model();
-            $query = $db->query('SELECT * FROM inventories');
-            if ($query->rowCount() > 0) return $query->fetchAll(PDO::FETCH_ASSOC);
+
+            $totalRecordPerPage = 10;
+            $count = $db->query('SELECT count(*) FROM inventories')->fetchColumn();
+            $totalPages = ceil($count / $totalRecordPerPage);
+            $startingLimit = ($page - 1) * $totalRecordPerPage;
+
+            $query = $db->query("SELECT * FROM inventories ORDER BY id ASC LIMIT $totalRecordPerPage OFFSET $startingLimit");
+            if ($query->rowCount() > 0) return ['inventories' => $query->fetchAll(PDO::FETCH_CLASS, self::class), 'totalPages' =>  $totalPages];
             return false;
         } catch (PDOException $e) {
             return false;
         }
     }
+
 }

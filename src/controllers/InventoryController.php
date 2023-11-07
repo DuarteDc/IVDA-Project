@@ -16,7 +16,9 @@ class InventoryController extends Controller
 
     public function index()
     {
-        $inventories = Inventory::find();
-        return $this->render('inventory/index', ['invetories' => $inventories]);
+        $page = (int) $this->get('page');
+        $page == 0 && $page = 1;
+        $data = Inventory::find($page);
+        return $this->render('inventory/index', ['invetories' => $data['inventories'], 'page' => $page, 'totalPages' => $data['totalPages'] ]);
     }
 }

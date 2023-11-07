@@ -24,7 +24,8 @@ $router->before('GET', '/auth.*', function () {
 
 $router->mount('/auth', function () use ($router) {
     $router->get('/', 'App\controllers\HomeController@index');
-    $router->get('/inventario', 'App\controllers\InventoryController@index');
+    $router->get('/inventory', 'App\controllers\InventoryController@index');
+    $router->get('/users', 'App\controllers\UserController@index');
 });
 
 $router->set404('/.*', '\App\controllers\NotFoundController@__invoke');
