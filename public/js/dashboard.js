@@ -2,18 +2,45 @@
     const $d = document;
 
     $d.addEventListener('DOMContentLoaded', () => {
-        const nav = $d.querySelector('nav');
-        const icon = $d.querySelector('.icon-tabler-menu-2');
-        const aside = $d.querySelector('aside');
-        
-        icon.addEventListener('click', () => {
-                const navbarStatus = JSON.parse(nav.getAttribute('aria-toggle')) || false;
-                if ( navbarStatus ) {
-                    aside.classList.add('absolute', '-left-[600px]', 'z-50');
-                    return nav.setAttribute('aria-toggle', !navbarStatus);
+
+        $(document).ready(function() {
+            $(".alert").delay(3000).slideUp(300);
+        });
+
+        $('#create-user').validate({
+            rules: {
+                name: {
+                    required: true, 
+                },
+                last_name: {
+                    required: true, 
+                },
+                email: {
+                    required:true
+                },
+                password: {
+                    required: true,
+                    minlength: 8
                 }
-                aside.classList.remove('-left-[600px]', 'absolute', 'z-50');
-                nav.setAttribute('aria-toggle', !navbarStatus);
-            })
+            },
+            messages: {
+                name: {
+                    required: 'El nombre es requerido',
+                },
+                last_name: {
+                    required: 'El apellido es requerido'
+                },  
+                email: {
+                    required: 'El correo es requerido',
+                    email: 'El corro no es valido',
+                },
+                password: {
+                    required: 'La contraseña es requerida',
+                    minlength: 'La contraseña debe contener al menos 8 caracteres',
+                }
+            }
+        });
+
     });
+
 })();
