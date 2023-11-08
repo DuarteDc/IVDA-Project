@@ -3,11 +3,11 @@ $this->section('Dashboard', '"./../css/styles.css"');
 $this->authLayout();
 ?>
 <section class="container-fluid mx-auto">
-  <div class="row justify-content-center mt-5">
+  <div class="row justify-content-center">
     <div class=" col-11 home-card py-5 px-5 position-relative">
       <div class="info-box-content row">
         <h1>Hola,</h1>
-        <h2><?php echo "{$this->auth()->name} {$this->auth()->last_name}"; ?></h2>
+        <h2><?php echo "{$this::auth()->name} {$this::auth()->last_name}"; ?></h2>
         <img src="/assets/home.svg" alt="Home" class="home-img">
       </div>
     </div>

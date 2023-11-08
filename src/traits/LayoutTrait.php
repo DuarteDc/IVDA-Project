@@ -9,7 +9,27 @@ trait LayoutTrait
 
     private Router $router;
 
-    public function section(string $title = 'title', string $styles = '') 
+
+    public function loginLayout()
+    {
+        echo '<!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Iniciar Sesión</title>
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+                <script src="https://cdn.tailwindcss.com"></script>
+            </head> 
+            <body>
+        ';
+    }
+
+    public function section(string $title = 'title', string $styles = '')
     {
         echo '<!DOCTYPE html>
             <html lang="en">
@@ -17,15 +37,14 @@ trait LayoutTrait
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>' . $title . '</title>
+                <script src="https://cdn.tailwindcss.com"></script>
                 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
                 <link rel="preconnect" href="https://fonts.googleapis.com">
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-                <link href='.$styles.' rel="stylesheet">
+                <link href=' . $styles . ' rel="stylesheet">
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"/>
-                <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
             </head> 
             <body>
         ';
@@ -60,7 +79,7 @@ trait LayoutTrait
                 </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <img src="https://ui-avatars.com/api/?name='.$this->auth()->name . $this->auth()->last_name.'" alt='.$this->auth()->name.'" loading="lazy" class="img-profile" width="50" heigth="50">
+                    <a href="/auth/profile"><img src="https://ui-avatars.com/api/?name=' . $this::auth()->name . " " .$this::auth()->last_name . '" alt=' . $this::auth()->name . '" loading="lazy" class="img-profile cursor-pointer" width="50" heigth="50"></a>
                 </ul>
             </nav>
             <aside class="main-sidebar sidebar-dark-primary elevation-4">

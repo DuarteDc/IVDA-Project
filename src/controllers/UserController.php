@@ -73,7 +73,25 @@ class UserController extends Controller {
     }
 
     public function delete(string $id) {
+        $user = User::findOne($id);
+        if (!$user->status) {
+            $this->setMessage(TypeAlert::Warning, 'El usuario ya ha sido desactivado');
+            header('location: /auth/users');
+        }
         $user = User::disableUser($id);
+        $this->setMessage(TypeAlert::Success, 'El usuario se desactivo correctamente');
+        header('location: /auth/users');
+    }
+
+    public function active(string $id) {
+        $user = User::findOne($id);
+        if ($user->status) {
+            $this->setMessage(TypeAlert::Warning, 'El usuario ya ha sido activado');
+            header('location: /auth/users');
+        }
+        $user = User::activeUser($id);
+        $this->setMessage(TypeAlert::Success, 'El usuario se activo correctamente');
+        header('location: /auth/users');
     }
 
 }

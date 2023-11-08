@@ -3261,3 +3261,134 @@ Stack trace:
 #7 {main}
   thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 118
 [07-Nov-2023 22:13:00 UTC] PHP Warning:  Array to string conversion in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 128
+[08-Nov-2023 15:35:15 UTC] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 63
+[08-Nov-2023 15:35:15 UTC] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 63
+[08-Nov-2023 15:35:15 UTC] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 63
+[08-Nov-2023 15:35:51 UTC] PHP Fatal error:  Uncaught TypeError: App\lib\Controller::setMessage(): Argument #1 ($key) must be of type App\emuns\TypeAlert, string given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 27 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:25
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(27): App\lib\Controller->setMessage()
+#1 [internal function]: App\controllers\SigninController->signin()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(37): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 25
+[08-Nov-2023 16:22:20 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 16:22:25 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 16:22:32 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 16:23:11 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 16:23:16 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 16:23:17 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 16:23:18 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 16:23:20 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 16:23:21 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 16:23:22 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 16:23:23 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 16:23:24 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 16:23:25 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 16:23:32 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 16:23:33 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 77
+[08-Nov-2023 16:23:38 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 16:29:55 UTC] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[08-Nov-2023 16:29:55 UTC] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[08-Nov-2023 16:29:55 UTC] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[08-Nov-2023 16:29:55 UTC] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[08-Nov-2023 16:29:55 UTC] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[08-Nov-2023 16:31:16 UTC] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[08-Nov-2023 16:31:16 UTC] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[08-Nov-2023 16:31:16 UTC] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[08-Nov-2023 16:31:16 UTC] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[08-Nov-2023 16:31:16 UTC] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[08-Nov-2023 16:37:14 UTC] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 80
+[08-Nov-2023 16:37:14 UTC] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 80
+[08-Nov-2023 16:37:14 UTC] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 80
+[08-Nov-2023 16:37:14 UTC] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[08-Nov-2023 16:37:14 UTC] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[08-Nov-2023 16:40:35 UTC] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 81
+[08-Nov-2023 16:40:35 UTC] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 81
+[08-Nov-2023 16:40:35 UTC] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 81
+[08-Nov-2023 17:08:00 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:08:55 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:09:55 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:11:05 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:11:13 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:11:18 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:12:01 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:12:20 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:13:22 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:13:29 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:14:03 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:14:17 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:14:27 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:14:42 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:14:59 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:15:36 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:16:05 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:16:07 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:16:21 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:16:52 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:17:08 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:17:26 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:31:33 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:37:27 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:37:54 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 17:38:02 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 18:10:28 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:10:28 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:12:30 UTC] PHP Deprecated:  Calling static trait method App\traits\AuthTrait::auth is deprecated, it should only be called on a class using the trait in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 59
+[08-Nov-2023 18:12:30 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:12:30 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:13:04 UTC] PHP Deprecated:  Calling static trait method App\traits\AuthTrait::auth is deprecated, it should only be called on a class using the trait in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 59
+[08-Nov-2023 18:13:04 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:13:04 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:13:22 UTC] PHP Deprecated:  Calling static trait method App\traits\AuthTrait::auth is deprecated, it should only be called on a class using the trait in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 59
+[08-Nov-2023 18:13:22 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:13:22 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:13:43 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:13:43 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:14:35 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:14:35 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:15:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:15:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:16:05 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:16:05 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:16:11 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:16:11 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:16:12 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:16:12 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 20
+[08-Nov-2023 18:30:14 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 18:30:34 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 18:47:29 UTC] PHP Warning:  Attempt to read property "user" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 13
+[08-Nov-2023 18:47:29 UTC] PHP Warning:  Attempt to read property "id" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 13
+[08-Nov-2023 18:47:29 UTC] PHP Warning:  Attempt to read property "user" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 16
+[08-Nov-2023 18:47:29 UTC] PHP Warning:  Attempt to read property "last_name" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 16
+[08-Nov-2023 18:47:29 UTC] PHP Warning:  Attempt to read property "user" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 20
+[08-Nov-2023 18:47:29 UTC] PHP Warning:  Attempt to read property "last_name" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 20
+[08-Nov-2023 18:47:29 UTC] PHP Warning:  Attempt to read property "user" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 24
+[08-Nov-2023 18:47:29 UTC] PHP Warning:  Attempt to read property "email" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 24
+[08-Nov-2023 19:30:40 UTC] PHP Fatal error:  Uncaught TypeError: App\lib\Controller::createSession(): Argument #1 ($user) must be of type App\models\User, bool given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ProfileController.php on line 25 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:17
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ProfileController.php(25): App\lib\Controller::createSession()
+#1 [internal function]: App\controllers\ProfileController->update()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(41): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 17
+[08-Nov-2023 19:31:27 UTC] PHP Fatal error:  Uncaught TypeError: App\lib\Controller::createSession(): Argument #1 ($user) must be of type App\models\User, bool given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ProfileController.php on line 25 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:17
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ProfileController.php(25): App\lib\Controller::createSession()
+#1 [internal function]: App\controllers\ProfileController->update()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(41): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 17
+[08-Nov-2023 20:00:37 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[08-Nov-2023 20:00:43 UTC] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88

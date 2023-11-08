@@ -3,9 +3,10 @@
 
     $d.addEventListener('DOMContentLoaded', () => {
 
-        $(document).ready(function() {
-            $(".alert").delay(3000).slideUp(300);
-        });
+        const alert = $d.querySelector(".alert");
+        if (!alert) return;
+        setTimeout(() => alert.classList.add('opacity-0', 'transition-all', 'duration-500', 'ease-out'), 2000);
+        setTimeout(() => alert.remove(), 3000);
 
         $('#create-user').validate({
             rules: {

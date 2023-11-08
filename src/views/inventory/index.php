@@ -1,9 +1,10 @@
 <?php
-$this->section('Inventario');
+$this->section('Dashboard - Inventario', '"./../css/styles.css"');
 $this->authLayout();
 ?>
 
-<h1 class="pt-5 text-center">
+
+<h1 class="py-5 text-center text-4xl">
     Lista de inventarios
 </h1>
 <section class="px-md-2 card">

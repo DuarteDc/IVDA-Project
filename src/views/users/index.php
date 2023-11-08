@@ -2,12 +2,14 @@
 $this->section('Dashboard - Usuarios', '"./../css/styles.css"');
 $this->authLayout();
 ?>
-<h1 class="py-5 text-center">
+
+<?php $this->getSessionMessage(); ?>
+
+<h1 class="py-5 text-center text-4xl">
     Lista de usuarios
 </h1>
 
 
-<?php $this->getSessionMessage(); ?>
 
 <section class="px-md-2 card">
     <div class="mt-2 md:mt-5 lg:mt-10 w-full d-flex justify-content-end py-4">
@@ -48,7 +50,9 @@ $this->authLayout();
                             </td>
                             <td class='d-flex justify-content-center'>
                                 <a href='/auth/users/{$user->id}' class='mx-1 btn btn-primary' title='Editar'><i class='fa-solid fa-pen-to-square'></i></a>
-                                <span class='mx-1 btn btn-danger' title='Desativar'><i class='fa-solid fa-trash'></i></span>
+                                ". ($user->status 
+                                ? "<form method='POST' action='/auth/users/{$user->id}/delete'><button class='mx-1 btn btn-danger' title='Desativar'><i class='fa-solid fa-trash'></i></button></form>"
+                                : "<form method='POST' action='/auth/users/{$user->id}/active'><button class='mx-1 btn btn-success' title='Activar'><i class='fa-solid fa-check'></i></button></form>") ."
                             </td>
                     </tr>";
                     }

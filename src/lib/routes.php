@@ -30,6 +30,10 @@ $router->mount('/auth', function () use ($router) {
     $router->get('/users/{id}', 'App\controllers\UserController@edit');
     $router->post('/users/save', 'App\controllers\UserController@save');
     $router->post('/users/{id}/update', 'App\controllers\UserController@update');
+    $router->post('/users/{id}/delete', 'App\controllers\UserController@delete');
+    $router->post('/users/{id}/active', 'App\controllers\UserController@active');
+    $router->get('/profile', 'App\controllers\ProfileController@index');
+    $router->post('/profile/update', 'App\controllers\ProfileController@update');
 });
 
 $router->set404('/.*', '\App\controllers\NotFoundController@__invoke');

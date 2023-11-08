@@ -5,9 +5,11 @@ namespace App\models;
 use App\lib\Model;
 use PDO;
 use PDOException;
+use App\traits\AuthTrait;
 
 class User extends Model
 {
+    use AuthTrait;
     public readonly string $id;
     public readonly string $name;
     public readonly string $last_name;
@@ -21,7 +23,7 @@ class User extends Model
         parent::__construct();
     }
 
-    private function getHashedPassword(string $password)
+    private static function getHashedPassword(string $password)
     {
         return password_hash($password, PASSWORD_BCRYPT, ['cost' => 12]);
     }
@@ -54,8 +56,7 @@ class User extends Model
             if ($totalPages < $page) $page = $totalPages;
             $startingLimit = ($page - 1) * $totalRecordPerPage;
 
-
-            $query = $db->query("SELECT * FROM users ORDER BY id ASC LIMIT $totalRecordPerPage OFFSET $startingLimit");
+            $query = $db->query("SELECT * FROM users WHERE id <> ". self::auth()->id . "ORDER BY id ASC LIMIT $totalRecordPerPage OFFSET $startingLimit");
             if ($query->rowCount() > 0) return ['users' => $query->fetchAll(PDO::FETCH_CLASS, self::class), 'totalPages' =>  $totalPages];
             return false;
         } catch (PDOException $e) {
@@ -112,13 +113,18 @@ class User extends Model
         try {
             $db = new Model();
             $query = 'SET ';
-            foreach($params as $key => $value) {
-                if ( strlen($value)  > 0) {
-                    $query .= "{$key} = '{$value}', ";
+            foreach ($params as $key => $value) {
+                if (strlen($value)  > 0){
+                    if ($key === 'password' && strlen($params[$key]) > 0)  {
+                        $query .= "{$key} = " . self::getHashedPassword($value, self::auth()->password). ", ";
+                    }else{
+                        $query .= "{$key} = '{$value}', ";
+                    }
                 }
             }
             $query = rtrim($query, ', '); 
-            return $db->query("UPDATE users $query Where id = $id");
+            $db->query("UPDATE users $query Where id = $id");
+            return self::findOne($id);
         } catch (\Throwable $th) {
             return false;
         }
@@ -146,4 +152,13 @@ class User extends Model
         }
     }
     
+
+    public static function activeUser(string $id) {
+        try {
+            $db = new Model;
+            return $db->query("UPDATE users SET status = true WHERE id = $id");
+        } catch (\Throwable $th) {
+            return false;
+        }
+    }
 }

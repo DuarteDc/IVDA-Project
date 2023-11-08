@@ -2,6 +2,7 @@
 
 namespace App\controllers;
 
+use App\emuns\TypeAlert;
 use App\lib\Controller;
 use App\models\User;
 
@@ -24,14 +25,14 @@ class SigninController extends Controller
         $password = $this->post('password');
 
         if (!$email || !$password) {
-            $this->setMessage('El correo y contraseña son requeridos');
+            $this->setMessage(TypeAlert::Danger, 'El correo y contraseña son requeridos');
             return header('location: /');
         }
 
         $user = User::findByEmail($email);
 
         if (!$user || !$user->verifyPassword($password, $user->password)) {
-            $this->setMessage('El usuario o contraseña no son validos');
+            $this->setMessage(TypeAlert::Danger, 'El usuario o contraseña no son validos');
             return header('location: /');
         }
 

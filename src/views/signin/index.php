@@ -1,6 +1,6 @@
-<?php $this->section('Iniciar Sesión'); ?>
+<?php $this->loginLayout(); ?>
     <main class="min-h-screen flex flex-col items-center w-full justify-center relative overflow-hidden px-5">
-        <?php $this->showAlert('message'); ?>
+        <?php $this->getSessionMessage(); ?>
         <span class="w-[200px] h-[100px] lg:w-[400px] lg:h-[200px] rounded-3xl -rotate-45 bg-blue-600/10 shadow-[0_10px_150px_20px_rgba(30,64,175,0.5)] absolute bottom-0 -left-20 lg:-left-24"></span>
         <span class="w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] rounded-md rotate-45 bg-blue-600/80  absolute lg:bottom-48 lg:left-40 bottom-20 left-16"></span>
         
