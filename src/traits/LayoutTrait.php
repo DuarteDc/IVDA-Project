@@ -9,7 +9,7 @@ trait LayoutTrait
 
     private Router $router;
 
-    public function section(string $title = 'title')
+    public function section(string $title = 'title', string $styles = '') 
     {
         echo '<!DOCTYPE html>
             <html lang="en">
@@ -22,7 +22,7 @@ trait LayoutTrait
                 <link rel="preconnect" href="https://fonts.googleapis.com">
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-                <link href="./../css/styles.css" rel="stylesheet">
+                <link href='.$styles.' rel="stylesheet">
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"/>
                 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -53,30 +53,25 @@ trait LayoutTrait
 
         $currentUri = $this->router->getCurrentUri();
         echo '
-            <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <nav class="main-header navbar navbar-expand navbar-dark navbar-dark">
                 <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 </ul>
+                <ul class="navbar-nav ml-auto">
+                    <img src="https://ui-avatars.com/api/?name='.$this->auth()->name . $this->auth()->last_name.'" alt='.$this->auth()->name.'" loading="lazy" class="img-profile" width="50" heigth="50">
+                </ul>
             </nav>
             <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <a href="/" class="brand-link">
-                <span class="brand-text font-weight-light">Home</span>
+                <span class="brand-text">Inicio</span>
             </a>
             <div class="sidebar">
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                <div class="image rounded-full">
-                    <img src="https://ui-avatars.com/api/?name=' . $this->auth()->name . $this->auth()->last_name . '" alt="' . $this->auth()->name . '" loading="lazy" class="rounded-full">
-                </div>
-                <div class="info">
-                    <a href="#" class="d-block">' . $this->auth()->name . ' ' . $this->auth()->last_name . '</a>
-                </div>
-                </div>
                 <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
                     <li class="nav-item menu-open">
-                    <a href="/" class="nav-link' . ($currentUri === '/auth' ? " active" : "")  . '">
+                    <a href="/" class="nav-link py-4 px-4' . ($currentUri === '/auth' ? " active" : "")  . '">
                     <i class="fa-solid fa-house"></i>
                         <p>
                         Inicio
@@ -84,7 +79,7 @@ trait LayoutTrait
                     </a>
                     </li>
                     <li class="nav-item menu-open">
-                    <a href="/auth/inventory" class="nav-link' . ($currentUri === '/auth/inventory' ? " active" : "")  . '">
+                    <a href="/auth/inventory" class="nav-link py-4 px-4' . (str_contains($currentUri, '/auth/inventory') ? " active" : "")  . '">
                         <i class="fa-solid fa-file"></i>
                         <p>
                         Inventario
@@ -92,7 +87,7 @@ trait LayoutTrait
                     </a>
                     </li>
                     <li class="nav-item menu-open">
-                    <a href="/auth/users" class="nav-link' . ($currentUri === '/user' ? " active" : "")  . '">
+                    <a href="/auth/users" class="nav-link py-4 px-4' . (str_contains($currentUri, '/auth/users') ? " active" : "")  . '">
                         <i class="fa-solid fa-users"></i>
                         <p>
                         Usuarios
@@ -103,7 +98,7 @@ trait LayoutTrait
                 </nav>
             </div>
             </aside>
-            <main class="wrapper content-wrapper">
+            <main class="wrapper content-wrapper px-md-5 px-2">
             ';
     }
 

@@ -2,6 +2,7 @@
 
 namespace App\lib;
 
+use App\emuns\TypeAlert;
 use App\lib\View;
 use App\traits\AuthTrait;
 
@@ -21,8 +22,8 @@ class Controller
         $this->view->render($name, $data);
     }
 
-    public function setMessage(String $message) {
-        $this->view->setMessage($message);
+    public function setMessage(TypeAlert $key, string $message) {
+        $this->view->setMessage($key, $message);
     }
 
     protected function post(String $param)

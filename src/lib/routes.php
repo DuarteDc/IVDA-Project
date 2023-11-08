@@ -26,11 +26,16 @@ $router->mount('/auth', function () use ($router) {
     $router->get('/', 'App\controllers\HomeController@index');
     $router->get('/inventory', 'App\controllers\InventoryController@index');
     $router->get('/users', 'App\controllers\UserController@index');
+    $router->get('/users/create', 'App\controllers\UserController@create');
+    $router->get('/users/{id}', 'App\controllers\UserController@edit');
+    $router->post('/users/save', 'App\controllers\UserController@save');
+    $router->post('/users/{id}/update', 'App\controllers\UserController@update');
 });
 
 $router->set404('/.*', '\App\controllers\NotFoundController@__invoke');
 
 $router->run();
+
 
 
 

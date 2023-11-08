@@ -2,14 +2,9 @@
 
 namespace App\models;
 
-use App\lib\Database;
 use App\lib\Model;
-use DatePeriod;
-use DateTime;
 use PDO;
 use PDOException;
-use Reflection;
-use ReflectionClass;
 
 class User extends Model
 {
@@ -28,18 +23,37 @@ class User extends Model
 
     private function getHashedPassword(string $password)
     {
-        return password_hash($password, 'PASSWORD_DEFAULT', ['cost' => 10]);
+        return password_hash($password, PASSWORD_BCRYPT, ['cost' => 12]);
+    }
+
+    public static function findOne($id)
+    {
+        try {
+            $db = new Model();
+            $query = $db->prepare('SELECT * FROM users Where status = true AND id = :id');
+            $query->execute([ 'id' => $id ]);
+
+            if ($query->rowCount() > 0) return $query->fetchObject(__CLASS__);
+
+            return false;
+        } catch (PDOException $e) {
+            return false;
+        }
     }
 
     public static function find($page = 1)
     {
         try {
             $db = new Model();
-
+            $page = abs($page);
             $totalRecordPerPage = 10;
             $count = $db->query('SELECT count(*) FROM users')->fetchColumn();
             $totalPages = ceil($count / $totalRecordPerPage);
             $startingLimit = ($page - 1) * $totalRecordPerPage;
+
+            if ($totalPages < $page) $page = $totalPages;
+            $startingLimit = ($page - 1) * $totalRecordPerPage;
+
 
             $query = $db->query("SELECT * FROM users ORDER BY id ASC LIMIT $totalRecordPerPage OFFSET $startingLimit");
             if ($query->rowCount() > 0) return ['users' => $query->fetchAll(PDO::FETCH_CLASS, self::class), 'totalPages' =>  $totalPages];
@@ -49,7 +63,8 @@ class User extends Model
         }
     }
 
-    public static function findAll() {
+    public static function findAll()
+    {
         try {
             $db = new Model();
             $query = $db->query('SELECT * FROM users Where status = true');
@@ -63,12 +78,12 @@ class User extends Model
     {
         try {
             $db = new Model();
-            $query = $db->prepare('SELECT * FROM users Where email = :email');
+            $query = $db->prepare('SELECT * FROM users Where status = true AND email = :email');
             $query->execute([
                 'email' => $email
             ]);
 
-            if ( $query->rowCount() > 0 ) return $query->fetchObject(__CLASS__);
+            if ($query->rowCount() > 0) return $query->fetchObject(__CLASS__);
 
             return false;
         } catch (PDOException $e) {
@@ -92,4 +107,43 @@ class User extends Model
         }
     }
 
+
+    public static function UpdateOne(string $id, array $params) {
+        try {
+            $db = new Model();
+            $query = 'SET ';
+            foreach($params as $key => $value) {
+                if ( strlen($value)  > 0) {
+                    $query .= "{$key} = '{$value}', ";
+                }
+            }
+            $query = rtrim($query, ', '); 
+            return $db->query("UPDATE users $query Where id = $id");
+        } catch (\Throwable $th) {
+            return false;
+        }
+    }
+
+
+    public function save(string $name, string $last_name, string $email, string $password)
+    {
+        try {
+            $passwordHash = $this->getHashedPassword($password);
+            $query = $this->prepare('INSERT INTO users(name, last_name, email, password) values(:name, :last_name, :email, :password)');
+            return $query->execute(['name' => $name, 'last_name' => $last_name, 'email' => $email, 'password' => $passwordHash]);
+        } catch (\Throwable $th) {
+            return false;
+        }
+    }
+
+
+    public static function disableUser(string $id) {
+        try {
+            $db = new Model;
+            return $db->query("UPDATE users SET status = false WHERE id = $id");
+        } catch (\Throwable $th) {
+            return false;
+        }
+    }
+    
 }

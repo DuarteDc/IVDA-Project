@@ -1,16 +1,20 @@
 <?php
-$this->section('Dashboard');
+$this->section('Dashboard', '"./../css/styles.css"');
 $this->authLayout();
 ?>
 <section class="container-fluid mx-auto">
   <div class="row justify-content-center mt-5">
     <div class=" col-11 home-card py-5 px-5 position-relative">
       <div class="info-box-content row">
-        <h2 class="info-box-text">Hola,</h2> <h3><?php echo "{$this->auth()->name} {$this->auth()->last_name}"; ?></h3>
+        <h1>Hola,</h1>
+        <h2><?php echo "{$this->auth()->name} {$this->auth()->last_name}"; ?></h2>
         <img src="/assets/home.svg" alt="Home" class="home-img">
       </div>
     </div>
 
+    <div class="col-11 d-flex justify-content-end my-5">
+      <button class="btn btn-info"><i class="fas fa-plus"></i> Crear inventario </button>
+    </div>
     <div class="card-container col-11">
       <div class="small-box bg-info mt-lg-5 p-0 w-100 pt-5">
         <div class="inner">
@@ -38,7 +42,7 @@ $this->authLayout();
         </a>
       </div>
 
-      <div class="small-box bg-gradient-success mt-lg-5 p-0 w-100 pt-5">
+      <div class="small-box bg-gradient-warning mt-lg-5 p-0 w-100 pt-5">
         <div class="inner">
           <h3><?php echo $data->userCount; ?></h3>
           <p>Total de usuarios</p>
