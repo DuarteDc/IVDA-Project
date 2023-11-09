@@ -13,19 +13,19 @@ class Model
         $this->db = new Database();
     }
 
-    public function query(String $query)
+    public function query(string $query)
     {
         return $this->db->connect()->query($query);
     }
 
-    public function prepare(String $query)
+    public function prepare(string $query)
     {
         return $this->db->connect()->prepare($query);
     }
 
-    // protected function returnInstanceOf($instanceOf) {
-    //     $arr = json_decode(json_encode ( $instanceOf ));
-    //     return json_decode(json_encode($arr));
-    // }   
-
+    public function insert(string $query, array $fields) {
+        $sql = $this->db->connect()->prepare($query);
+        $sql->execute($fields);
+        return $this->db->connect()->lastInsertId();
+    }
 }

@@ -21,13 +21,14 @@ class ProfileController extends Controller
 
     public function update()
     {
+
         $currentUser = $this->auth();
 
         if ($this->post('email')) {
             $user = User::findByEmail($this->post('email'));
             if ($user && $user->id !== $this::auth()->id) {
                 $this->setMessage(TypeAlert::Warning, "Ya existe un usuario con el correo {$this->post('email')}");
-                 return header('location: /auth/profile');
+                return header('location: /auth/profile');
             }
         }
 

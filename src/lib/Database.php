@@ -41,7 +41,7 @@ class Database
                 $options,
             );
         } catch (PDOException $e) {
-            throw $e;
+            throw $e->getMessage();
         }
     }
 }

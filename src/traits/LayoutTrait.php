@@ -82,7 +82,7 @@ trait LayoutTrait
                     <a href="/auth/profile"><img src="https://ui-avatars.com/api/?name=' . $this::auth()->name . " " .$this::auth()->last_name . '" alt=' . $this::auth()->name . '" loading="lazy" class="img-profile cursor-pointer" width="50" heigth="50"></a>
                 </ul>
             </nav>
-            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <aside class="main-sidebar sidebar-dark-primary ">
             <a href="/" class="brand-link">
                 <span class="brand-text">Inicio</span>
             </a>

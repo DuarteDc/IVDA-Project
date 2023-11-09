@@ -10,10 +10,12 @@ $this->authLayout();
 <section class="px-md-2 card">
     <div class="overflow-auto">
     <div class="mt-2 md:mt-5 lg:mt-10 w-full d-flex justify-content-end py-4">
-            <a href="/auth/users/create" class="btn btn-info">
-                <i class="fas fa-plus"></i>
-                Generar inventario
-            </a>
+            <form method="POST" action="/auth/inventory">
+                <button class="btn btn-success">
+                    <i class="fas fa-plus"></i>
+                    Generar inventario
+                </button>
+            </form>
         </div>
         <table class="table table-striped">
             <thead class="thead-dark">
@@ -28,10 +30,10 @@ $this->authLayout();
             </thead>
             <tbody>
                 <?php
-                if (!$data->invetories) {
-                    echo '<tr><td colspan="6" class="py-5"> No hay inventarios disponibles </td></tr>';
+                if (!$data->inventories) {
+                    echo '<tr><td colspan="6" class="py-5 text-center"> No hay inventarios disponibles </td></tr>';
                 } else {
-                    foreach ($data->invetories as $inventory) {
+                    foreach ($data->inventories as $inventory) {
                         echo "<tr class='hover:bg-gray-100 text-center'>
                             <td>{$inventory->id}</td>
                             <td>{$inventory->name}</td>

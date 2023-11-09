@@ -10,11 +10,11 @@ use PDOException;
 class Inventory extends Model
 {
 
-    public readonly string $id;
-    public readonly string $name;
-    public readonly string $start_date;
-    public readonly null $end_date;
-    public readonly bool $status;
+    public readonly string  $id;
+    public readonly string  $name;
+    public readonly string  $start_date;
+    public readonly null    $end_date;
+    public readonly bool    $status;
 
     public function __construct()
     {
@@ -30,7 +30,7 @@ class Inventory extends Model
 
             if ($query->rowCount() > 0) return $query->fetchObject(__CLASS__);
 
-            return 0;
+            return false;
         } catch (PDOException $e) {
             return false;
         }
@@ -51,8 +51,19 @@ class Inventory extends Model
             if ($query->rowCount() > 0) return ['inventories' => $query->fetchAll(PDO::FETCH_CLASS, self::class), 'totalPages' =>  $totalPages];
             return ['inventories' => [], 'totalPages' => $totalPages];
         } catch (PDOException $e) {
-            return false;
+            return ['inventories' => [], 'totalPages' => 0];
         }
     }
+
+
+    public function save(string $name, string $start_date, string $user_id) {
+        try{
+            $query = $this->insert('INSERT INTO inventories(name, start_date, user_id) VALUES (:name, :start_date, :user_id)', [ 'name' => $name, 'start_date' => $start_date, 'user_id' =>  $user_id]);
+            return $query;
+        } catch (PDOException $e) {
+            var_dump($e->getMessage());
+        }
+    }
+
 
 }

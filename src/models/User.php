@@ -9,6 +9,10 @@ use App\traits\AuthTrait;
 
 class User extends Model
 {
+
+    CONST USER = 1;
+    CONST ADMIN = 2;
+
     use AuthTrait;
     public readonly string $id;
     public readonly string $name;
@@ -17,6 +21,7 @@ class User extends Model
     public readonly string $password;
     public readonly string $created_at;
     public readonly bool $status;
+    public readonly string $role;
 
     public function __construct()
     {
@@ -58,9 +63,9 @@ class User extends Model
 
             $query = $db->query("SELECT * FROM users WHERE id <> ". self::auth()->id . "ORDER BY id ASC LIMIT $totalRecordPerPage OFFSET $startingLimit");
             if ($query->rowCount() > 0) return ['users' => $query->fetchAll(PDO::FETCH_CLASS, self::class), 'totalPages' =>  $totalPages];
-            return false;
+            return ['users' => [], 'totalPages' =>  0];
         } catch (PDOException $e) {
-            return false;
+            return ['users' => [], 'totalPages' =>  0];
         }
     }
 
@@ -115,8 +120,8 @@ class User extends Model
             $query = 'SET ';
             foreach ($params as $key => $value) {
                 if (strlen($value)  > 0){
-                    if ($key === 'password' && strlen($params[$key]) > 0)  {
-                        $query .= "{$key} = " . self::getHashedPassword($value, self::auth()->password). ", ";
+                    if ($key === 'password')  {
+                        $query .= "{$key} = '" . self::getHashedPassword($value, self::auth()->password). "', ";
                     }else{
                         $query .= "{$key} = '{$value}', ";
                     }

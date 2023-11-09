@@ -8,9 +8,9 @@ $this->authLayout();
 <section class="py-20 flex justify-center flex-col w-full lg:w-9/12 mx-auto">
     <div class="flex items-center">
         <img src="https://ui-avatars.com/api/?name=<?php echo $this::auth()->name ." ". $this::auth()->last_name ?>" alt="<?php $this::auth()->name ?>" loading="lazy" class="w-[18rem] lg:w-[22rem] lg:h-[22rem] rounded-full" width="50" heigth="50">
-        <div class="flex flex-col mx-2 md:mx-4">
-            <h1 class="text-4xl font-bold"><?php echo $this::auth()->name . " " . $this::auth()->last_name ?></h1>
-            <h2><?php echo $this::auth()->email ?></h2>
+        <div class="flex flex-col font-bold">
+            <h1 class="text-6xl mx-4 text-blue-600"><?php echo $this::auth()->name . " " . $this::auth()->last_name ?></h1>
+            <h2 class="mx-4 text-gray-600 mt-2"><?php echo $this::auth()->email ?></h2>
         </div>
     </div>
     <div class="mt-10">

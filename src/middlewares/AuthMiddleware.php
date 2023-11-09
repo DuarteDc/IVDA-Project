@@ -6,15 +6,15 @@ use App\lib\Middleware;
 
 class AuthMiddleware extends Middleware {
 
-    public function checkAuth() {
-        if( gettype($this->auth())  == 'boolean') {
+    public static function checkAuth() {
+        if( gettype(self::auth())  == 'boolean') {
             header("HTTP/1.1 307 Temporary Redirect");
             return header('location: /');    
         }
     }
 
-    public function isAuthenticate () {
-        if( gettype($this->auth()) != 'boolean') {
+    public static function isAuthenticate () {
+        if( gettype(self::auth()) != 'boolean') {
             header("HTTP/1.1 307 Temporary Redirect");
             return header('location: /auth');    
         }
