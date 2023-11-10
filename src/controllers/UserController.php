@@ -12,7 +12,6 @@ class UserController extends Controller {
         parent::__construct();
     }
 
-
     public function index() {
         $page = (int) $this->get('page');
         $page == 0 && $page = 1;

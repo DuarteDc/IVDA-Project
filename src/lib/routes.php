@@ -26,6 +26,12 @@ $router->mount('/auth', function () use ($router) {
     $router->get('/', 'App\controllers\HomeController@index');
     $router->get('/inventory', 'App\controllers\InventoryController@index');
     $router->post('/inventory', 'App\controllers\InventoryController@create');
+    $router->get('/inventory/edit/{id}', 'App\controllers\InventoryController@edit');
+    $router->get('/subsecretaries', 'App\controllers\SubSecretaryController@index');
+    
+    $router->get('/subsecretaries/create', 'App\controllers\SubSecretaryController@create');
+
+    $router->post('/subsecretaries', 'App\controllers\SubSecretary@save');
     $router->get('/users', 'App\controllers\UserController@index');
     $router->get('/users/create', 'App\controllers\UserController@create');
     $router->get('/users/{id}', 'App\controllers\UserController@edit');

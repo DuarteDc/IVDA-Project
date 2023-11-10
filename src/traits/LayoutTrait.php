@@ -106,6 +106,14 @@ trait LayoutTrait
                     </a>
                     </li>
                     <li class="nav-item menu-open">
+                    <a href="/auth/subsecretaries" class="nav-link py-4 px-4' . (str_contains($currentUri, '/auth/subsecretaries') ? " active" : "")  . '">
+                        <i class="fa-solid fa-file"></i>
+                        <p>
+                        Subsecretarias
+                        </p>
+                    </a>
+                    </li>
+                    <li class="nav-item menu-open">
                     <a href="/auth/users" class="nav-link py-4 px-4' . (str_contains($currentUri, '/auth/users') ? " active" : "")  . '">
                         <i class="fa-solid fa-users"></i>
                         <p>

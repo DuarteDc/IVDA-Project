@@ -2,6 +2,7 @@
 
 namespace App\lib;
 use App\lib\Database;
+use PDO;
 
 class Model
 {
@@ -26,6 +27,6 @@ class Model
     public function insert(string $query, array $fields) {
         $sql = $this->db->connect()->prepare($query);
         $sql->execute($fields);
-        return $this->db->connect()->lastInsertId();
+        return $sql->fetchObject();
     }
 }

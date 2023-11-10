@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\controllers;
 
 use App\emuns\TypeAlert;
@@ -30,16 +29,22 @@ class InventoryController extends Controller
         $inventory = new Inventory();
         
         $newInventory = $inventory->save($name, $currentDate, $this::auth()->id);
-        var_dump($newInventory);
-        die();
-        if ($this) {
+        if(!$newInventory) {
             $this->setMessage(TypeAlert::Danger, 'Parece que hubo un error al crear el inventario');
             return header('location: /auth/inventory');
-        }
+        }   
 
         $this->setMessage(TypeAlert::Success, 'El inventario se creo con exito');
-        return header('location: /auth/inventory/edit/'.$inventory->id);
+        return header('location: /auth/inventory/edit/'.$newInventory->id);
     }
 
+
+    public function edit(string $id) {
+        $inventory = Inventory::findOne($id);
+        if (!$inventory) 
+            return $this->render('404/index');
+        
+        $this->render('inventory/edit', [ 'inventory' => $inventory ]);
+    }
 
 }

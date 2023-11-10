@@ -3690,3 +3690,362 @@ Stack trace:
 [08-Nov-2023 17:42:33 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
 [08-Nov-2023 17:42:33 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
 [08-Nov-2023 17:42:33 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:19:17 America/Mexico_City] PHP Warning:  Attempt to read property "id" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 32
+[09-Nov-2023 09:19:17 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: App\models\Inventory::save(): Argument #3 ($user_id) must be of type string, null given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 32 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php:59
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(32): App\models\Inventory->save()
+#1 [internal function]: App\controllers\InventoryController->create()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(47): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 59
+[09-Nov-2023 09:20:07 America/Mexico_City] PHP Warning:  Attempt to read property "id" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 32
+[09-Nov-2023 09:20:07 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: App\models\Inventory::save(): Argument #3 ($user_id) must be of type string, null given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 32 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php:59
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(32): App\models\Inventory->save()
+#1 [internal function]: App\controllers\InventoryController->create()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(47): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 59
+[09-Nov-2023 09:20:09 America/Mexico_City] PHP Warning:  Attempt to read property "role" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/HasAdminRole.php on line 12
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[09-Nov-2023 09:20:11 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Warning:  Attempt to read property "role" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/HasAdminRole.php on line 12
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[09-Nov-2023 09:20:13 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:20:48 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:14 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$user_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:33:17 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 51
+[09-Nov-2023 09:35:38 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 52
+[09-Nov-2023 09:35:38 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 52
+[09-Nov-2023 09:35:38 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 52
+[09-Nov-2023 09:35:38 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 52
+[09-Nov-2023 09:35:38 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 52
+[09-Nov-2023 09:35:38 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 52
+[09-Nov-2023 09:35:38 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 52
+[09-Nov-2023 09:35:38 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 52
+[09-Nov-2023 09:35:38 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 52
+[09-Nov-2023 09:35:38 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Inventory::$crated_at is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 52
+[09-Nov-2023 09:57:10 America/Mexico_City] PHP Fatal error:  Uncaught ValueError: Invalid column index in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(30): PDOStatement->fetchColumn()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php(63): App\lib\Model->insert()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(32): App\models\Inventory->save()
+#3 [internal function]: App\controllers\InventoryController->create()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(47): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 30
+[09-Nov-2023 09:58:07 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant PDO::FETCH_OBJECT in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php(63): App\lib\Model->insert()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(32): App\models\Inventory->save()
+#2 [internal function]: App\controllers\InventoryController->create()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(47): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php on line 30
+[09-Nov-2023 10:52:06 America/Mexico_City] PHP Warning:  Array to string conversion in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/edit.php on line 30
+[09-Nov-2023 10:52:38 America/Mexico_City] PHP Warning:  Array to string conversion in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/inventory/edit.php on line 30
+[09-Nov-2023 12:40:00 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/create.php on line 26
+[09-Nov-2023 12:40:00 America/Mexico_City] PHP Warning:  Attempt to read property "start_date" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/create.php on line 26
+[09-Nov-2023 12:40:07 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/create.php on line 30
+[09-Nov-2023 12:40:07 America/Mexico_City] PHP Warning:  Attempt to read property "start_date" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/create.php on line 30
+[09-Nov-2023 12:58:44 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "SubSecretary" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:19
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->index()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 19
+[09-Nov-2023 12:58:59 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "SubSecretary" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:19
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->index()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 19
+[09-Nov-2023 12:59:48 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "SubSecretary" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:19
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->index()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 19
+[09-Nov-2023 13:00:49 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$inventories in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 21
+[09-Nov-2023 13:07:01 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\PDO" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:34
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(19): App\models\SubSecretary::find()
+#1 [internal function]: App\controllers\SubSecretaryController->index()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 34
+[09-Nov-2023 14:04:14 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[09-Nov-2023 14:04:31 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[09-Nov-2023 14:04:42 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[09-Nov-2023 14:05:15 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[09-Nov-2023 14:05:21 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 88
+[09-Nov-2023 14:38:23 America/Mexico_City] PHP Warning:  Attempt to read property "role" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/HasAdminRole.php on line 12
+[09-Nov-2023 14:38:23 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[09-Nov-2023 14:38:23 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[09-Nov-2023 14:38:23 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[09-Nov-2023 14:38:23 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 10
+[09-Nov-2023 14:38:23 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 10
+[09-Nov-2023 14:38:23 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 10
+[09-Nov-2023 14:38:23 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 12
+[09-Nov-2023 14:38:23 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 12
+[09-Nov-2023 14:38:23 America/Mexico_City] PHP Warning:  Attempt to read property "email" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 13
+[09-Nov-2023 14:38:23 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 22
+[09-Nov-2023 14:38:23 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 26
+[09-Nov-2023 14:38:23 America/Mexico_City] PHP Warning:  Attempt to read property "email" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/profile/index.php on line 32
+[09-Nov-2023 14:53:57 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 87
+[09-Nov-2023 15:04:39 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 87
+[09-Nov-2023 15:04:53 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 87
+[09-Nov-2023 16:46:52 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: array / int in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:47
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(22): App\models\SubSecretary::find()
+#1 [internal function]: App\controllers\SubSecretaryController->index()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 47
+[09-Nov-2023 16:48:18 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: PDOStatement / int in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:47
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(22): App\models\SubSecretary::find()
+#1 [internal function]: App\controllers\SubSecretaryController->index()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 47
+[09-Nov-2023 16:56:48 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: PDOStatement / int in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:49
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(22): App\models\SubSecretary::find()
+#1 [internal function]: App\controllers\SubSecretaryController->index()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 49
+[09-Nov-2023 17:05:13 America/Mexico_City] PHP Warning:  Undefined variable $currentUri in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 14
+[09-Nov-2023 17:05:13 America/Mexico_City] PHP Fatal error:  Uncaught Error: Method name must be a string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php:14
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(18): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(24): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 14
+[09-Nov-2023 17:05:19 America/Mexico_City] PHP Warning:  Undefined variable $currentUri in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 14
+[09-Nov-2023 17:05:19 America/Mexico_City] PHP Fatal error:  Uncaught Error: Method name must be a string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php:14
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(18): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(24): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 14
+[09-Nov-2023 17:05:25 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::currentUri() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php:14
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(18): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(24): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 14
+[09-Nov-2023 17:05:28 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::currentUri() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php:14
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(18): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(24): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 14
+[09-Nov-2023 17:06:03 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::get() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php:14
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(18): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(24): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 14
+[09-Nov-2023 17:12:06 America/Mexico_City] PHP Warning:  Undefined array key "type" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 14
+[09-Nov-2023 17:12:06 America/Mexico_City] PHP Warning:  Undefined array key "type" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 15
+[09-Nov-2023 17:12:06 America/Mexico_City] PHP Warning:  Undefined array key "type" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 15
+[09-Nov-2023 17:14:28 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: App\models\SubSecretary::find(): Argument #2 ($type) must be of type bool, null given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 23 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:37
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(23): App\models\SubSecretary::find()
+#1 [internal function]: App\controllers\SubSecretaryController->index()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 37
+[09-Nov-2023 17:14:31 America/Mexico_City] PHP Parse error:  syntax error, unexpected token ":" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 21
+[09-Nov-2023 17:15:12 America/Mexico_City] PHP Warning:  Undefined array key "type" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 14
+[09-Nov-2023 17:15:12 America/Mexico_City] PHP Warning:  Undefined array key "type" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 15
+[09-Nov-2023 17:41:43 America/Mexico_City] PHP Warning:  Undefined variable $i in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 62
+[09-Nov-2023 17:41:51 America/Mexico_City] PHP Warning:  Undefined variable $i in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 62
+[09-Nov-2023 17:41:59 America/Mexico_City] PHP Warning:  Undefined variable $i in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 62
+[09-Nov-2023 17:42:10 America/Mexico_City] PHP Warning:  Undefined variable $i in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 62
+[09-Nov-2023 17:42:12 America/Mexico_City] PHP Warning:  Undefined variable $i in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 62
+[09-Nov-2023 17:42:17 America/Mexico_City] PHP Warning:  Undefined variable $i in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 62
