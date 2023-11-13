@@ -13,6 +13,7 @@ class SubSecretary extends Model
     public readonly string  $name;
     public readonly bool    $status;
     public readonly string  $created_at;
+    public readonly AdministrativeUnit $administrativeUnits;
 
     public function __construct()
     {
@@ -26,7 +27,7 @@ class SubSecretary extends Model
             $query = $db->prepare('SELECT * FROM subsecretaries Where id = :id');
             $query->execute(['id' => $id]);
 
-            if ($query->rowCount() > 0) return $query->fetchObject(__CLASS__);
+            if ($query->rowCount() > 0) return $query->fetchAll(PDO::FETCH_CLASS, self::class);
 
             return false;
         } catch (PDOException $e) {
@@ -60,14 +61,27 @@ class SubSecretary extends Model
         }
     }
 
-    public static function Where(string $query)
+    public static function Where(string $strQuery)
     {
         try {
             $db = new Model();
-            $query = $db->prepare('SELECT * FROM inventories :query');
-            $query->execute(['query' => $query]);
+            $query = $db->prepare('SELECT * FROM subsecretaries :query');
+            $query->execute(['query' => $strQuery]);
 
             if ($query->rowCount() > 0) return $query->fetchObject(__CLASS__);
+
+            return false;
+        } catch (PDOException $e) {
+            return false;
+        }
+    }
+
+    public static function findAll()
+    {
+        try {
+            $db = new Model();
+            $query = $db->query("SELECT * FROM subsecretaries WHERE status = true");
+            if ($query->rowCount() > 0) return $query->fetchAll(PDO::FETCH_CLASS, self::class);
 
             return false;
         } catch (PDOException $e) {
@@ -85,4 +99,9 @@ class SubSecretary extends Model
             return false;
         }
     }
+
+    public function xd() {
+        echo "xd";
+    }
+
 }

@@ -52,6 +52,11 @@ class SubSecretaryController extends Controller {
         return header('location: /auth/subsecretaries');
     }
 
+    public function show(string $id) {
+        $subsecretary = SubSecretary::findOne($id);
+        $this->render('/subsecretary/show', ['subsecretary' => $subsecretary]);
+    }
+
     public function disable(string $id) {
         $subsecretary = SubSecretary::findOne($id);
     }

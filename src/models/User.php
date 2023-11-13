@@ -14,6 +14,7 @@ class User extends Model
     CONST ADMIN = 2;
 
     use AuthTrait;
+    
     public readonly string $id;
     public readonly string $name;
     public readonly string $last_name;
@@ -26,11 +27,6 @@ class User extends Model
     public function __construct()
     {
         parent::__construct();
-    }
-
-    private static function getHashedPassword(string $password)
-    {
-        return password_hash($password, PASSWORD_BCRYPT, ['cost' => 12]);
     }
 
     public static function findOne($id)
@@ -166,4 +162,11 @@ class User extends Model
             return false;
         }
     }
+
+
+    private static function getHashedPassword(string $password)
+    {
+        return password_hash($password, PASSWORD_BCRYPT, ['cost' => 12]);
+    }
+
 }

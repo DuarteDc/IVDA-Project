@@ -28,8 +28,12 @@ $router->mount('/auth', function () use ($router) {
     $router->post('/inventory', 'App\controllers\InventoryController@create');
     $router->get('/inventory/edit/{id}', 'App\controllers\InventoryController@edit');
     $router->get('/subsecretaries', 'App\controllers\SubSecretaryController@index');
-    
     $router->get('/subsecretaries/create', 'App\controllers\SubSecretaryController@create');
+    $router->get('/subsecretaries/{id}', 'App\controllers\SubSecretaryController@show');
+
+    $router->get('/administrative-unit', 'App\controllers\AdministrativeUnitController@index');
+    $router->get('/administrative-unit/create', 'App\controllers\AdministrativeUnitController@create');
+    $router->post('/administrative-unit/save', 'App\controllers\AdministrativeUnitController@save');
 
     $router->post('/subsecretaries', 'App\controllers\SubSecretary@save');
     $router->get('/users', 'App\controllers\UserController@index');
@@ -51,6 +55,7 @@ $router->mount('/user', function () use ($router) {
 $router->set404('/.*', '\App\controllers\NotFoundController@__invoke');
 
 $router->run();
+
 
 
 

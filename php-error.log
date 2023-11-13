@@ -4049,3 +4049,808 @@ Stack trace:
 [09-Nov-2023 17:42:10 America/Mexico_City] PHP Warning:  Undefined variable $i in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 62
 [09-Nov-2023 17:42:12 America/Mexico_City] PHP Warning:  Undefined variable $i in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 62
 [09-Nov-2023 17:42:17 America/Mexico_City] PHP Warning:  Undefined variable $i in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 62
+[13-Nov-2023 09:44:59 America/Mexico_City] PHP Warning:  Attempt to read property "role" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/HasAdminRole.php on line 12
+[13-Nov-2023 09:45:01 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[13-Nov-2023 09:45:01 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[13-Nov-2023 09:45:01 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[13-Nov-2023 09:52:12 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::get() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(18): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(24): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 5
+[13-Nov-2023 09:52:24 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::get() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(18): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(24): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 5
+[13-Nov-2023 09:53:55 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\View::getCurrentUri() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php:5
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(18): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(24): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 5
+[13-Nov-2023 10:27:30 America/Mexico_City] PHP Warning:  Undefined property: App\controllers\SubSecretaryController::$router in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 17
+[13-Nov-2023 10:29:33 America/Mexico_City] PHP Warning:  Undefined variable $HTTP_RAW_POST_DATA in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 17
+[13-Nov-2023 10:40:04 America/Mexico_City] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\lib\View::getAll(), 0 passed in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 70 and exactly 1 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/QueryParamsTrait.php:21
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php(70): App\lib\View->getAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require('...')
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(24): App\lib\Controller->render()
+#4 [internal function]: App\controllers\SubSecretaryController->index()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/QueryParamsTrait.php on line 21
+[13-Nov-2023 10:40:19 America/Mexico_City] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\lib\View::getAll(), 0 passed in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 70 and exactly 1 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/QueryParamsTrait.php:21
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php(70): App\lib\View->getAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require('...')
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(24): App\lib\Controller->render()
+#4 [internal function]: App\controllers\SubSecretaryController->index()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/QueryParamsTrait.php on line 21
+[13-Nov-2023 10:40:25 America/Mexico_City] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\lib\View::getAll(), 0 passed in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php on line 70 and exactly 1 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/QueryParamsTrait.php:21
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/index.php(70): App\lib\View->getAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require('...')
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(24): App\lib\Controller->render()
+#4 [internal function]: App\controllers\SubSecretaryController->index()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(53): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/QueryParamsTrait.php on line 21
+[13-Nov-2023 10:51:44 America/Mexico_City] PHP Warning:  Undefined variable $queryString in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/QueryParamsTrait.php on line 28
+[13-Nov-2023 10:52:04 America/Mexico_City] PHP Warning:  Undefined variable $queryString in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/QueryParamsTrait.php on line 28
+[13-Nov-2023 10:52:09 America/Mexico_City] PHP Warning:  Undefined variable $queryString in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/QueryParamsTrait.php on line 28
+[13-Nov-2023 10:54:40 America/Mexico_City] PHP Warning:  Undefined variable $queryString in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/QueryParamsTrait.php on line 28
+[13-Nov-2023 11:27:32 America/Mexico_City] PHP Warning:  Attempt to read property "subsecretaries" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 29
+[13-Nov-2023 13:11:21 America/Mexico_City] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:68
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(68): PDOStatement->execute()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(61): App\models\SubSecretary::Where()
+#2 [internal function]: App\controllers\SubSecretaryController->getAllSubsecretaries()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(55): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 68
+[13-Nov-2023 13:12:21 America/Mexico_City] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:68
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(68): PDOStatement->execute()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(61): App\models\SubSecretary::Where()
+#2 [internal function]: App\controllers\SubSecretaryController->getAllSubsecretaries()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(55): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 68
+[13-Nov-2023 13:12:23 America/Mexico_City] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:68
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(68): PDOStatement->execute()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(61): App\models\SubSecretary::Where()
+#2 [internal function]: App\controllers\SubSecretaryController->getAllSubsecretaries()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(55): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 68
+[13-Nov-2023 13:13:18 America/Mexico_City] PHP Warning:  Attempt to read property "role" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/HasAdminRole.php on line 12
+[13-Nov-2023 13:13:18 America/Mexico_City] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:68
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(68): PDOStatement->execute()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(61): App\models\SubSecretary::Where()
+#2 [internal function]: App\controllers\SubSecretaryController->getAllSubsecretaries()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(55): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 68
+[13-Nov-2023 13:13:31 America/Mexico_City] PHP Warning:  Attempt to read property "role" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/HasAdminRole.php on line 12
+[13-Nov-2023 13:13:31 America/Mexico_City] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:68
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(68): PDOStatement->execute()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(61): App\models\SubSecretary::Where()
+#2 [internal function]: App\controllers\SubSecretaryController->getAllSubsecretaries()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(55): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 68
+[13-Nov-2023 13:13:32 America/Mexico_City] PHP Warning:  Attempt to read property "role" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/HasAdminRole.php on line 12
+[13-Nov-2023 13:13:32 America/Mexico_City] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:68
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(68): PDOStatement->execute()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(61): App\models\SubSecretary::Where()
+#2 [internal function]: App\controllers\SubSecretaryController->getAllSubsecretaries()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(55): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 68
+[13-Nov-2023 13:13:53 America/Mexico_City] PHP Warning:  Attempt to read property "role" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/HasAdminRole.php on line 12
+[13-Nov-2023 13:13:53 America/Mexico_City] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:68
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(68): PDOStatement->execute()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(61): App\models\SubSecretary::Where()
+#2 [internal function]: App\controllers\SubSecretaryController->getAllSubsecretaries()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(55): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 68
+[13-Nov-2023 13:13:55 America/Mexico_City] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:68
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(68): PDOStatement->execute()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(61): App\models\SubSecretary::Where()
+#2 [internal function]: App\controllers\SubSecretaryController->getAllSubsecretaries()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(55): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 68
+[13-Nov-2023 13:13:57 America/Mexico_City] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:68
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(68): PDOStatement->execute()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(61): App\models\SubSecretary::Where()
+#2 [internal function]: App\controllers\SubSecretaryController->getAllSubsecretaries()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(55): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 68
+[13-Nov-2023 13:15:26 America/Mexico_City] PHP Warning:  Attempt to read property "role" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/HasAdminRole.php on line 12
+[13-Nov-2023 13:17:44 America/Mexico_City] PHP Parse error:  syntax error, unexpected double-quoted string "X", expecting variable or "{" or "$" in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 68
+[13-Nov-2023 13:19:56 America/Mexico_City] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:63
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->getAllSubsecretaries()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(55): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 63
+[13-Nov-2023 13:20:32 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetchAll(): Argument #1 ($mode) must be of type int, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:70
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(70): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(61): App\models\SubSecretary::Where()
+#2 [internal function]: App\controllers\SubSecretaryController->getAllSubsecretaries()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(55): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 70
+[13-Nov-2023 13:21:03 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetchAll(): Argument #1 ($mode) must be of type int, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:70
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(70): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(61): App\models\SubSecretary::Where()
+#2 [internal function]: App\controllers\SubSecretaryController->getAllSubsecretaries()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(55): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 70
+[13-Nov-2023 13:21:09 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetchAll(): Argument #1 ($mode) must be of type int, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:70
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(70): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(61): App\models\SubSecretary::Where()
+#2 [internal function]: App\controllers\SubSecretaryController->getAllSubsecretaries()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(55): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 70
+[13-Nov-2023 13:21:28 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetch(): Argument #1 ($mode) must be of type int, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:70
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(70): PDOStatement->fetch()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(61): App\models\SubSecretary::Where()
+#2 [internal function]: App\controllers\SubSecretaryController->getAllSubsecretaries()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(55): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 70
+[13-Nov-2023 13:21:32 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetchAll(): Argument #1 ($mode) must be of type int, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:70
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(70): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(61): App\models\SubSecretary::Where()
+#2 [internal function]: App\controllers\SubSecretaryController->getAllSubsecretaries()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(55): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 70
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Attempt to read property "id" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 39
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Attempt to read property "name" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 42
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Undefined variable $subsecretary in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 47
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Attempt to read property "status" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 47
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Undefined variable $subsecretary in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 48
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Attempt to read property "status" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 48
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Attempt to read property "id" on int in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 39
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Attempt to read property "name" on int in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 42
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Undefined variable $subsecretary in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 47
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Attempt to read property "status" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 47
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Undefined variable $subsecretary in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 48
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Attempt to read property "status" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 48
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 67
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 67
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 67
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$totalPages in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 71
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 75
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$totalPages in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 75
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 75
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 75
+[13-Nov-2023 14:15:27 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$totalPages in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 75
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Attempt to read property "id" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 39
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Attempt to read property "name" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 42
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Undefined variable $subsecretary in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 47
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Attempt to read property "status" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 47
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Undefined variable $subsecretary in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 48
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Attempt to read property "status" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 48
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Attempt to read property "id" on int in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 39
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Attempt to read property "name" on int in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 42
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Undefined variable $subsecretary in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 47
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Attempt to read property "status" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 47
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Undefined variable $subsecretary in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 48
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Attempt to read property "status" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 48
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 67
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 67
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 67
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$totalPages in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 71
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 75
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$totalPages in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 75
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 75
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 75
+[13-Nov-2023 14:15:47 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$totalPages in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 75
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Attempt to read property "id" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 39
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Attempt to read property "name" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 42
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Attempt to read property "status" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 47
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Attempt to read property "status" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 48
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Attempt to read property "id" on int in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 39
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Attempt to read property "name" on int in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 42
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Attempt to read property "status" on int in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 47
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Attempt to read property "status" on int in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 48
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 67
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 67
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 67
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$totalPages in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 71
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 75
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$totalPages in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 75
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 75
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$page in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 75
+[13-Nov-2023 14:18:18 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$totalPages in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/administrative-unit/index.php on line 75
+[13-Nov-2023 15:17:44 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot modify readonly property App\models\AdministrativeUnit::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$name in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$created_at in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$name in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$created_at in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php on line 56
+[13-Nov-2023 15:18:10 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot modify readonly property App\models\AdministrativeUnit::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$name in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$created_at in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$name in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$created_at in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php on line 56
+[13-Nov-2023 15:19:06 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot modify readonly property App\models\AdministrativeUnit::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$name in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$created_at in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$name in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+
+Next Error: Cannot modify readonly property App\models\AdministrativeUnit::$created_at in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:56
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(56): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#2 [internal function]: App\controllers\AdministrativeUnitController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php on line 56
+[13-Nov-2023 16:16:41 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "App\models\self" in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php:41
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(26): App\models\AdministrativeUnit::find()
+#1 [internal function]: App\controllers\AdministrativeUnitController->index()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php on line 41
+[13-Nov-2023 16:42:50 America/Mexico_City] PHP Warning:  Undefined variable $subsecretary in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 3
+[13-Nov-2023 17:05:30 America/Mexico_City] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(57): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[13-Nov-2023 17:19:50 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::save() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(57): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[13-Nov-2023 17:21:06 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetchObject(): Argument #1 ($class) must be a valid class name, 2 given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(30): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(56): App\models\SubSecretary::findOne()
+#2 [internal function]: App\controllers\SubSecretaryController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 30
+[13-Nov-2023 17:21:15 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetchObject(): Argument #1 ($class) must be a valid class name, 2 given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(30): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(56): App\models\SubSecretary::findOne()
+#2 [internal function]: App\controllers\SubSecretaryController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 30
+[13-Nov-2023 17:21:17 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetchObject(): Argument #1 ($class) must be a valid class name, 2 given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(30): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(56): App\models\SubSecretary::findOne()
+#2 [internal function]: App\controllers\SubSecretaryController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 30
+[13-Nov-2023 17:21:52 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: PDOStatement::fetchObject(): Argument #1 ($class) must be a valid class name, 2 given in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(30): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(56): App\models\SubSecretary::findOne()
+#2 [internal function]: App\controllers\SubSecretaryController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 30
+[13-Nov-2023 17:22:06 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::save() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(57): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[13-Nov-2023 17:22:46 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::save() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(57): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[13-Nov-2023 17:22:57 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::xd() in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(57): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[13-Nov-2023 17:23:26 America/Mexico_City] PHP Parse error:  syntax error, unexpected token "return", expecting ";" in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 32
+[13-Nov-2023 17:23:28 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method PDOStatement::fechAll() in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(56): App\models\SubSecretary::findOne()
+#1 [internal function]: App\controllers\SubSecretaryController->show()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 30
+[13-Nov-2023 17:23:43 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(57): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[13-Nov-2023 17:26:28 America/Mexico_City] PHP Parse error:  Unclosed '{' on line 25 does not match ')' in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 30
+[13-Nov-2023 17:26:41 America/Mexico_City] PHP Fatal error:  Class "SubSecretary" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 30
+[13-Nov-2023 17:27:08 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(57): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[13-Nov-2023 17:40:03 America/Mexico_City] PHP Warning:  Attempt to read property "role" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/HasAdminRole.php on line 12
+[13-Nov-2023 17:40:04 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[13-Nov-2023 17:40:04 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[13-Nov-2023 17:40:04 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[13-Nov-2023 17:40:04 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(22): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(57): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(57): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7

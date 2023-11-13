@@ -6,11 +6,12 @@ use App\emuns\TypeAlert;
 use App\traits\AlertTrait;
 use App\traits\AuthTrait;
 use App\traits\LayoutTrait;
+use App\traits\QueryParamsTrait;
 
 class View
 {
 
-    use AlertTrait, LayoutTrait, AuthTrait;
+    use AlertTrait, LayoutTrait, AuthTrait, QueryParamsTrait;
 
     public function render(String $name, $data)
     {
