@@ -12,17 +12,31 @@ date_default_timezone_set($_ENV['TIMEZONE']);
 
 $router = new \Bramus\Router\Router();
 
-$router->setBasePath('/');
+function sendCorsHeaders()
+{
+    header('Access-Control-Allow-Origin: *');
+    header('Content-Type: application/json; charset=utf-8');
+    header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, session");
+    header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
+}
 
-$router->before('GET', '/', function () { AuthMiddleware::isAuthenticate(); });
+$router->options('/api.*', function() {
+    sendCorsHeaders();
+});
 
-$router->get('/', '\App\controllers\SigninController@index');
+sendCorsHeaders();
 
-$router->post('/signin', '\App\controllers\SigninController@signin');
-   
-$router->before('GET', '/auth.*', function () { AuthMiddleware::checkAuth(); HasAdminRole::hasUserRole();});
+$router->mount('/api.*', function () use ($router) {
 
-$router->mount('/auth', function () use ($router) {
+    $router->post('/signin', '\App\controllers\SigninController@signin');
+    $router->get('/me', '\App\controllers\SigninController@user');
+
+    $router->before('GET', '/auth.*', function () { AuthMiddleware::checkAuth(); });
+
+    $router->mount('/auth.*', function () use ($router) {
+        $router->get('/users', 'App\controllers\UserController@index');
+    });
+
     $router->get('/', 'App\controllers\HomeController@index');
     $router->get('/inventory', 'App\controllers\InventoryController@index');
     $router->post('/inventory', 'App\controllers\InventoryController@create');
@@ -36,7 +50,6 @@ $router->mount('/auth', function () use ($router) {
     $router->post('/administrative-unit/save', 'App\controllers\AdministrativeUnitController@save');
 
     $router->post('/subsecretaries', 'App\controllers\SubSecretary@save');
-    $router->get('/users', 'App\controllers\UserController@index');
     $router->get('/users/create', 'App\controllers\UserController@create');
     $router->get('/users/{id}', 'App\controllers\UserController@edit');
     $router->post('/users/save', 'App\controllers\UserController@save');
@@ -47,14 +60,18 @@ $router->mount('/auth', function () use ($router) {
     $router->post('/profile/update', 'App\controllers\ProfileController@update');
 });
 
-$router->mount('/user', function () use ($router) {
-    $router->get('/', function() {
-        echo "xd";
-    });
-});
+
+$router->get('/.*', '\App\controllers\SigninController@index');
+
+$router->before('GET', '/', function () { AuthMiddleware::isAuthenticate(); });
+
+
+$router->before('GET', '/auth.*', function () { AuthMiddleware::checkAuth(); HasAdminRole::hasUserRole();});
+
 $router->set404('/.*', '\App\controllers\NotFoundController@__invoke');
 
 $router->run();
+
 
 
 

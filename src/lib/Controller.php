@@ -12,9 +12,19 @@ class Controller
     private View $view;
     use AuthTrait;
 
+    private array $status = [
+        200 => '200 OK',
+        400 => '400 Bad Request',
+        401 => '401 Unauthorized',
+        422 => 'Unprocessable Entity',
+        500 => '500 Internal Server Error'
+    ];
+
     public function __construct()
     {
         $this->view = new View;
+
+        header("Access-Control-Allow-Origin: *");
     }
 
     public function render(String $name, array $data = [])
@@ -22,21 +32,39 @@ class Controller
         $this->view->render($name, $data);
     }
 
-    public function setMessage(TypeAlert $key, string $message) {
+    public function setMessage(TypeAlert $key, string $message)
+    {
         $this->view->setMessage($key, $message);
     }
 
     protected function post(String $param)
     {
-        if (!isset($_POST[$param])) return null;
+        $data = file_get_contents('php://input');
+        $data = json_decode($data, true);
+        if (!isset($data[$param])) return null;
 
-        return $_POST[$param];
+        return $data[$param];
     }
 
     protected function get(String $param)
     {
         if (!isset($_GET[$param])) return null;
 
-        return $_GET[$param];
+        return json_decode($_GET[$param]);
     }
+
+    protected function response( $data, $status = 200 ) {
+        
+        header("Access-Control-Allow-Origin: *");
+        header("Cache-Control: no-transform,public,max-age=300,s-maxage=900");
+        header("Content-Type: application/json");
+
+        http_response_code($status);
+
+        header('Status: '.$this->status[$status]);
+
+        echo json_encode($data);
+        exit();
+    }
+
 }

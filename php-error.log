@@ -4854,3 +4854,492 @@ Stack trace:
 #8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require('...')
 #9 {main}
   thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[14-Nov-2023 09:36:18 America/Mexico_City] PHP Warning:  Attempt to read property "role" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/HasAdminRole.php on line 12
+[14-Nov-2023 09:36:19 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 09:36:19 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 09:36:19 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 09:36:19 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 09:36:19 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 11:33:29 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:33:42 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:34:27 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:34:54 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:34:55 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:34:55 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:35:03 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:35:05 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:36:28 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:36:28 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:36:28 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:36:28 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:36:29 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:37:14 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:37:29 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:37:46 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:39:39 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:39:40 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:39:40 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:39:40 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:39:40 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:39:42 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:39:43 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:39:43 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:39:43 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:39:43 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:39:44 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:39:44 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:39:44 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:39:44 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:40:21 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:40:22 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:40:23 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:40:23 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:40:23 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:40:23 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:40:23 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:40:23 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:41:21 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:42:11 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:42:12 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:42:12 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:42:12 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:42:12 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:42:12 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:42:13 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:42:13 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:42:44 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:43:09 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:43:11 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:43:11 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:43:11 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:43:11 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:43:44 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:44:00 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:44:03 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:44:27 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:46:42 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 11:46:42 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 11:46:42 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 11:46:42 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 11:46:42 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 11:48:58 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:48:59 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:49:31 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:49:32 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:49:32 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:49:32 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:49:32 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:50:25 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:50:25 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:50:25 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:50:45 America/Mexico_City] PHP Warning:  Undefined array key "PUT" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 11:57:27 America/Mexico_City] PHP Warning:  Undefined array key "OPTIONS" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[14-Nov-2023 14:00:03 America/Mexico_City] PHP Warning:  Undefined array key "HTTP_SESSION" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 43
+[14-Nov-2023 14:13:28 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:38
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#1 [internal function]: App\controllers\SigninController->user()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 38
+[14-Nov-2023 14:13:45 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:38
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#1 [internal function]: App\controllers\SigninController->user()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 38
+[14-Nov-2023 14:13:58 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:38
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#1 [internal function]: App\controllers\SigninController->user()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 38
+[14-Nov-2023 14:13:59 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:38
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#1 [internal function]: App\controllers\SigninController->user()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 38
+[14-Nov-2023 14:14:05 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:38
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#1 [internal function]: App\controllers\SigninController->user()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 38
+[14-Nov-2023 14:14:07 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:38
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#1 [internal function]: App\controllers\SigninController->user()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 38
+[14-Nov-2023 14:14:19 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:38
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#1 [internal function]: App\controllers\SigninController->user()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 38
+[14-Nov-2023 14:14:20 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:38
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#1 [internal function]: App\controllers\SigninController->user()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 38
+[14-Nov-2023 14:14:54 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:38
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#1 [internal function]: App\controllers\SigninController->user()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 38
+[14-Nov-2023 14:14:55 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:38
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#1 [internal function]: App\controllers\SigninController->user()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 38
+[14-Nov-2023 14:14:58 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:38
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#1 [internal function]: App\controllers\SigninController->user()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 38
+[14-Nov-2023 14:15:16 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:39
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#1 [internal function]: App\controllers\SigninController->user()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 39
+[14-Nov-2023 14:15:28 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:39
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#1 [internal function]: App\controllers\SigninController->user()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 39
+[14-Nov-2023 14:15:29 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:39
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#1 [internal function]: App\controllers\SigninController->user()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 39
+[14-Nov-2023 14:15:45 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: App\lib\Controller::generateJWT(): Argument #1 ($payload) must be of type App\models\User, stdClass given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 39 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:25
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(39): App\lib\Controller::generateJWT()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#2 [internal function]: App\controllers\SigninController->user()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 25
+[14-Nov-2023 14:16:29 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "App\traits\User" in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php:39
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(45): App\lib\Controller::isValidToken()
+#1 [internal function]: App\controllers\SigninController->user()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php on line 39
+[14-Nov-2023 14:30:18 America/Mexico_City] PHP Warning:  Undefined array key "email" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 27
+[14-Nov-2023 14:30:19 America/Mexico_City] PHP Warning:  Undefined array key "email" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 27
+[14-Nov-2023 14:30:19 America/Mexico_City] PHP Warning:  Undefined array key "email" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 27
+[14-Nov-2023 14:30:20 America/Mexico_City] PHP Warning:  Undefined array key "email" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 27
+[14-Nov-2023 14:30:58 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use [] for reading in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php:27
+Stack trace:
+#0 [internal function]: App\controllers\SigninController->signin()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 27
+[14-Nov-2023 14:31:00 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use [] for reading in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php:27
+Stack trace:
+#0 [internal function]: App\controllers\SigninController->signin()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 27
+[14-Nov-2023 14:31:00 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot use [] for reading in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php:27
+Stack trace:
+#0 [internal function]: App\controllers\SigninController->signin()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 27
+[14-Nov-2023 14:37:06 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:43
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(43): json_decode()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(24): App\lib\Controller->post()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 43
+[14-Nov-2023 14:37:07 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:43
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(43): json_decode()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(24): App\lib\Controller->post()
+#2 [internal function]: App\controllers\SigninController->signin()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(68): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 43
+[14-Nov-2023 15:22:41 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:22:41 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:22:41 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:22:41 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:22:41 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:22:51 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:22:51 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:22:51 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:22:51 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:22:51 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:22:58 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:22:58 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:22:58 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:22:58 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:22:58 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:22:59 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:22:59 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:22:59 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:22:59 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:22:59 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:10 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:10 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:10 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:10 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:10 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:13 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:13 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:13 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:13 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:13 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:16 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:16 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:16 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:16 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:16 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:17 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:17 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:17 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:17 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:17 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:18 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:18 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:18 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:18 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:18 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:18 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:18 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:18 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:18 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:18 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:19 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:19 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:19 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:19 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:19 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:20 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:20 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:20 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:20 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:20 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:20 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:20 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:20 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:20 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:20 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:21 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:21 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:21 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:21 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:21 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:21 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:21 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:21 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:21 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:21 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:22 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:22 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:22 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:22 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:22 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:22 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:22 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:22 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:22 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:22 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:33 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:33 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:33 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:33 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:33 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:34 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:34 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:34 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:34 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:34 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:59 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:59 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:59 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:23:59 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:23:59 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:14 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:14 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:14 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:14 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:14 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:15 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:15 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:15 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:15 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:15 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:25 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:25 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:25 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:25 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:25 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:26 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:26 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:26 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:26 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:26 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:27 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:27 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:27 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:27 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:27 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:28 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:28 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:28 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:28 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:28 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:28 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:28 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:28 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:28 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:28 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:48 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:48 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:48 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:24:48 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:24:48 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:25:06 America/Mexico_City] PHP Warning:  Attempt to read property "id" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 60
+[14-Nov-2023 15:25:07 America/Mexico_City] PHP Warning:  Attempt to read property "id" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 60
+[14-Nov-2023 15:25:15 America/Mexico_City] PHP Warning:  Attempt to read property "id" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 60
+[14-Nov-2023 15:29:33 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:29:33 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:29:33 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:29:33 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:29:33 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:29:50 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:29:50 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:29:50 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:29:50 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:29:50 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:31:13 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:31:13 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:31:13 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:31:13 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:31:13 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:32:01 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:32:01 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:32:01 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:32:01 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:32:01 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:32:20 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:32:20 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:32:20 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:32:20 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:32:20 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:32:41 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:32:41 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:32:41 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
+[14-Nov-2023 15:32:41 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[14-Nov-2023 15:32:41 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10

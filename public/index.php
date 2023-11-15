@@ -10,5 +10,6 @@ ini_set('log_errors', TRUE);
 
 ini_set("error_log", "./../php-error.log");
 
+
 require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../src/lib/routes.php';

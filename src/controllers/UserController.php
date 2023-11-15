@@ -6,26 +6,31 @@ use App\emuns\TypeAlert;
 use App\lib\Controller;
 use App\models\User;
 
-class UserController extends Controller {
+class UserController extends Controller
+{
 
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
     }
 
-    public function index() {
+    public function index()
+    {
         $page = (int) $this->get('page');
         $page == 0 && $page = 1;
         $data = User::find($page);
-        return $this->render('users/index', ['users' => $data['users'], 'page' => $page, 'totalPages' => $data['totalPages'] ]);
+        return $this->response(['users' => $data['users'], 'page' => $page, 'totalPages' => $data['totalPages']]);
     }
 
 
-    public function create() {
+    public function create()
+    {
         return $this->render('users/create');
     }
 
-    public function save() {
-        
+    public function save()
+    {
+
         $name = $this->post('name');
         $last_name = $this->post('last_name');
         $email = $this->post('email');
@@ -49,7 +54,8 @@ class UserController extends Controller {
         header('location: /auth/users');
     }
 
-    public function edit(string $id) {
+    public function edit(string $id)
+    {
         $user = User::findOne($id);
 
         if (!$user) {
@@ -60,7 +66,8 @@ class UserController extends Controller {
         return $this->render('users/edit', ['user' => $user]);
     }
 
-    public function update(string $id) {
+    public function update(string $id)
+    {
         $user = User::UpdateOne($id, $_POST);
         if (!$user) {
             $this->setMessage(TypeAlert::Warning, 'Hubo un error al actualizar el usuario');
@@ -71,7 +78,8 @@ class UserController extends Controller {
         header('location: /auth/users');
     }
 
-    public function delete(string $id) {
+    public function delete(string $id)
+    {
         $user = User::findOne($id);
         if (!$user->status) {
             $this->setMessage(TypeAlert::Warning, 'El usuario ya ha sido desactivado');
@@ -82,7 +90,8 @@ class UserController extends Controller {
         header('location: /auth/users');
     }
 
-    public function active(string $id) {
+    public function active(string $id)
+    {
         $user = User::findOne($id);
         if ($user->status) {
             $this->setMessage(TypeAlert::Warning, 'El usuario ya ha sido activado');
@@ -92,5 +101,4 @@ class UserController extends Controller {
         $this->setMessage(TypeAlert::Success, 'El usuario se activo correctamente');
         header('location: /auth/users');
     }
-
 }
