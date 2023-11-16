@@ -24,7 +24,7 @@ class AdministrativeUnitController extends Controller
         !$type || $type == 'true' || $type != 'false' ? $type = true : $type = false;
 
         $data = AdministrativeUnit::find($page, $type);
-        
+
         $this->render('administrative-unit/index', ['administrative_units' => $data['administrative_units'], 'page' => $page, 'totalPages' => $data['totalPages']]);
     }
 
@@ -59,4 +59,10 @@ class AdministrativeUnitController extends Controller
         return header('location: /auth/administrative-unit');
     }
 
+    public function getBySubsecretary(string $subsecretary_id)
+    {
+        $administrative_units = AdministrativeUnit::findBySubsecretary($subsecretary_id);
+
+        $this->response(['administrative_units' => $administrative_units]);
+    }
 }

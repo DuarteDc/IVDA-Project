@@ -6,29 +6,33 @@ use App\emuns\TypeAlert;
 use App\lib\Controller;
 use App\models\SubSecretary;
 
-class SubSecretaryController extends Controller {
+class SubSecretaryController extends Controller
+{
 
     public function __construct()
     {
         parent::__construct();
     }
 
-    public function index() {
+    public function index()
+    {
         $page = (int) $this->get('page');
         $page == 0 && $page = 1;
 
         $type = $this->get('type');
         !$type || $type == 'true' || $type != 'false' ? $type = true : $type = false;
-        
+
         $data = SubSecretary::find($page, $type);
-        $this->render('subsecretary/index',  ['subsecretaries' => $data['subsecretaries'], 'page' => $page, 'totalPages' => $data['totalPages'] ]);
+        $this->render('subsecretary/index',  ['subsecretaries' => $data['subsecretaries'], 'page' => $page, 'totalPages' => $data['totalPages']]);
     }
 
-    public function create() {
+    public function create()
+    {
         $this->render('subsecretary/create');
     }
 
-    public function save() {
+    public function save()
+    {
         $name = $this->post('name');
 
         if (!$name) {
@@ -52,13 +56,22 @@ class SubSecretaryController extends Controller {
         return header('location: /auth/subsecretaries');
     }
 
-    public function show(string $id) {
+    public function show(string $id)
+    {
         $subsecretary = SubSecretary::findOne($id);
         $this->render('/subsecretary/show', ['subsecretary' => $subsecretary]);
     }
 
-    public function disable(string $id) {
-        $subsecretary = SubSecretary::findOne($id);
+
+    public function getAll()
+    {
+        $subsecretaries = SubSecretary::WhereStatus(true);
+        $this->response(['subsecretaries' => $subsecretaries]);
     }
 
+
+    public function disable(string $id)
+    {
+        $subsecretary = SubSecretary::findOne($id);
+    }
 }

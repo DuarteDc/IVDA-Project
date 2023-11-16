@@ -65,7 +65,7 @@ class SubSecretary extends Model
     {
         try {
             $db = new Model();
-            $query = $db->prepare('SELECT * FROM subsecretaries :query');
+            $query = $db->prepare('SELECT * FROM subsecretaries WHERE :query');
             $query->execute(['query' => $strQuery]);
 
             if ($query->rowCount() > 0) return $query->fetchObject(__CLASS__);
@@ -100,8 +100,16 @@ class SubSecretary extends Model
         }
     }
 
-    public function xd() {
-        echo "xd";
+    public static function WhereStatus(bool $type)
+    {
+        try {
+            $db = new Model();
+            $type = json_encode($type);
+            $query = $db->query("SELECT * FROM subsecretaries WHERE status = {$type}");
+            if ($query->rowCount() > 0) return $query->fetchAll(PDO::FETCH_CLASS, self::class);
+            return false;
+        } catch (PDOException $e) {
+            return false;
+        }
     }
-
 }

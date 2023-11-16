@@ -10,11 +10,11 @@ use App\traits\AuthTrait;
 class User extends Model
 {
 
-    CONST USER = 1;
-    CONST ADMIN = 2;
+    const USER = 1;
+    const ADMIN = 2;
 
     use AuthTrait;
-    
+
     public readonly string $id;
     public readonly string $name;
     public readonly string $last_name;
@@ -23,6 +23,7 @@ class User extends Model
     public readonly string $created_at;
     public readonly bool $status;
     public readonly string $role;
+    public readonly string | null $administrative_unit_id;
 
     public function __construct()
     {
@@ -33,8 +34,8 @@ class User extends Model
     {
         try {
             $db = new Model();
-            $query = $db->prepare('SELECT * FROM users Where status = true AND id = :id');
-            $query->execute([ 'id' => $id ]);
+            $query = $db->prepare('SELECT * FROM users Where id = :id');
+            $query->execute(['id' => $id]);
 
             if ($query->rowCount() > 0) return $query->fetchObject(__CLASS__);
 
@@ -57,7 +58,7 @@ class User extends Model
             if ($totalPages < $page) $page = $totalPages;
             $startingLimit = ($page - 1) * $totalRecordPerPage;
 
-            $query = $db->query("SELECT * FROM users WHERE id <> ". self::auth()->id . "ORDER BY id ASC LIMIT $totalRecordPerPage OFFSET $startingLimit");
+            $query = $db->query("SELECT * FROM users WHERE id <> " . self::auth()->id . "ORDER BY id ASC LIMIT $totalRecordPerPage OFFSET $startingLimit");
             if ($query->rowCount() > 0) return ['users' => $query->fetchAll(PDO::FETCH_CLASS, self::class), 'totalPages' =>  $totalPages];
             return ['users' => [], 'totalPages' =>  0];
         } catch (PDOException $e) {
@@ -110,20 +111,21 @@ class User extends Model
     }
 
 
-    public static function UpdateOne(string $id, array $params) {
+    public static function UpdateOne(string $id, array $params)
+    {
         try {
             $db = new Model();
             $query = 'SET ';
             foreach ($params as $key => $value) {
-                if (strlen($value)  > 0){
-                    if ($key === 'password')  {
-                        $query .= "{$key} = '" . self::getHashedPassword($value, self::auth()->password). "', ";
-                    }else{
+                if (strlen($value)  > 0) {
+                    if ($key === 'password') {
+                        $query .= "{$key} = '" . self::getHashedPassword($value, self::auth()->password) . "', ";
+                    } else {
                         $query .= "{$key} = '{$value}', ";
                     }
                 }
             }
-            $query = rtrim($query, ', '); 
+            $query = rtrim($query, ', ');
             $db->query("UPDATE users $query Where id = $id");
             return self::findOne($id);
         } catch (\Throwable $th) {
@@ -132,19 +134,21 @@ class User extends Model
     }
 
 
-    public function save(string $name, string $last_name, string $email, string $password)
+    public function save(string $name, string $last_name, string $email, string $password, int $role, $administrative_unit_id = 0)
     {
         try {
             $passwordHash = $this->getHashedPassword($password);
-            $query = $this->prepare('INSERT INTO users(name, last_name, email, password) values(:name, :last_name, :email, :password)');
-            return $query->execute(['name' => $name, 'last_name' => $last_name, 'email' => $email, 'password' => $passwordHash]);
+            $query = $this->prepare('INSERT INTO users(name, last_name, email, password, role, administrative_unit_id) VALUES (:name, :last_name, :email, :password, :role, :administrative_unit_id)');
+
+            return $query->execute(['name' => $name, 'last_name' => $last_name, 'email' => $email, 'password' => $passwordHash, 'role' => $role, 'administrative_unit_id' => empty($administrative_unit_id) ? NULL : $administrative_unit_id]);
         } catch (\Throwable $th) {
             return false;
         }
     }
 
 
-    public static function disableUser(string $id) {
+    public static function disableUser(string $id)
+    {
         try {
             $db = new Model;
             return $db->query("UPDATE users SET status = false WHERE id = $id");
@@ -152,9 +156,10 @@ class User extends Model
             return false;
         }
     }
-    
 
-    public static function activeUser(string $id) {
+
+    public static function activeUser(string $id)
+    {
         try {
             $db = new Model;
             return $db->query("UPDATE users SET status = true WHERE id = $id");
@@ -168,5 +173,4 @@ class User extends Model
     {
         return password_hash($password, PASSWORD_BCRYPT, ['cost' => 12]);
     }
-
 }

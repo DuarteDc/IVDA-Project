@@ -19,7 +19,7 @@ class UserController extends Controller
         $page = (int) $this->get('page');
         $page == 0 && $page = 1;
         $data = User::find($page);
-        return $this->response(['users' => $data['users'], 'page' => $page, 'totalPages' => $data['totalPages']]);
+        $this->response(['users' => $data['users'], 'page' => $page, 'totalPages' => $data['totalPages']]);
     }
 
 
@@ -35,23 +35,27 @@ class UserController extends Controller
         $last_name = $this->post('last_name');
         $email = $this->post('email');
         $password = $this->post('password');
+        $role = $this->post('role');
+        $administrative_unit_id = $this->post('administrative_unit_id');
 
-        if (!$name || !$last_name || !$email || !$password) {
-            $this->setMessage(TypeAlert::Warning, 'Los campos son obligatorios');
-            return header('location: /auth/users/create');
+        if (!$name || !$last_name || !$email || !$password  || !isset($role)) {
+            return $this->response(['message' => 'Los campos son obligatorios'], 400);
+        }
+        
+        if ($role == "0" && !isset($administrative_unit_id)) {
+            return $this->response(['message' => 'La unidad administrativa es obligatorio para un usario'], 400);
         }
 
         $user = User::findByEmail($email);
 
         if ($user) {
-            $this->setMessage(TypeAlert::Danger, 'Ya existe un usuario con ese correo');
-            return header('location: /auth/users/create');
+            return $this->response(['message' => 'Ya existe un usuario con ese correo electronico'], 400);
         }
 
         $user = new User;
-        $user->save($name, $last_name, $email, $password);
-        $this->setMessage(TypeAlert::Success, 'El usuario se creo correctamente');
-        header('location: /auth/users');
+        $user->save($name, $last_name, $email, $password, (int) $role, $administrative_unit_id);
+        $this->response(['message' => 'El usuario se creo correctamente']);
+
     }
 
     public function edit(string $id)
@@ -80,25 +84,22 @@ class UserController extends Controller
 
     public function delete(string $id)
     {
-        $user = User::findOne($id);
-        if (!$user->status) {
-            $this->setMessage(TypeAlert::Warning, 'El usuario ya ha sido desactivado');
-            header('location: /auth/users');
-        }
+        $user = User::findOne($id);        
+        if (!$user->status) 
+            return $this->response(['message' => 'El usuario ya ha sido desactivado'], 400);
+        
         $user = User::disableUser($id);
-        $this->setMessage(TypeAlert::Success, 'El usuario se desactivo correctamente');
-        header('location: /auth/users');
+        $this->response(['message' => 'El usuario se desactivo correctamente'], 200);
     }
 
     public function active(string $id)
     {
         $user = User::findOne($id);
-        if ($user->status) {
-            $this->setMessage(TypeAlert::Warning, 'El usuario ya ha sido activado');
-            header('location: /auth/users');
-        }
+        if ($user->status) 
+            return $this->response(['message' => 'El usuario ya ha sido activado'], 400);
+            
+        
         $user = User::activeUser($id);
-        $this->setMessage(TypeAlert::Success, 'El usuario se activo correctamente');
-        header('location: /auth/users');
+        $this->response(['message' => 'El usuario se activo correctamente']);
     }
 }

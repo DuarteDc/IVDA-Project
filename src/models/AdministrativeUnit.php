@@ -73,5 +73,32 @@ class AdministrativeUnit extends Model {
     }
 
 
+    public static function WhereStatus(bool $type)
+    {
+        try {
+            $db = new Model();
+            $type = json_encode($type);
+            $query = $db->query("SELECT * FROM administrative_units WHERE status = {$type}");
+            if ($query->rowCount() > 0) return $query->fetchAll(PDO::FETCH_CLASS, self::class);
+            return false;
+        } catch (PDOException $e) {
+            return false;
+        }
+    }
+
+    public static function findBySubsecretary(string $subsecretary_id)
+    {
+        try {
+            $db = new Model();
+            $query = $db->query("SELECT * FROM administrative_units WHERE status = true AND subsecretary_id = $subsecretary_id");
+            if ($query->rowCount() > 0) return $query->fetchAll(PDO::FETCH_CLASS, self::class);
+            return [];
+        } catch (PDOException $e) {
+            return [];
+        }
+    }
+
+
+
 
 }

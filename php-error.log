@@ -5343,3 +5343,356 @@ Stack trace:
 [14-Nov-2023 15:32:41 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/LayoutTrait.php on line 82
 [14-Nov-2023 15:32:41 America/Mexico_City] PHP Warning:  Attempt to read property "name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
 [14-Nov-2023 15:32:41 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/home/index.php on line 10
+[15-Nov-2023 11:48:04 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 88
+[15-Nov-2023 11:56:47 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:56:47 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:56:47 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:56:47 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:56:47 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:56:47 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:56:47 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:56:47 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:56:47 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:56:47 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:02 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:02 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:02 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:02 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:02 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:02 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:02 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:02 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:02 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:02 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:20 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:20 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:20 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:20 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:20 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:20 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:20 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:20 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:20 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:57:20 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\User::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 61
+[15-Nov-2023 11:58:10 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property App\models\User::$administrative_unit_id of type string in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:62
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(62): PDOStatement->fetchAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(21): App\models\User::find()
+#2 [internal function]: App\controllers\UserController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(74): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 62
+[15-Nov-2023 12:20:07 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method App\models\AdministrativeUnit::Where() in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php:64
+Stack trace:
+#0 [internal function]: App\controllers\AdministrativeUnitController->getAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(80): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php on line 64
+[15-Nov-2023 12:20:08 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method App\models\AdministrativeUnit::Where() in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php:64
+Stack trace:
+#0 [internal function]: App\controllers\AdministrativeUnitController->getAll()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(80): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php on line 64
+[15-Nov-2023 12:26:33 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(32): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(62): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(82): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[15-Nov-2023 12:26:41 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(32): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(62): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(82): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[15-Nov-2023 12:26:56 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(32): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(62): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(82): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[15-Nov-2023 12:26:57 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(32): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(62): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(82): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[15-Nov-2023 12:26:58 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(32): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(62): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(82): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[15-Nov-2023 12:27:24 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(32): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(62): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(82): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[15-Nov-2023 12:27:27 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(32): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(62): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(82): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[15-Nov-2023 12:28:00 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(32): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(62): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(82): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[15-Nov-2023 12:28:13 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(32): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(62): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(82): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[15-Nov-2023 12:28:13 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(32): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(62): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(82): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[15-Nov-2023 12:28:52 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(32): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(62): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(82): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[15-Nov-2023 12:28:53 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(32): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(62): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(82): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[15-Nov-2023 12:28:55 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(32): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(62): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(82): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[15-Nov-2023 12:28:55 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(32): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(62): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(82): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[15-Nov-2023 12:28:56 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function xd() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php:7
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php(19): require()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(32): App\lib\View->render()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(62): App\lib\Controller->render()
+#3 [internal function]: App\controllers\SubSecretaryController->show()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(82): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/subsecretary/show.php on line 7
+[15-Nov-2023 13:32:53 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "App\controllers\subsecretary_id" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php:64
+Stack trace:
+#0 [internal function]: App\controllers\AdministrativeUnitController->getBySubsecretary()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php on line 64
+[15-Nov-2023 14:37:51 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: App\models\User::save(): Argument #6 ($administrative_unit_id) must be of type int, string given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 56 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:137
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User->save()
+#1 [internal function]: App\controllers\UserController->save()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 137
+[15-Nov-2023 14:37:52 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: App\models\User::save(): Argument #6 ($administrative_unit_id) must be of type int, string given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 56 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:137
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User->save()
+#1 [internal function]: App\controllers\UserController->save()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 137
+[15-Nov-2023 14:37:53 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: App\models\User::save(): Argument #6 ($administrative_unit_id) must be of type int, string given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 56 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:137
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User->save()
+#1 [internal function]: App\controllers\UserController->save()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 137
+[15-Nov-2023 14:37:53 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: App\models\User::save(): Argument #6 ($administrative_unit_id) must be of type int, string given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 56 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:137
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User->save()
+#1 [internal function]: App\controllers\UserController->save()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 137
+[15-Nov-2023 14:37:57 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: App\models\User::save(): Argument #6 ($administrative_unit_id) must be of type int, string given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 56 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:137
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User->save()
+#1 [internal function]: App\controllers\UserController->save()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 137
+[15-Nov-2023 14:37:58 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: App\models\User::save(): Argument #6 ($administrative_unit_id) must be of type int, string given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 56 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:137
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User->save()
+#1 [internal function]: App\controllers\UserController->save()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 137
+[15-Nov-2023 14:40:15 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: http_response_code(): Argument #1 ($response_code) must be of type int, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:62
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(62): http_response_code()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\lib\Controller->response()
+#2 [internal function]: App\controllers\UserController->save()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 62
+[15-Nov-2023 17:20:48 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 89
+[15-Nov-2023 17:21:45 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 89
+[15-Nov-2023 17:22:08 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 89
+[15-Nov-2023 17:22:14 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 89
+[15-Nov-2023 17:22:34 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 91
+[15-Nov-2023 17:45:54 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 98
+[15-Nov-2023 17:46:08 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 98
