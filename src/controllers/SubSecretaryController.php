@@ -23,7 +23,7 @@ class SubSecretaryController extends Controller
         !$type || $type == 'true' || $type != 'false' ? $type = true : $type = false;
 
         $data = SubSecretary::find($page, $type);
-        $this->render('subsecretary/index',  ['subsecretaries' => $data['subsecretaries'], 'page' => $page, 'totalPages' => $data['totalPages']]);
+        $this->response(['subsecretaries' => $data['subsecretaries'], 'page' => $page, 'totalPages' => $data['totalPages']]);
     }
 
     public function create()

@@ -5696,3 +5696,423 @@ Stack trace:
 [15-Nov-2023 17:22:34 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 91
 [15-Nov-2023 17:45:54 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 98
 [15-Nov-2023 17:46:08 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 98
+[16-Nov-2023 10:57:57 America/Mexico_City] PHP Warning:  Undefined array key 404 in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 64
+[16-Nov-2023 14:07:43 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?object in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:08:00 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:08:17 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:08:26 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:08:33 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?object in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:09:57 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot modify readonly property App\models\User::$administrative_unit_id in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#1 [internal function]: App\controllers\UserController->show()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 44
+[16-Nov-2023 14:10:08 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:10:28 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:10:29 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:10:29 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:10:31 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:11:18 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:11:35 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:11:49 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:12:17 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:13:32 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:13:33 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:13:46 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:13:47 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:14:24 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:14:25 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:14:25 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:14:46 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:17:15 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:17:59 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:18:16 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:18:17 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:18:18 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:18:57 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:19:13 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:19:14 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:25:20 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:25:21 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:25:32 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[16-Nov-2023 14:25:33 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign int to property App\models\User::$administrative_unit_id of type ?App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php:42
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(42): PDOStatement->fetchObject()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(56): App\models\User::findOne()
+#2 [internal function]: App\controllers\UserController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42

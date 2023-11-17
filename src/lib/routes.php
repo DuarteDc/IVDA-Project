@@ -17,7 +17,7 @@ function sendCorsHeaders()
     header('Access-Control-Allow-Origin: *');
     header('Content-Type: application/json; charset=utf-8');
     header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, session");
-    header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
+    header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, PATCH');
 }
 
 $router->options('/api.*', function () {
@@ -36,10 +36,13 @@ $router->mount('/api.*', function () use ($router) {
     });
 
     $router->mount('/auth.*', function () use ($router) {
+
         $router->get('/users', 'App\controllers\UserController@index');
+        $router->get('/users/{id}', 'App\controllers\UserController@show');
         $router->post('/users/save', 'App\controllers\UserController@save');
         $router->delete('/users/{id}', 'App\controllers\UserController@delete');
         $router->post('/users/active/{id}', 'App\controllers\UserController@active');
+        $router->patch('/users/{id}', 'App\controllers\UserController@update');
 
         $router->get('/subsecretaries/all', 'App\controllers\SubSecretaryController@getAll');
         
@@ -57,9 +60,8 @@ $router->mount('/api.*', function () use ($router) {
 
         $router->post('/subsecretaries', 'App\controllers\SubSecretary@save');
         $router->get('/users/create', 'App\controllers\UserController@create');
-        $router->get('/users/{id}', 'App\controllers\UserController@edit');
         $router->post('/users/save', 'App\controllers\UserController@save');
-        $router->post('/users/{id}/update', 'App\controllers\UserController@update');
+        
         $router->post('/users/{id}/delete', 'App\controllers\UserController@delete');
         
         $router->get('/profile', 'App\controllers\ProfileController@index');

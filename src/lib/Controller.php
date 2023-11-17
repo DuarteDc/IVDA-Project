@@ -17,6 +17,7 @@ class Controller
         400 => '400 Bad Request',
         401 => '401 Unauthorized',
         422 => 'Unprocessable Entity',
+        404 => '404 Not Found',
         500 => '500 Internal Server Error'
     ];
 
@@ -35,6 +36,11 @@ class Controller
     public function setMessage(TypeAlert $key, string $message)
     {
         $this->view->setMessage($key, $message);
+    }
+
+    protected function request() {
+        $data = file_get_contents('php://input');
+        return json_decode($data, true);
     }
 
     protected function post(String $param)

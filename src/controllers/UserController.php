@@ -22,12 +22,6 @@ class UserController extends Controller
         $this->response(['users' => $data['users'], 'page' => $page, 'totalPages' => $data['totalPages']]);
     }
 
-
-    public function create()
-    {
-        return $this->render('users/create');
-    }
-
     public function save()
     {
 
@@ -41,7 +35,7 @@ class UserController extends Controller
         if (!$name || !$last_name || !$email || !$password  || !isset($role)) {
             return $this->response(['message' => 'Los campos son obligatorios'], 400);
         }
-        
+
         if ($role == "0" && !isset($administrative_unit_id)) {
             return $this->response(['message' => 'La unidad administrativa es obligatorio para un usario'], 400);
         }
@@ -55,39 +49,35 @@ class UserController extends Controller
         $user = new User;
         $user->save($name, $last_name, $email, $password, (int) $role, $administrative_unit_id);
         $this->response(['message' => 'El usuario se creo correctamente']);
-
     }
 
-    public function edit(string $id)
+    public function show(string $id)
     {
         $user = User::findOne($id);
 
-        if (!$user) {
-            header('HTTP/1.1 404 Not Found');
-            return $this->render('404/index');
-        }
+        if (!$user)
+            return $this->response(['message' => 'El usuario no existe'], 404);
 
-        return $this->render('users/edit', ['user' => $user]);
+        return $this->response(['user' => $user]);
     }
 
     public function update(string $id)
     {
-        $user = User::UpdateOne($id, $_POST);
-        if (!$user) {
-            $this->setMessage(TypeAlert::Warning, 'Hubo un error al actualizar el usuario');
-            return header('location: /auth/users');
-        }
+        if (empty($this->request())) return $this->response(['message' => 'El usuario se actualizo correctamente']);
 
-        $this->setMessage(TypeAlert::Success, 'El usuario se actualizo correctamente');
-        header('location: /auth/users');
+        $user = User::UpdateOne($id, $this->request());
+        if (!$user)
+            return $this->response(['message' =>  'Hubo un error al actualizar el usuario']);
+
+        $this->response(['message' => 'El usuario se actualizo correctamente']);
     }
 
     public function delete(string $id)
     {
-        $user = User::findOne($id);        
-        if (!$user->status) 
+        $user = User::findOne($id);
+        if (!$user->status)
             return $this->response(['message' => 'El usuario ya ha sido desactivado'], 400);
-        
+
         $user = User::disableUser($id);
         $this->response(['message' => 'El usuario se desactivo correctamente'], 200);
     }
@@ -95,10 +85,10 @@ class UserController extends Controller
     public function active(string $id)
     {
         $user = User::findOne($id);
-        if ($user->status) 
+        if ($user->status)
             return $this->response(['message' => 'El usuario ya ha sido activado'], 400);
-            
-        
+
+
         $user = User::activeUser($id);
         $this->response(['message' => 'El usuario se activo correctamente']);
     }

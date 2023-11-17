@@ -12,6 +12,7 @@ trait AuthTrait
 
     public static function auth()
     {
+        JWT::$leeway = 2;
         $session = $_SERVER['HTTP_SESSION'] ?? '';
         $key = $_ENV['JWT_SECRET_KEY'];
         $decode = JWT::decode($session, new Key($key, 'HS256'));
@@ -26,10 +27,10 @@ trait AuthTrait
 
     public static function generateJWT($payload)
     {
-        JWT::$leeway = 60;
+        JWT::$leeway = 2;
         $key = $_ENV['JWT_SECRET_KEY'];
         $data = [
-            'iat' => 1356999524,
+            'iat' => 3,
             'user' => $payload,
         ];
         $token = JWT::encode($data, $key, 'HS256');

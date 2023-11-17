@@ -30,9 +30,8 @@ class SigninController extends Controller
 
         $user = User::findByEmail($email);
 
-        if (!$user || !$user->verifyPassword($password, $user->password))
+        if (!$user || !$user->verifyPassword($password, $user->password) || !$user->status)
             return $this->response(['message' => 'El usuario o contraseña no son validos'], 400);
-
 
         $response = $this::generateJWT($user);
         return $this->response($response);

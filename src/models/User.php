@@ -23,7 +23,7 @@ class User extends Model
     public readonly string $created_at;
     public readonly bool $status;
     public readonly string $role;
-    public readonly string | null $administrative_unit_id;
+    public $administrative_unit_id;
 
     public function __construct()
     {
@@ -37,9 +37,18 @@ class User extends Model
             $query = $db->prepare('SELECT * FROM users Where id = :id');
             $query->execute(['id' => $id]);
 
-            if ($query->rowCount() > 0) return $query->fetchObject(__CLASS__);
+            if ($query->rowCount() <= 0) return false;
 
-            return false;
+            $user = $query->fetchObject(self::class);
+
+            if (empty($user->administrative_unit_id)) return $user;
+
+            $administrative_unit = $db->query("SELECT * from administrative_units Where id = {$user->administrative_unit_id}");
+
+            if ($administrative_unit->rowCount() <= 0) return $user;
+
+            $user->administrative_unit_id = $administrative_unit->fetchObject(AdministrativeUnit::class);
+            return $user;
         } catch (PDOException $e) {
             return false;
         }
