@@ -13,7 +13,8 @@ class SubSecretary extends Model
     public readonly string  $name;
     public readonly bool    $status;
     public readonly string  $created_at;
-    public readonly AdministrativeUnit $administrativeUnits;
+    public readonly AdministrativeUnit $administrative_units;
+    public readonly User $users;
 
     public function __construct()
     {
@@ -27,7 +28,7 @@ class SubSecretary extends Model
             $query = $db->prepare('SELECT * FROM subsecretaries Where id = :id');
             $query->execute(['id' => $id]);
 
-            if ($query->rowCount() > 0) return $query->fetchAll(PDO::FETCH_CLASS, self::class);
+            if ($query->rowCount() > 0) return $query->fetchObject(self::class);
 
             return false;
         } catch (PDOException $e) {
@@ -35,24 +36,22 @@ class SubSecretary extends Model
         }
     }
 
-    public static function find(string $page = "1", bool $type = true)
+    public static function find(string $page = "1")
     {
         try {
             $db = new Model();
             $page = abs($page);
 
-            $type = json_encode($type);
-
             $totalRecordPerPage = 10;
 
-            $count = $db->query("SELECT count(*) FROM subsecretaries WHERE status = {$type}")->fetchColumn();
+            $count = $db->query("SELECT count(*) FROM subsecretaries")->fetchColumn();
 
             $totalPages = ceil($count / $totalRecordPerPage);
             if ($totalPages < $page) $page = $totalPages;
             $startingLimit = ($page - 1) * $totalRecordPerPage;
 
-            $query = $db->query("SELECT * FROM subsecretaries Where status = {$type} ORDER BY id DESC LIMIT $totalRecordPerPage OFFSET $startingLimit");
-            
+            $query = $db->query("SELECT * FROM subsecretaries ORDER BY id DESC LIMIT $totalRecordPerPage OFFSET $startingLimit");
+
             if ($query->rowCount() > 0) return ['subsecretaries' => $query->fetchAll(PDO::FETCH_CLASS, self::class), 'totalPages' =>  $totalPages];
 
             return ['subsecretaries' => [], 'totalPages' => $totalPages];
@@ -65,8 +64,8 @@ class SubSecretary extends Model
     {
         try {
             $db = new Model();
-            $query = $db->prepare('SELECT * FROM subsecretaries WHERE :query');
-            $query->execute(['query' => $strQuery]);
+            $query = $db->query("SELECT * FROM subsecretaries WHERE {$strQuery}");
+        
 
             if ($query->rowCount() > 0) return $query->fetchObject(__CLASS__);
 
@@ -92,7 +91,7 @@ class SubSecretary extends Model
     public function save(string $name)
     {
         try {
-            $query = $this->insert('INSERT INTO inventories(name) VALUES (:name)  RETURNING id', ['name' => $name]);
+            $query = $this->insert('INSERT INTO subsecretaries(name) VALUES (:name)  RETURNING id', ['name' => $name]);
             return $query;
         } catch (PDOException $e) {
             var_dump($e->getMessage());
@@ -112,4 +111,57 @@ class SubSecretary extends Model
             return false;
         }
     }
+
+    public static function administrativeUnits($subsecretary, bool $type = true)
+    {
+        try{
+            if (!$subsecretary) return false;
+    
+            $type = json_encode($type);
+            $db = new Model();
+            $query = $db->query("SELECT * FROM administrative_units WHERE status = {$type} AND subsecretary_id = {$subsecretary->id}");
+            return $query->fetchAll(PDO::FETCH_CLASS, AdministrativeUnit::class);
+        }catch(PDOException $e){
+            return false;
+        }
+    }
+
+    public static function users($subsecretary)
+    {
+        try{
+            if (!$subsecretary) return false;
+            $db = new Model();
+            $administrative_units = $subsecretary->administrativeUnits($subsecretary);
+            if(!count($administrative_units) > 0) return [];
+            $query = $db->query("SELECT * FROM users WHERE administrative_unit_id = {$administrative_units[0]->id}");
+            return $query->fetchAll(PDO::FETCH_CLASS, User::class);
+        }catch(PDOException $e){
+            return false;
+        }
+    }
+
+
+
+    public static function disableSubsecretary(string $id)
+    {
+        try {
+            $db = new Model;
+            return $db->query("UPDATE subsecretaries SET status = false WHERE id = $id");
+        } catch (\Throwable $th) {
+            return false;
+        }
+    }
+
+
+    public static function activeSubsecretary(string $id)
+    {
+        try {
+            $db = new Model;
+            return $db->query("UPDATE subsecretaries SET status = true WHERE id = $id");
+        } catch (\Throwable $th) {
+            return false;
+        }
+    }
+
 }
+

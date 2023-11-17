@@ -6116,3 +6116,103 @@ Stack trace:
 #7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
 #8 {main}
   thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php on line 42
+[17-Nov-2023 17:05:05 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Cannot assign array to property App\models\SubSecretary::$administrative_units of type App\models\AdministrativeUnit in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php:122
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(45): App\models\SubSecretary::administrativeUnits()
+#1 [internal function]: App\controllers\SubSecretaryController->show()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(90): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 122
+[17-Nov-2023 17:06:53 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method App\models\SubSecretary::administrative_units() in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(90): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[17-Nov-2023 17:07:56 America/Mexico_City] PHP Fatal error:  Uncaught Error: Object of class App\models\SubSecretary could not be converted to string in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:64
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->delete()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(90): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 64
+[17-Nov-2023 17:08:10 America/Mexico_City] PHP Warning:  Undefined variable $adminsitrative_units in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 66
+[17-Nov-2023 17:08:10 America/Mexico_City] PHP Warning:  Undefined property: App\models\SubSecretary::$ in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 66
+[17-Nov-2023 17:08:10 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:66
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(66): count()
+#1 [internal function]: App\controllers\SubSecretaryController->delete()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(90): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 66
+[17-Nov-2023 17:08:19 America/Mexico_City] PHP Warning:  Undefined property: App\models\SubSecretary::$adminsitrative_units in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 66
+[17-Nov-2023 17:08:19 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:66
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(66): count()
+#1 [internal function]: App\controllers\SubSecretaryController->delete()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(90): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 66
+[17-Nov-2023 17:08:21 America/Mexico_City] PHP Warning:  Undefined property: App\models\SubSecretary::$adminsitrative_units in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 66
+[17-Nov-2023 17:08:21 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:66
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(66): count()
+#1 [internal function]: App\controllers\SubSecretaryController->delete()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(90): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 66
+[17-Nov-2023 17:30:12 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\AdministrativeUnit::$email is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 135
+[17-Nov-2023 17:30:12 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\AdministrativeUnit::$password is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 135
+[17-Nov-2023 17:30:12 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\AdministrativeUnit::$last_name is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 135
+[17-Nov-2023 17:30:12 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\AdministrativeUnit::$role is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 135
+[17-Nov-2023 17:30:12 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\AdministrativeUnit::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 135
+[17-Nov-2023 17:30:12 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\AdministrativeUnit::$email is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 135
+[17-Nov-2023 17:30:12 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\AdministrativeUnit::$password is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 135
+[17-Nov-2023 17:30:12 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\AdministrativeUnit::$last_name is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 135
+[17-Nov-2023 17:30:12 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\AdministrativeUnit::$role is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 135
+[17-Nov-2023 17:30:12 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\AdministrativeUnit::$administrative_unit_id is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 135
+[17-Nov-2023 17:31:47 America/Mexico_City] PHP Warning:  Undefined array key 0 in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 135
+[17-Nov-2023 17:31:47 America/Mexico_City] PHP Warning:  Attempt to read property "id" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php on line 135
+[17-Nov-2023 17:34:20 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: array + int in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[17-Nov-2023 17:56:55 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45

@@ -44,21 +44,25 @@ $router->mount('/api.*', function () use ($router) {
         $router->post('/users/active/{id}', 'App\controllers\UserController@active');
         $router->patch('/users/{id}', 'App\controllers\UserController@update');
 
+        $router->get('/subsecretaries', 'App\controllers\SubSecretaryController@index');
+        $router->get('/subsecretaries/{id}', 'App\controllers\SubSecretaryController@show');
+        $router->post('/subsecretaries', 'App\controllers\SubSecretaryController@save');
+        $router->delete('/subsecretaries/{id}', 'App\controllers\SubSecretaryController@delete');
         $router->get('/subsecretaries/all', 'App\controllers\SubSecretaryController@getAll');
+        $router->post('/subsecretaries/active/{id}', 'App\controllers\SubSecretaryController@active');
         
         $router->get('/inventory', 'App\controllers\InventoryController@index');
         $router->post('/inventory', 'App\controllers\InventoryController@create');
         $router->get('/inventory/edit/{id}', 'App\controllers\InventoryController@edit');
-        $router->get('/subsecretaries', 'App\controllers\SubSecretaryController@index');
         $router->get('/subsecretaries/create', 'App\controllers\SubSecretaryController@create');
-        $router->get('/subsecretaries/{id}', 'App\controllers\SubSecretaryController@show');
+        
 
         $router->get('/administrative-unit/all', 'App\controllers\AdministrativeUnitController@getAll');
         $router->get('/administrative-unit/subsecretary/{subsecretary_id}', 'App\controllers\AdministrativeUnitController@getBySubsecretary');
         $router->get('/administrative-unit/create', 'App\controllers\AdministrativeUnitController@create');
         $router->post('/administrative-unit/save', 'App\controllers\AdministrativeUnitController@save');
 
-        $router->post('/subsecretaries', 'App\controllers\SubSecretary@save');
+        
         $router->get('/users/create', 'App\controllers\UserController@create');
         $router->post('/users/save', 'App\controllers\UserController@save');
         

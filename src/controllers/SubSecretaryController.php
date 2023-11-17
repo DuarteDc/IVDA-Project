@@ -2,7 +2,6 @@
 
 namespace App\controllers;
 
-use App\emuns\TypeAlert;
 use App\lib\Controller;
 use App\models\SubSecretary;
 
@@ -18,48 +17,33 @@ class SubSecretaryController extends Controller
     {
         $page = (int) $this->get('page');
         $page == 0 && $page = 1;
-
-        $type = $this->get('type');
-        !$type || $type == 'true' || $type != 'false' ? $type = true : $type = false;
-
-        $data = SubSecretary::find($page, $type);
+        $data = SubSecretary::find($page);
         $this->response(['subsecretaries' => $data['subsecretaries'], 'page' => $page, 'totalPages' => $data['totalPages']]);
-    }
-
-    public function create()
-    {
-        $this->render('subsecretary/create');
     }
 
     public function save()
     {
         $name = $this->post('name');
 
-        if (!$name) {
-            $this->setMessage(TypeAlert::Warning, 'El nombre es requerido para crear una subsecretaria');
-            return header('location: /auth/subsecretaries');
-        }
+        if (!$name) return $this->response(['message' => 'El nombre es requerido para crear una subsecretaria'], 400);
 
         $name = trim(strtoupper($name));
 
-        $existSubsecretary = SubSecretary::Where("name = $name");
+        $existSubsecretary = SubSecretary::Where("name = '$name'");
 
-        if ($existSubsecretary) {
-            $this->setMessage(TypeAlert::Warning, 'Ya existe una subsecretaria con ese nombre');
-            return header('location: /auth/subsecretaries');
-        }
+        if ($existSubsecretary) return $this->response(['message' => 'Ya existe una subsecretaria con ese nombre'], 400);
 
         $subsecretary = new SubSecretary();
         $subsecretary->save($name);
 
-        $this->setMessage(TypeAlert::Success, 'La subsecretaria se creo con exito');
-        return header('location: /auth/subsecretaries');
+        $this->response(['message' => 'La subsecretaria se creo con exito']);
     }
 
     public function show(string $id)
     {
         $subsecretary = SubSecretary::findOne($id);
-        $this->render('/subsecretary/show', ['subsecretary' => $subsecretary]);
+        $this->response(['subsecretary' => $subsecretary, 'enable_administrative_units' => $subsecretary->administrativeUnits($subsecretary), 
+        'disable_administrative_units' => (int) $subsecretary->administrativeUnits($subsecretary, false), 'users' => $subsecretary->users($subsecretary)]);
     }
 
 
@@ -70,8 +54,33 @@ class SubSecretaryController extends Controller
     }
 
 
-    public function disable(string $id)
+    public function delete(string $id)
     {
         $subsecretary = SubSecretary::findOne($id);
+
+        if (!$subsecretary) return $this->response(['message' => 'Parece que la subsecretaria no existe o no esta disponible'], 400);
+
+        if (!$subsecretary->status) return $this->response(['message' => 'La subsecretaria ya ha sido desactivada'], 400);
+
+        $administrative_units = $subsecretary->administrativeUnits($subsecretary, true);
+
+        if (count($administrative_units) > 0) return $this->response(['message' => 'La subsecretaria no puede ser desactivada porque cuenta con unidades administrativas activas'], 400);
+
+        $subsecretary->disableSubsecretary($subsecretary->id);
+
+        $this->response(['message' => 'La subsecretaria se desactivo correctamente']);
+    }
+
+    public function active(string $id)
+    {
+        $subsecretary = SubSecretary::findOne($id);
+
+        if (!$subsecretary) return $this->response(['message' => 'Parece que la subsecretaria no existe o no esta disponible'], 400);
+
+        if ($subsecretary->status) return $this->response(['message' => 'La subsecretaria ya ha sido activada'], 400);
+
+        $subsecretary->activeSubsecretary($subsecretary->id);
+
+        $this->response(['message' => 'La subsecretaria se activo correctamente']);
     }
 }
