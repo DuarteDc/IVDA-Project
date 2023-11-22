@@ -15,36 +15,37 @@ class InventoryController extends Controller
     }
 
     public function index()
-    { 
-        $page = (int) $this->get('page');
+    {
+        $page = (int) $this->get('page');   
         $page == 0 && $page = 1;
         $data = Inventory::find($page);
-    
-        return $this->render('inventory/index', ['inventories' => $data['inventories'], 'page' => $page, 'totalPages' => $data['totalPages'] ]);
-    }
 
-    public function create() {
+        return $this->response(['inventories' => $data['inventories'], 'page' => $page, 'totalPages' => $data['totalPages']]);
+    }   
+
+    public function create()
+    {
         $currentDate = date("Y-m-d H:i:s");
-        $name = 'Inventario del'. $currentDate;
+        $name = 'Inventario del' . $currentDate;
         $inventory = new Inventory();
-        
+
         $newInventory = $inventory->save($name, $currentDate, $this::auth()->id);
-        if(!$newInventory) {
+        if (!$newInventory) {
             $this->setMessage(TypeAlert::Danger, 'Parece que hubo un error al crear el inventario');
             return header('location: /auth/inventory');
-        }   
+        }
 
         $this->setMessage(TypeAlert::Success, 'El inventario se creo con exito');
-        return header('location: /auth/inventory/edit/'.$newInventory->id);
+        return header('location: /auth/inventory/edit/' . $newInventory->id);
     }
 
 
-    public function edit(string $id) {
+    public function edit(string $id)
+    {
         $inventory = Inventory::findOne($id);
-        if (!$inventory) 
+        if (!$inventory)
             return $this->render('404/index');
-        
-        $this->render('inventory/edit', [ 'inventory' => $inventory ]);
-    }
 
+        $this->render('inventory/edit', ['inventory' => $inventory]);
+    }
 }

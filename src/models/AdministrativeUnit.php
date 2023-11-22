@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\models;
 
@@ -6,7 +6,8 @@ use App\lib\Model;
 use PDO;
 use PDOException;
 
-class AdministrativeUnit extends Model {
+class AdministrativeUnit extends Model
+{
 
 
     public readonly string $id;
@@ -14,19 +15,21 @@ class AdministrativeUnit extends Model {
     public readonly bool $status;
     public readonly string $subsecretary_id;
     public readonly string $created_at;
+    public $users;
 
-    public function __construct() {
-        parent::__construct();    
+    public function __construct()
+    {
+        parent::__construct();
     }
 
     public static function findOne($id)
     {
         try {
             $db = new Model();
-            $query = $db->prepare('SELECT * FROM administrative_units Where status = true AND id = :id');
-            $query->execute([ 'id' => $id ]);
+            $query = $db->prepare('SELECT * FROM administrative_units WHERE id = :id');
+            $query->execute(['id' => $id]);
 
-            if ($query->rowCount() > 0) 
+            if ($query->rowCount() > 0)
                 return $query->fetchObject(__CLASS__);
 
             return false;
@@ -38,22 +41,20 @@ class AdministrativeUnit extends Model {
     public static function find(string $page = "1", bool $type = true)
     {
         try {
-             
+
             $db = new Model();
             $page = abs($page);
 
-            $type = json_encode($type);
-
             $totalRecordPerPage = 10;
 
-            $count = $db->query("SELECT count(*) FROM administrative_units WHERE status = {$type}")->fetchColumn();
+            $count = $db->query("SELECT count(*) FROM administrative_units")->fetchColumn();
 
             $totalPages = ceil($count / $totalRecordPerPage);
             if ($totalPages < $page) $page = $totalPages;
             $startingLimit = ($page - 1) * $totalRecordPerPage;
 
-            $query = $db->query("SELECT administrative_units.id , administrative_units.name, administrative_units.status, administrative_units.created_at, subsecretaries.name  as subsecretary_id FROM administrative_units JOIN subsecretaries on subsecretaries.id = administrative_units.subsecretary_id Where administrative_units.status = {$type} ORDER BY administrative_units.id DESC LIMIT $totalRecordPerPage OFFSET $startingLimit");
-            
+            $query = $db->query("SELECT administrative_units.id , administrative_units.name, administrative_units.status, administrative_units.created_at, subsecretaries.name  as subsecretary_id FROM administrative_units JOIN subsecretaries on subsecretaries.id = administrative_units.subsecretary_id ORDER BY administrative_units.id DESC LIMIT $totalRecordPerPage OFFSET $startingLimit");
+
             if ($query->rowCount() > 0) return ['administrative_units' => $query->fetchAll(PDO::FETCH_CLASS, self::class), 'totalPages' =>  $totalPages];
 
             return ['administrative_units' => [], 'totalPages' => $totalPages];
@@ -98,7 +99,27 @@ class AdministrativeUnit extends Model {
         }
     }
 
+    public static function changeStatus(string $id, bool $status)
+    {
+        try {
+            $db = new Model;
+            $status = json_encode($status);
+            return $db->query("UPDATE administrative_units SET status = {$status} WHERE id = {$id}");
+        } catch (\Throwable $th) {
+            return false;
+        }
+    }
 
-
-
+    
+    public static function users($administrative_unit)
+    {
+        try {
+            $db = new Model();
+            $query = $db->query("SELECT * FROM users WHERE status = true AND administrative_unit_id = $administrative_unit->id");
+            if ($query->rowCount() > 0) return $query->fetchAll(PDO::FETCH_CLASS, User::class);
+            return [];
+        } catch (PDOException $e) {
+            return [];
+        }
+    }
 }

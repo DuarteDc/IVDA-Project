@@ -24,14 +24,13 @@ $router->options('/api.*', function () {
     sendCorsHeaders();
 });
 
-sendCorsHeaders();
 
 $router->mount('/api.*', function () use ($router) {
 
     $router->post('/signin', '\App\controllers\SigninController@signin');
     $router->get('/me', '\App\controllers\SigninController@user');
 
-    $router->before('GET', '/auth.*', function () {
+    $router->before('GET|POST|DELETE|PATCH', '/auth.*', function () {
         AuthMiddleware::checkAuth();
     });
 
@@ -47,20 +46,23 @@ $router->mount('/api.*', function () use ($router) {
         $router->get('/subsecretaries', 'App\controllers\SubSecretaryController@index');
         $router->get('/subsecretaries/{id}', 'App\controllers\SubSecretaryController@show');
         $router->post('/subsecretaries', 'App\controllers\SubSecretaryController@save');
+        $router->patch('/subsecretaries/{id}', 'App\controllers\SubSecretaryController@update');
         $router->delete('/subsecretaries/{id}', 'App\controllers\SubSecretaryController@delete');
-        $router->get('/subsecretaries/all', 'App\controllers\SubSecretaryController@getAll');
+        $router->get('/subsecretaries-all', 'App\controllers\SubSecretaryController@getAll');
         $router->post('/subsecretaries/active/{id}', 'App\controllers\SubSecretaryController@active');
         
-        $router->get('/inventory', 'App\controllers\InventoryController@index');
-        $router->post('/inventory', 'App\controllers\InventoryController@create');
-        $router->get('/inventory/edit/{id}', 'App\controllers\InventoryController@edit');
-        $router->get('/subsecretaries/create', 'App\controllers\SubSecretaryController@create');
+        $router->get('/inventories', 'App\controllers\InventoryController@index');
+        $router->post('/inventories', 'App\controllers\InventoryController@create');
+        $router->get('/inventories/edit/{id}', 'App\controllers\InventoryController@edit');
         
 
-        $router->get('/administrative-unit/all', 'App\controllers\AdministrativeUnitController@getAll');
-        $router->get('/administrative-unit/subsecretary/{subsecretary_id}', 'App\controllers\AdministrativeUnitController@getBySubsecretary');
-        $router->get('/administrative-unit/create', 'App\controllers\AdministrativeUnitController@create');
-        $router->post('/administrative-unit/save', 'App\controllers\AdministrativeUnitController@save');
+        $router->get('/administrative-units', 'App\controllers\AdministrativeUnitController@index');
+        $router->get('/administrative-units/{id}', 'App\controllers\AdministrativeUnitController@show');
+        $router->post('/administrative-units', 'App\controllers\AdministrativeUnitController@save');
+        $router->get('/administrative-units/all', 'App\controllers\AdministrativeUnitController@getAll');
+        $router->get('/administrative-units/subsecretary/{subsecretary_id}', 'App\controllers\AdministrativeUnitController@getBySubsecretary');
+        $router->delete('/administrative-units/{id}', 'App\controllers\AdministrativeUnitController@delete');
+        $router->post('/administrative-units/enable/{id}', 'App\controllers\AdministrativeUnitController@active');
 
         
         $router->get('/users/create', 'App\controllers\UserController@create');
@@ -77,13 +79,13 @@ $router->mount('/api.*', function () use ($router) {
 $router->get('/.*', '\App\controllers\SigninController@index');
 
 $router->before('GET', '/', function () {
-    AuthMiddleware::isAuthenticate();
+    // AuthMiddleware::isAuthenticate();
 });
 
 
 $router->before('GET', '/auth.*', function () {
-    AuthMiddleware::checkAuth();
-    HasAdminRole::hasUserRole();
+    // AuthMiddleware::checkAuth();
+    
 });
 
 $router->set404('/.*', '\App\controllers\NotFoundController@__invoke');

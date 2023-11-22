@@ -6216,3 +6216,518 @@ Stack trace:
 #5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
 #6 {main}
   thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:24:13 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:24:48 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:24:54 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:25:38 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:39:46 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:39:59 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:40:03 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:40:07 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:40:17 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:40:41 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:41:27 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:42:16 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:43:04 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:43:11 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:43:14 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 09:50:00 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 10:13:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 10:42:03 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:45
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 45
+[21-Nov-2023 11:46:09 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 11:50:30 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 11:56:08 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 12:00:12 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 12:08:20 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 12:10:44 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 13:04:09 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 13:04:20 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 13:04:23 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 13:04:28 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 13:04:40 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 13:04:58 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 13:05:16 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 13:05:21 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 13:16:25 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(92): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 13:43:44 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(92): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 14:19:16 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 14:19:23 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 14:20:39 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 14:21:12 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 14:21:43 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 14:22:32 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 14:24:08 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 14:24:22 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 14:24:23 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 14:24:24 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 14:24:24 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:46
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 46
+[21-Nov-2023 17:20:16 America/Mexico_City] PHP Fatal error:  Uncaught UnexpectedValueException: Wrong number of segments in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php:109
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(18): Firebase\JWT\JWT::decode()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(15): App\lib\Middleware::auth()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(83): App\middlewares\AuthMiddleware::isAuthenticate()
+#3 [internal function]: {closure}()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(94): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php on line 109
+[21-Nov-2023 17:20:56 America/Mexico_City] PHP Fatal error:  Uncaught UnexpectedValueException: Wrong number of segments in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php:109
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(18): Firebase\JWT\JWT::decode()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(15): App\lib\Middleware::auth()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(83): App\middlewares\AuthMiddleware::isAuthenticate()
+#3 [internal function]: {closure}()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(94): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php on line 109
+[21-Nov-2023 17:20:57 America/Mexico_City] PHP Fatal error:  Uncaught UnexpectedValueException: Wrong number of segments in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php:109
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(18): Firebase\JWT\JWT::decode()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(15): App\lib\Middleware::auth()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(83): App\middlewares\AuthMiddleware::isAuthenticate()
+#3 [internal function]: {closure}()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(94): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php on line 109
+[21-Nov-2023 17:20:58 America/Mexico_City] PHP Fatal error:  Uncaught UnexpectedValueException: Wrong number of segments in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php:109
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(18): Firebase\JWT\JWT::decode()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(15): App\lib\Middleware::auth()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(83): App\middlewares\AuthMiddleware::isAuthenticate()
+#3 [internal function]: {closure}()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(94): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php on line 109
+[21-Nov-2023 17:21:03 America/Mexico_City] PHP Fatal error:  Uncaught UnexpectedValueException: Wrong number of segments in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php:109
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(18): Firebase\JWT\JWT::decode()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(15): App\lib\Middleware::auth()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(83): App\middlewares\AuthMiddleware::isAuthenticate()
+#3 [internal function]: {closure}()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(94): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php on line 109

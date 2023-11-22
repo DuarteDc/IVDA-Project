@@ -42,10 +42,28 @@ class SubSecretaryController extends Controller
     public function show(string $id)
     {
         $subsecretary = SubSecretary::findOne($id);
-        $this->response(['subsecretary' => $subsecretary, 'enable_administrative_units' => $subsecretary->administrativeUnits($subsecretary), 
-        'disable_administrative_units' => (int) $subsecretary->administrativeUnits($subsecretary, false), 'users' => $subsecretary->users($subsecretary)]);
+        if (!$subsecretary) $this->response(['message' => 'La subsecretaria que intentas buscar no existe'], 400);
+        $this->response([
+            'subsecretary' => $subsecretary, 'enable_administrative_units' => $subsecretary->administrativeUnits($subsecretary),
+            'disable_administrative_units' => $subsecretary->administrativeUnits($subsecretary, false), 'users' => $subsecretary->users($subsecretary)
+        ]);
     }
 
+    public function update(string $id)
+    {
+        $subsecretary = SubSecretary::findOne($id);
+        if (!$subsecretary) return $this->response(['message' => 'La subsecretaría no existe o no es valida']);
+
+        $name = $this->post('name');
+
+        $name = trim(strtoupper($name));
+
+        $existSubsecretary = SubSecretary::Where("id <> {$id} AND name = '{$name}'");
+        if ($existSubsecretary) return $this->response(['message' => 'Ya existe una subsecretaria con ese nombre'], 400);
+
+        $subsecretary->UpdateOne($id, $this->request());
+        $this->response(['message' => 'La subsecretaria se actualizo con exito']);
+    }
 
     public function getAll()
     {

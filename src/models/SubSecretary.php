@@ -30,7 +30,7 @@ class SubSecretary extends Model
 
             if ($query->rowCount() > 0) return $query->fetchObject(self::class);
 
-            return false;
+            return [false];
         } catch (PDOException $e) {
             return false;
         }
@@ -50,13 +50,30 @@ class SubSecretary extends Model
             if ($totalPages < $page) $page = $totalPages;
             $startingLimit = ($page - 1) * $totalRecordPerPage;
 
-            $query = $db->query("SELECT * FROM subsecretaries ORDER BY id DESC LIMIT $totalRecordPerPage OFFSET $startingLimit");
+            $query = $db->query("SELECT * FROM subsecretaries ORDER BY id ASC LIMIT $totalRecordPerPage OFFSET $startingLimit");
 
             if ($query->rowCount() > 0) return ['subsecretaries' => $query->fetchAll(PDO::FETCH_CLASS, self::class), 'totalPages' =>  $totalPages];
 
             return ['subsecretaries' => [], 'totalPages' => $totalPages];
         } catch (PDOException $e) {
             return ['subsecretaries' => [], 'totalPages' => 0];
+        }
+    }
+
+    public static function UpdateOne(string $id, array $params)
+    {
+        try {
+            $db = new Model();
+            $query = 'SET ';
+            foreach ($params as $key => $value) {
+                if (strlen($value)  > 0)  $query .= "{$key} = '{$value}', ";
+                
+            }
+            $query = rtrim($query, ', ');
+            $db->query("UPDATE subsecretaries $query Where id = $id");
+            return self::findOne($id);
+        } catch (\Throwable $th) {
+            return false;
         }
     }
 

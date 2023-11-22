@@ -20,18 +20,16 @@ class AdministrativeUnitController extends Controller
         $page = (int) $this->get('page');
         $page == 0 && $page = 1;
 
-        $type = $this->get('type');
-        !$type || $type == 'true' || $type != 'false' ? $type = true : $type = false;
+        $data = AdministrativeUnit::find($page);
 
-        $data = AdministrativeUnit::find($page, $type);
-
-        $this->render('administrative-unit/index', ['administrative_units' => $data['administrative_units'], 'page' => $page, 'totalPages' => $data['totalPages']]);
+        $this->response(['administrative_units' => $data['administrative_units'], 'page' => $page, 'totalPages' => $data['totalPages']]);
     }
 
-    public function create()
+    public function show(string $id)
     {
-        $subsecretaries = SubSecretary::findAll();
-        $this->render('administrative-unit/create', ['subsecretaries' => $subsecretaries]);
+        $administrative_unit = AdministrativeUnit::findOne($id);
+        if (!$administrative_unit) $this->response(['message' => 'La unidad administrativa que intentas buscar no existe'], 400);
+        $this->response(['administrative_unit' => $administrative_unit]);
     }
 
     public function save()
@@ -39,24 +37,16 @@ class AdministrativeUnitController extends Controller
         $name = $this->post('name');
         $subsecretary = $this->post('subsecretary_id');
 
-        if (!$name || !$subsecretary) {
-            $this->setMessage(TypeAlert::Warning, 'Los campos son requeridos para crear una unidad administrativa');
-            return header('location: /auth/administrative-unit/create');
-        }
+        if (!$name || !$subsecretary) return $this->response(['message' => 'Los campos son requeridos para crear una unidad administrativa'], 400);
 
         $existSubsecretary = SubSecretary::findOne($subsecretary);
 
-        if (!$existSubsecretary) {
-            $this->setMessage(TypeAlert::Warning, 'La subsecretaria no es correcta o no esta disponible');
-            return header('location: /auth/administrative-unit/create');
-        }
-
+        if (!$existSubsecretary) return $this->response(['message' =>  'La subsecretaria no es correcta o no esta disponible'], 400);
 
         $administrative = new AdministrativeUnit();
         $administrative->save($name, $subsecretary);
 
-        $this->setMessage(TypeAlert::Warning, 'La subsecretaria no es');
-        return header('location: /auth/administrative-unit');
+        $this->response(['message' => 'La unidad administrativa se creo con exito']);
     }
 
     public function getBySubsecretary(string $subsecretary_id)
@@ -65,4 +55,50 @@ class AdministrativeUnitController extends Controller
 
         $this->response(['administrative_units' => $administrative_units]);
     }
+
+    public function delete(string $id)
+    {
+        $administrative_unit = AdministrativeUnit::findOne($id);
+
+        if (!$administrative_unit) return $this->response(['message' => 'La unidad administrativa no existe o no es valida'], 404);
+
+        if (!$administrative_unit->status) return $this->response(['message' => 'La unidad administratuva ya ha sido desactivada'], 400);
+
+        $users = $administrative_unit->users($administrative_unit);
+
+        if (count($users) > 0) return $this->response(['message' => 'La unidad administrativa no puede ser eliminada porque cuenta con usuarios activos'], 400);
+
+        $administrative_unit->changeStatus($administrative_unit->id, false);
+        $this->response(['message' => 'La unidad administrativa se desactivo correctamente']);
+    }
+
+
+    public function active(string $id)
+    {
+        $administrative_unit = AdministrativeUnit::findOne($id);
+
+        if (!$administrative_unit) return $this->response(['message' => 'La unidad administrativa no existe o no es valida'], 404);
+
+        if ($administrative_unit->status) return $this->response(['message' => 'La unidad administrativa ya ha sido activada'], 400);
+
+        $administrative_unit->changeStatus($administrative_unit->id, true);
+        $this->response(['message' => 'La unidad administrativa se desactivo correctamente']);
+    }
+
+    public function update(string $id)
+    {
+        $subsecretary = AdministrativeUnit::findOne($id);
+        if (!$subsecretary) return $this->response(['message' => 'La subsecretaría no existe o no es valida']);
+
+        $name = $this->post('name');
+
+        $name = trim(strtoupper($name));
+
+        $existSubsecretary = SubSecretary::Where("id <> {$id} AND name = '{$name}'");
+        if ($existSubsecretary) return $this->response(['message' => 'Ya existe una subsecretaria con ese nombre'], 400);
+
+        // $subsecretary->UpdateOne($id, $this->request());
+        $this->response(['message' => 'La subsecretaria se actualizo con exito']);
+    }
+
 }
