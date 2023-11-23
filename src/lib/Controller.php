@@ -8,9 +8,9 @@ use App\traits\AuthTrait;
 
 class Controller
 {
+    use AuthTrait;
 
     private View $view;
-    use AuthTrait;
 
     private array $status = [
         200 => '200 OK',
@@ -24,8 +24,6 @@ class Controller
     public function __construct()
     {
         $this->view = new View;
-
-        header("Access-Control-Allow-Origin: *");
     }
 
     public function render(String $name, array $data = [])

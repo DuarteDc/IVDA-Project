@@ -3,7 +3,6 @@
 namespace App\models;
 
 use App\lib\Model;
-use DateTime;
 use PDO;
 use PDOException;
 
@@ -12,8 +11,7 @@ class Inventory extends Model
 
     public readonly string  $id;
     public readonly string  $name;
-    public readonly string  $start_date;
-    public readonly null    $end_date;
+    public readonly string  $code;
     public readonly bool    $status;
     public readonly string  $user_id;
     public readonly string  $created_at;    
@@ -58,10 +56,10 @@ class Inventory extends Model
     }
 
 
-    public function save(string $name, string $start_date, string $user_id) {
+    public function save(string $name, string $code, string $user_id) {
         try{
-            $query = $this->insert('INSERT INTO inventories(name, start_date, user_id) VALUES (:name, :start_date, :user_id)  RETURNING id', 
-            [ 'name' => $name, 'start_date' => $start_date, 'user_id' =>  $user_id]);
+            $query = $this->insert('INSERT INTO inventories(name, code, user_id) VALUES (:name, :code, :user_id)  RETURNING id', 
+            [ 'name' => $name, 'code' => $code, 'user_id' =>  $user_id]);
             return $query;
         } catch (PDOException $e) {
             var_dump($e->getMessage());

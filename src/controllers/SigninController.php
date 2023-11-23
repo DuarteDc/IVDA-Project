@@ -4,6 +4,7 @@ namespace App\controllers;
 
 use App\lib\Controller;
 use App\models\User;
+use Exception;
 
 class SigninController extends Controller
 {
@@ -41,7 +42,8 @@ class SigninController extends Controller
     {
         $session = $_SERVER['HTTP_SESSION'] ?? '';
         if (!$session) return $this->response(['message' => "unauthorized - 401"], 401);
-        $xd = $this::isValidToken($session);
-        $this->response($xd);
+        $session = $this::isValidToken($session);
+        // if ($session instanceof Exception) return $this->response(['message' => $session->getMessage()], 401);
+        $this->response($session);
     }
 }

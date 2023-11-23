@@ -3,8 +3,6 @@
 use App\middlewares\AuthMiddleware;
 use App\middlewares\HasAdminRole;
 
-session_start();
-
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../../');
 $dotenv->load();
 
@@ -30,7 +28,7 @@ $router->mount('/api.*', function () use ($router) {
     $router->post('/signin', '\App\controllers\SigninController@signin');
     $router->get('/me', '\App\controllers\SigninController@user');
 
-    $router->before('GET|POST|DELETE|PATCH', '/auth.*', function () {
+    $router->before('GET|POST|DELETE|PATCH|PUT', '/auth.*', function () {
         AuthMiddleware::checkAuth();
     });
 
@@ -52,17 +50,19 @@ $router->mount('/api.*', function () use ($router) {
         $router->post('/subsecretaries/active/{id}', 'App\controllers\SubSecretaryController@active');
         
         $router->get('/inventories', 'App\controllers\InventoryController@index');
-        $router->post('/inventories', 'App\controllers\InventoryController@create');
-        $router->get('/inventories/edit/{id}', 'App\controllers\InventoryController@edit');
+        $router->post('/inventories', 'App\controllers\InventoryController@save');
+        $router->post('/inventories/add-file/{id}', 'App\controllers\InventoryController@addFile');
+        $router->delete('/inventories/remove-file/{id}/{no_file}', 'App\controllers\InventoryController@deleteFile');
+        $router->get('/inventories/{id}', 'App\controllers\InventoryController@show');
         
 
         $router->get('/administrative-units', 'App\controllers\AdministrativeUnitController@index');
-        $router->get('/administrative-units/{id}', 'App\controllers\AdministrativeUnitController@show');
+        $router->get('/administrative-units/subsecretary/{subsecretary_id}', 'App\controllers\AdministrativeUnitController@getBySubsecretary');
         $router->post('/administrative-units', 'App\controllers\AdministrativeUnitController@save');
         $router->get('/administrative-units/all', 'App\controllers\AdministrativeUnitController@getAll');
-        $router->get('/administrative-units/subsecretary/{subsecretary_id}', 'App\controllers\AdministrativeUnitController@getBySubsecretary');
         $router->delete('/administrative-units/{id}', 'App\controllers\AdministrativeUnitController@delete');
         $router->post('/administrative-units/enable/{id}', 'App\controllers\AdministrativeUnitController@active');
+        $router->get('/administrative-units/{id}', 'App\controllers\AdministrativeUnitController@show');
 
         
         $router->get('/users/create', 'App\controllers\UserController@create');
