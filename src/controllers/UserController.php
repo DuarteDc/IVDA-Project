@@ -36,9 +36,9 @@ class UserController extends Controller
             return $this->response(['message' => 'Los campos son obligatorios'], 400);
         }
 
-        if ($role == "0" && !isset($administrative_unit_id)) {
-            return $this->response(['message' => 'La unidad administrativa es obligatorio para un usario'], 400);
-        }
+        if ($role == "0" && empty($administrative_unit_id))
+            return $this->response(['message' => 'La unidad administrativa es obligatorio para crear un usuario'], 400);
+
 
         $user = User::findByEmail($email);
 
@@ -65,9 +65,15 @@ class UserController extends Controller
     {
         if (empty($this->request())) return $this->response(['message' => 'El usuario se actualizo correctamente']);
 
-        $user = User::UpdateOne($id, $this->request());
-        if (!$user)
-            return $this->response(['message' =>  'Hubo un error al actualizar el usuario']);
+        $user = User::findOne($id);
+
+        if (!$user) return $this->response(['message' => 'El usuario no es valido o no existe'], 400);
+
+        if($this->post('role') == '0' && empty($this->post('administrative_unit_id'))) return $this->response(['message' => 'Es necesario asignarle una unidad administrativa al usuario'], 400);
+
+        $user->UpdateOne($id, $this->request());
+
+        if (!$user) return $this->response(['message' =>  'Hubo un error al actualizar el usuario']);
 
         $this->response(['message' => 'El usuario se actualizo correctamente']);
     }
@@ -78,7 +84,7 @@ class UserController extends Controller
         if (!$user->status)
             return $this->response(['message' => 'El usuario ya ha sido desactivado'], 400);
 
-        $user = User::disableUser($id);
+        $user->disableUser($id);
         $this->response(['message' => 'El usuario se desactivo correctamente'], 200);
     }
 
@@ -89,7 +95,7 @@ class UserController extends Controller
             return $this->response(['message' => 'El usuario ya ha sido activado'], 400);
 
 
-        $user = User::activeUser($id);
+        $user->activeUser($id);
         $this->response(['message' => 'El usuario se activo correctamente']);
     }
 }

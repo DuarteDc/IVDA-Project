@@ -7334,3 +7334,122 @@ Stack trace:
 #5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
 #6 {main}
   thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php on line 107
+[24-Nov-2023 09:42:53 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 33
+[24-Nov-2023 11:56:41 America/Mexico_City] PHP Fatal error:  Uncaught Error: Attempt to assign property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:69
+Stack trace:
+#0 [internal function]: App\controllers\InventoryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(98): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 69
+[24-Nov-2023 12:00:03 America/Mexico_City] PHP Fatal error:  Uncaught Error: Attempt to assign property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:69
+Stack trace:
+#0 [internal function]: App\controllers\InventoryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(98): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 69
+[24-Nov-2023 12:00:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Attempt to assign property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:69
+Stack trace:
+#0 [internal function]: App\controllers\InventoryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(98): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 69
+[24-Nov-2023 15:11:00 America/Mexico_City] PHP Warning:  Undefined variable $subsecretary in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 49
+[24-Nov-2023 15:11:00 America/Mexico_City] PHP Warning:  Attempt to read property "name" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 49
+[24-Nov-2023 15:11:00 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot modify readonly property App\models\AdministrativeUnit::$subsecretary_id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:49
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->App\controllers\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(48): array_map()
+#2 [internal function]: App\controllers\SubSecretaryController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(98): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 49
+[24-Nov-2023 15:11:13 America/Mexico_City] PHP Warning:  Undefined variable $subsecretary in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 49
+[24-Nov-2023 15:11:13 America/Mexico_City] PHP Warning:  Attempt to read property "name" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 49
+[24-Nov-2023 15:11:13 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot modify readonly property App\models\AdministrativeUnit::$subsecretary_id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:49
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->App\controllers\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(48): array_map()
+#2 [internal function]: App\controllers\SubSecretaryController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(98): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 49
+[24-Nov-2023 15:12:47 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot modify readonly property App\models\AdministrativeUnit::$subsecretary_id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:49
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->App\controllers\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(48): array_map()
+#2 [internal function]: App\controllers\SubSecretaryController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(98): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 49
+[24-Nov-2023 15:13:23 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot modify readonly property App\models\AdministrativeUnit::$subsecretary_id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:49
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->App\controllers\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(48): array_map()
+#2 [internal function]: App\controllers\SubSecretaryController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(98): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 49
+[24-Nov-2023 15:14:17 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot modify readonly property App\models\AdministrativeUnit::$subsecretary_id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:50
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->App\controllers\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(49): array_map()
+#2 [internal function]: App\controllers\SubSecretaryController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(98): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 50
+[24-Nov-2023 15:14:37 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot modify readonly property App\models\AdministrativeUnit::$subsecretary_id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:50
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->App\controllers\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(49): array_map()
+#2 [internal function]: App\controllers\SubSecretaryController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(98): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 50
+[24-Nov-2023 15:15:59 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot modify readonly property App\models\AdministrativeUnit::$subsecretary_id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:50
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->App\controllers\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(49): array_map()
+#2 [internal function]: App\controllers\SubSecretaryController->show()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(98): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 50

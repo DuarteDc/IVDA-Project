@@ -42,10 +42,19 @@ class SubSecretaryController extends Controller
     public function show(string $id)
     {
         $subsecretary = SubSecretary::findOne($id);
-        if (!$subsecretary) $this->response(['message' => 'La subsecretaria que intentas buscar no existe'], 400);
+
+        if (!$subsecretary) return $this->response(['message' => 'La subsecretaria que intentas buscar no existe'], 400);
+
+        $administrative_units = $subsecretary->administrativeUnits($subsecretary);
+
+        $administrative_units = array_map(function ($administrative_unit) use ($subsecretary) {
+            $administrative_unit->subsecretary_id = $subsecretary->name;
+            return $administrative_unit;
+        }, $administrative_units);
+
         $this->response([
-            'subsecretary' => $subsecretary, 'enable_administrative_units' => $subsecretary->administrativeUnits($subsecretary),
-            'disable_administrative_units' => $subsecretary->administrativeUnits($subsecretary, false), 'users' => $subsecretary->users($subsecretary)
+            'subsecretary' => $subsecretary, 'administrative_units' => $administrative_units,
+            'inventories' => $subsecretary->inventories($subsecretary, false), 'users' => $subsecretary->users($subsecretary)
         ]);
     }
 

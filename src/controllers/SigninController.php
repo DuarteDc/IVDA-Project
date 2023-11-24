@@ -28,7 +28,6 @@ class SigninController extends Controller
         if (!$email || !$password)
             return $this->response(['message' => 'El usuario y contraseña son requeridos'], 400);
 
-
         $user = User::findByEmail($email);
 
         if (!$user || !$user->verifyPassword($password, $user->password) || !$user->status)

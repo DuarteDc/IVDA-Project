@@ -13,7 +13,7 @@ class AdministrativeUnit extends Model
     public readonly string $id;
     public readonly string $name;
     public readonly bool $status;
-    public readonly string $subsecretary_id;
+    public string $subsecretary_id;
     public readonly string $created_at;
     public $users;
 

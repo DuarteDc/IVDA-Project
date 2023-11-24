@@ -90,7 +90,7 @@ class User extends Model
     {
         try {
             $db = new Model();
-            $query = $db->prepare('SELECT * FROM users Where status = true AND email = :email');
+            $query = $db->prepare('SELECT * FROM users Where email = :email');
             $query->execute([
                 'email' => $email
             ]);
@@ -123,6 +123,7 @@ class User extends Model
     public static function UpdateOne(string $id, array $params)
     {
         try {
+            if (isset($params['subsecretary_id'])) unset($params['subsecretary_id']);
             $db = new Model();
             $query = 'SET ';
             foreach ($params as $key => $value) {
@@ -135,10 +136,10 @@ class User extends Model
                 }
             }
             $query = rtrim($query, ', ');
-            $db->query("UPDATE users $query Where id = $id");
+            return $db->query("UPDATE users $query Where id = $id");
             return self::findOne($id);
         } catch (\Throwable $th) {
-            return false;
+            return $th->getMessage();
         }
     }
 

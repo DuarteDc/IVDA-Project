@@ -67,7 +67,6 @@ class SubSecretary extends Model
             $query = 'SET ';
             foreach ($params as $key => $value) {
                 if (strlen($value)  > 0)  $query .= "{$key} = '{$value}', ";
-                
             }
             $query = rtrim($query, ', ');
             $db->query("UPDATE subsecretaries $query Where id = $id");
@@ -82,7 +81,7 @@ class SubSecretary extends Model
         try {
             $db = new Model();
             $query = $db->query("SELECT * FROM subsecretaries WHERE {$strQuery}");
-        
+
 
             if ($query->rowCount() > 0) return $query->fetchObject(__CLASS__);
 
@@ -123,41 +122,58 @@ class SubSecretary extends Model
             $type = json_encode($type);
             $query = $db->query("SELECT * FROM subsecretaries WHERE status = {$type}");
             if ($query->rowCount() > 0) return $query->fetchAll(PDO::FETCH_CLASS, self::class);
-            return false;
+            return [];
+        } catch (PDOException $e) {
+            return [];
+        }
+    }
+
+    public static function administrativeUnits(SubSecretary $subsecretary, bool $type = true)
+    {
+        try {
+            if (!$subsecretary) return false;
+
+            $type = json_encode($type);
+            $db = new Model();
+            $query = $db->query("SELECT * FROM administrative_units WHERE status = {$type} AND subsecretary_id = {$subsecretary->id}");
+            return $query->fetchAll(PDO::FETCH_CLASS, AdministrativeUnit::class);
         } catch (PDOException $e) {
             return false;
         }
     }
 
-    public static function administrativeUnits($subsecretary, bool $type = true)
+    public static function users(SubSecretary $subsecretary)
     {
-        try{
-            if (!$subsecretary) return false;
-    
-            $type = json_encode($type);
-            $db = new Model();
-            $query = $db->query("SELECT * FROM administrative_units WHERE status = {$type} AND subsecretary_id = {$subsecretary->id}");
-            return $query->fetchAll(PDO::FETCH_CLASS, AdministrativeUnit::class);
-        }catch(PDOException $e){
-            return false;
-        }
-    }
-
-    public static function users($subsecretary)
-    {
-        try{
+        try {
             if (!$subsecretary) return false;
             $db = new Model();
             $administrative_units = $subsecretary->administrativeUnits($subsecretary);
-            if(!count($administrative_units) > 0) return [];
+            if (!count($administrative_units) > 0) return [];
             $query = $db->query("SELECT * FROM users WHERE administrative_unit_id = {$administrative_units[0]->id}");
             return $query->fetchAll(PDO::FETCH_CLASS, User::class);
-        }catch(PDOException $e){
+        } catch (PDOException $e) {
             return false;
         }
     }
 
+    public static function inventories(SubSecretary $subsecretary)
+    {
+        try {
+            if (!$subsecretary) return false;
+            $db = new Model();
+            $query = $db->query("SELECT * FROM administrative_unit_inventories_subsecretary WHERE subsecretary_id = {$subsecretary->id}");
+            $relation =  $query->fetchAll(PDO::FETCH_CLASS, AdministrativeUnitInventorySubsecretary::class);
 
+            $invetories = [];
+            foreach ($relation as $key => $inventory) {
+                $query = $db->query("SELECT * FROM inventories WHERE id = {$inventory->inventory_id}");
+                array_push($invetories, $query->fetchObject(Inventory::class));
+            }
+            return $invetories;
+        } catch (PDOException $e) {
+            return [];
+        }
+    }
 
     public static function disableSubsecretary(string $id)
     {
@@ -179,6 +195,4 @@ class SubSecretary extends Model
             return false;
         }
     }
-
 }
-
