@@ -7453,3 +7453,196 @@ Stack trace:
 #7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
 #8 {main}
   thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 50
+[24-Nov-2023 23:09:36 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:12:04 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:12:05 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:12:05 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:12:05 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:15:23 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:15:23 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:15:58 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:15:59 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:15:59 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:15:59 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:15:59 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:16:00 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:16:00 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:17:45 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:17:46 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:17:47 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:17:47 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:17:55 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 23:17:55 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered an invalid name at [postgresql://DuarteDc:2j1MTmGVPHYJ@ep-dark-resonance-59199087-pooler.us-east-2.aws.neon.tech/ivda?sslmode]. in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/graham-campbell/result-type/src/Error.php(118): Dotenv\Parser\Parser::Dotenv\Parser\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php(29): GrahamCampbell\ResultType\Error->mapError()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Parser\Parser->parse()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(7): Dotenv\Dotenv->load()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 30
+[24-Nov-2023 17:20:21 America/Mexico_City] PHP Fatal error:  Uncaught Error: Typed property App\lib\Database::$db must not be accessed before initialization in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:26
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(14): App\lib\Database->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(92): App\lib\Model->__construct()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(98): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 26
