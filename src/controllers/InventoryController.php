@@ -43,12 +43,30 @@ class InventoryController extends Controller
         $this->response(['message' => 'El inventario se creo con exito']);
     }
 
+    public function update(string $id)
+    {
+        $code = $this->post('code');
+        $administrative_unit_id = $this->post('administrative_unit_id');
+        $subsecretary_id = $this->post('subsecretary_id');
+
+        if (empty($code) && empty($administrative_unit_id) && empty($subsecretary_id)) return $this->response(['message' => 'El inventario se actualizó correctamente']);
+
+        $inventory = AdministrativeUnitInventorySubsecretary::Where("id = $id");
+        if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible']);
+
+        $inventory->UpdateOne($id, ['administrative_unit_id' => $administrative_unit_id, 'subsecretary_id' => $subsecretary_id]);
+
+        $inventory = Inventory::UpdateOne($inventory->inventory_id, ['code' => $code]);
+
+        $this->response(['message' => 'El inventario se creo con exito']);
+    }
+
     public function show(string $id)
     {
         $inventory = Inventory::findOne($id);
         if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
         $inventory = AdministrativeUnitInventorySubsecretary::Where("inventory_id = {$inventory->id}");
-        $inventory->body = json_decode($inventory->body);
+        $inventory->body = json_decode($inventory->body ?? "[]");
         $this->response(['inventory' => $inventory->getDataRelations($inventory)]);
     }
 
@@ -84,6 +102,16 @@ class InventoryController extends Controller
         $this->response(['message' => 'El archivo se elimino correctamente']);
     }
 
+
+    public function finalizeInventory(string $id)
+    {
+        $inventory = Inventory::findOne($id);
+        if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
+        if ($inventory->status) return $this->response(['message' => 'El inventario ya ha sido finalizado'], 400);
+        $inventory->UpdateOne($id, ['status' => true]);
+        $this->response(['message' => 'El inventario se finalizo correctamenet']);
+    }
+
     private function addNewFile($body, $file)
     {
         if (empty($body)) {
@@ -116,7 +144,7 @@ class InventoryController extends Controller
 
     private function existFile(string $no_file, $body)
     {
-        if(empty($body)) return false;
+        if (empty($body)) return false;
         $body = json_decode($body);
         $exist = array_filter($body, fn ($file) => $file->no == $no_file);
         return count($exist) == 1;

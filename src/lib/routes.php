@@ -7,7 +7,7 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../../');
 $dotenv->load();
 
 date_default_timezone_set($_ENV['TIMEZONE']);
-
+session_start();
 $router = new \Bramus\Router\Router();
 
 function sendCorsHeaders()
@@ -16,6 +16,9 @@ function sendCorsHeaders()
     header('Content-Type: application/json; charset=utf-8');
     header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, session");
     header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, PATCH');
+    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+    header("Cache-Control: post-check=0, pre-check=0", false);
+    header("Pragma: no-cache");
 }
 
 $router->options('/api.*', function () {
@@ -28,7 +31,7 @@ $router->mount('/api.*', function () use ($router) {
     $router->post('/signin', '\App\controllers\SigninController@signin');
     $router->get('/me', '\App\controllers\SigninController@user');
 
-    $router->before('GET|POST|DELETE|PATCH|PUT', '/auth.*', function () {
+    $router->before('GET|POST|DELETE|PATCH', '/auth.*', function () {
         AuthMiddleware::checkAuth();
     });
 
@@ -48,28 +51,30 @@ $router->mount('/api.*', function () use ($router) {
         $router->delete('/subsecretaries/{id}', 'App\controllers\SubSecretaryController@delete');
         $router->get('/subsecretaries-all', 'App\controllers\SubSecretaryController@getAll');
         $router->post('/subsecretaries/active/{id}', 'App\controllers\SubSecretaryController@active');
-        
+
         $router->get('/inventories', 'App\controllers\InventoryController@index');
         $router->post('/inventories', 'App\controllers\InventoryController@save');
+        $router->patch('/inventories/{id}', 'App\controllers\InventoryController@update');
         $router->post('/inventories/add-file/{id}', 'App\controllers\InventoryController@addFile');
         $router->delete('/inventories/remove-file/{id}/{no_file}', 'App\controllers\InventoryController@deleteFile');
         $router->get('/inventories/{id}', 'App\controllers\InventoryController@show');
-        
+        $router->post('/inventories/finalize/{id}', 'App\controllers\InventoryController@finalizeInventory');
+
 
         $router->get('/administrative-units', 'App\controllers\AdministrativeUnitController@index');
         $router->get('/administrative-units/subsecretary/{subsecretary_id}', 'App\controllers\AdministrativeUnitController@getBySubsecretary');
+        $router->patch('/administrative-units/{id}', 'App\controllers\AdministrativeUnitController@update');
         $router->post('/administrative-units', 'App\controllers\AdministrativeUnitController@save');
         $router->get('/administrative-units/all', 'App\controllers\AdministrativeUnitController@getAll');
         $router->delete('/administrative-units/{id}', 'App\controllers\AdministrativeUnitController@delete');
         $router->post('/administrative-units/enable/{id}', 'App\controllers\AdministrativeUnitController@active');
         $router->get('/administrative-units/{id}', 'App\controllers\AdministrativeUnitController@show');
 
-        
         $router->get('/users/create', 'App\controllers\UserController@create');
         $router->post('/users/save', 'App\controllers\UserController@save');
-        
+
         $router->post('/users/{id}/delete', 'App\controllers\UserController@delete');
-        
+
         $router->get('/profile', 'App\controllers\ProfileController@index');
         $router->post('/profile/update', 'App\controllers\ProfileController@update');
     });
@@ -85,7 +90,7 @@ $router->before('GET', '/', function () {
 
 $router->before('GET', '/auth.*', function () {
     // AuthMiddleware::checkAuth();
-    
+
 });
 
 $router->set404('/.*', '\App\controllers\NotFoundController@__invoke');

@@ -3,6 +3,7 @@
 namespace App\models;
 
 use App\lib\Model;
+use PDO;
 use PDOException;
 
 class AdministrativeUnitInventorySubsecretary extends Model
@@ -18,6 +19,21 @@ class AdministrativeUnitInventorySubsecretary extends Model
     public function __construct()
     {
         parent::__construct();
+    }
+
+    public static function findOne(string $id)
+    {
+        try {
+            $db = new Model();
+            $query = $db->prepare('SELECT * FROM administrative_unit_inventories_subsecretary Where id = :id');
+            $query->execute(['id' => $id]);
+
+            if ($query->rowCount() > 0) return $query->fetchObject(self::class);
+
+            return [false];
+        } catch (PDOException $e) {
+            return false;
+        }
     }
 
     public static function save(string $administrative_unit_id, string $inventory_id, string $subsecretary_id)
@@ -64,10 +80,27 @@ class AdministrativeUnitInventorySubsecretary extends Model
         try {
             $db = new Model;
             $inventory->subsecretary_id = $db->query("SELECT id, name FROM subsecretaries WHERE id = {$inventory->subsecretary_id}")->fetchObject(SubSecretary::class);
-            $inventory->inventory_id = $db->query("SELECT id, name, code FROM inventories WHERE id = {$inventory->inventory_id}")->fetchObject(Inventory::class);
+            $inventory->inventory_id = $db->query("SELECT id, name, status, code FROM inventories WHERE id = {$inventory->inventory_id}")->fetchObject(Inventory::class);
             $inventory->administrative_unit_id = $db->query("SELECT id, name FROM administrative_units WHERE id = {$inventory->administrative_unit_id}")->fetchObject(AdministrativeUnit::class);
             return $inventory;
         } catch (\Throwable $th) {
+            return false;
+        }
+    }
+
+
+    public static function UpdateOne(int $id, array $params)
+    {
+        try {
+            $db = new Model();
+            $query = 'SET ';
+            foreach ($params as $key => $value) {
+                if (strlen($value)  > 0)  $query .= "{$key} = '{$value}', ";
+            }
+            $query = rtrim($query, ', ');
+            $db->query("UPDATE administrative_unit_inventories_subsecretary $query Where id = $id");
+            self::findOne($id);
+        } catch (PDOException $th) {
             return false;
         }
     }

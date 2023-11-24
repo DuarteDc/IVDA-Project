@@ -43,7 +43,7 @@ class SigninController extends Controller
         $session = $_SERVER['HTTP_SESSION'] ?? '';
         if (!$session) return $this->response(['message' => "unauthorized - 401"], 401);
         $session = $this::isValidToken($session);
-        // if ($session instanceof Exception) return $this->response(['message' => $session->getMessage()], 401);
+        if ($session instanceof Exception) return $this->response(['message' => $session->getMessage()], 401);
         $this->response($session);
     }
 }

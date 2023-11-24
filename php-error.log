@@ -7190,3 +7190,147 @@ Stack trace:
 #5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
 #6 {main}
   thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:40:44 America/Mexico_City] PHP Warning:  Attempt to read property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:40:44 America/Mexico_City] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:40:44 America/Mexico_City] PHP Fatal error:  Uncaught Error: Attempt to assign property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:51
+Stack trace:
+#0 [internal function]: App\controllers\InventoryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(93): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:44:15 America/Mexico_City] PHP Warning:  Attempt to read property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:44:15 America/Mexico_City] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:44:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Attempt to assign property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:51
+Stack trace:
+#0 [internal function]: App\controllers\InventoryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(93): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:46:39 America/Mexico_City] PHP Warning:  Attempt to read property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:46:39 America/Mexico_City] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:46:39 America/Mexico_City] PHP Fatal error:  Uncaught Error: Attempt to assign property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:51
+Stack trace:
+#0 [internal function]: App\controllers\InventoryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(93): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:47:00 America/Mexico_City] PHP Warning:  Attempt to read property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:47:00 America/Mexico_City] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:47:00 America/Mexico_City] PHP Fatal error:  Uncaught Error: Attempt to assign property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:51
+Stack trace:
+#0 [internal function]: App\controllers\InventoryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(93): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:48:35 America/Mexico_City] PHP Warning:  Attempt to read property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:48:35 America/Mexico_City] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:48:35 America/Mexico_City] PHP Fatal error:  Uncaught Error: Attempt to assign property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:51
+Stack trace:
+#0 [internal function]: App\controllers\InventoryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(93): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:48:48 America/Mexico_City] PHP Warning:  Attempt to read property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:48:48 America/Mexico_City] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:48:48 America/Mexico_City] PHP Fatal error:  Uncaught Error: Attempt to assign property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:51
+Stack trace:
+#0 [internal function]: App\controllers\InventoryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(93): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:50:28 America/Mexico_City] PHP Warning:  Attempt to read property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:50:28 America/Mexico_City] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 09:50:28 America/Mexico_City] PHP Fatal error:  Uncaught Error: Attempt to assign property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:51
+Stack trace:
+#0 [internal function]: App\controllers\InventoryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(93): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 51
+[23-Nov-2023 11:13:06 America/Mexico_City] PHP Warning:  Attempt to read property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 64
+[23-Nov-2023 11:13:06 America/Mexico_City] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 64
+[23-Nov-2023 11:13:06 America/Mexico_City] PHP Fatal error:  Uncaught Error: Attempt to assign property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:64
+Stack trace:
+#0 [internal function]: App\controllers\InventoryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 64
+[23-Nov-2023 13:29:56 America/Mexico_City] PHP Warning:  Attempt to read property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 69
+[23-Nov-2023 13:29:57 America/Mexico_City] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 69
+[23-Nov-2023 13:29:57 America/Mexico_City] PHP Fatal error:  Uncaught Error: Attempt to assign property "body" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:69
+Stack trace:
+#0 [internal function]: App\controllers\InventoryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 69
+[23-Nov-2023 13:30:08 America/Mexico_City] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 69
+[23-Nov-2023 13:30:39 America/Mexico_City] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 69
+[23-Nov-2023 13:31:07 America/Mexico_City] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 69
+[23-Nov-2023 13:31:13 America/Mexico_City] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 69
+[23-Nov-2023 13:31:34 America/Mexico_City] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 69
+[23-Nov-2023 13:32:03 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:69
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(69): json_decode()
+#1 [internal function]: App\controllers\InventoryController->show()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 69
+[23-Nov-2023 17:32:37 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function UpdateOne() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php:107
+Stack trace:
+#0 [internal function]: App\controllers\AdministrativeUnitController->update()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(98): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php on line 107
+[23-Nov-2023 17:32:56 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function UpdateOne() on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php:107
+Stack trace:
+#0 [internal function]: App\controllers\AdministrativeUnitController->update()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(98): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php on line 107

@@ -122,4 +122,21 @@ class AdministrativeUnit extends Model
             return [];
         }
     }
+    
+    public static function UpdateOne(string $id, array $params)
+    {
+        try {
+            $db = new Model();
+            $query = 'SET ';
+            foreach ($params as $key => $value) {
+                if (strlen($value)  > 0)  $query .= "{$key} = '{$value}', ";
+                
+            }
+            $query = rtrim($query, ', ');
+            $db->query("UPDATE subsecretaries $query Where id = $id");
+            return self::findOne($id);
+        } catch (\Throwable $th) {
+            return false;
+        }
+    }
 }

@@ -66,5 +66,18 @@ class Inventory extends Model
         }
     }
 
-
+    public static function UpdateOne(int $id, array $params)
+    {
+        try {
+            $db = new Model();
+            $query = 'SET ';
+            foreach ($params as $key => $value) {
+                if (strlen($value)  > 0)  $query .= "{$key} = '{$value}', ";
+            }
+            $query = rtrim($query, ', ');
+            return $db->query("UPDATE inventories $query Where id = $id");
+        } catch (PDOException $th) {
+            return false;
+        }
+    }
 }
