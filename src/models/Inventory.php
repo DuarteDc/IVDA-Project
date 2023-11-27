@@ -55,6 +55,19 @@ class Inventory extends Model
         }
     }
 
+    public static function Where(string $strQuery)
+    {
+        try {
+            $db = new Model();
+            $query = $db->query("SELECT * FROM inventories WHERE {$strQuery}");
+
+            if ($query->rowCount() > 0) return $query->fetchObject(__CLASS__);
+
+            return false;
+        } catch (PDOException $e) {
+            return false;
+        }
+    }
 
     public function save(string $name, string $code, string $user_id) {
         try{

@@ -70,6 +70,16 @@ class InventoryController extends Controller
         $this->response(['inventory' => $inventory->getDataRelations($inventory)]);
     }
 
+    public function getInventoryByUser()
+    {
+        $administrative_unit_id = $this::auth()->administrative_unit_id;
+        $inventory = AdministrativeUnitInventorySubsecretary::Where("administrative_unit_id = $administrative_unit_id");
+        if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
+        $inventory = $inventory->getDataRelations($inventory);
+        if ($inventory->inventory_id->status) return $this->response(['message' => 'El inventario ya ha sido finalizado'], 400);
+        $this->response(['inventory' => $inventory->inventory_id]);
+    }
+
     public function addFile(string $id)
     {
         $inventory = Inventory::findOne($id);

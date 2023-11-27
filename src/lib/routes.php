@@ -57,6 +57,7 @@ $router->mount('/api.*', function () use ($router) {
         $router->patch('/inventories/{id}', 'App\controllers\InventoryController@update');
         $router->post('/inventories/add-file/{id}', 'App\controllers\InventoryController@addFile');
         $router->delete('/inventories/remove-file/{id}/{no_file}', 'App\controllers\InventoryController@deleteFile');
+        $router->get('/inventories/user', 'App\controllers\InventoryController@getInventoryByUser');
         $router->get('/inventories/{id}', 'App\controllers\InventoryController@show');
         $router->post('/inventories/finalize/{id}', 'App\controllers\InventoryController@finalizeInventory');
 
@@ -70,11 +71,6 @@ $router->mount('/api.*', function () use ($router) {
         $router->post('/administrative-units/enable/{id}', 'App\controllers\AdministrativeUnitController@active');
         $router->get('/administrative-units/{id}', 'App\controllers\AdministrativeUnitController@show');
 
-        $router->get('/users/create', 'App\controllers\UserController@create');
-        $router->post('/users/save', 'App\controllers\UserController@save');
-
-        $router->post('/users/{id}/delete', 'App\controllers\UserController@delete');
-
         $router->get('/profile', 'App\controllers\ProfileController@index');
         $router->post('/profile/update', 'App\controllers\ProfileController@update');
     });
@@ -82,16 +78,6 @@ $router->mount('/api.*', function () use ($router) {
 
 
 $router->get('/.*', '\App\controllers\SigninController@index');
-
-$router->before('GET', '/', function () {
-    // AuthMiddleware::isAuthenticate();
-});
-
-
-$router->before('GET', '/auth.*', function () {
-    // AuthMiddleware::checkAuth();
-
-});
 
 $router->set404('/.*', '\App\controllers\NotFoundController@__invoke');
 
