@@ -15,6 +15,7 @@
         "bramus/router": "~1.6",
         "vlucas/phpdotenv": "^5.5",
         "firebase/php-jwt": "^6.9",
-        "paragonie/sodium_compat": "^1.20"
+        "paragonie/sodium_compat": "^1.20",
+        "dompdf/dompdf": "^2.0"
     }
 }

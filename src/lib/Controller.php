@@ -5,10 +5,11 @@ namespace App\lib;
 use App\emuns\TypeAlert;
 use App\lib\View;
 use App\traits\AuthTrait;
+use App\traits\PDFTrait;
 
 class Controller
 {
-    use AuthTrait;
+    use AuthTrait, PDFTrait;
 
     private View $view;
 
@@ -16,7 +17,8 @@ class Controller
         200 => '200 OK',
         400 => '400 Bad Request',
         401 => '401 Unauthorized',
-        422 => 'Unprocessable Entity',
+        422 => '422 Unprocessable Entity',
+        403 => '403 Forbidden',
         404 => '404 Not Found',
         500 => '500 Internal Server Error'
     ];
@@ -31,12 +33,18 @@ class Controller
         $this->view->render($name, $data);
     }
 
+    public function view(String $name, array $data = [])
+    {
+        return $this->view->view($name, $data);
+    }
+
     public function setMessage(TypeAlert $key, string $message)
     {
         $this->view->setMessage($key, $message);
     }
 
-    protected function request() {
+    protected function request()
+    {
         $data = file_get_contents('php://input');
         return json_decode($data, true);
     }
@@ -57,18 +65,18 @@ class Controller
         return json_decode($_GET[$param]);
     }
 
-    protected function response( $data, $status = 200 ) {
-        
+    protected function response($data, $status = 200)
+    {
+
         header("Access-Control-Allow-Origin: *");
         header("Cache-Control: no-transform,public,max-age=300,s-maxage=900");
         header("Content-Type: application/json");
 
         http_response_code($status);
 
-        header('Status: '.$this->status[$status]);
+        header('Status: ' . $this->status[$status]);
 
         echo json_encode($data);
         exit();
     }
-
 }

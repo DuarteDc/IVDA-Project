@@ -61,7 +61,6 @@ $router->mount('/api.*', function () use ($router) {
         $router->get('/inventories/{id}', 'App\controllers\InventoryController@show');
         $router->post('/inventories/finalize/{id}', 'App\controllers\InventoryController@finalizeInventory');
 
-
         $router->get('/administrative-units', 'App\controllers\AdministrativeUnitController@index');
         $router->get('/administrative-units/subsecretary/{subsecretary_id}', 'App\controllers\AdministrativeUnitController@getBySubsecretary');
         $router->patch('/administrative-units/{id}', 'App\controllers\AdministrativeUnitController@update');
@@ -70,6 +69,8 @@ $router->mount('/api.*', function () use ($router) {
         $router->delete('/administrative-units/{id}', 'App\controllers\AdministrativeUnitController@delete');
         $router->post('/administrative-units/enable/{id}', 'App\controllers\AdministrativeUnitController@active');
         $router->get('/administrative-units/{id}', 'App\controllers\AdministrativeUnitController@show');
+
+        $router->get('/report/generate/{id}', 'App\controllers\ReportController@generateReport');
 
         $router->get('/profile', 'App\controllers\ProfileController@index');
         $router->post('/profile/update', 'App\controllers\ProfileController@update');

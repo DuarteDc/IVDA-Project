@@ -7646,3 +7646,943 @@ Stack trace:
 #8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
 #9 {main}
   thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 26
+[27-Nov-2023 09:17:27 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(19): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(63): App\lib\Model->query()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(21): App\models\User::find()
+#3 [internal function]: App\controllers\UserController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[27-Nov-2023 09:17:46 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(19): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(63): App\lib\Model->query()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(21): App\models\User::find()
+#3 [internal function]: App\controllers\UserController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[27-Nov-2023 09:18:29 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(19): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(63): App\lib\Model->query()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(21): App\models\User::find()
+#3 [internal function]: App\controllers\UserController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[27-Nov-2023 09:19:15 America/Mexico_City] PHP Fatal error:  Uncaught Firebase\JWT\ExpiredException: Expired token in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php:176
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(17): Firebase\JWT\JWT::decode()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(70): App\models\User::auth()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(21): App\models\User::find()
+#3 [internal function]: App\controllers\UserController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php on line 176
+[27-Nov-2023 09:28:40 America/Mexico_City] PHP Fatal error:  Uncaught Firebase\JWT\ExpiredException: Expired token in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php:176
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(17): Firebase\JWT\JWT::decode()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(70): App\models\User::auth()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(21): App\models\User::find()
+#3 [internal function]: App\controllers\UserController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php on line 176
+[27-Nov-2023 09:30:14 America/Mexico_City] PHP Fatal error:  Uncaught Firebase\JWT\ExpiredException: Expired token in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php:176
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(17): Firebase\JWT\JWT::decode()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(75): App\lib\Controller::auth()
+#2 [internal function]: App\controllers\InventoryController->getInventoryByUser()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php on line 176
+[27-Nov-2023 09:30:17 America/Mexico_City] PHP Fatal error:  Uncaught Firebase\JWT\ExpiredException: Expired token in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php:176
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(17): Firebase\JWT\JWT::decode()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(75): App\lib\Controller::auth()
+#2 [internal function]: App\controllers\InventoryController->getInventoryByUser()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php on line 176
+[27-Nov-2023 09:34:08 America/Mexico_City] PHP Fatal error:  Uncaught Firebase\JWT\ExpiredException: Expired token in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php:176
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(17): Firebase\JWT\JWT::decode()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(75): App\lib\Controller::auth()
+#2 [internal function]: App\controllers\InventoryController->getInventoryByUser()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php on line 176
+[27-Nov-2023 09:34:48 America/Mexico_City] PHP Fatal error:  Uncaught Firebase\JWT\ExpiredException: Expired token in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php:176
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(17): Firebase\JWT\JWT::decode()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(75): App\lib\Controller::auth()
+#2 [internal function]: App\controllers\InventoryController->getInventoryByUser()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php on line 176
+[27-Nov-2023 09:36:00 America/Mexico_City] PHP Fatal error:  Uncaught Firebase\JWT\ExpiredException: Expired token in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php:176
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(17): Firebase\JWT\JWT::decode()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(75): App\lib\Controller::auth()
+#2 [internal function]: App\controllers\InventoryController->getInventoryByUser()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/firebase/php-jwt/src/JWT.php on line 176
+[27-Nov-2023 09:37:08 America/Mexico_City] PHP Warning:  Attempt to read property "administrative_unit_id" on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 75
+[27-Nov-2023 09:39:45 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function getMessage() on string in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php:15
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(35): App\middlewares\AuthMiddleware::checkAuth()
+#1 [internal function]: {closure}()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(84): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php on line 15
+[27-Nov-2023 11:02:27 America/Mexico_City] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 11:03:02 America/Mexico_City] PHP Warning:  require_once(dompdf/autoload.inc.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php on line 18
+[27-Nov-2023 11:03:02 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required 'dompdf/autoload.inc.php' (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php on line 18
+[27-Nov-2023 11:03:02 America/Mexico_City] PHP Warning:  require_once(dompdf/autoload.inc.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php on line 18
+[27-Nov-2023 11:03:02 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required 'dompdf/autoload.inc.php' (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php on line 18
+[27-Nov-2023 11:03:23 America/Mexico_City] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 11:03:23 America/Mexico_City] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 11:07:00 America/Mexico_City] PHP Warning:  require_once(dompdf/autoload.inc.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php on line 17
+[27-Nov-2023 11:07:00 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required 'dompdf/autoload.inc.php' (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php on line 17
+[27-Nov-2023 11:09:38 America/Mexico_City] PHP Warning:  require(/home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf): Failed to open stream: Success in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php on line 17
+[27-Nov-2023 11:09:38 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduardo/Documentos/ICEGEM/IVDA/public/../vendor/dompdf/dompdf/' (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php on line 17
+[27-Nov-2023 11:09:47 America/Mexico_City] PHP Warning:  require_once(dompdf/autoload.inc.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php on line 18
+[27-Nov-2023 11:09:47 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required 'dompdf/autoload.inc.php' (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php on line 18
+[27-Nov-2023 11:09:48 America/Mexico_City] PHP Warning:  require_once(dompdf/autoload.inc.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php on line 18
+[27-Nov-2023 11:09:48 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required 'dompdf/autoload.inc.php' (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php on line 18
+[27-Nov-2023 11:10:49 America/Mexico_City] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 11:11:27 America/Mexico_City] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 17:11:40 UTC] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 17:11:41 UTC] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 11:11:59 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: spl_autoload_register(): Argument #1 ($callback) must be a valid callback or null, function "/home/eduardo/Documentos/ICEGEM/IVDA/public/../vendor/dompdf/dompdf/dompdf_config.inc.php" not found or invalid function name in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php:17
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(17): spl_autoload_register()
+#1 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php on line 17
+[27-Nov-2023 11:24:38 America/Mexico_City] PHP Parse error:  syntax error, unexpected token "echo", expecting ";" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 22
+[27-Nov-2023 12:12:51 America/Mexico_City] PHP Parse error:  syntax error, unexpected token "=" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 17
+[27-Nov-2023 12:13:29 America/Mexico_City] PHP Parse error:  syntax error, unexpected token "=" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 17
+[27-Nov-2023 12:13:37 America/Mexico_City] PHP Deprecated:  Optional parameter $resize declared before required parameter $repy is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mpdf/mpdf/mpdf.php on line 2147
+[27-Nov-2023 12:13:37 America/Mexico_City] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mpdf/mpdf/mpdf.php on line 2349
+[27-Nov-2023 12:13:46 America/Mexico_City] PHP Deprecated:  Optional parameter $resize declared before required parameter $repy is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mpdf/mpdf/mpdf.php on line 2147
+[27-Nov-2023 12:13:46 America/Mexico_City] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mpdf/mpdf/mpdf.php on line 2349
+[27-Nov-2023 12:13:57 America/Mexico_City] PHP Deprecated:  Optional parameter $resize declared before required parameter $repy is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mpdf/mpdf/mpdf.php on line 2147
+[27-Nov-2023 12:13:57 America/Mexico_City] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mpdf/mpdf/mpdf.php on line 2349
+[27-Nov-2023 12:13:57 America/Mexico_City] PHP Deprecated:  Optional parameter $resize declared before required parameter $repy is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mpdf/mpdf/mpdf.php on line 2147
+[27-Nov-2023 12:13:57 America/Mexico_City] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mpdf/mpdf/mpdf.php on line 2349
+[27-Nov-2023 12:14:25 America/Mexico_City] PHP Deprecated:  Optional parameter $resize declared before required parameter $repy is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mpdf/mpdf/mpdf.php on line 2147
+[27-Nov-2023 12:14:25 America/Mexico_City] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mpdf/mpdf/mpdf.php on line 2349
+[27-Nov-2023 12:14:26 America/Mexico_City] PHP Deprecated:  Optional parameter $resize declared before required parameter $repy is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mpdf/mpdf/mpdf.php on line 2147
+[27-Nov-2023 12:14:26 America/Mexico_City] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mpdf/mpdf/mpdf.php on line 2349
+[27-Nov-2023 12:15:12 America/Mexico_City] PHP Deprecated:  Optional parameter $resize declared before required parameter $repy is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mpdf/mpdf/mpdf.php on line 2147
+[27-Nov-2023 12:15:12 America/Mexico_City] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mpdf/mpdf/mpdf.php on line 2349
+[27-Nov-2023 12:19:04 America/Mexico_City] PHP Parse error:  syntax error, unexpected token "=" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 17
+[27-Nov-2023 12:44:36 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:44:36 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:44:36 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:44:36 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:44:36 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:44:36 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:44:36 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:44:36 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:44:36 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:44:36 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:44:36 America/Mexico_City] PHP Deprecated:  Optional parameter $channels declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:46:27 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:46:27 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:46:27 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:46:27 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:46:27 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:46:27 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:46:27 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:46:27 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:46:27 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:46:27 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:46:27 America/Mexico_City] PHP Deprecated:  Optional parameter $channels declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:46:53 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:46:53 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:46:53 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:46:53 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:46:53 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:46:53 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:46:53 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:46:53 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:46:53 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:46:53 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:46:53 America/Mexico_City] PHP Deprecated:  Optional parameter $channels declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:46:54 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:46:54 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:46:54 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:46:54 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:46:54 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:46:54 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:46:54 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:46:54 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:46:54 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:46:54 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:46:54 America/Mexico_City] PHP Deprecated:  Optional parameter $channels declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:47:33 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:47:33 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:47:33 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:47:33 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:47:33 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:47:33 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:47:33 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:47:33 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:47:33 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:47:33 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:47:33 America/Mexico_City] PHP Deprecated:  Optional parameter $channels declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:47:34 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:47:34 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:47:34 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:47:34 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:47:34 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:47:34 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:47:34 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:47:34 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:47:34 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:47:34 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:47:34 America/Mexico_City] PHP Deprecated:  Optional parameter $channels declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:47:54 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:47:54 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:47:54 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:47:54 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:47:54 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:47:54 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:47:54 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:47:54 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:47:54 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:47:54 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:47:54 America/Mexico_City] PHP Deprecated:  Optional parameter $channels declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:47:55 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:47:55 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 182
+[27-Nov-2023 12:47:55 America/Mexico_City] PHP Deprecated:  Optional parameter $paper declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:47:55 America/Mexico_City] PHP Deprecated:  Optional parameter $orientation declared before required parameter $dompdf is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Canvas.php on line 27
+[27-Nov-2023 12:47:55 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:47:55 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $img is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 4723
+[27-Nov-2023 12:47:55 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:47:55 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $data is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5066
+[27-Nov-2023 12:47:55 America/Mexico_City] PHP Deprecated:  Optional parameter $w declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:47:55 America/Mexico_City] PHP Deprecated:  Optional parameter $h declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:47:55 America/Mexico_City] PHP Deprecated:  Optional parameter $channels declared before required parameter $imgname is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/lib/Cpdf.php on line 5410
+[27-Nov-2023 12:50:48 America/Mexico_City] PHP Warning:  include_once(./vendor/autoload.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 7
+[27-Nov-2023 12:50:48 America/Mexico_City] PHP Warning:  include_once(): Failed opening './vendor/autoload.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 7
+[27-Nov-2023 12:50:49 America/Mexico_City] PHP Warning:  include_once(./vendor/autoload.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 7
+[27-Nov-2023 12:50:49 America/Mexico_City] PHP Warning:  include_once(): Failed opening './vendor/autoload.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 7
+[27-Nov-2023 18:52:53 UTC] PHP Warning:  require_once(dompdf/autoload.inc.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:52:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'dompdf/autoload.inc.php' (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php:24
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require()
+#1 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:53:24 UTC] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 18:53:25 UTC] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 18:53:25 UTC] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 18:53:37 UTC] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 18:53:38 UTC] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 12:55:05 America/Mexico_City] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 12:55:06 America/Mexico_City] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 12:55:19 America/Mexico_City] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 12:55:26 America/Mexico_City] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 18:56:04 UTC] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 18:56:05 UTC] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 18:56:19 UTC] PHP Warning:  require_once(/home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf_config.inc.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:56:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf_config.inc.php' (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php:24
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require()
+#1 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:56:38 UTC] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 18:57:15 UTC] PHP Warning:  require_once(/home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/autoload.inc.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:57:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/autoload.inc.php' (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php:24
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require()
+#1 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:57:16 UTC] PHP Warning:  require_once(/home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/autoload.inc.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:57:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/autoload.inc.php' (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php:24
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require()
+#1 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:57:27 UTC] PHP Warning:  require_once(/home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/autoload.inc.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:57:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/autoload.inc.php' (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php:24
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require()
+#1 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:57:28 UTC] PHP Warning:  require_once(/home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/autoload.inc.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:57:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/autoload.inc.php' (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php:24
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require()
+#1 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:57:28 UTC] PHP Warning:  require_once(/home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/autoload.inc.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:57:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/autoload.inc.php' (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php:24
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require()
+#1 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:57:28 UTC] PHP Warning:  require_once(/home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/autoload.inc.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:57:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/autoload.inc.php' (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php:24
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(14): require()
+#1 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/autoload.php on line 24
+[27-Nov-2023 18:57:53 UTC] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 18:57:54 UTC] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 18:58:26 UTC] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 12:58:52 America/Mexico_City] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 12:58:53 America/Mexico_City] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 12:59:06 America/Mexico_City] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/autoload.inc.php on line 83
+[27-Nov-2023 13:01:04 America/Mexico_City] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/dompdf.cls.php on line 743
+[27-Nov-2023 13:01:04 America/Mexico_City] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/dompdf.cls.php on line 763
+[27-Nov-2023 13:01:47 America/Mexico_City] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/dompdf.cls.php on line 743
+[27-Nov-2023 13:01:47 America/Mexico_City] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/dompdf.cls.php on line 763
+[27-Nov-2023 13:01:48 America/Mexico_City] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/dompdf.cls.php on line 743
+[27-Nov-2023 13:01:48 America/Mexico_City] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/include/dompdf.cls.php on line 763
+[27-Nov-2023 13:17:10 America/Mexico_City] PHP Parse error:  syntax error, unexpected token "(", expecting "," or ";" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 6
+[27-Nov-2023 13:17:11 America/Mexico_City] PHP Parse error:  syntax error, unexpected token "(", expecting "," or ";" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 6
+[27-Nov-2023 13:18:55 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "Dompdf\Dompdf" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php(12): App\lib\Controller->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\ReportController->__construct()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 30
+[27-Nov-2023 13:19:27 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "Dompdf\Dompdf" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php(12): App\lib\Controller->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\ReportController->__construct()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 30
+[27-Nov-2023 13:19:28 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "Dompdf\Dompdf" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php(12): App\lib\Controller->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\ReportController->__construct()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 30
+[27-Nov-2023 13:22:41 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "Dompdf\Dompdf" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php(12): App\lib\Controller->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\ReportController->__construct()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 30
+[27-Nov-2023 13:22:43 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "Dompdf\Dompdf" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php(12): App\lib\Controller->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\ReportController->__construct()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 30
+[27-Nov-2023 13:35:20 America/Mexico_City] PHP Warning:  include(/home/eduardo/Documentos/ICEGEM/IVDA/src/lib/font/helveticab.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/FPDF.php on line 1139
+[27-Nov-2023 13:35:20 America/Mexico_City] PHP Warning:  include(): Failed opening '/home/eduardo/Documentos/ICEGEM/IVDA/src/lib/font/helveticab.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/FPDF.php on line 1139
+[27-Nov-2023 13:35:21 America/Mexico_City] PHP Warning:  include(/home/eduardo/Documentos/ICEGEM/IVDA/src/lib/font/helveticab.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/FPDF.php on line 1139
+[27-Nov-2023 13:35:21 America/Mexico_City] PHP Warning:  include(): Failed opening '/home/eduardo/Documentos/ICEGEM/IVDA/src/lib/font/helveticab.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/FPDF.php on line 1139
+[27-Nov-2023 13:47:31 America/Mexico_City] PHP Deprecated:  mb_detect_encoding(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 427
+[27-Nov-2023 13:47:31 America/Mexico_City] PHP Deprecated:  mb_convert_encoding(): Passing null to parameter #1 ($string) of type array|string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 435
+[27-Nov-2023 13:47:32 America/Mexico_City] PHP Deprecated:  mb_detect_encoding(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 427
+[27-Nov-2023 13:47:32 America/Mexico_City] PHP Deprecated:  mb_convert_encoding(): Passing null to parameter #1 ($string) of type array|string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 435
+[27-Nov-2023 13:47:52 America/Mexico_City] PHP Deprecated:  mb_detect_encoding(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 427
+[27-Nov-2023 13:47:52 America/Mexico_City] PHP Deprecated:  mb_convert_encoding(): Passing null to parameter #1 ($string) of type array|string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 435
+[27-Nov-2023 13:47:53 America/Mexico_City] PHP Deprecated:  mb_detect_encoding(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 427
+[27-Nov-2023 13:47:53 America/Mexico_City] PHP Deprecated:  mb_convert_encoding(): Passing null to parameter #1 ($string) of type array|string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 435
+[27-Nov-2023 13:47:53 America/Mexico_City] PHP Deprecated:  mb_detect_encoding(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 427
+[27-Nov-2023 13:47:53 America/Mexico_City] PHP Deprecated:  mb_convert_encoding(): Passing null to parameter #1 ($string) of type array|string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 435
+[27-Nov-2023 13:49:56 America/Mexico_City] PHP Deprecated:  mb_detect_encoding(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 427
+[27-Nov-2023 13:49:56 America/Mexico_City] PHP Deprecated:  mb_convert_encoding(): Passing null to parameter #1 ($string) of type array|string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 435
+[27-Nov-2023 13:51:26 America/Mexico_City] PHP Deprecated:  file_get_contents(): Passing null to parameter #1 ($filename) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 19
+[27-Nov-2023 13:52:03 America/Mexico_City] PHP Deprecated:  file_get_contents(): Passing null to parameter #1 ($filename) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 19
+[27-Nov-2023 14:11:04 America/Mexico_City] PHP Warning:  Undefined variable $dompdf in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 21
+[27-Nov-2023 14:11:41 America/Mexico_City] PHP Deprecated:  mb_detect_encoding(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 427
+[27-Nov-2023 14:11:41 America/Mexico_City] PHP Deprecated:  mb_convert_encoding(): Passing null to parameter #1 ($string) of type array|string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 435
+[27-Nov-2023 14:11:44 America/Mexico_City] PHP Deprecated:  mb_detect_encoding(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 427
+[27-Nov-2023 14:11:44 America/Mexico_City] PHP Deprecated:  mb_convert_encoding(): Passing null to parameter #1 ($string) of type array|string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 435
+[27-Nov-2023 14:13:24 America/Mexico_City] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 20
+[27-Nov-2023 14:13:26 America/Mexico_City] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 20
+[27-Nov-2023 14:20:20 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 21
+[27-Nov-2023 14:24:11 America/Mexico_City] PHP Warning:  require(/home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php/../views/report/index.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php on line 24
+[27-Nov-2023 14:29:51 America/Mexico_City] PHP Parse error:  syntax error, unexpected token "{", expecting "function" or "const" in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 37
+[27-Nov-2023 14:30:02 America/Mexico_City] PHP Parse error:  syntax error, unexpected token "{", expecting "function" or "const" in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 37
+[27-Nov-2023 14:31:07 America/Mexico_City] PHP Parse error:  syntax error, unexpected token "{", expecting "function" or "const" in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 37
+[27-Nov-2023 14:36:13 America/Mexico_City] PHP Warning:  Attempt to read property "status" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 21
+[27-Nov-2023 15:40:13 America/Mexico_City] PHP Warning:  Undefined variable $files in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:40:13 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:41:42 America/Mexico_City] PHP Warning:  Undefined variable $inventory in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:41:42 America/Mexico_City] PHP Warning:  Attempt to read property "files" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:41:42 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:42:15 America/Mexico_City] PHP Warning:  Undefined variable $inventory in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:42:15 America/Mexico_City] PHP Warning:  Attempt to read property "files" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:42:15 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:42:34 America/Mexico_City] PHP Warning:  Undefined variable $inventory in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:42:34 America/Mexico_City] PHP Warning:  Attempt to read property "files" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:42:34 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:42:52 America/Mexico_City] PHP Warning:  Undefined variable $inventory in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:42:52 America/Mexico_City] PHP Warning:  Attempt to read property "files" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:42:52 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:43:01 America/Mexico_City] PHP Warning:  Undefined variable $inventory in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:43:01 America/Mexico_City] PHP Warning:  Attempt to read property "body" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:43:01 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:43:11 America/Mexico_City] PHP Warning:  Undefined variable $inventory in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:43:11 America/Mexico_City] PHP Warning:  Undefined variable $inventory in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 114
+[27-Nov-2023 15:43:11 America/Mexico_City] PHP Warning:  Attempt to read property "body" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 114
+[27-Nov-2023 15:43:11 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 114
+[27-Nov-2023 15:43:25 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 113
+[27-Nov-2023 15:44:14 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 118
+[27-Nov-2023 15:44:14 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 118
+[27-Nov-2023 15:44:30 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 118
+[27-Nov-2023 15:44:30 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 118
+[27-Nov-2023 15:44:59 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 15:44:59 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 15:45:11 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 15:45:11 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 15:45:16 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 15:45:16 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 15:45:30 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 15:45:30 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 15:45:41 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 118
+[27-Nov-2023 15:45:41 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 118
+[27-Nov-2023 15:45:56 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 117
+[27-Nov-2023 15:45:56 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 117
+[27-Nov-2023 15:51:50 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 117
+[27-Nov-2023 15:51:50 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$secction in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 117
+[27-Nov-2023 16:36:35 America/Mexico_City] PHP Parse error:  syntax error, unexpected identifier "htmlentities", expecting ":" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 34
+[27-Nov-2023 16:41:18 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 16:41:18 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 16:41:18 America/Mexico_City] PHP Warning:  Attempt to read property "body" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 16:41:18 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 16:41:57 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 16:41:57 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 16:41:57 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 16:41:57 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 16:42:24 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 16:42:24 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 16:42:24 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 16:42:24 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 16:42:25 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 16:42:25 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 16:42:25 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 16:42:25 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 16:42:37 America/Mexico_City] PHP Deprecated:  file_get_contents(): Passing null to parameter #1 ($filename) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 33
+[27-Nov-2023 16:42:37 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 16:42:37 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 16:42:37 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 16:42:37 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 16:47:49 America/Mexico_City] PHP Deprecated:  mb_detect_encoding(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 427
+[27-Nov-2023 16:47:49 America/Mexico_City] PHP Deprecated:  mb_convert_encoding(): Passing null to parameter #1 ($string) of type array|string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 435
+[27-Nov-2023 16:48:40 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 16:48:40 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 16:48:40 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 16:48:40 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 16:49:18 America/Mexico_City] PHP Warning:  include_once(/home/eduardo/Documentos/ICEGEM/IVDA/public): Failed to open stream: Success in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 16:49:18 America/Mexico_City] PHP Warning:  include_once(): Failed opening '' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 16:55:44 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type int in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 16:55:44 America/Mexico_City] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 354
+[27-Nov-2023 16:55:44 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 16:55:44 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 16:55:44 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 16:55:44 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 16:56:11 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type int in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 16:56:11 America/Mexico_City] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 354
+[27-Nov-2023 16:56:11 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 16:56:11 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 16:56:11 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 16:56:11 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 16:56:12 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type int in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 16:56:12 America/Mexico_City] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 354
+[27-Nov-2023 16:56:12 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 16:56:12 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 16:56:12 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 16:56:12 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 16:56:13 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type int in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 16:56:13 America/Mexico_City] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 354
+[27-Nov-2023 16:56:13 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 16:56:13 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 16:56:13 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 16:56:13 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 16:56:38 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 16:56:38 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 16:56:38 America/Mexico_City] PHP Warning:  Attempt to read property "body" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 16:56:38 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 16:56:38 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type int in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 16:56:38 America/Mexico_City] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 354
+[27-Nov-2023 16:56:38 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php:354) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 16:56:38 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php:354) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 16:56:38 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php:354) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 16:56:38 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php:354) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 16:57:14 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 16:57:14 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 16:57:14 America/Mexico_City] PHP Warning:  Attempt to read property "body" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 16:57:14 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 16:57:14 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type int in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 16:57:14 America/Mexico_City] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 354
+[27-Nov-2023 16:57:14 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php:354) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 16:57:14 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php:354) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 16:57:14 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php:354) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 16:57:14 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php:354) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 17:01:06 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:01:06 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:01:06 America/Mexico_City] PHP Warning:  Attempt to read property "body" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:01:06 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:01:06 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:01:31 America/Mexico_City] PHP Warning:  require(&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+    &lt;title&gt;Inventario General&lt;/title&gt;
+&lt;/head&gt;
+&lt;style&gt;
+    .body {
+        font-size: 12px;
+    }
+
+    .gary-row {
+        background-color: #EBEDEF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 6px;
+        font-size: 12px;
+    }
+
+    .white-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 6px;
+    }
+
+    .first-head-table {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .first-head-table&gt;span {
+        width: 100%;
+        padding: 10px 6px;
+    }
+
+    .table {
+        width: 100%;
+        font-size: 12px;
+    }
+    table{
+        border-collapse: collapse;
+    }
+
+    table th {
+        background-color: #EBEDEF;
+        font-weight: lighter;
+        border: solid 1px #ABB2B9;
+    }
+    table td {
+        font-weight: lighter;
+        border: solid 1px #ABB2B9;
+    }
+&lt;/style&gt;
+
+&lt;body class=&quot;body&quot;&gt;
+    &lt;main&gt;
+        &lt;h1 style=&quot;text-align: center; font-weight: bold;&quot;&gt;INVENTARIO GENERAL DE ARCHIVO&lt;/h1&gt;
+        &lt;section&gt;
+            &lt;div class=&quot;gary-row&quot;&gt;
+                &lt;span&gt;
+                    &lt;p&gt;Dependencia:&lt;/p&gt;
+                &lt;/span&gt;
+                &lt;span&gt;
+                    &lt;p&gt;Tipo de archivo:&lt;/p&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;white-row&quot;&gt;
+                &lt;span&gt;
+                    &lt;p&gt;Codificación estructural:&lt;/p&gt;
+                &lt;/span&gt;
+                &lt;span&gt;
+                    &lt;p&gt;Tipo de archivo:&lt;/p&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;gary-row&quot;&gt;
+                &lt;span&gt;
+                    &lt;p&gt;Unidad administrativa:&lt;/p&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;first-head-table&quot;&gt;
+                &lt;span style=&quot;background-color: #05AEB3; color: white;&quot;&gt;
+                    Fondo documental:
+                &lt;/span&gt;
+                &lt;span&gt;
+                    Secretaría de Finanzas (SF)
+                &lt;/span&gt;
+                &lt;span style=&quot;background-color: #05AEB3; color: white;&quot;&gt;
+                    Subfondo:
+                &lt;/span&gt;
+                &lt;span&gt;
+                    Oficina del C. Secretario y Áreas Staff (OSF)
+                &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+        &lt;table class=&quot;table&quot;&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt; Número progresivo &lt;/th&gt;
+                    &lt;th&gt; Seccion &lt;/th&gt;
+                    &lt;th&gt; Serie y/o subserie documental &lt;/th&gt;
+                    &lt;th&gt; Número de expediente &lt;/th&gt;
+                    &lt;th&gt; Fórmula clasificadora del expediente &lt;/th&gt;
+                    &lt;th&gt; Nombre del expediente &lt;/th&gt;
+                    &lt;th&gt; Total de legajos&lt;/th&gt;
+                    &lt;th&gt; Total de documentos&lt;/th&gt;
+                    &lt;th&gt; Fecha de los documentos&lt;/th&gt;
+                    &lt;th&gt; Observaciones&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;?php
+                foreach ($data-&gt;inventory-&gt;body as $key =&gt; $file) {
+                    echo &quot;
+                        &lt;tr&gt;
+                            &lt;td&gt;{$file-&gt;no}&lt;/td&gt;
+                            &lt;td&gt;{$file-&gt;section}&lt;/td&gt;
+                            &lt;td&gt;{$file-&gt;serie}&lt;/td&gt;
+                            &lt;td&gt;{$file-&gt;no_ex}&lt;/td&gt;
+                            &lt;td&gt;{$file-&gt;formule}&lt;/td&gt;
+                            &lt;td&gt;{$file-&gt;name}&lt;/td&gt;
+                            &lt;td&gt;{$file-&gt;total_legajos}&lt;/td&gt;
+                            &lt;td&gt;{$file-&gt;total_files}&lt;/td&gt;
+                            &lt;td&gt;{$file-&gt;files_date[0]}&lt;/td&gt;
+                            &lt;td&gt;{$file-&gt;observations}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &quot;;
+                }
+                ?&gt;
+
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 34
+[27-Nov-2023 17:01:31 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php:34) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:01:31 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php:34) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:01:31 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php:34) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 17:01:31 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php:34) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 17:01:47 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:01:47 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:01:47 America/Mexico_City] PHP Warning:  Attempt to read property "body" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:01:47 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:01:47 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:02:01 America/Mexico_City] PHP Deprecated:  file_get_contents(): Passing null to parameter #1 ($filename) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:02:01 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:02:01 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:02:01 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 17:02:01 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 17:02:48 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:02:48 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:02:48 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:02:48 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 17:02:48 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 17:02:49 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:02:49 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:02:49 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:02:49 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 17:02:49 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 17:03:00 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:03:00 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:03:00 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:03:00 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 17:03:00 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 17:03:00 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:03:01 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:03:01 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:03:01 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 17:03:01 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 17:04:20 America/Mexico_City] PHP Warning:  require(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 37
+[27-Nov-2023 17:04:20 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:04:20 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:04:20 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 17:04:20 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 17:04:39 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type int in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 17:04:39 America/Mexico_City] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 354
+[27-Nov-2023 17:04:39 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:04:39 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:04:39 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 17:04:39 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 17:04:40 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type int in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 17:04:40 America/Mexico_City] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 354
+[27-Nov-2023 17:04:40 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:04:40 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:04:40 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 17:04:40 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 17:05:49 America/Mexico_City] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 467
+[27-Nov-2023 17:05:49 America/Mexico_City] PHP Deprecated:  mb_stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 517
+[27-Nov-2023 17:05:49 America/Mexico_City] PHP Deprecated:  basename(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 530
+[27-Nov-2023 17:05:49 America/Mexico_City] PHP Deprecated:  dirname(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 531
+[27-Nov-2023 17:05:49 America/Mexico_City] PHP Deprecated:  mb_strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 72
+[27-Nov-2023 17:05:49 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 17:05:49 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:05:49 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:05:49 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 17:05:49 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 17:05:50 America/Mexico_City] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 467
+[27-Nov-2023 17:05:50 America/Mexico_City] PHP Deprecated:  mb_stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 517
+[27-Nov-2023 17:05:50 America/Mexico_City] PHP Deprecated:  basename(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 530
+[27-Nov-2023 17:05:50 America/Mexico_City] PHP Deprecated:  dirname(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 531
+[27-Nov-2023 17:05:50 America/Mexico_City] PHP Deprecated:  mb_strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 72
+[27-Nov-2023 17:05:50 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 17:05:50 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:05:50 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:05:50 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 17:05:50 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 17:12:11 America/Mexico_City] PHP Deprecated:  file_get_contents(): Passing null to parameter #1 ($filename) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 32
+[27-Nov-2023 17:12:11 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:12:11 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:12:11 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 17:12:11 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 17:13:31 America/Mexico_City] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 354
+[27-Nov-2023 17:13:31 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:13:31 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:13:31 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 17:13:31 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 17:13:58 America/Mexico_City] PHP Warning:  file_get_contents(null): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 35
+[27-Nov-2023 17:13:58 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type bool in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 17:13:58 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:13:58 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:13:58 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 74
+[27-Nov-2023 17:13:58 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 78
+[27-Nov-2023 17:14:34 America/Mexico_City] PHP Warning:  file_get_contents(null): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 33
+[27-Nov-2023 17:14:35 America/Mexico_City] PHP Warning:  file_get_contents(null): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 33
+[27-Nov-2023 17:22:49 America/Mexico_City] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 467
+[27-Nov-2023 17:22:49 America/Mexico_City] PHP Deprecated:  mb_stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 517
+[27-Nov-2023 17:22:49 America/Mexico_City] PHP Deprecated:  basename(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 530
+[27-Nov-2023 17:22:49 America/Mexico_City] PHP Deprecated:  dirname(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 531
+[27-Nov-2023 17:22:49 America/Mexico_City] PHP Deprecated:  mb_strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 72
+[27-Nov-2023 17:22:49 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 17:22:49 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:22:49 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:22:49 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:22:49 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:23:06 America/Mexico_City] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 467
+[27-Nov-2023 17:23:06 America/Mexico_City] PHP Deprecated:  mb_stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 517
+[27-Nov-2023 17:23:06 America/Mexico_City] PHP Deprecated:  basename(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 530
+[27-Nov-2023 17:23:06 America/Mexico_City] PHP Deprecated:  dirname(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 531
+[27-Nov-2023 17:23:06 America/Mexico_City] PHP Deprecated:  mb_strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 72
+[27-Nov-2023 17:23:06 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 17:23:06 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:23:06 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:23:06 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:23:06 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:23:18 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type int in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 17:23:18 America/Mexico_City] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 354
+[27-Nov-2023 17:23:18 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:23:18 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:23:18 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:23:18 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:23:35 America/Mexico_City] PHP Deprecated:  parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 467
+[27-Nov-2023 17:23:35 America/Mexico_City] PHP Deprecated:  mb_stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 517
+[27-Nov-2023 17:23:35 America/Mexico_City] PHP Deprecated:  basename(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 530
+[27-Nov-2023 17:23:35 America/Mexico_City] PHP Deprecated:  dirname(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 531
+[27-Nov-2023 17:23:35 America/Mexico_City] PHP Deprecated:  mb_strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 72
+[27-Nov-2023 17:23:35 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 17:23:35 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:23:35 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:23:35 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:23:35 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:23:42 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type int in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 17:23:42 America/Mexico_City] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 354
+[27-Nov-2023 17:23:42 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:23:42 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:23:42 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:23:42 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:23:47 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type int in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Helpers.php on line 108
+[27-Nov-2023 17:23:47 America/Mexico_City] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/dompdf/dompdf/src/Dompdf.php on line 354
+[27-Nov-2023 17:23:47 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:23:47 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:23:47 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:23:47 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:135) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:28:51 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:29:12 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:29:13 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:29:27 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:29:27 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:29:27 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:29:27 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:29:27 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:31:26 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:31:26 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:31:26 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:31:26 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:31:26 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:31:30 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:31:30 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:31:30 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:31:30 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:31:30 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:31:59 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:31:59 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:31:59 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:31:59 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:31:59 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:32:29 America/Mexico_City] PHP Deprecated:  file_get_contents(): Passing null to parameter #1 ($filename) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:32:29 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:32:29 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:32:29 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:32:29 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:32:30 America/Mexico_City] PHP Deprecated:  file_get_contents(): Passing null to parameter #1 ($filename) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:32:30 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:32:30 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:32:30 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:32:30 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:34:51 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:34:51 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:34:51 America/Mexico_City] PHP Warning:  Attempt to read property "body" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:34:51 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:34:51 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:34:56 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:34:56 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:34:56 America/Mexico_City] PHP Warning:  Attempt to read property "body" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:34:56 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:34:56 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:35:01 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:01 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:01 America/Mexico_City] PHP Warning:  Attempt to read property "body" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:01 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:01 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:35:23 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:23 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:23 America/Mexico_City] PHP Warning:  Attempt to read property "body" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:23 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:23 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:35:29 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:29 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:29 America/Mexico_City] PHP Warning:  Attempt to read property "body" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:29 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:29 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:35:38 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:38 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:38 America/Mexico_City] PHP Warning:  Attempt to read property "body" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:38 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:35:38 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:36:12 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:36:12 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:36:12 America/Mexico_City] PHP Warning:  Attempt to read property "body" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:36:12 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 119
+[27-Nov-2023 17:36:12 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 32
+[27-Nov-2023 17:36:35 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 32
+[27-Nov-2023 17:36:36 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 32
+[27-Nov-2023 17:36:37 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 32
+[27-Nov-2023 17:37:00 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 32
+[27-Nov-2023 17:37:11 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 32
+[27-Nov-2023 17:37:22 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 32
+[27-Nov-2023 17:37:34 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:37:34 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 33
+[27-Nov-2023 17:37:39 America/Mexico_City] PHP Warning:  file_get_contents(1): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:37:51 America/Mexico_City] PHP Deprecated:  file_get_contents(): Passing null to parameter #1 ($filename) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:37:51 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:37:51 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:37:51 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:37:51 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:40:02 America/Mexico_City] PHP Deprecated:  file_get_contents(): Passing null to parameter #1 ($filename) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:40:02 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:40:02 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:40:02 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:40:02 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:40:03 America/Mexico_City] PHP Deprecated:  file_get_contents(): Passing null to parameter #1 ($filename) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:40:03 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:40:03 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:40:03 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:40:03 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:40:03 America/Mexico_City] PHP Deprecated:  file_get_contents(): Passing null to parameter #1 ($filename) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 17:40:03 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 71
+[27-Nov-2023 17:40:03 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 72
+[27-Nov-2023 17:40:03 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
+[27-Nov-2023 17:40:03 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
+[27-Nov-2023 17:44:22 America/Mexico_City] PHP Deprecated:  Function utf8_decode() is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
