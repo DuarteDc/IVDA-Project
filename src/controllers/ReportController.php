@@ -28,18 +28,12 @@ class ReportController extends Controller
             $inventory = $inventory->getDataRelations($inventory);
             $inventory->body = json_decode($inventory->body ?? "[]");
 
-            $xd = file_get_contents($this->view('report/index', ['inventory' => $inventory]), true);
+            ob_start();
+            $this->render('report/index', ['inventory' => $inventory]);
+            $document = ob_get_clean();
+
             
             
-            var_dump($xd);
-            die();
-
-
-            // return $this->response([$xd]);
-            $dompdf = $this->pdf();
-            $dompdf->loadHtml($xd);
-            $dompdf->render();
-            return $dompdf->stream();
         } catch (\Throwable $th) {
             $this->response(['message' => $th->getMessage()]);
         }

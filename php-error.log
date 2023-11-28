@@ -8586,3 +8586,19 @@ Stack trace:
 [27-Nov-2023 17:40:03 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 73
 [27-Nov-2023 17:40:03 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:131) in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 77
 [27-Nov-2023 17:44:22 America/Mexico_City] PHP Deprecated:  Function utf8_decode() is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 31
+[27-Nov-2023 21:27:56 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/duartebv/Documentos/IGECEM/IVDA-Project/src/lib/Database.php:44
+Stack trace:
+#0 /home/duartebv/Documentos/IGECEM/IVDA-Project/src/lib/Model.php(24): App\lib\Database->connect()
+#1 /home/duartebv/Documentos/IGECEM/IVDA-Project/src/models/User.php(93): App\lib\Model->prepare()
+#2 /home/duartebv/Documentos/IGECEM/IVDA-Project/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/duartebv/Documentos/IGECEM/IVDA-Project/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/duartebv/Documentos/IGECEM/IVDA-Project/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/duartebv/Documentos/IGECEM/IVDA-Project/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/duartebv/Documentos/IGECEM/IVDA-Project/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/duartebv/Documentos/IGECEM/IVDA-Project/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/duartebv/Documentos/IGECEM/IVDA-Project/src/lib/Database.php on line 44
+[27-Nov-2023 21:36:05 America/Mexico_City] PHP Warning:  Undefined variable $xd in /home/duartebv/Documentos/IGECEM/IVDA-Project/src/controllers/ReportController.php on line 36
+[27-Nov-2023 21:36:05 America/Mexico_City] PHP Deprecated:  mb_detect_encoding(): Passing null to parameter #1 ($string) of type string is deprecated in /home/duartebv/Documentos/IGECEM/IVDA-Project/vendor/dompdf/dompdf/src/Dompdf.php on line 427
+[27-Nov-2023 21:36:05 America/Mexico_City] PHP Deprecated:  mb_convert_encoding(): Passing null to parameter #1 ($string) of type array|string is deprecated in /home/duartebv/Documentos/IGECEM/IVDA-Project/vendor/dompdf/dompdf/src/Dompdf.php on line 435
