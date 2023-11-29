@@ -32,17 +32,7 @@ class Controller
     {
         $this->view->render($name, $data);
     }
-
-    public function view(String $name, array $data = [])
-    {
-        return $this->view->view($name, $data);
-    }
-
-    public function setMessage(TypeAlert $key, string $message)
-    {
-        $this->view->setMessage($key, $message);
-    }
-
+    
     protected function request()
     {
         $data = file_get_contents('php://input');

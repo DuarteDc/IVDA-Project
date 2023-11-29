@@ -2,7 +2,6 @@
 
 namespace App\lib;
 use App\lib\Database;
-use PDO;
 
 class Model
 {

@@ -2,10 +2,11 @@
 
 namespace App\controllers;
 
+use App\emuns\OrientationTypes;
+use App\emuns\PaperTypes;
 use App\lib\Controller;
 use App\models\AdministrativeUnitInventorySubsecretary;
 use App\models\Inventory;
-use DOMDocument;
 
 class ReportController extends Controller
 {
@@ -32,8 +33,12 @@ class ReportController extends Controller
             $this->render('report/index', ['inventory' => $inventory]);
             $document = ob_get_clean();
 
-            
-            
+            header("Access-Control-Allow-Origin: *");
+            header("Cache-Control: no-transform,public,max-age=300,s-maxage=900");
+            header("Content-Type: application/json");
+
+            http_response_code(200);
+            return $this->generatePDF($document, PaperTypes::A4, OrientationTypes::Landscape, $inventory->inventory_id->name, true);
         } catch (\Throwable $th) {
             $this->response(['message' => $th->getMessage()]);
         }

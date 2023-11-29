@@ -8602,3 +8602,238 @@ Stack trace:
 [27-Nov-2023 21:36:05 America/Mexico_City] PHP Warning:  Undefined variable $xd in /home/duartebv/Documentos/IGECEM/IVDA-Project/src/controllers/ReportController.php on line 36
 [27-Nov-2023 21:36:05 America/Mexico_City] PHP Deprecated:  mb_detect_encoding(): Passing null to parameter #1 ($string) of type string is deprecated in /home/duartebv/Documentos/IGECEM/IVDA-Project/vendor/dompdf/dompdf/src/Dompdf.php on line 427
 [27-Nov-2023 21:36:05 America/Mexico_City] PHP Deprecated:  mb_convert_encoding(): Passing null to parameter #1 ($string) of type array|string is deprecated in /home/duartebv/Documentos/IGECEM/IVDA-Project/vendor/dompdf/dompdf/src/Dompdf.php on line 435
+[28-Nov-2023 11:52:33 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$code in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 40
+[28-Nov-2023 11:53:54 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$adminitrative_unit_id in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 53
+[28-Nov-2023 11:53:54 America/Mexico_City] PHP Warning:  Attempt to read property "name" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 53
+[28-Nov-2023 11:59:45 America/Mexico_City] PHP Warning:  Undefined array key 1 in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 46
+[28-Nov-2023 11:59:45 America/Mexico_City] PHP Warning:  Undefined array key 2 in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 47
+[28-Nov-2023 12:00:02 America/Mexico_City] PHP Warning:  Undefined array key 1 in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 46
+[28-Nov-2023 12:00:02 America/Mexico_City] PHP Warning:  Undefined array key 2 in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 47
+[28-Nov-2023 13:27:08 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:48
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 48
+[28-Nov-2023 14:28:57 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(18): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(63): App\lib\Model->query()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(21): App\models\User::find()
+#3 [internal function]: App\controllers\UserController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[28-Nov-2023 14:29:03 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(18): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(63): App\lib\Model->query()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(21): App\models\User::find()
+#3 [internal function]: App\controllers\UserController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[28-Nov-2023 14:29:04 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(18): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(47): App\lib\Model->query()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(20): App\models\SubSecretary::find()
+#3 [internal function]: App\controllers\SubSecretaryController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[28-Nov-2023 14:29:30 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(18): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/SubSecretary.php(47): App\lib\Model->query()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php(20): App\models\SubSecretary::find()
+#3 [internal function]: App\controllers\SubSecretaryController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[28-Nov-2023 14:29:34 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(18): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(63): App\lib\Model->query()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(21): App\models\User::find()
+#3 [internal function]: App\controllers\UserController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[28-Nov-2023 14:29:36 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(18): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/AdministrativeUnit.php(50): App\lib\Model->query()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php(24): App\models\AdministrativeUnit::find()
+#3 [internal function]: App\controllers\AdministrativeUnitController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[28-Nov-2023 14:29:39 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(18): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(63): App\lib\Model->query()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(21): App\models\User::find()
+#3 [internal function]: App\controllers\UserController->index()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[28-Nov-2023 14:31:10 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(23): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(93): App\lib\Model->prepare()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[28-Nov-2023 14:31:12 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(23): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(93): App\lib\Model->prepare()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[28-Nov-2023 14:31:12 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(23): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(93): App\lib\Model->prepare()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[28-Nov-2023 14:31:12 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(23): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(93): App\lib\Model->prepare()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[28-Nov-2023 14:31:12 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(23): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(93): App\lib\Model->prepare()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[28-Nov-2023 14:32:01 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(23): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(93): App\lib\Model->prepare()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[28-Nov-2023 14:32:02 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(23): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(93): App\lib\Model->prepare()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[28-Nov-2023 14:32:23 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:44
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(23): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(93): App\lib\Model->prepare()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(31): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 44
+[28-Nov-2023 15:29:43 America/Mexico_City] PHP Warning:  file_get_contents(capitan.png): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 37
+[28-Nov-2023 15:32:32 America/Mexico_City] PHP Warning:  Undefined array key "host" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 35
+[28-Nov-2023 15:32:59 America/Mexico_City] PHP Warning:  Undefined array key "host" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 38
+[28-Nov-2023 16:50:44 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:48
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 48
+[28-Nov-2023 16:58:50 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function administrativeUnits() on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php:48
+Stack trace:
+#0 [internal function]: App\controllers\SubSecretaryController->show()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(85): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 48
