@@ -14,7 +14,7 @@ class Inventory extends Model
     public readonly string  $code;
     public readonly bool    $status;
     public readonly string  $user_id;
-    public readonly string  $created_at;    
+    public readonly string  $created_at;
 
     public function __construct()
     {
@@ -69,10 +69,13 @@ class Inventory extends Model
         }
     }
 
-    public function save(string $name, string $code, string $user_id) {
-        try{
-            $query = $this->insert('INSERT INTO inventories(name, code, user_id) VALUES (:name, :code, :user_id)  RETURNING id', 
-            [ 'name' => $name, 'code' => $code, 'user_id' =>  $user_id]);
+    public function save(string $name, string $code, string $user_id)
+    {
+        try {
+            $query = $this->insert(
+                'INSERT INTO inventories(name, code, user_id) VALUES (:name, :code, :user_id)  RETURNING id',
+                ['name' => $name, 'code' => $code, 'user_id' =>  $user_id]
+            );
             return $query;
         } catch (PDOException $e) {
             var_dump($e->getMessage());
@@ -91,6 +94,16 @@ class Inventory extends Model
             return $db->query("UPDATE inventories $query Where id = $id");
         } catch (PDOException $th) {
             return false;
+        }
+    }
+
+    public static function countInventories()
+    {
+        try {
+            $db = new Model();
+            return $db->query("SELECT count(*) FROM inventories")->fetchColumn();
+        } catch (\Throwable $th) {
+            return 0;
         }
     }
 }

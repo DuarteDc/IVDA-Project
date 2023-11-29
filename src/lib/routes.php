@@ -37,6 +37,8 @@ $router->mount('/api.*', function () use ($router) {
 
     $router->mount('/auth.*', function () use ($router) {
 
+        $router->get('/dashboard', 'App\controllers\HomeController@getDashboardData');
+
         $router->get('/users', 'App\controllers\UserController@index');
         $router->get('/users/{id}', 'App\controllers\UserController@show');
         $router->post('/users/save', 'App\controllers\UserController@save');

@@ -30,7 +30,7 @@ class SubSecretary extends Model
 
             if ($query->rowCount() > 0) return $query->fetchObject(self::class);
 
-            return [false];
+            return false;
         } catch (PDOException $e) {
             return false;
         }
@@ -193,6 +193,17 @@ class SubSecretary extends Model
             return $db->query("UPDATE subsecretaries SET status = true WHERE id = $id");
         } catch (\Throwable $th) {
             return false;
+        }
+    }
+
+
+    public static function countSubsecretaries()
+    {
+        try {
+            $db = new Model();
+            return $db->query("SELECT count(*) FROM subsecretaries")->fetchColumn();
+        } catch (\Throwable $th) {
+            return 0;
         }
     }
 }

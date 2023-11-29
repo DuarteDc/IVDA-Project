@@ -20,8 +20,7 @@ class InventoryController extends Controller
         $page = (int) $this->get('page');
         $page == 0 && $page = 1;
         $data = Inventory::find($page);
-
-        return $this->response(['inventories' => $data['inventories'], 'page' => $page, 'totalPages' => $data['totalPages']]);
+        $this->response(['inventories' => $data['inventories'], 'page' => $page, 'totalPages' => $data['totalPages']]);
     }
 
     public function save()

@@ -177,7 +177,15 @@ class User extends Model
             return false;
         }
     }
-
+    public static function countUsers()
+    {
+        try {
+            $db = new Model();
+            return $db->query("SELECT count(*) FROM users")->fetchColumn();
+        } catch (\Throwable $th) {
+            return 0;
+        }
+    }
 
     private static function getHashedPassword(string $password)
     {

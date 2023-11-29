@@ -14,7 +14,7 @@ trait PDFTrait
     {
         try {
             $options = new Options();
-            $options->set('isRemoteEnabled', TRUE);
+            $options->set('isRemoteEnabled', true);
 
             $dompdf = new Dompdf($options);
             $dompdf->loadHtml($html);

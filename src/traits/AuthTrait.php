@@ -36,7 +36,7 @@ trait AuthTrait
             $decode = JWT::decode($token, new Key($key, 'HS256'));
             return self::generateJWT($decode->user);
         } catch (Exception $e) {
-            return $e;
+            return $e->getMessage();
         }
     }
 }

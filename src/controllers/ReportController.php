@@ -34,8 +34,6 @@ class ReportController extends Controller
             $document = ob_get_clean();
 
             header("Access-Control-Allow-Origin: *");
-            header("Cache-Control: no-transform,public,max-age=300,s-maxage=900");
-            header("Content-Type: application/json");
 
             http_response_code(200);
             return $this->generatePDF($document, PaperTypes::A4, OrientationTypes::Landscape, $inventory->inventory_id->name, true);

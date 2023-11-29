@@ -110,7 +110,7 @@ class AdministrativeUnit extends Model
         }
     }
 
-    
+
     public static function users($administrative_unit)
     {
         try {
@@ -122,7 +122,7 @@ class AdministrativeUnit extends Model
             return [];
         }
     }
-    
+
     public static function UpdateOne(string $id, array $params)
     {
         try {
@@ -130,13 +130,22 @@ class AdministrativeUnit extends Model
             $query = 'SET ';
             foreach ($params as $key => $value) {
                 if (strlen($value)  > 0)  $query .= "{$key} = '{$value}', ";
-                
             }
             $query = rtrim($query, ', ');
             $db->query("UPDATE subsecretaries $query Where id = $id");
             return self::findOne($id);
         } catch (\Throwable $th) {
             return false;
+        }
+    }
+
+    public static function countAdministrativeUnits()
+    {
+        try {
+            $db = new Model();
+            return $db->query("SELECT count(*) FROM administrative_units")->fetchColumn();
+        } catch (\Throwable $th) {
+            return 0;
         }
     }
 }
