@@ -8907,3 +8907,21 @@ Stack trace:
 #5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
 #6 {main}
   thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SubSecretaryController.php on line 48
+[01-Dec-2023 15:11:32 America/Mexico_City] PHP Fatal error:  Uncaught ValueError: mb_http_output(): Argument #1 ($encoding) must be a valid encoding, "1" given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php:12
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(12): mb_http_output()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#2 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php on line 12
+[01-Dec-2023 15:11:44 America/Mexico_City] PHP Fatal error:  Uncaught ValueError: mb_http_output(): Argument #1 ($encoding) must be a valid encoding, "1" given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php:12
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(12): mb_http_output()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#2 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php on line 12
+[01-Dec-2023 15:13:14 America/Mexico_City] PHP Fatal error:  Uncaught ValueError: mb_http_input(): Argument #1 ($type) must be one of "G", "P", "C", "S", "I", or "L" in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php:13
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(13): mb_http_input()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#2 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php on line 13

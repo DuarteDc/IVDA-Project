@@ -60,7 +60,7 @@ class Controller
 
         header("Access-Control-Allow-Origin: *");
         header("Cache-Control: no-transform,public,max-age=300,s-maxage=900");
-        header("Content-Type: application/json");
+        header("Content-Type: application/json;  charset=UTF-8");
 
         http_response_code($status);
 

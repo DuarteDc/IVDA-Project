@@ -1,13 +1,15 @@
 <?php
 
 use App\middlewares\AuthMiddleware;
-use App\middlewares\HasAdminRole;
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../../');
 $dotenv->load();
 
+mb_internal_encoding('UTF-8');
 date_default_timezone_set($_ENV['TIMEZONE']);
 session_start();
+
+
 $router = new \Bramus\Router\Router();
 
 function sendCorsHeaders()

@@ -27,7 +27,7 @@ class SubSecretaryController extends Controller
 
         if (!$name) return $this->response(['message' => 'El nombre es requerido para crear una subsecretaria'], 400);
 
-        $name = trim(strtoupper($name));
+        $name = trim(mb_strtoupper($name));
 
         $existSubsecretary = SubSecretary::Where("name = '$name'");
 
@@ -65,12 +65,12 @@ class SubSecretaryController extends Controller
 
         $name = $this->post('name');
 
-        $name = trim(strtoupper($name));
+        $name = trim(mb_strtoupper($name));
 
         $existSubsecretary = SubSecretary::Where("id <> {$id} AND name = '{$name}'");
         if ($existSubsecretary) return $this->response(['message' => 'Ya existe una subsecretaria con ese nombre'], 400);
 
-        $subsecretary->UpdateOne($id, $this->request());
+        $subsecretary->UpdateOne($id, ['name' => $name]);
         $this->response(['message' => 'La subsecretaria se actualizo con exito']);
     }
 
