@@ -25,8 +25,6 @@ class InventoryController extends Controller
 
     public function save()
     {
-        $name = 'INVENTARIO GENERAL DE ARCHIVO';
-        $inventory = new Inventory();
 
         $code = $this->post('code');
         $administrative_unit_id = $this->post('administrative_unit_id');
@@ -34,6 +32,11 @@ class InventoryController extends Controller
 
         if (!$code || !$administrative_unit_id || !$subsecretary_id) return $this->response(['message' => 'Los campos son requeridos'], 400);
 
+        $inventory = AdministrativeUnitInventorySubsecretary::Where("administrative_unit_id = $administrative_unit_id AND subsecretary_id = $subsecretary_id");
+        if ($inventory && !Inventory::findOne($inventory->inventory_id)->status) return $this->response(['message' => 'Ya existe un inventario en proceso con esa unidad administrativa'], 400);
+
+        $name = 'INVENTARIO GENERAL DE ARCHIVO';
+        $inventory = new Inventory();
         $newInventory = $inventory->save($name, $code, $this::auth()->id);
         if (!$newInventory) return $this->response(['message' => 'Parece que hubo un error al crear el inventario'], 400);
 
@@ -52,6 +55,10 @@ class InventoryController extends Controller
 
         $inventory = AdministrativeUnitInventorySubsecretary::Where("id = $id");
         if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible']);
+
+        if ($inventory->administrative_unit_id != $administrative_unit_id || $inventory->$subsecretary_id != $subsecretary_id) {
+            if (!empty(json_decode($inventory->body))) return $this->response(['message' => 'El inventario no se puede actualizar porque ya cuenta con archivos agregados'], 400);
+        }
 
         $inventory->UpdateOne($id, ['administrative_unit_id' => $administrative_unit_id, 'subsecretary_id' => $subsecretary_id]);
 

@@ -16,6 +16,7 @@
         "vlucas/phpdotenv": "^5.5",
         "firebase/php-jwt": "^6.9",
         "paragonie/sodium_compat": "^1.20",
-        "dompdf/dompdf": "^2.0"
+        "dompdf/dompdf": "^2.0",
+        "tecnickcom/tcpdf": "^6.6"
     }
 }

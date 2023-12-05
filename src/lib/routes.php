@@ -23,7 +23,7 @@ function sendCorsHeaders()
     header("Pragma: no-cache");
 }
 
-$router->options('/api.*', function () {
+$router->options('/api/.*', function () {
     sendCorsHeaders();
 });
 

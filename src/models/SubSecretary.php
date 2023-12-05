@@ -132,7 +132,6 @@ class SubSecretary extends Model
     {
         try {
             if (!$subsecretary) return false;
-
             $type = json_encode($type);
             $db = new Model();
             $query = $db->query("SELECT * FROM administrative_units WHERE status = {$type} AND subsecretary_id = {$subsecretary->id}");

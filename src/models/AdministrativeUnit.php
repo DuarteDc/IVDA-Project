@@ -132,7 +132,7 @@ class AdministrativeUnit extends Model
                 if (strlen($value)  > 0)  $query .= "{$key} = '{$value}', ";
             }
             $query = rtrim($query, ', ');
-            $db->query("UPDATE subsecretaries $query Where id = $id");
+            $db->query("UPDATE administrative_units $query Where id = $id");
             return self::findOne($id);
         } catch (\Throwable $th) {
             return false;

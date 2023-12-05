@@ -35,7 +35,7 @@
 <body class="body">
     <main style="position: relative;">
         <div style="position: absolute; top: -20px; right: 0px; z-index: 5000;">
-            <!-- <img src="https://retys.edomex.gob.mx/img/h3.png" alt="EdoMex" height="50" width="150"> -->
+            <img src="https://retys.edomex.gob.mx/img/h3.png" alt="EdoMex" height="50" width="150">
         </div>
         <h1 style="text-align: center; font-weight: bold;">INVENTARIO GENERAL DE ARCHIVO</h1>
         <section>
