@@ -3,29 +3,30 @@
 namespace App\traits;
 
 use App\emuns\OrientationTypes;
-use Dompdf\Dompdf;
-use Dompdf\Options;
 use App\emuns\PaperTypes;
 use Exception;
 
-use TCPDF;
+use mikehaertl\wkhtmlto\Pdf;
+use mikehaertl\tmp\File;
+
 trait PDFTrait
 {
-    public function generatePDF(string $html, PaperTypes $paper, OrientationTypes $orientation, string $fileName, bool $download = true)
+    public function generatePDF(string $html, PaperTypes $paper, OrientationTypes $orientation, string $fileName)
     {
         try {
-            // $options = new Options();
-            // $options->set('isRemoteEnabled', true);
-
-            // $dompdf = new Dompdf($options);
-            // $dompdf->loadHtml($html);
-            // $dompdf->setPaper($paper->value, $orientation->value);
-            // $dompdf->render();
-            // return $dompdf->stream("$fileName.pdf", ['Attachment' => $download]);
-            $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
-            $pdf->AddPage();
-            $pdf->writeHTML($html);
-            $pdf->Output("$fileName.pdf", 'I');
+            $config = array(
+                // 'biinary' => '/usr/share/local/wkhtmltopf',
+                'footer-html' => new File('<html><p>sssssssssssssss</p></html>', '.html'),
+                'orientation' => $orientation->value, 'page-size' => $paper->value,
+                'margin-top'    => '70px',
+                'margin-right'  => '40px',
+                'margin-bottom' => '140px',
+                'margin-left'   => '40px'
+            );
+            $pdf = new Pdf($config);
+            $pdf->addPage($html);
+            if (!$pdf->send())
+                var_dump($pdf->getError());
         } catch (Exception $e) {
             return $e->getMessage();
         }

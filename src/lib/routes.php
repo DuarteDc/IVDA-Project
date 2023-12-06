@@ -6,6 +6,7 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../../');
 $dotenv->load();
 
 mb_internal_encoding('UTF-8');
+set_time_limit(120);
 date_default_timezone_set($_ENV['TIMEZONE']);
 session_start();
 
@@ -33,9 +34,9 @@ $router->mount('/api.*', function () use ($router) {
     $router->post('/signin', '\App\controllers\SigninController@signin');
     $router->get('/me', '\App\controllers\SigninController@user');
 
-    $router->before('GET|POST|DELETE|PATCH', '/auth.*', function () {
-        AuthMiddleware::checkAuth();
-    });
+    // $router->before('GET|POST|DELETE|PATCH', '/auth.*', function () {
+    //     AuthMiddleware::checkAuth();
+    // });
 
     $router->mount('/auth.*', function () use ($router) {
 

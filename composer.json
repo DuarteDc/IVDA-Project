@@ -17,6 +17,7 @@
         "firebase/php-jwt": "^6.9",
         "paragonie/sodium_compat": "^1.20",
         "dompdf/dompdf": "^2.0",
-        "tecnickcom/tcpdf": "^6.6"
+        "tecnickcom/tcpdf": "^6.6",
+        "mikehaertl/phpwkhtmltopdf": "^2.5"
     }
 }
