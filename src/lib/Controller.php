@@ -2,14 +2,14 @@
 
 namespace App\lib;
 
-use App\emuns\TypeAlert;
 use App\lib\View;
 use App\traits\AuthTrait;
+use App\traits\MailTrait;
 use App\traits\PDFTrait;
 
 class Controller
 {
-    use AuthTrait, PDFTrait;
+    use AuthTrait, PDFTrait, MailTrait;
 
     private View $view;
 

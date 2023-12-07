@@ -15,16 +15,15 @@ trait PDFTrait
     {
         try {
             $config = array(
-                // 'biinary' => '/usr/share/local/wkhtmltopf',
-                'footer-html' => new File('<html><p>sssssssssssssss</p></html>', '.html'),
-                'orientation' => $orientation->value, 'page-size' => $paper->value,
+                'orientation' => $orientation->value,
+                'page-size' => $paper->value,
                 'margin-top'    => '70px',
                 'margin-right'  => '40px',
                 'margin-bottom' => '140px',
-                'margin-left'   => '40px'
+                'margin-left'   => '40px',
             );
             $pdf = new Pdf($config);
-            $pdf->addPage($html);
+            $pdf->addPage($html);   
             if (!$pdf->send())
                 var_dump($pdf->getError());
         } catch (Exception $e) {

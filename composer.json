@@ -18,6 +18,7 @@
         "paragonie/sodium_compat": "^1.20",
         "dompdf/dompdf": "^2.0",
         "tecnickcom/tcpdf": "^6.6",
-        "mikehaertl/phpwkhtmltopdf": "^2.5"
+        "mikehaertl/phpwkhtmltopdf": "^2.5",
+        "sendgrid/sendgrid": "~7"
     }
 }

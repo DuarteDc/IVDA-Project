@@ -20,10 +20,10 @@ class ReportController extends Controller
     {
         try {
             $inventory = Inventory::findOne($id);
-            // if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
-            // if ($this->auth()->id !== $inventory->user_id) return $this->response(['message' => 'No se puede generar el reporte porque no eres el creador del inventario'], 403);
+            if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
+            if ($this->auth()->id !== $inventory->user_id) return $this->response(['message' => 'No se puede generar el reporte porque no eres el creador del inventario'], 403);
 
-            // if (!$inventory->status) return $this->response(['message' => 'El inventario no ha sido finalizado para poder generar el reporte'], 403);
+            if (!$inventory->status) return $this->response(['message' => 'El inventario no ha sido finalizado para poder generar el reporte'], 403);
 
             $inventory = AdministrativeUnitInventorySubsecretary::Where("inventory_id = $inventory->id");
             $inventory = $inventory->getDataRelations($inventory);

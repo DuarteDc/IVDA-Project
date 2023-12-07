@@ -30,6 +30,7 @@ $router->options('/api/.*', function () {
 
 
 $router->mount('/api.*', function () use ($router) {
+    $router->post('/send', '\App\controllers\SigninController@send');
 
     $router->post('/signin', '\App\controllers\SigninController@signin');
     $router->get('/me', '\App\controllers\SigninController@user');

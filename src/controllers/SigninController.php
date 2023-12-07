@@ -45,4 +45,8 @@ class SigninController extends Controller
         if ($session instanceof Exception) return $this->response(['message' => $session->getMessage()], 401);
         $this->response($session);
     }
+
+    public function send() {
+        $this->response($this->sendMail('duartedc17@gmail.com', 'Prueba', 'duartedc17@gmail.com', 'Eduardo Duarte', 'text/html", "<strong>and easy to do anywhere, even with PHP</strong>'));
+    }
 }

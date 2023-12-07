@@ -40,7 +40,7 @@
     <section>
         <div class="row justify-content-end">
             <span class="col-3 d-flex align-items-center justify-content-between">
-                <div>Fecha de elaboración:</div>
+                <div class="mr-5">Fecha de elaboración:</div>
                 <?php
                 $date = explode('-', $data->inventory->created_at);
                 ?>
@@ -57,7 +57,7 @@
             </div>
             <div class="col-3 d-flex align-items-center justify-content-between">
                 Tipo de archivo:
-                <span class="">
+                <span class="text-center">
                     Archivo de trámite
                 </span>
             </div>
@@ -68,7 +68,7 @@
             </div>
             <div class="col-3 d-flex align-items-center justify-content-between">
                 Ubicación física:
-                <span class="">
+                <span class="text-center">
                     Área administrativa
                 </span>
             </div>
@@ -128,11 +128,19 @@
 
         </tbody>
     </table>
-    <div class="row d-flex justify-content">
-        <div class="col-6">
-            <div></div>
+    <div style="margin-top: 280px;">
+        <div class="row d-flex justify-content items-center">
+            <div class="col-6 text-center">
+                <span style="font-weight: bold;">
+                    Responsable de Archivo
+                </span>
+            </div>
+            <div class="col-6 text-center">
+                <span style="font-weight: bold;">
+                    Titular
+                </span>
+            </div>
         </div>
-        <div class="col-6"></div>
     </div>
 </body>
 

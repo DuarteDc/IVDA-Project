@@ -9252,3 +9252,120 @@ Stack trace:
 [04-Dec-2023 18:02:05 America/Mexico_City] PHP Warning:  Undefined array key 0 in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/tecnickcom/tcpdf/tcpdf.php on line 18452
 [04-Dec-2023 18:02:05 America/Mexico_City] PHP Warning:  Undefined array key 0 in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/tecnickcom/tcpdf/tcpdf.php on line 18450
 [04-Dec-2023 18:03:24 America/Mexico_City] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/tecnickcom/tcpdf/tcpdf.php on line 18311
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 45
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 45
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "created_at" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 45
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 45
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Undefined array key 2 in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 48
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Undefined array key 1 in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 49
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 56
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 56
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "subsecretary_id" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 56
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "name" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 56
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 67
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 67
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "inventory_id" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 67
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "code" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 67
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 78
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 78
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "administrative_unit_id" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 78
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "name" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 78
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 84
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 84
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "subsecretary_id" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 84
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "name" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 84
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 86
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 86
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "administrative_unit_id" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 86
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "name" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 86
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Undefined variable $data in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 110
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "inventory" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 110
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  Attempt to read property "body" on null in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 110
+[06-Dec-2023 09:19:24 America/Mexico_City] PHP Warning:  foreach() argument must be of type array|object, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 110
+[06-Dec-2023 09:19:47 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:67) in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mikehaertl/php-tmpfile/src/File.php on line 193
+[06-Dec-2023 09:19:47 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:67) in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mikehaertl/php-tmpfile/src/File.php on line 193
+[06-Dec-2023 09:19:47 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:67) in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mikehaertl/php-tmpfile/src/File.php on line 193
+[06-Dec-2023 09:19:47 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:67) in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mikehaertl/php-tmpfile/src/File.php on line 193
+[06-Dec-2023 09:19:47 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:67) in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mikehaertl/php-tmpfile/src/File.php on line 193
+[06-Dec-2023 09:19:47 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php:67) in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/mikehaertl/php-tmpfile/src/File.php on line 193
+[06-Dec-2023 09:20:45 America/Mexico_City] PHP Warning:  require(/home/eduardo/Documentos/ICEGEM/IVDA/src/traits/../views/report/header.html): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/PDFTrait.php on line 19
+[06-Dec-2023 10:27:44 America/Mexico_City] PHP Warning:  require(/home/eduardo/Documentos/ICEGEM/IVDA/src/lib/../views/report/header.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php on line 15
+[06-Dec-2023 10:28:12 America/Mexico_City] PHP Warning:  require(/home/eduardo/Documentos/ICEGEM/IVDA/src/lib/../views/report/header.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php on line 15
+[06-Dec-2023 10:28:13 America/Mexico_City] PHP Warning:  require(/home/eduardo/Documentos/ICEGEM/IVDA/src/lib/../views/report/header.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php on line 15
+[06-Dec-2023 10:28:49 America/Mexico_City] PHP Warning:  require(/home/eduardo/Documentos/ICEGEM/IVDA/src/lib/../views/report/header.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php on line 15
+[06-Dec-2023 10:28:50 America/Mexico_City] PHP Warning:  require(/home/eduardo/Documentos/ICEGEM/IVDA/src/lib/../views/report/header.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php on line 15
+[06-Dec-2023 10:29:19 America/Mexico_City] PHP Warning:  require(/home/eduardo/Documentos/ICEGEM/IVDA/src/lib/../views/report/header.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/View.php on line 15
+[06-Dec-2023 10:29:34 America/Mexico_City] PHP Warning:  Undefined variable $header in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 42
+[06-Dec-2023 10:29:38 America/Mexico_City] PHP Warning:  Undefined variable $header in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php on line 42
+[06-Dec-2023 11:12:50 America/Mexico_City] PHP Fatal error:  During class fetch: Uncaught ParseError: Unclosed '(' on line 17 in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/PDFTrait.php:75
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(10): Composer\Autoload\ClassLoader->loadClass()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/composer/ClassLoader.php(576): include('...')
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php(11): Composer\Autoload\ClassLoader->loadClass()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/composer/ClassLoader.php(576): include('...')
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#7 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(472): ReflectionMethod->__construct()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#10 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#11 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(90): Bramus\Router\Router->run()
+#12 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#13 {main} in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 10
+[06-Dec-2023 11:12:58 America/Mexico_City] PHP Fatal error:  During class fetch: Uncaught ParseError: Unclosed '(' on line 17 in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/PDFTrait.php:75
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(10): Composer\Autoload\ClassLoader->loadClass()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/composer/ClassLoader.php(576): include('...')
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/ReportController.php(11): Composer\Autoload\ClassLoader->loadClass()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/composer/ClassLoader.php(576): include('...')
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#7 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(472): ReflectionMethod->__construct()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#10 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#11 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(90): Bramus\Router\Router->run()
+#12 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#13 {main} in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 10
+[06-Dec-2023 11:59:55 America/Mexico_City] PHP Warning:  include(/home/eduardo/Documentos/ICEGEM/IVDA/src/lib/font/helveticab.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/FPDF.php on line 1139
+[06-Dec-2023 11:59:55 America/Mexico_City] PHP Warning:  include(): Failed opening '/home/eduardo/Documentos/ICEGEM/IVDA/src/lib/font/helveticab.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/FPDF.php on line 1139
+[06-Dec-2023 12:05:46 America/Mexico_City] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/fpdf186/FPDF.php on line 458
+[06-Dec-2023 12:05:46 America/Mexico_City] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/fpdf186/FPDF.php on line 458
+[06-Dec-2023 12:05:46 America/Mexico_City] PHP Warning:  include(/helveticab.php): Failed to open stream: No such file or directory in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/fpdf186/FPDF.php on line 1075
+[06-Dec-2023 12:05:46 America/Mexico_City] PHP Warning:  include(): Failed opening '/helveticab.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/fpdf186/FPDF.php on line 1075
+[06-Dec-2023 17:07:13 America/Mexico_City] PHP Deprecated:  Optional parameter $subject declared before required parameter $content is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/MailTrait.php on line 11
+[06-Dec-2023 17:07:15 America/Mexico_City] PHP Deprecated:  Optional parameter $subject declared before required parameter $content is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/MailTrait.php on line 11
+[06-Dec-2023 17:09:06 America/Mexico_City] PHP Fatal error:  Uncaught SendGrid\Mail\TypeException: "$emailAddress" must be a valid email address. Got: Nada in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/sendgrid/sendgrid/lib/helper/Assert.php:61
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php(69): SendGrid\Helper\Assert::email()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php(47): SendGrid\Mail\EmailAddress->setEmailAddress()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/sendgrid/sendgrid/lib/mail/Mail.php(190): SendGrid\Mail\EmailAddress->__construct()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/sendgrid/sendgrid/lib/mail/Mail.php(383): SendGrid\Mail\Mail->addRecipientEmail()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/MailTrait.php(16): SendGrid\Mail\Mail->addTo()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(50): App\lib\Controller->sendMail()
+#6 [internal function]: App\controllers\SigninController->send()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#10 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#11 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#12 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/sendgrid/sendgrid/lib/helper/Assert.php on line 61
+[06-Dec-2023 17:10:02 America/Mexico_City] PHP Fatal error:  Uncaught SendGrid\Mail\TypeException: "$emailAddress" must be a valid email address. Got: Nada in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/sendgrid/sendgrid/lib/helper/Assert.php:61
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php(69): SendGrid\Helper\Assert::email()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php(47): SendGrid\Mail\EmailAddress->setEmailAddress()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/sendgrid/sendgrid/lib/mail/Mail.php(190): SendGrid\Mail\EmailAddress->__construct()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/sendgrid/sendgrid/lib/mail/Mail.php(383): SendGrid\Mail\Mail->addRecipientEmail()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/MailTrait.php(16): SendGrid\Mail\Mail->addTo()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(50): App\lib\Controller->sendMail()
+#6 [internal function]: App\controllers\SigninController->send()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#10 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(91): Bramus\Router\Router->run()
+#11 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#12 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/sendgrid/sendgrid/lib/helper/Assert.php on line 61
