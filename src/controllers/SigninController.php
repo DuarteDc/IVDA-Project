@@ -91,7 +91,7 @@ class SigninController extends Controller
         $key = $this->post('key');
         $email = $this->post('email');
 
-        if (empty($email) || empty($key)) return $this->response(['message' => 'Token no es valido'], 403);
+        if (empty($email) || empty($key)) return $this->response(['message' => 'El token no es valido o ha expirado'], 403);
 
         $token = Token::where("token = '$key' AND email = '$email'");
         if (!$token || $token->expiration_date < date("Y-m-d H:i:s", strtotime('now'))) return $this->response(['message' => 'El token no es valido o ha expirado'], 403);
@@ -119,7 +119,7 @@ class SigninController extends Controller
 
     private function getExpitarionToken()
     {
-        return date("Y-m-d H:i:s", strtotime('now') + 3600);
+        return date("Y-m-d H:i:s", strtotime('now') + 300);
     }
 
     private function getUrlToResetPassword(string $key, string $email)

@@ -129,7 +129,7 @@ class User extends Model
             foreach ($params as $key => $value) {
                 if (strlen($value)  > 0) {
                     if ($key === 'password') {
-                        $query .= "{$key} = '" . self::getHashedPassword($value, self::auth()->password) . "', ";
+                        $query .= "{$key} = '" . self::getHashedPassword($value) . "', ";
                     } else {
                         $query .= "{$key} = '{$value}', ";
                     }
