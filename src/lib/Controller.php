@@ -52,7 +52,7 @@ class Controller
     {
         if (!isset($_GET[$param])) return null;
 
-        return json_decode($_GET[$param]);
+        return $_GET[$param];
     }
 
     protected function response($data, $status = 200)

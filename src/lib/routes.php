@@ -10,7 +10,6 @@ set_time_limit(120);
 date_default_timezone_set($_ENV['TIMEZONE']);
 session_start();
 
-
 $router = new \Bramus\Router\Router();
 
 function sendCorsHeaders()
@@ -28,16 +27,19 @@ $router->options('/api/.*', function () {
     sendCorsHeaders();
 });
 
-
 $router->mount('/api.*', function () use ($router) {
-    $router->post('/send', '\App\controllers\SigninController@send');
-
+    
     $router->post('/signin', '\App\controllers\SigninController@signin');
     $router->get('/me', '\App\controllers\SigninController@user');
+    
+    $router->post('/recover-password', '\App\controllers\SigninController@recoverPassword');
+    $router->get('/get-password-token', '\App\controllers\SigninController@getPasswordToken');
+    $router->post('/change-password', '\App\controllers\SigninController@changePassword');
 
-    // $router->before('GET|POST|DELETE|PATCH', '/auth.*', function () {
-    //     AuthMiddleware::checkAuth();
-    // });
+
+    $router->before('GET|POST|DELETE|PATCH', '/auth.*', function () {
+        AuthMiddleware::checkAuth();
+    });
 
     $router->mount('/auth.*', function () use ($router) {
 

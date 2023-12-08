@@ -95,7 +95,7 @@ class User extends Model
                 'email' => $email
             ]);
 
-            if ($query->rowCount() > 0) return $query->fetchObject(__CLASS__);
+            if ($query->rowCount() > 0) return $query->fetchObject(self::class);
 
             return false;
         } catch (PDOException $e) {

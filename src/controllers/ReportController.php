@@ -39,7 +39,7 @@ class ReportController extends Controller
 
             header("Access-Control-Allow-Origin: *");
             http_response_code(200);
-            return $this->generatePDF($document, PaperTypes::A4, OrientationTypes::Landscape, $inventory->inventory_id->name);
+            $this->generatePDF($document, PaperTypes::A4, OrientationTypes::Landscape, $inventory->inventory_id->name);
         } catch (\Throwable $th) {
             $this->response(['message' => $th->getMessage()]);
         }

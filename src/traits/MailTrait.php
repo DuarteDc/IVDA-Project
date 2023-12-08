@@ -9,21 +9,19 @@ use SendGrid\Mail\Mail;
 trait MailTrait
 {
 
-    public function sendMail(string $from, string $subject, string $to, string $name, string $content)
+    public function sendMail(string $subject, string $to, string $content)
     {
         $email = new Mail;
-        $email->setFrom($from, $name);
+        $email->setFrom($_ENV['SENDGRID_DEFAULT_SENDER_ADDRESS'], $_ENV['SENDGRID_DEFAULT_SENDER_NAME']);
         $email->setSubject($subject);
         $email->addTo($to);
-        $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
         $email->addContent(
             "text/html",
-            "<strong>and easy to do anywhere, even with PHP</strong>"
+            $content
         );
         $sendgrid = new SendGrid($_ENV['SENDGRID_API_KEY']);
         try {
             $response = $sendgrid->send($email);
-            var_dump($response);
         } catch (Exception $e) {
             echo 'Caught exception: ' . $e->getMessage() . "\n";
         }
