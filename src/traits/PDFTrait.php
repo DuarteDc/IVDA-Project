@@ -3,29 +3,24 @@
 namespace App\traits;
 
 use App\emuns\OrientationTypes;
+use Dompdf\Dompdf;
+use Dompdf\Options;
 use App\emuns\PaperTypes;
 use Exception;
 
-use mikehaertl\wkhtmlto\Pdf;
-use mikehaertl\tmp\File;
-
 trait PDFTrait
 {
-    public function generatePDF(string $html, PaperTypes $paper, OrientationTypes $orientation, string $fileName)
+    public function generatePDF(string $html, PaperTypes $paper, OrientationTypes $orientation, string $fileName, bool $download = true)
     {
         try {
-            $config = array(
-                'orientation' => $orientation->value,
-                'page-size' => $paper->value,
-                'margin-top'    => '70px',
-                'margin-right'  => '40px',
-                'margin-bottom' => '140px',
-                'margin-left'   => '40px',
-            );
-            $pdf = new Pdf($config);
-            $pdf->addPage($html);   
-            if (!$pdf->send())
-                var_dump($pdf->getError());
+            $options = new Options();
+            $options->set('isRemoteEnabled', true);
+
+            $dompdf = new Dompdf($options);
+            $dompdf->loadHtml($html);
+            $dompdf->setPaper($paper->value, $orientation->value);
+            $dompdf->render();
+            return $dompdf->stream("$fileName.pdf", ['Attachment' => $download]);
         } catch (Exception $e) {
             return $e->getMessage();
         }
