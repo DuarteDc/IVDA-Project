@@ -124,6 +124,6 @@ class SigninController extends Controller
 
     private function getUrlToResetPassword(string $key, string $email)
     {
-        return "http://" . $_SERVER['HTTP_HOST'] . "/reset-password?key=$key&email=$email";
+        return "https://" . $_SERVER['HTTP_HOST'] . "/reset-password?key=$key&email=$email";
     }
 }
