@@ -40,11 +40,11 @@ class SigninController extends Controller
 
     public function user()
     {
-        $session = $_SERVER['HTTP_SESSION'] ?? '';
-        if (!$session) return $this->response(['message' => "unauthorized - 401"], 401);
-        $session = $this::isValidToken($session);
-        if ($session instanceof Exception) return $this->response(['message' => $session->getMessage()], 401);
-        $this->response($session);
+            $session = $_SERVER['HTTP_SESSION'] ?? '';
+            if (!$session) return $this->response(['message' => "unauthorized - 401"], 401);
+            $session = $this::isValidToken($session);
+            if ($session instanceof Exception) return $this->response(['message' => $session->getMessage()], 401);
+            $this->response($session);
     }
 
     public function recoverPassword()
