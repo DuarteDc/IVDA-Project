@@ -15,8 +15,8 @@ class SubSecretaryController extends Controller
 
     public function index()
     {
-        $page = (int) $this->get('page');
-        $page == 0 && $page = 1;
+        $page = $this->get('page');
+        //$page == 0 && $page = 1;
         $data = SubSecretary::find($page);
         $this->response(['subsecretaries' => $data['subsecretaries'], 'page' => $page, 'totalPages' => $data['totalPages']]);
     }

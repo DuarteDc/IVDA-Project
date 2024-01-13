@@ -2,7 +2,6 @@
 
 namespace App\traits;
 
-use App\models\User;
 use Exception;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;

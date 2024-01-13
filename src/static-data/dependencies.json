@@ -1,0 +1,191 @@
+
+[
+    {
+        "code": "207C01010000000",
+        "name": "Dirección General"
+    },
+    {
+        "code": "207C0101000100S",
+        "name": "Coordinación de Informática"
+    },
+    {
+        "code": "207C0101000101S",
+        "name": "Departamento de Análisis, Diseño y Programación de Sistemas"
+    },
+    {
+        "code": "207C0101000102S",
+        "name": "Departamento de Mantenimiento y Soporte Técnico"
+    },
+    {
+        "code": "207C0101000103S",
+        "name": "Departamento de Seguridad Informática"
+    },
+    {
+        "code": "207C0101000200S",
+        "name": "Unidad Jurídica y de Igualdad de Género."
+    },
+    {
+        "code": "207C0101000300S",
+        "name": "Unidad de Información, Planeación, Programación y Evaluación"
+    },
+    {
+        "code": "207C0101010000S",
+        "name": "Coordinación Administrativa"
+    },
+    {
+        "code": "207C0101010100S",
+        "name": "Subdirección de Adquisiciones y Servicios"
+    },
+    {
+        "code": "207C0101010200S",
+        "name": "Subdirección de Administración de Personal"
+    },
+    {
+        "code": "207C0101010300S",
+        "name": "Subdirección de Contabilidad y Finanzas"
+    },
+    {
+        "code": "207C0101020000S",
+        "name": "Órgano Interno de Control"
+    },
+    {
+        "code": "207C0101030000L",
+        "name": "Dirección de Geografía"
+    },
+    {
+        "code": "207C0101030300L",
+        "name": "Subdirección de Cartografía y Geomática"
+    },
+    {
+        "code": "207C0101030301L",
+        "name": "Departamento de Cartografía Automatizada"
+    },
+    {
+        "code": "207C0101030302L",
+        "name": "Departamento de Topografía y Geodesia"
+    },
+    {
+        "code": "207C0101030303L",
+        "name": "Departamento de Fotogrametría y Teledetección"
+    },
+    {
+        "code": "207C0101030200L",
+        "name": "Subdirección de Sistemas de Información Geográfica"
+    },
+    {
+        "code": "207C0101030203L",
+        "name": "Departamento de Desarrollo Geotecnológico"
+    },
+    {
+        "code": "207C0101030202L",
+        "name": "Departamento de Análisis Espacial y Geoinformática"
+    },
+    {
+        "code": "207C0101040000L",
+        "name": "Dirección de Estadística"
+    },
+    {
+        "code": "207C0101040100L",
+        "name": "Subdirección de Información Económica"
+    },
+    {
+        "code": "207C0101040101L",
+        "name": "Departamento de Estadística Económica"
+    },
+    {
+        "code": "207C0101040102L",
+        "name": "Departamento de Registros Administrativos Económicos"
+    },
+    {
+        "code": "207C0101040200L",
+        "name": "Subdirección de Información Social"
+    },
+    {
+        "code": "207C0101040201L",
+        "name": "Departamento de Estadística Social"
+    },
+    {
+        "code": "207C0101040202L",
+        "name": "Departamento de Registros Administrativos Sociales"
+    },
+    {
+        "code": "207C0101050000L",
+        "name": "Dirección de Catastro"
+    },
+    {
+        "code": "207C0101050100L",
+        "name": "Subdirección de Valuación y Dictaminación Catastral"
+    },
+    {
+        "code": "207C0101050101L",
+        "name": "Departamento de Valuación Catastral"
+    },
+    {
+        "code": "207C0101050103L",
+        "name": "Departamento de Dictaminación Catastral"
+    },
+    {
+        "code": "207C0101050200L",
+        "name": "Subdirección de Información Catastral"
+    },
+    {
+        "code": "207C0101050201L",
+        "name": "Departamento de Inventario Catastral Digital"
+    },
+    {
+        "code": "207C0101050202L",
+        "name": "Departamento de Informática Catastral"
+    },
+    {
+        "code": "207C0101060000L",
+        "name": "Dirección de Servicios de Información"
+    },
+    {
+        "code": "207C0101060100L",
+        "name": "Subdirección de Divulgación"
+    },
+    {
+        "code": "207C0101060101L",
+        "name": "Departamento de Edición Documental"
+    },
+    {
+        "code": "207C0101060102L",
+        "name": "Departamento de Centros de Consulta y Comercialización"
+    },
+    {
+        "code": "207C0101060103L",
+        "name": "Departamento de Vinculación Institucional"
+    },
+    {
+        "code": "207C0101060001T",
+        "name": "Delegación Atlacomulco"
+    },
+    {
+        "code": "207C0101060002T",
+        "name": "Delegación Tianguistenco"
+    },
+    {
+        "code": "207C0101060003T",
+        "name": "Delegación Toluca"
+    },
+    {
+        "code": "207C0101060004T",
+        "name": "Delegación Valle de Bravo"
+    },
+    {
+        "code": "207C0101060005T",
+        "name": "Delegación Ecatepec"
+    },
+    {
+        "code": "207C0101060006T",
+        "name": "Delegación Nezahualcóyotl"
+    },
+    {
+        "code": "207C0101060007T",
+        "name": "Delegación Naucalpan"
+    },
+    {
+        "code": "207C0101060008T",
+        "name": "Delegación Tejupilco"
+    }
+]

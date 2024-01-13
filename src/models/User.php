@@ -23,7 +23,7 @@ class User extends Model
     public readonly string $created_at;
     public readonly bool $status;
     public readonly string $role;
-    public $administrative_unit_id;
+    public $dependency_id;
 
     public function __construct()
     {
@@ -47,7 +47,7 @@ class User extends Model
 
             if ($administrative_unit->rowCount() <= 0) return $user;
 
-            $user->administrative_unit_id = $administrative_unit->fetchObject(AdministrativeUnit::class);
+            $user->administrative_unit_id = $administrative_unit->fetchObject(Dependency::class);
             return $user;
         } catch (PDOException $e) {
             return false;
@@ -184,6 +184,22 @@ class User extends Model
             return $db->query("SELECT count(*) FROM users")->fetchColumn();
         } catch (\Throwable $th) {
             return 0;
+        }
+    }
+
+    public static function runSeed(array $users)
+    {
+        try {
+            $query = 'INSERT INTO users(name, last_name, email, password, dependency_id, role) values';
+            $db = new Model();
+            foreach ($users as $key => $user) {
+                $query .= "('{$user["name"]}','{$user["last_name"]}', '{$user["email"]}', '{$user["password"]}', '{$user["dependency_id"]}', '{$user["role"]}'),";
+            }
+            $query = rtrim($query, ', ');        
+
+            return $db->query($query);
+        } catch (PDOException $e) {
+            return $e->getMessage();
         }
     }
 

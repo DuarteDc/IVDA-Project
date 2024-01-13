@@ -6,12 +6,13 @@ use App\lib\Model;
 use PDO;
 use PDOException;
 
-class AdministrativeUnit extends Model
+class Dependency extends Model
 {
 
 
     public readonly string $id;
     public readonly string $name;
+    public readonly string $code;
     public readonly bool $status;
     public string $subsecretary_id;
     public readonly string $created_at;
@@ -26,7 +27,7 @@ class AdministrativeUnit extends Model
     {
         try {
             $db = new Model();
-            $query = $db->prepare('SELECT * FROM administrative_units WHERE id = :id');
+            $query = $db->prepare('SELECT * FROM dependencies WHERE id = :id');
             $query->execute(['id' => $id]);
 
             if ($query->rowCount() > 0)
@@ -35,6 +36,17 @@ class AdministrativeUnit extends Model
             return false;
         } catch (PDOException $e) {
             return false;
+        }
+    }
+
+    public static function findAll()
+    {
+        try {
+            $db = new Model();
+            $query = $db->query('SELECT * FROM dependencies');
+            return $query->fetchAll(PDO::FETCH_CLASS, static::class);
+        } catch (PDOException $e) {
+            return [];
         }
     }
 
@@ -47,26 +59,26 @@ class AdministrativeUnit extends Model
 
             $totalRecordPerPage = 10;
 
-            $count = $db->query("SELECT count(*) FROM administrative_units")->fetchColumn();
+            $count = $db->query("SELECT count(*) FROM dependencies")->fetchColumn();
 
             $totalPages = ceil($count / $totalRecordPerPage);
             if ($totalPages < $page) $page = $totalPages;
             $startingLimit = ($page - 1) * $totalRecordPerPage;
 
-            $query = $db->query("SELECT administrative_units.id , administrative_units.name, administrative_units.status, administrative_units.created_at, subsecretaries.name  as subsecretary_id FROM administrative_units JOIN subsecretaries on subsecretaries.id = administrative_units.subsecretary_id ORDER BY administrative_units.id DESC LIMIT $totalRecordPerPage OFFSET $startingLimit");
+            $query = $db->query("SELECT dependencies.id , dependencies.name, dependencies.status, dependencies.created_at, subsecretaries.name  as subsecretary_id FROM dependencies JOIN subsecretaries on subsecretaries.id = dependencies.subsecretary_id ORDER BY depenencies.id DESC LIMIT $totalRecordPerPage OFFSET $startingLimit");
 
-            if ($query->rowCount() > 0) return ['administrative_units' => $query->fetchAll(PDO::FETCH_CLASS, self::class), 'totalPages' =>  $totalPages];
+            if ($query->rowCount() > 0) return ['dependencies' => $query->fetchAll(PDO::FETCH_CLASS, self::class), 'totalPages' =>  $totalPages];
 
-            return ['administrative_units' => [], 'totalPages' => $totalPages];
+            return ['dependencies' => [], 'totalPages' => $totalPages];
         } catch (PDOException $e) {
-            return ['administrative_units' => [], 'totalPages' => 0];
+            return ['dependencies' => [], 'totalPages' => 0];
         }
     }
 
     public function save(string $name, string $subsecretary_id)
     {
         try {
-            $query = $this->prepare('INSERT INTO administrative_units(name, subsecretary_id) values(:name, :subsecretary_id)');
+            $query = $this->prepare('INSERT INTO dependencies(name, subsecretary_id) values(:name, :subsecretary_id)');
             return $query->execute(['name' => $name, 'subsecretary_id' => $subsecretary_id]);
         } catch (\Throwable $th) {
             return false;
@@ -79,7 +91,7 @@ class AdministrativeUnit extends Model
         try {
             $db = new Model();
             $type = json_encode($type);
-            $query = $db->query("SELECT * FROM administrative_units WHERE status = {$type}");
+            $query = $db->query("SELECT * FROM dependencies WHERE status = {$type}");
             if ($query->rowCount() > 0) return $query->fetchAll(PDO::FETCH_CLASS, self::class);
             return false;
         } catch (PDOException $e) {
@@ -91,7 +103,7 @@ class AdministrativeUnit extends Model
     {
         try {
             $db = new Model();
-            $query = $db->query("SELECT * FROM administrative_units WHERE status = true AND subsecretary_id = $subsecretary_id");
+            $query = $db->query("SELECT * FROM dependencies WHERE status = true AND subsecretary_id = $subsecretary_id");
             if ($query->rowCount() > 0) return $query->fetchAll(PDO::FETCH_CLASS, self::class);
             return [];
         } catch (PDOException $e) {
@@ -104,7 +116,7 @@ class AdministrativeUnit extends Model
         try {
             $db = new Model;
             $status = json_encode($status);
-            return $db->query("UPDATE administrative_units SET status = {$status} WHERE id = {$id}");
+            return $db->query("UPDATE dependencies SET status = {$status} WHERE id = {$id}");
         } catch (\Throwable $th) {
             return false;
         }
@@ -132,7 +144,7 @@ class AdministrativeUnit extends Model
                 if (strlen($value)  > 0)  $query .= "{$key} = '{$value}', ";
             }
             $query = rtrim($query, ', ');
-            $db->query("UPDATE administrative_units $query Where id = $id");
+            $db->query("UPDATE dependencies $query Where id = $id");
             return self::findOne($id);
         } catch (\Throwable $th) {
             return false;
@@ -143,9 +155,28 @@ class AdministrativeUnit extends Model
     {
         try {
             $db = new Model();
-            return $db->query("SELECT count(*) FROM administrative_units")->fetchColumn();
+            return $db->query("SELECT count(*) FROM dependencies")->fetchColumn();
         } catch (\Throwable $th) {
             return 0;
         }
     }
+
+    public static function runSeed() {
+        try {
+            $data = file_get_contents(__DIR__ . '/../static-data/dependencies.json');
+    
+            $query = 'INSERT INTO dependencies(name, code) values';
+            $db = new Model();
+            foreach (json_decode($data) as $key => $value) {
+                $query .= "('{$value->name}', '{$value->code}'),";
+            }
+            $query = rtrim($query, ', ');
+
+            return $db->query($query);
+        } catch (PDOException $e) {
+            return $e;
+        }
+    }
+
 }
+

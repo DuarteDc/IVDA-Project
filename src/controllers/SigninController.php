@@ -99,8 +99,6 @@ class SigninController extends Controller
         $password = $this->post('password');
         $confirm_password = $this->post('confirm_password');
 
-
-
         if ($password != $confirm_password) return $this->response(['message' => 'Las contraselas no coinciden, por favor verificalas'], 400);
         $user = User::findByEmail($email);
         if (!$user || !$user->status) return $this->response(['message' => 'El correo electronico no es valido'], 400);

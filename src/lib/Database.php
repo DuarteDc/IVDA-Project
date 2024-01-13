@@ -13,6 +13,7 @@ class Database
     private readonly String $db;
     private readonly String $user;
     private readonly String $password;
+    private readonly String $port;
 
     public function __construct()
     {
@@ -20,6 +21,7 @@ class Database
         $this->db       = $_ENV['DB'];
         $this->user     = $_ENV['USER'];
         $this->password = $_ENV['PASSWORD'];
+        $this->port     = $_ENV['PORT'];
 
         if (!$this->host || !$this->db || !$this->user) return throw new Exception("Configure .env file");
     }
@@ -27,7 +29,7 @@ class Database
     public function connect(): PDO
     {
         try {
-            $connection = "pgsql:host=" . $this->host . ";dbname=" . $this->db;
+            $connection = "pgsql:host=" . $this->host . ";port=". $this->port .";dbname=" . $this->db;
 
             $options = [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

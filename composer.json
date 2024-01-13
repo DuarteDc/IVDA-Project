@@ -19,6 +19,7 @@
         "dompdf/dompdf": "^2.0",
         "tecnickcom/tcpdf": "^6.6",
         "mikehaertl/phpwkhtmltopdf": "^2.5",
-        "sendgrid/sendgrid": "~7"
+        "sendgrid/sendgrid": "~7",
+        "fakerphp/faker": "^1.23"
     }
 }

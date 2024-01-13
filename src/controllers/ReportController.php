@@ -33,10 +33,6 @@ class ReportController extends Controller
             $this->render('report/index', ['inventory' => $inventory]);
             $document = ob_get_clean();
 
-            // ob_start();
-            // $this->render('report/header');
-            // $header = ob_get_clean();
-
             header("Access-Control-Allow-Origin: *");
             http_response_code(200);
             $this->generatePDF($document, PaperTypes::A4, OrientationTypes::Landscape, $inventory->inventory_id->name);

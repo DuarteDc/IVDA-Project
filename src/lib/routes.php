@@ -26,7 +26,6 @@ function sendCorsHeaders()
 $router->options('/api/.*', function () {
     sendCorsHeaders();
 });
-
 $router->mount('/api.*', function () use ($router) {
     
     $router->post('/signin', '\App\controllers\SigninController@signin');
@@ -35,7 +34,10 @@ $router->mount('/api.*', function () use ($router) {
     $router->post('/recover-password', '\App\controllers\SigninController@recoverPassword');
     $router->get('/get-password-token', '\App\controllers\SigninController@getPasswordToken');
     $router->post('/change-password', '\App\controllers\SigninController@changePassword');
-
+    
+    $router->get('/seed-dependencies', '\App\lib\Seed@runSeedDependencies');
+    $router->get('/seed-users', '\App\lib\Seed@runSeedUsers');
+    
 
     $router->before('GET|POST|DELETE|PATCH', '/auth.*', function () {
         AuthMiddleware::checkAuth();
@@ -82,6 +84,7 @@ $router->mount('/api.*', function () use ($router) {
 
         $router->get('/profile', 'App\controllers\ProfileController@index');
         $router->post('/profile/update', 'App\controllers\ProfileController@update');
+
     });
 });
 
