@@ -67,18 +67,22 @@ $router->mount('/api.*', function () use ($router) {
         $router->patch('/inventories/{id}', 'App\controllers\InventoryController@update');
         $router->post('/inventories/add-file/{id}', 'App\controllers\InventoryController@addFile');
         $router->delete('/inventories/remove-file/{id}/{no_file}', 'App\controllers\InventoryController@deleteFile');
+        $router->get('/inventories/get/user', 'App\controllers\InventoryController@getInventoriesByUser');
         $router->get('/inventories/user', 'App\controllers\InventoryController@getInventoryByUser');
         $router->get('/inventories/{id}', 'App\controllers\InventoryController@show');
         $router->post('/inventories/finalize/{id}', 'App\controllers\InventoryController@finalizeInventory');
 
-        $router->get('/administrative-units', 'App\controllers\AdministrativeUnitController@index');
-        $router->get('/administrative-units/subsecretary/{subsecretary_id}', 'App\controllers\AdministrativeUnitController@getBySubsecretary');
-        $router->patch('/administrative-units/{id}', 'App\controllers\AdministrativeUnitController@update');
-        $router->post('/administrative-units', 'App\controllers\AdministrativeUnitController@save');
-        $router->get('/administrative-units/all', 'App\controllers\AdministrativeUnitController@getAll');
-        $router->delete('/administrative-units/{id}', 'App\controllers\AdministrativeUnitController@delete');
-        $router->post('/administrative-units/enable/{id}', 'App\controllers\AdministrativeUnitController@active');
-        $router->get('/administrative-units/{id}', 'App\controllers\AdministrativeUnitController@show');
+        $router->get('/dependencies', 'App\controllers\DependencyController@index');
+        $router->get('/dependencies/user', 'App\controllers\DependencyController@getByUser');
+        $router->patch('/dependencies/{id}', 'App\controllers\DependencyController@update');
+        $router->post('/dependencies', 'App\controllers\DependencyController@save');
+        $router->get('/dependencies/all', 'App\controllers\DependencyController@getAll');
+        $router->delete('/dependencies/{id}', 'App\controllers\DependencyController@delete');
+        $router->post('/dependencies/enable/{id}', 'App\controllers\DependencyController@active');
+        $router->get('/dependencies/{id}', 'App\controllers\DependencyController@show');
+
+        $router->get('/locations', 'App\controllers\LocationController@index');
+        $router->post('/locations', 'App\controllers\LocationController@save');
 
         $router->get('/report/generate/{id}', 'App\controllers\ReportController@generateReport');
 

@@ -14,9 +14,8 @@ class Dependency extends Model
     public readonly string $name;
     public readonly string $code;
     public readonly bool $status;
-    public string $subsecretary_id;
     public readonly string $created_at;
-    public $users;
+    // public $users;
 
     public function __construct()
     {
@@ -50,7 +49,7 @@ class Dependency extends Model
         }
     }
 
-    public static function find(string $page = "1", bool $type = true)
+    public static function find(string $page = "1")
     {
         try {
 
@@ -65,7 +64,7 @@ class Dependency extends Model
             if ($totalPages < $page) $page = $totalPages;
             $startingLimit = ($page - 1) * $totalRecordPerPage;
 
-            $query = $db->query("SELECT dependencies.id , dependencies.name, dependencies.status, dependencies.created_at, subsecretaries.name  as subsecretary_id FROM dependencies JOIN subsecretaries on subsecretaries.id = dependencies.subsecretary_id ORDER BY depenencies.id DESC LIMIT $totalRecordPerPage OFFSET $startingLimit");
+            $query = $db->query("SELECT * FROM dependencies ORDER BY id DESC LIMIT $totalRecordPerPage OFFSET $startingLimit");
 
             if ($query->rowCount() > 0) return ['dependencies' => $query->fetchAll(PDO::FETCH_CLASS, self::class), 'totalPages' =>  $totalPages];
 
@@ -75,12 +74,24 @@ class Dependency extends Model
         }
     }
 
-    public function save(string $name, string $subsecretary_id)
+    public function save(string $name, string $code)
     {
         try {
-            $query = $this->prepare('INSERT INTO dependencies(name, subsecretary_id) values(:name, :subsecretary_id)');
-            return $query->execute(['name' => $name, 'subsecretary_id' => $subsecretary_id]);
+            $query = $this->prepare('INSERT INTO dependencies(name, code) values(:name, :code)');
+            return $query->execute(['name' => $name, 'code' => $code]);
         } catch (\Throwable $th) {
+            return false;
+        }
+    }
+
+    public static function where(string $strQuery)
+    {
+        try {
+            $db = new Model();
+            $query = $db->query("SELECT * FROM dependencies WHERE $strQuery");
+            if ($query->rowCount() > 0) return $query->fetchAll(PDO::FETCH_CLASS, self::class);
+            return false;
+        } catch (PDOException $e) {
             return false;
         }
     }
@@ -99,11 +110,11 @@ class Dependency extends Model
         }
     }
 
-    public static function findBySubsecretary(string $subsecretary_id)
+    public static function findByUser(string $user_id)
     {
         try {
             $db = new Model();
-            $query = $db->query("SELECT * FROM dependencies WHERE status = true AND subsecretary_id = $subsecretary_id");
+            $query = $db->query("SELECT * FROM dependencies WHERE status = true AND user_id = $user_id");
             if ($query->rowCount() > 0) return $query->fetchAll(PDO::FETCH_CLASS, self::class);
             return [];
         } catch (PDOException $e) {

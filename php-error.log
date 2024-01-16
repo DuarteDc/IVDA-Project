@@ -1933,3 +1933,342 @@ Stack trace:
 #5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
 #6 {main}
   thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php on line 24
+[15-Jan-2024 10:53:57 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 10:54:05 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 10:54:35 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 10:56:00 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php:24
+Stack trace:
+#0 [internal function]: App\controllers\AdministrativeUnitController->index()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php on line 24
+[15-Jan-2024 10:56:11 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php:24
+Stack trace:
+#0 [internal function]: App\controllers\AdministrativeUnitController->index()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php on line 24
+[15-Jan-2024 10:57:12 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php:24
+Stack trace:
+#0 [internal function]: App\controllers\AdministrativeUnitController->index()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php on line 24
+[15-Jan-2024 10:57:34 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php:24
+Stack trace:
+#0 [internal function]: App\controllers\AdministrativeUnitController->index()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/AdministrativeUnitController.php on line 24
+[15-Jan-2024 10:59:08 America/Mexico_City] PHP Warning:  Undefined array key "administrative_units" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 26
+[15-Jan-2024 10:59:18 America/Mexico_City] PHP Warning:  Undefined array key "administrative_units" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 26
+[15-Jan-2024 10:59:47 America/Mexico_City] PHP Warning:  Undefined array key "administrative_units" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 26
+[15-Jan-2024 11:03:35 America/Mexico_City] PHP Warning:  Undefined array key "administrative_units" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 26
+[15-Jan-2024 11:04:53 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 11:04:56 America/Mexico_City] PHP Warning:  Undefined array key "administrative_units" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 26
+[15-Jan-2024 11:05:14 America/Mexico_City] PHP Warning:  Undefined array key "administrative_units" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 26
+[15-Jan-2024 11:05:35 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 11:05:44 America/Mexico_City] PHP Warning:  Undefined array key "administrative_units" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 26
+[15-Jan-2024 11:07:00 America/Mexico_City] PHP Warning:  Undefined array key "administrative_units" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 26
+[15-Jan-2024 11:09:36 America/Mexico_City] PHP Warning:  Undefined array key "administrative_units" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 26
+[15-Jan-2024 11:19:25 America/Mexico_City] PHP Warning:  Undefined array key "administrative_units" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 25
+[15-Jan-2024 11:20:00 America/Mexico_City] PHP Warning:  Undefined array key "administrative_units" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 25
+[15-Jan-2024 11:20:09 America/Mexico_City] PHP Warning:  Undefined array key "administrative_units" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 25
+[15-Jan-2024 11:30:34 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Dependency::$status is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Dependency.php on line 69
+[15-Jan-2024 11:30:34 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Dependency::$status is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Dependency.php on line 69
+[15-Jan-2024 11:30:34 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Dependency::$status is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Dependency.php on line 69
+[15-Jan-2024 11:30:34 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Dependency::$status is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Dependency.php on line 69
+[15-Jan-2024 11:30:34 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Dependency::$status is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Dependency.php on line 69
+[15-Jan-2024 11:30:34 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Dependency::$status is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Dependency.php on line 69
+[15-Jan-2024 11:30:34 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Dependency::$status is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Dependency.php on line 69
+[15-Jan-2024 11:30:34 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Dependency::$status is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Dependency.php on line 69
+[15-Jan-2024 11:30:34 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Dependency::$status is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Dependency.php on line 69
+[15-Jan-2024 11:30:34 America/Mexico_City] PHP Deprecated:  Creation of dynamic property App\models\Dependency::$status is deprecated in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Dependency.php on line 69
+[15-Jan-2024 11:33:42 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 11:36:26 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 11:36:38 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 11:37:13 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 11:41:52 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 11:56:17 America/Mexico_City] PHP Warning:  Undefined variable $code in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 93
+[15-Jan-2024 13:26:08 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 13:27:24 America/Mexico_City] PHP Parse error:  syntax error, unexpected token ")", expecting variable or "{" or "$" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 97
+[15-Jan-2024 13:27:27 America/Mexico_City] PHP Parse error:  syntax error, unexpected token ")", expecting variable or "{" or "$" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 97
+[15-Jan-2024 13:27:42 America/Mexico_City] PHP Parse error:  syntax error, unexpected token ")", expecting variable or "{" or "$" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 97
+[15-Jan-2024 13:40:19 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 13:40:31 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 14:16:16 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 15:09:50 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 15:36:13 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 16:17:39 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 16:33:39 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 16:35:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 16:36:24 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(96): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 16:46:29 America/Mexico_City] PHP Deprecated:  Optional parameter $page declared before required parameter $user_id is implicitly treated as a required parameter in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Inventory.php on line 58
+[15-Jan-2024 16:50:29 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 16:50:33 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 16:52:00 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[15-Jan-2024 17:34:56 America/Mexico_City] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\models\Location::__construct(), 0 passed and exactly 1 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Location.php:16
+Stack trace:
+#0 [internal function]: App\models\Location->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Location.php(49): PDOStatement->fetchAll()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(26): App\models\Location::where()
+#3 [internal function]: App\controllers\LocationController->save()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(100): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Location.php on line 16
+[15-Jan-2024 17:35:50 America/Mexico_City] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\models\Location::__construct(), 0 passed and exactly 1 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Location.php:16
+Stack trace:
+#0 [internal function]: App\models\Location->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Location.php(49): PDOStatement->fetchAll()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(26): App\models\Location::where()
+#3 [internal function]: App\controllers\LocationController->save()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(100): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Location.php on line 16
+[15-Jan-2024 17:35:51 America/Mexico_City] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\models\Location::__construct(), 0 passed and exactly 1 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Location.php:16
+Stack trace:
+#0 [internal function]: App\models\Location->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Location.php(49): PDOStatement->fetchAll()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(26): App\models\Location::where()
+#3 [internal function]: App\controllers\LocationController->save()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(100): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/Location.php on line 16
+[15-Jan-2024 17:50:31 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$dependecy_id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 59
+[15-Jan-2024 17:50:57 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$dependecy_id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 59
+[15-Jan-2024 17:52:00 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$dependecy_id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 59

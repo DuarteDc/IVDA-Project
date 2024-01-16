@@ -4,6 +4,7 @@ namespace App\controllers;
 
 use App\lib\Controller;
 use App\models\AdministrativeUnitInventorySubsecretary;
+use App\models\DependencyInventory;
 use App\models\Inventory;
 use PDOException;
 
@@ -20,6 +21,14 @@ class InventoryController extends Controller
         $page = (int) $this->get('page');
         $page == 0 && $page = 1;
         $data = Inventory::find($page);
+        $this->response(['inventories' => $data['inventories'], 'page' => $page, 'totalPages' => $data['totalPages']]);
+    }
+
+    public function getInventoriesByUser()
+    {
+        $page = (int) $this->get('page');
+        $page == 0 && $page = 1;
+        $data = Inventory::findByUser($page, $this->auth()->id);
         $this->response(['inventories' => $data['inventories'], 'page' => $page, 'totalPages' => $data['totalPages']]);
     }
 
