@@ -5,7 +5,10 @@ namespace App\controllers;
 use App\lib\Controller;
 use App\models\AdministrativeUnitInventorySubsecretary;
 use App\models\DependencyInventory;
+use App\models\DependencyInventoryLocationTypeFile;
 use App\models\Inventory;
+use App\models\Location;
+use App\models\TypeFile;
 use PDOException;
 
 class InventoryController extends Controller
@@ -20,7 +23,7 @@ class InventoryController extends Controller
     {
         $page = (int) $this->get('page');
         $page == 0 && $page = 1;
-        $data = Inventory::find($page);
+        $data = Inventory::findByUser($page, $this->auth()->id);
         $this->response(['inventories' => $data['inventories'], 'page' => $page, 'totalPages' => $data['totalPages']]);
     }
 
@@ -35,23 +38,49 @@ class InventoryController extends Controller
     public function save()
     {
 
-        $code = $this->post('code');
-        $administrative_unit_id = $this->post('administrative_unit_id');
-        $subsecretary_id = $this->post('subsecretary_id');
+        $inventory = Inventory::Where("user_id = {$this->auth()->id} AND status = false");
+        if ($inventory) return $this->response(['message' => 'No es posible crear un nuevo inventario porque actualmente hay un inventario en curso'], 400);
 
-        if (!$code || !$administrative_unit_id || !$subsecretary_id) return $this->response(['message' => 'Los campos son requeridos'], 400);
+        $typeFile = $this->post('type_file');
+        $location = $this->post('location');
+        $date = $this->post('date');
 
-        $inventory = AdministrativeUnitInventorySubsecretary::Where("administrative_unit_id = '$administrative_unit_id' AND subsecretary_id = '$subsecretary_id'");
-        if ($inventory && !Inventory::findOne($inventory->inventory_id)->status) return $this->response(['message' => 'Ya existe un inventario en proceso con esa unidad administrativa'], 400);
+        if (!$typeFile || !$location || !$date) return $this->response(['message' => 'Los campos son requeridos'], 400);
 
-        $name = 'INVENTARIO GENERAL DE ARCHIVO';
+        if (gettype($typeFile) === "string" && is_numeric($typeFile)) return $this->response(['message' => 'Por favor ingresa un nombre valido para crear un tipo de archivo'], 400);
+        if (gettype($location) === "string" && is_numeric($location)) return $this->response(['message' => 'Por favor ingresa un nombre valido para crear una ubicación'], 400);
+
+        if (gettype($typeFile) === "integer") {
+            $typeFile = TypeFile::findOne($typeFile);
+            if (!$typeFile) return $this->response(['message' => 'El tipo de archivo no existe o no es valido'], 400);
+        } else {
+            $name = trim(ucwords($typeFile));
+            if (TypeFile::where("name = '$name'")) return $this->response(['message' => 'Ya existe un typo de archivo con ese nombre'], 400);
+            $newFileType = new TypeFile();
+            $newFileType = $newFileType->save($name);
+            if (!$newFileType) return $this->response(['message' => 'No es posible crear una nueva ubicación - Intenta más tarde'], 500);
+            $typeFile = $newFileType->id;
+        }
+
+        if (gettype($location) === "integer") {
+            $location = Location::findOne($location);
+            if (!$location) return $this->response(['message' => 'El tipo de archivo no existe o no es valido'], 400);
+        } else {
+            $name = trim(ucwords($location));
+            if (TypeFile::where("name = '$name'")) return $this->response(['message' => 'Ya existe un typo de archivo con ese nombre'], 400);
+            $newLocation = new Location();
+            $newLocation = $newLocation->save($name);
+            if (!$newLocation) return $this->response(['message' => 'No es posible crear una nueva ubicación - Intenta más tarde'], 500);
+            $location = $newLocation->id;
+        }
+
+
         $inventory = new Inventory();
-        $newInventory = $inventory->save($name, $code, $this::auth()->id);
-        if (!$newInventory) return $this->response(['message' => 'Parece que hubo un error al crear el inventario'], 400);
 
-        $this->attachInventoryData($administrative_unit_id, $newInventory->id, $subsecretary_id);
+        $inventory = $inventory->save($this->auth()->id, $date);
+        $inventory->attachData($this->auth()->dependency_id, $inventory->id, $location->id, $typeFile->id);
 
-        $this->response(['message' => 'El inventario se creo con exito']);
+        $this->response(['message' => 'El inventario se creo con exito'], 200);
     }
 
     public function update(string $id)
@@ -80,15 +109,16 @@ class InventoryController extends Controller
     {
         $inventory = Inventory::findOne($id);
         if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
-        $inventory = AdministrativeUnitInventorySubsecretary::Where("inventory_id = {$inventory->id}");
+        $inventory = DependencyInventoryLocationTypeFile::Where("inventory_id = {$inventory->id}");
         $inventory->body = json_decode($inventory->body ?? "[]");
         $this->response(['inventory' => $inventory->getDataRelations($inventory)]);
+    
     }
 
     public function getInventoryByUser()
     {
-        $administrative_unit_id = self::auth()->administrative_unit_id;
-        $inventory = AdministrativeUnitInventorySubsecretary::Where("administrative_unit_id = $administrative_unit_id");
+        $administrative_unit_id = $this->auth()->dependency_id;
+        $inventory = DependencyInventoryLocationTypeFile::Where("dependency_id = $administrative_unit_id");
         if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 404);
         $inventory = $inventory->getDataRelations($inventory);
         if ($inventory->inventory_id->status) return $this->response(['message' => 'El inventario ya ha sido finalizado'], 400);
@@ -101,7 +131,7 @@ class InventoryController extends Controller
         $inventory = Inventory::findOne($id);
         if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
 
-        $inventory_body = AdministrativeUnitInventorySubsecretary::Where("inventory_id = {$inventory->id}");
+        $inventory_body = DependencyInventoryLocationTypeFile::Where("inventory_id = {$inventory->id}");
 
         if (!$inventory_body) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
 
@@ -115,7 +145,7 @@ class InventoryController extends Controller
         $inventory = Inventory::findOne($id);
         if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
 
-        $inventory_body = AdministrativeUnitInventorySubsecretary::Where("inventory_id = {$inventory->id}");
+        $inventory_body = DependencyInventoryLocationTypeFile::Where("inventory_id = {$inventory->id}");
 
         if (!$inventory_body) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
 

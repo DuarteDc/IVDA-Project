@@ -10,10 +10,9 @@ class LocationController extends Controller
 
     public function index()
     {
-        $locations = Location::findAll();
+        $locations = Location::findAll();   
         $this->response(['locations' => $locations], 200);
     }
-
 
     public function save()
     {

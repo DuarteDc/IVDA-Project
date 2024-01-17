@@ -26,6 +26,6 @@ class Model
     public function insert(string $query, array $fields) {
         $sql = $this->db->connect()->prepare($query);
         $sql->execute($fields);
-        return $sql->fetchObject();
+        return $sql->fetchColumn();
     }
 }

@@ -84,6 +84,9 @@ $router->mount('/api.*', function () use ($router) {
         $router->get('/locations', 'App\controllers\LocationController@index');
         $router->post('/locations', 'App\controllers\LocationController@save');
 
+        $router->get('/type-files', 'App\controllers\TypeFileController@index');
+        $router->post('/type-files', 'App\controllers\TypeFileController@save');
+
         $router->get('/report/generate/{id}', 'App\controllers\ReportController@generateReport');
 
         $router->get('/profile', 'App\controllers\ProfileController@index');

@@ -10,10 +10,9 @@ class Inventory extends Model
 {
 
     public readonly string  $id;
-    public readonly string  $name;
-    public readonly string  $code;
     public readonly bool    $status;
     public readonly string  $user_id;
+    public readonly string  $start_date;
     public readonly string  $created_at;
 
     public function __construct()
@@ -89,14 +88,11 @@ class Inventory extends Model
         }
     }
 
-    public function save(string $name, string $code, string $user_id)
+    public function save(string $userId, string $startDate)
     {
         try {
-            $query = $this->insert(
-                'INSERT INTO inventories(name, code, user_id) VALUES (:name, :code, :user_id)  RETURNING id',
-                ['name' => $name, 'code' => $code, 'user_id' =>  $user_id]
-            );
-            return $query;
+            (string)$id = $this->insert('INSERT INTO inventories(user_id, start_date) VALUES (:user_id, :start_date) returning id', ['user_id' =>  $userId, 'start_date' => $startDate]);
+            return $this->findOne($id);
         } catch (PDOException $e) {
             var_dump($e->getMessage());
         }
@@ -114,6 +110,16 @@ class Inventory extends Model
             return $db->query("UPDATE inventories $query Where id = $id");
         } catch (PDOException $th) {
             return false;
+        }
+    }
+
+    public function attachData($dependencyId, $inventoryId, $locationId, $typeFileId)
+    {
+        try {
+            $relation = new DependencyInventoryLocationTypeFile;
+            return $relation->save((string)$dependencyId, (string) $inventoryId, (string) $locationId, (string) $typeFileId);
+        } catch (\Throwable $th) {
+            return $th->getMessage();
         }
     }
 

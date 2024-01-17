@@ -1,4 +1,5 @@
 .env
+php-error.log
 
 /vendor
 /postgres
