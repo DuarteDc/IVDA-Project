@@ -20,6 +20,8 @@ trait PDFTrait
             $dompdf->loadHtml($html);
             $dompdf->setPaper($paper->value, $orientation->value);
             $dompdf->render();
+            $font = $dompdf->getFontMetrics()->getFont("Arial");
+            $dompdf->getCanvas()->page_text(760, 560, "Hoja {PAGE_NUM} de {PAGE_COUNT}", $font, 9, array(0, 0, 0));
             return $dompdf->stream("$fileName.pdf", ['Attachment' => $download]);
         } catch (Exception $e) {
             return $e->getMessage();

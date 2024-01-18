@@ -32,8 +32,7 @@ class Location extends Model
     public function save(string $name)
     {
         try {
-            $query = $this->prepare('INSERT INTO locations (name) values(:name)');
-            $id = $query->execute(['name' => $name]);
+            (string)$id = $this->insert('INSERT INTO locations (name) values(:name) returning id', ['name' => $name]);
             return $this->findOne($id);
         } catch (\Throwable $th) {
             return $th->getMessage();
@@ -62,5 +61,4 @@ class Location extends Model
             return $e->getMessage();
         }
     }
-
 }

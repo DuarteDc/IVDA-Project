@@ -7,9 +7,21 @@
     <title>Inventario General</title>
 </head>
 <style>
+    header {
+        position: fixed;
+        display: block;
+        top: -80px;
+        margin: auto;
+        width: 100%;
+    }
+
+    @page {
+        margin: 100px 40px;
+    }
+
     .body {
         font-size: 11px;
-        font-family: Aroal, sans-serif;
+        font-family: Arial, Helvetica, sans-serif, sans-serif;
     }
 
     table {
@@ -32,19 +44,22 @@
     }
 </style>
 
+<!-- jeremy35@hotmail.com -->
+
 <body class="body">
-    <main style="position: relative;">
-        <div style="position: absolute; top: -20px; right: 0px; z-index: 5000;">
-            <!-- <img src="https://retys.edomex.gob.mx/img/h3.png" alt="EdoMex" height="50" width="150"> -->
-        </div>
-        <h1 style="text-align: center; font-weight: bold;">INVENTARIO GENERAL DE ARCHIVO</h1>
+    <header>
+        <img src="data:image/png;base64, . <?php echo $data->fisrtImage ?>. " width="200px" height="70px" style="position: absolute; left: 0px;" />
+        <img src="data:image/png;base64, . <?php echo $data->secondImage ?>. " width="270px" height="65px" style="position: absolute; right: -60px;" />
+    </header>
+    <main>
+        <h1 style="text-align: center; font-weight: bold; margin-top: -20px;">INVENTARIO GENERAL DE ARCHIVO</h1>
         <section>
             <div style="padding: 0px 8px; vertical-align: middle; width: 100%; text-align: right; margin-bottom: -2px;">
                 <div style="display: inline-block; vertical-align: middle;">
                     Fecha de elaboración:
                     <div style="display: inline-block; background-color: #EBEDEF; vertical-align: middle;">
                         <?php
-                        $date = explode('-', $data->inventory->created_at);
+                        $date = explode('-', $data->inventory->inventory_id->start_date);
                         ?>
                         <div style="display: inline-block; vertical-align: middle; margin-bottom: -5px; padding: 5.5px 10px; background-color: #B2BABB;"><?php echo $date[2] ?></div>
                         <div style="display: inline-block; vertical-align: middle; padding: 8px 10px; margin-bottom: -5px;"><?php echo $date[1] ?></div>
@@ -54,32 +69,30 @@
             </div>
             <div style="background-color: #EBEDEF; padding: 5px 4px; vertical-align: middle; width: 100%;">
                 <div style="display: inline-block; width: 70%; vertical-align: middle; ">
-                    Dependencia: <?php echo $data->inventory->subsecretary_id->name ?>
+                    Dependencia: Instituto de Información e Investigación Geográfica, Estadística y Catastral del Estado de México
                 </div>
                 <div style="display: inline-block; vertical-align: middle; ">
-                    Tipo de archivo: Archivo de trámite
+                    Tipo de archivo: <?php echo $data->inventory->type_file_id->name ?>
                 </div>
             </div>
             <div style="padding: 5px 4px; width: 100%;">
                 <div style="display: inline-block; width: 70%; vertical-align: middle; ">
-                    Codificación estructural: <?php echo $data->inventory->inventory_id->code ?>
+                    Codificación estructural: <?php echo $data->inventory->dependency_id->code ?>
                 </div>
                 <div style="display: inline-block; vertical-align: middle; text-align: right;  ">
-                    Ubicación física: Área administrativa
+                    Ubicación física: <?php echo $data->inventory->location_id->name ?>
                 </div>
             </div>
             <div style="background-color: #EBEDEF; padding: 5px 4px; vertical-align: middle;  width: 100%;">
                 <div style="display: inline-block; width: 70%;">
-                    Unidad administrativa: <?php echo $data->inventory->administrative_unit_id->name ?>
+                    Unidad administrativa: <?php echo $data->inventory->dependency_id->name ?>
                 </div>
             </div>
             <table>
                 <thead>
                     <tr>
-                        <th style="text-align: left; font-weight: lighter;  width: 100%; background-color: #05AEB3; color: white; padding: 5px 3px;">Fondo documental:</th>
-                        <th style="text-align: left; font-weight: lighter;  width: 100%; background-color: white; padding: 5px 0; padding: 5px 3px;"><?php echo $data->inventory->subsecretary_id->name ?></th>
-                        <th style="text-align: left; font-weight: lighter;  width: 100%;  background-color: #05AEB3; color: white; padding: 5px 3px;">Subfondo:</th>
-                        <th style="text-align: left; font-weight: lighter;  width: 100%; background-color: white; padding: 5px 0; padding: 5px 3px;"><?php echo $data->inventory->administrative_unit_id->name ?></th>
+                        <th style="text-align: left; font-weight: lighter;  width: 30%; background-color: #05AEB3; color: white; padding: 5px 3px;">Fondo documental:</th>
+                        <th style="text-align: left; font-weight: lighter;  width: 100%; background-color: white; padding: 5px 0; padding: 5px 3px;">Instituto de Información e Investigación Geográfica, Estadística y Catastral del Estado de México</th>
                     </tr>
                 </thead>
             </table>

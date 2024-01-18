@@ -10,8 +10,9 @@ use App\traits\AuthTrait;
 class User extends Model
 {
 
-    const USER = 1;
-    const ADMIN = 2;
+    const ADMIN = 0;
+    const SUBADMIN = 1;
+    const USER = 2;
 
     use AuthTrait;
 

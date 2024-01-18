@@ -3,8 +3,6 @@
 namespace App\controllers;
 
 use App\lib\Controller;
-use App\models\AdministrativeUnitInventorySubsecretary;
-use App\models\DependencyInventory;
 use App\models\DependencyInventoryLocationTypeFile;
 use App\models\Inventory;
 use App\models\Location;
@@ -35,6 +33,34 @@ class InventoryController extends Controller
         $this->response(['inventories' => $data['inventories'], 'page' => $page, 'totalPages' => $data['totalPages']]);
     }
 
+
+    private function validateNewLocation($location)
+    {
+        if (gettype($location) === "integer") {
+            $getLocation = Location::findOne($location);
+            if (!$getLocation) return $this->response(['message' => 'El tipo de archivo no existe o no es valido'], 400);
+            return $getLocation;
+        }
+        $name = trim(ucwords($location));
+        if (TypeFile::where("name = '$name'")) return $this->response(['message' => 'Ya existe un typo de archivo con ese nombre'], 400);
+        $newLocation = new Location();
+        return $newLocation->save($name);
+    }
+
+
+    private function validateNewTypeFile($typeFile)
+    {
+        if (gettype($typeFile) === "integer") {
+            $getTypeFile = TypeFile::findOne($typeFile);
+            if (!$getTypeFile) return $this->response(['message' => 'El tipo de archivo no existe o no es valido'], 400);
+            return $getTypeFile;
+        }
+        $name = trim(ucwords($typeFile));
+        if (TypeFile::where("name = '$name'")) return $this->response(['message' => 'Ya existe un typo de archivo con ese nombre'], 400);
+        $newFileType = new TypeFile();
+        return $newFileType->save($name);
+    }
+
     public function save()
     {
 
@@ -50,57 +76,34 @@ class InventoryController extends Controller
         if (gettype($typeFile) === "string" && is_numeric($typeFile)) return $this->response(['message' => 'Por favor ingresa un nombre valido para crear un tipo de archivo'], 400);
         if (gettype($location) === "string" && is_numeric($location)) return $this->response(['message' => 'Por favor ingresa un nombre valido para crear una ubicación'], 400);
 
-        if (gettype($typeFile) === "integer") {
-            $typeFile = TypeFile::findOne($typeFile);
-            if (!$typeFile) return $this->response(['message' => 'El tipo de archivo no existe o no es valido'], 400);
-        } else {
-            $name = trim(ucwords($typeFile));
-            if (TypeFile::where("name = '$name'")) return $this->response(['message' => 'Ya existe un typo de archivo con ese nombre'], 400);
-            $newFileType = new TypeFile();
-            $newFileType = $newFileType->save($name);
-            if (!$newFileType) return $this->response(['message' => 'No es posible crear una nueva ubicación - Intenta más tarde'], 500);
-            $typeFile = $newFileType->id;
-        }
-
-        if (gettype($location) === "integer") {
-            $location = Location::findOne($location);
-            if (!$location) return $this->response(['message' => 'El tipo de archivo no existe o no es valido'], 400);
-        } else {
-            $name = trim(ucwords($location));
-            if (TypeFile::where("name = '$name'")) return $this->response(['message' => 'Ya existe un typo de archivo con ese nombre'], 400);
-            $newLocation = new Location();
-            $newLocation = $newLocation->save($name);
-            if (!$newLocation) return $this->response(['message' => 'No es posible crear una nueva ubicación - Intenta más tarde'], 500);
-            $location = $newLocation->id;
-        }
-
+        $newTypeFile = $this->validateNewTypeFile($typeFile);
+        $newLocation = $this->validateNewLocation($location);
 
         $inventory = new Inventory();
 
         $inventory = $inventory->save($this->auth()->id, $date);
-        $inventory->attachData($this->auth()->dependency_id, $inventory->id, $location->id, $typeFile->id);
+        $inventory->attachData($this->auth()->dependency_id, $inventory->id, $newLocation->id, $newTypeFile->id);
 
         $this->response(['message' => 'El inventario se creo con exito'], 200);
     }
 
     public function update(string $id)
     {
-        $code = $this->post('code');
-        $administrative_unit_id = $this->post('administrative_unit_id');
-        $subsecretary_id = $this->post('subsecretary_id');
+        $typeFile = $this->post('type_file');
+        $location = $this->post('location');
+        $date = $this->post('date');
 
-        if (empty($code) && empty($administrative_unit_id) && empty($subsecretary_id)) return $this->response(['message' => 'El inventario se actualizó correctamente']);
+        if (empty($typeFile) && empty($location) && empty($date)) return $this->response(['message' => 'El inventario se actualizó correctamente']);
 
-        $inventory = AdministrativeUnitInventorySubsecretary::Where("id = $id");
+        $inventory = DependencyInventoryLocationTypeFile::Where("id = $id");
         if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible']);
 
-        if ($inventory->administrative_unit_id != $administrative_unit_id || $inventory->$subsecretary_id != $subsecretary_id) {
-            if (!empty(json_decode($inventory->body))) return $this->response(['message' => 'El inventario no se puede actualizar porque ya cuenta con archivos agregados'], 400);
-        }
+        $newTypeFile = $this->validateNewTypeFile($typeFile);
+        $newLocation = $this->validateNewLocation($location);
 
-        $inventory->UpdateOne($id, ['administrative_unit_id' => $administrative_unit_id, 'subsecretary_id' => $subsecretary_id]);
+        $inventory->UpdateOne($id, ['type_file_id' => $newTypeFile->id, 'location_id' => $newLocation->id]);
 
-        $inventory = Inventory::UpdateOne($inventory->inventory_id, ['code' => $code]);
+        $inventory = Inventory::UpdateOne($inventory->inventory_id, ['start_date' => $date]);
 
         $this->response(['message' => 'El inventario se creo con exito']);
     }
@@ -112,7 +115,6 @@ class InventoryController extends Controller
         $inventory = DependencyInventoryLocationTypeFile::Where("inventory_id = {$inventory->id}");
         $inventory->body = json_decode($inventory->body ?? "[]");
         $this->response(['inventory' => $inventory->getDataRelations($inventory)]);
-    
     }
 
     public function getInventoryByUser()
@@ -204,14 +206,5 @@ class InventoryController extends Controller
         $body = json_decode($body);
         $exist = array_filter($body, fn ($file) => $file->no == $no_file);
         return count($exist) == 1;
-    }
-
-    private function attachInventoryData(string $administrative_unit_id, string $inventory_id, string $subsecretary_id)
-    {
-        try {
-            return AdministrativeUnitInventorySubsecretary::save($administrative_unit_id, $inventory_id, $subsecretary_id);
-        } catch (PDOException $e) {
-            $this->response(['message' => $e->getMessage()]);
-        }
     }
 }

@@ -1,17 +1,20 @@
 <?php
 
 namespace App\models;
+
 use App\lib\Model;
 use PDO;
 use PDOException;
 
-class TypeFile extends Model {
-    
+class TypeFile extends Model
+{
+
     public readonly string $id;
     public readonly string $name;
     public readonly string $created_at;
 
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
     }
 
@@ -29,8 +32,7 @@ class TypeFile extends Model {
     public function save(string $name)
     {
         try {
-            $query = $this->prepare('INSERT INTO type_files (name) values(:name)');
-            $id = $query->execute(['name' => $name]);
+            (string)$id = $this->insert('INSERT INTO type_files (name) values(:name) returning id', ['name' => $name]);
             return $this->findOne($id);
         } catch (\Throwable $th) {
             return $th->getMessage();
@@ -61,6 +63,4 @@ class TypeFile extends Model {
             return $e->getMessage();
         }
     }
-
-
 }

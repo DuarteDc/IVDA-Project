@@ -55,7 +55,6 @@ class DependencyInventoryLocationTypeFile extends Model
         try {
             $db = new Model();
             $query = $db->query("SELECT * FROM dependency_inventory_location_type_file WHERE {$strQuery}");
-
             if ($query->rowCount() > 0) return $query->fetchObject(__CLASS__);
 
             return false;
