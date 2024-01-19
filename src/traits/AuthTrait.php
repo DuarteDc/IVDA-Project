@@ -20,6 +20,9 @@ trait AuthTrait
     public static function generateJWT($payload)
     {
         $key = $_ENV['JWT_SECRET_KEY'];
+
+        unset($payload->password);
+
         $data = [
             'exp' => strtotime('now') + 3600,
             'user' => $payload,

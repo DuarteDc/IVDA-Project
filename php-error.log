@@ -826,3 +826,622 @@ Stack trace:
 #5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
 #6 {main}
   thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[18-Jan-2024 09:21:24 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(103): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[18-Jan-2024 09:22:32 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(103): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[18-Jan-2024 09:30:43 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(103): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[18-Jan-2024 10:23:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(103): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[18-Jan-2024 10:48:32 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(103): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[18-Jan-2024 10:51:04 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(103): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[18-Jan-2024 10:51:44 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(103): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[18-Jan-2024 11:03:59 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(103): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[18-Jan-2024 11:18:41 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(103): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[18-Jan-2024 11:23:04 America/Mexico_City] PHP Fatal error:  Uncaught Error: Class "App\models\AdministrativeUnit" not found in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:25
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->getDashboardData()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(103): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 25
+[18-Jan-2024 11:23:50 America/Mexico_City] PHP Warning:  Undefined variable $administrative_units_count in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 30
+[18-Jan-2024 11:23:50 America/Mexico_City] PHP Warning:  Undefined variable $subsecretaries_count in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 31
+[18-Jan-2024 11:46:38 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot unset readonly property App\models\User::$password in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php:27
+Stack trace:
+#0 [internal function]: App\controllers\UserController->App\controllers\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(24): array_map()
+#2 [internal function]: App\controllers\UserController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(103): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 27
+[18-Jan-2024 11:46:49 America/Mexico_City] PHP Parse error:  syntax error, unexpected token "=", expecting "->" or "?->" or "{" or "[" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 27
+[18-Jan-2024 11:47:04 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot modify readonly property App\models\User::$password in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php:27
+Stack trace:
+#0 [internal function]: App\controllers\UserController->App\controllers\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(24): array_map()
+#2 [internal function]: App\controllers\UserController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(103): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 27
+[18-Jan-2024 11:47:05 America/Mexico_City] PHP Fatal error:  Uncaught Error: Cannot modify readonly property App\models\User::$password in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php:27
+Stack trace:
+#0 [internal function]: App\controllers\UserController->App\controllers\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php(24): array_map()
+#2 [internal function]: App\controllers\UserController->index()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(103): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/UserController.php on line 27
+[18-Jan-2024 14:01:11 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, App\models\Dependency given in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php:123
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php(123): array_merge()
+#1 [internal function]: App\controllers\DependencyController->getDependenciesWithoutUsersAndMyDependency()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(105): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 123
+[18-Jan-2024 14:11:55 America/Mexico_City] PHP Warning:  Attempt to read property "dependency_id" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 124
+[18-Jan-2024 14:12:04 America/Mexico_City] PHP Warning:  Attempt to read property "dependency_id" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 124
+[18-Jan-2024 14:38:21 America/Mexico_City] PHP Fatal error:  Uncaught Error: Object of class App\controllers\LocationController could not be converted to string in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:80
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(12): App\lib\Controller->middleware()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 80
+[18-Jan-2024 14:49:04 America/Mexico_City] PHP Parse error:  syntax error, unexpected token "->" in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 81
+[18-Jan-2024 14:49:32 America/Mexico_City] PHP Fatal error:  Uncaught ArgumentCountError: ReflectionClass::getMethod() expects exactly 1 argument, 0 given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:82
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): ReflectionClass->getMethod()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(12): App\lib\Controller->middleware()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 82
+[18-Jan-2024 14:53:12 America/Mexico_City] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\lib\Middleware::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php:27
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(16): App\lib\Middleware::response()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(43): App\middlewares\AuthMiddleware::checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php on line 27
+[18-Jan-2024 14:53:54 America/Mexico_City] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\lib\Middleware::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php:27
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(16): App\lib\Middleware::response()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(43): App\middlewares\AuthMiddleware::checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php on line 27
+[18-Jan-2024 14:54:32 America/Mexico_City] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\lib\Middleware::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php:27
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(16): App\lib\Middleware::response()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(43): App\middlewares\AuthMiddleware::checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php on line 27
+[18-Jan-2024 15:00:28 America/Mexico_City] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\lib\Controller::middleware(), 0 passed in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php on line 12 and exactly 2 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:81
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(12): App\lib\Controller->middleware()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 81
+[18-Jan-2024 15:00:36 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\Controller::middleware() in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php:12
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php on line 12
+[18-Jan-2024 15:00:42 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\Controller::middleware() in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php:12
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php on line 12
+[18-Jan-2024 15:00:48 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method App\lib\Controller::middleware() in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php:12
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#5 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php on line 12
+[18-Jan-2024 15:01:18 America/Mexico_City] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\lib\Controller::middleware(), 0 passed in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php on line 12 and exactly 2 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:81
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(12): App\lib\Controller->middleware()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 81
+[18-Jan-2024 15:16:46 America/Mexico_City] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\lib\Controller::validateMethos(), 0 passed in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 88 and exactly 2 expected in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:81
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(88): App\lib\Controller->validateMethos()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 81
+[18-Jan-2024 15:17:12 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:82
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): in_array()
+#1 [internal function]: App\lib\Controller->App\lib\{closure}()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): array_filter()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(88): App\lib\Controller->validateMethos()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 82
+[18-Jan-2024 15:17:37 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:82
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): in_array()
+#1 [internal function]: App\lib\Controller->App\lib\{closure}()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): array_filter()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(88): App\lib\Controller->validateMethos()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 82
+[18-Jan-2024 15:17:47 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:82
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): in_array()
+#1 [internal function]: App\lib\Controller->App\lib\{closure}()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): array_filter()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(89): App\lib\Controller->validateMethos()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 82
+[18-Jan-2024 15:18:27 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:82
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): in_array()
+#1 [internal function]: App\lib\Controller->App\lib\{closure}()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): array_filter()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(89): App\lib\Controller->validateMethos()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 82
+[18-Jan-2024 15:19:04 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:82
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): in_array()
+#1 [internal function]: App\lib\Controller->App\lib\{closure}()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): array_filter()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(89): App\lib\Controller->validateMethos()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 82
+[18-Jan-2024 15:19:12 America/Mexico_City] PHP Warning:  Undefined array key 0 in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 88
+[18-Jan-2024 15:19:12 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:82
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): in_array()
+#1 [internal function]: App\lib\Controller->App\lib\{closure}()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): array_filter()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(89): App\lib\Controller->validateMethos()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 82
+[18-Jan-2024 15:19:17 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:82
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): in_array()
+#1 [internal function]: App\lib\Controller->App\lib\{closure}()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): array_filter()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(89): App\lib\Controller->validateMethos()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 82
+[18-Jan-2024 15:19:42 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:82
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): in_array()
+#1 [internal function]: App\lib\Controller->App\lib\{closure}()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): array_filter()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(89): App\lib\Controller->validateMethos()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 82
+[18-Jan-2024 15:19:51 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:82
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): in_array()
+#1 [internal function]: App\lib\Controller->App\lib\{closure}()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(82): array_filter()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(89): App\lib\Controller->validateMethos()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 82
+[18-Jan-2024 15:24:37 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: get_parent_class(): Argument #1 ($object_or_class) must be an object or a valid class name, bool given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:88
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(88): get_parent_class()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 88
+[18-Jan-2024 15:38:57 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method App\middlewares\HasAdminRole::invoke() in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:95
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 95
+[18-Jan-2024 15:39:17 America/Mexico_City] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\lib\Middleware::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php:27
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/HasAdminRole.php(12): App\lib\Middleware::response()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(95): App\middlewares\HasAdminRole->__invoke()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php on line 27
+[18-Jan-2024 15:42:14 America/Mexico_City] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\lib\Middleware::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php:27
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/HasAdminRole.php(12): App\lib\Middleware::response()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(97): App\middlewares\HasAdminRole->__invoke()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php on line 27
+[18-Jan-2024 15:42:57 America/Mexico_City] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\lib\Middleware::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php:27
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/HasAdminRole.php(12): App\lib\Middleware->response()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(97): App\middlewares\HasAdminRole->__invoke()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php on line 27
+[18-Jan-2024 16:00:18 America/Mexico_City] PHP Fatal error:  Uncaught Error: Non-static method App\lib\Middleware::response() cannot be called statically in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php:16
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(43): App\middlewares\AuthMiddleware::checkAuth()
+#1 [internal function]: {closure}()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php on line 16
+[18-Jan-2024 16:00:27 America/Mexico_City] PHP Fatal error:  Uncaught Error: Non-static method App\lib\Middleware::response() cannot be called statically in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php:16
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(43): App\middlewares\AuthMiddleware::checkAuth()
+#1 [internal function]: {closure}()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php on line 16
+[18-Jan-2024 16:00:28 America/Mexico_City] PHP Fatal error:  Uncaught Error: Non-static method App\lib\Middleware::response() cannot be called statically in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php:16
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(43): App\middlewares\AuthMiddleware::checkAuth()
+#1 [internal function]: {closure}()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php on line 16
+[18-Jan-2024 16:45:55 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "App\lib\self" in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:93
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/LocationController.php(13): App\lib\Controller->middleware()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(480): App\controllers\LocationController->__construct()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(97): Bramus\Router\Router->run()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#6 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 93
+[18-Jan-2024 16:50:02 America/Mexico_City] PHP Warning:  Attempt to read property "router" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 93
+[18-Jan-2024 16:52:32 America/Mexico_City] PHP Warning:  Undefined array key "PUT" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[18-Jan-2024 17:04:18 America/Mexico_City] PHP Fatal error:  Uncaught Error: Non-static method App\lib\Middleware::response() cannot be called statically in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php:16
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(44): App\middlewares\AuthMiddleware::checkAuth()
+#1 [internal function]: {closure}()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(102): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php on line 16
+[18-Jan-2024 17:04:46 America/Mexico_City] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\middlewares\AuthMiddleware::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php:30
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(16): App\lib\Middleware::response()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(44): App\middlewares\AuthMiddleware::checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(102): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php on line 30
+[18-Jan-2024 17:05:10 America/Mexico_City] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\lib\Middleware::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php:27
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(16): App\lib\Middleware::response()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(44): App\middlewares\AuthMiddleware::checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(102): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php on line 27
+[18-Jan-2024 17:05:23 America/Mexico_City] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\lib\Middleware::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php:27
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(16): App\lib\Middleware::response()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(44): App\middlewares\AuthMiddleware::checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(102): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php on line 27
+[18-Jan-2024 17:05:25 America/Mexico_City] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\lib\Middleware::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php:27
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(16): App\lib\Middleware::response()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(44): App\middlewares\AuthMiddleware::checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(102): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php on line 27
+[18-Jan-2024 17:05:53 America/Mexico_City] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\lib\Middleware::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php:27
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(16): App\lib\Middleware::response()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(44): App\middlewares\AuthMiddleware::checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(102): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php on line 27
+[18-Jan-2024 17:06:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\lib\Middleware::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php:27
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(16): App\lib\Middleware::response()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(44): App\middlewares\AuthMiddleware::checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(102): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php on line 27
+[18-Jan-2024 17:06:37 America/Mexico_City] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\lib\Middleware::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php:27
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(16): App\lib\Middleware::response()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(44): App\middlewares\AuthMiddleware::checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(102): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php on line 27
+[18-Jan-2024 17:07:14 America/Mexico_City] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\lib\Middleware::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php:27
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(16): App\lib\Middleware::response()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(44): App\middlewares\AuthMiddleware::checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(102): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php on line 27
+[18-Jan-2024 17:07:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\lib\Middleware::$status in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php:27
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/middlewares/AuthMiddleware.php(16): App\lib\Middleware::response()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(44): App\middlewares\AuthMiddleware::checkAuth()
+#2 [internal function]: {closure}()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(458): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(281): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(102): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Middleware.php on line 27
+[18-Jan-2024 17:22:04 America/Mexico_City] PHP Warning:  Undefined array key "PUT" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[18-Jan-2024 17:22:21 America/Mexico_City] PHP Warning:  Undefined array key "PUT" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[18-Jan-2024 17:22:41 America/Mexico_City] PHP Warning:  Undefined array key "PUT" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292

@@ -27,7 +27,6 @@
     table {
         border-collapse: collapse;
         width: 100%;
-        padding-right: 0px;
         overflow-wrap: break-word;
     }
 
@@ -35,12 +34,15 @@
         font-weight: lighter;
         background-color: #EBEDEF;
         border: solid 1px #ABB2B9;
+        width: auto;
     }
 
     table td {
         font-weight: lighter;
         overflow-wrap: break-word;
         border: solid 1px #ABB2B9;
+        word-wrap: break-word;
+        max-width: 80px;
     }
 </style>
 
@@ -113,16 +115,16 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th rowspan="2"> Número progresivo </th>
-                    <th rowspan="2"> Seccion </th>
-                    <th rowspan="2" style="width: 120px;"> Serie y/o subserie documental </th>
-                    <th rowspan="2"> Número de expediente </th>
-                    <th rowspan="2"> Fórmula clasificadora del expediente </th>
-                    <th rowspan="2" style="width: 250px;"> Nombre del expediente </th>
-                    <th rowspan="2"> Total de legajos</th>
-                    <th rowspan="2"> Total de documentos</th>
-                    <th colspan="2" style="width: 350px;"> Fecha de los documentos</th>
-                    <th rowspan="2" style="max-width: 200px;"> Observaciones</th>
+                    <th rowspan="2">Número progresivo</th>
+                    <th rowspan="2">Sección</th>
+                    <th rowspan="2" style="width: 100px; max-width: 100px;"> Serie y/o subserie documental</th>
+                    <th rowspan="2">Número de expediente</th>
+                    <th rowspan="2" style="max-width: 130px;"> Fórmula clasificadora del expediente</th>
+                    <th rowspan="2" style="width: 170px; max-width: 170px;"> Nombre del expediente</th>
+                    <th rowspan="2">Total de legajos</th>
+                    <th rowspan="2">Total de documentos</th>
+                    <th colspan="2">Fecha de los documentos</th>
+                    <th rowspan="2" style="max-width: 160px; width: 160px;">Observaciones</th>
                 </tr>
                 <tr>
                     <th>Primero</th>
@@ -142,9 +144,9 @@
                             <td>{$file->name}</td>
                             <td>{$file->total_legajos}</td>
                             <td>{$file->total_files}</td>
-                            <td style='width:70px'>{$file->files_date[0]}</td>
-                            <td style='width:70px'>{$file->files_date[1]}</td>
-                            <td style='max-width: 160px; width: 200px;'>{$file->observations}</td>
+                            <td style='min-width:65px'>{$file->files_date[0]}</td>
+                            <td style='min-width:65px'>{$file->files_date[1]}</td>
+                            <td>{$file->observations}</td>
                         </tr>
                         ";
                 }

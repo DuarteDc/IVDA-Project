@@ -3,26 +3,13 @@
 namespace App\middlewares;
 
 use App\lib\Middleware;
+use App\models\User;
 
 class HasAdminRole extends Middleware {
 
-    public static function hasUserRole () {
-        $user = self::auth();
-        
-        if ($user->role == 0) {
-            header("HTTP/1.1 307 Temporary Redirect");
-            return header('location: /user');    
-        }
-    }
-
-
-    public static function hasAdminRole () {
-        $user = self::auth();
-        
-        if ($user->role == 1) {
-            header("HTTP/1.1 307 Temporary Redirect");
-            return header('location: /auth');    
-        }
+    public static function hasAdminRole () {        
+        if (static::auth()->role != User::ADMIN) 
+            return static::response(['message' => '403 - Forbidden'], 403);
     }
 
 }

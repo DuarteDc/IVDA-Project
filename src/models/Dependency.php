@@ -15,7 +15,6 @@ class Dependency extends Model
     public readonly string $code;
     public readonly bool $status;
     public readonly string $created_at;
-    // public $users;
 
     public function __construct()
     {
@@ -162,7 +161,19 @@ class Dependency extends Model
         }
     }
 
-    public static function countAdministrativeUnits()
+    public static function withoutUsers()
+    {
+        try {
+            $db = new Model;
+            $query = $db->query("SELECT * FROM dependencies WHERE id NOT IN (SELECT dependency_id FROM users)");
+            return $query->rowCount() > 0 ? $query->fetchAll(PDO::FETCH_CLASS, static::class) : 0;
+        } catch (\Throwable $th) {
+            return 0;
+        }
+    }
+
+
+    public static function countDependencies()
     {
         try {
             $db = new Model();
@@ -172,10 +183,11 @@ class Dependency extends Model
         }
     }
 
-    public static function runSeed() {
+    public static function runSeed()
+    {
         try {
             $data = file_get_contents(__DIR__ . '/../static-data/dependencies.json');
-    
+
             $query = 'INSERT INTO dependencies(name, code) values';
             $db = new Model();
             foreach (json_decode($data) as $key => $value) {
@@ -188,6 +200,4 @@ class Dependency extends Model
             return $e;
         }
     }
-
 }
-

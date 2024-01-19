@@ -3,6 +3,7 @@
 namespace App\controllers;
 
 use App\lib\Controller;
+use App\models\Dependency;
 use App\models\Token;
 use App\models\User;
 use Exception;
@@ -33,6 +34,10 @@ class SigninController extends Controller
 
         if (!$user || !$user->verifyPassword($password, $user->password) || !$user->status)
             return $this->response(['message' => 'El usuario o contraseña no son validos'], 400);
+
+        $dependency = Dependency::findOne($user->dependency_id);
+        if(!$dependency) return $this->response(['message' => 'Para poder acceder es necesario estar asociado a una dependencia - Por favor contacta al administrador'], 400);
+        if(!$dependency->status) return $this->response(['message' => 'La dependencia a la perteneces ha sido desactivada - Por favor contacta al administrador'], 400);
 
         $response = $this::generateJWT($user);
         return $this->response($response);

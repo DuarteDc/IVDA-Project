@@ -12,7 +12,6 @@ class User extends Model
 
     const ADMIN = 0;
     const SUBADMIN = 1;
-    const USER = 2;
 
     use AuthTrait;
 
@@ -20,7 +19,7 @@ class User extends Model
     public readonly string $name;
     public readonly string $last_name;
     public readonly string $email;
-    public readonly string $password;
+    public string $password;
     public readonly string $created_at;
     public readonly bool $status;
     public readonly string $role;
@@ -41,14 +40,6 @@ class User extends Model
             if ($query->rowCount() <= 0) return false;
 
             $user = $query->fetchObject(self::class);
-
-            if (empty($user->administrative_unit_id)) return $user;
-
-            $administrative_unit = $db->query("SELECT * from administrative_units Where id = {$user->administrative_unit_id}");
-
-            if ($administrative_unit->rowCount() <= 0) return $user;
-
-            $user->administrative_unit_id = $administrative_unit->fetchObject(Dependency::class);
             return $user;
         } catch (PDOException $e) {
             return false;
@@ -68,7 +59,7 @@ class User extends Model
             if ($totalPages < $page) $page = $totalPages;
             $startingLimit = ($page - 1) * $totalRecordPerPage;
 
-            $query = $db->query("SELECT * FROM users WHERE id <> " . self::auth()->id . "ORDER BY id ASC LIMIT $totalRecordPerPage OFFSET $startingLimit");
+            $query = $db->query("SELECT id, name, last_name, email, role, status, dependency_id FROM users WHERE id <> " . self::auth()->id . "ORDER BY id ASC LIMIT $totalRecordPerPage OFFSET $startingLimit");
             if ($query->rowCount() > 0) return ['users' => $query->fetchAll(PDO::FETCH_CLASS, self::class), 'totalPages' =>  $totalPages];
             return ['users' => [], 'totalPages' =>  0];
         } catch (PDOException $e) {
@@ -124,7 +115,7 @@ class User extends Model
     public static function UpdateOne(string $id, array $params)
     {
         try {
-            if (isset($params['subsecretary_id'])) unset($params['subsecretary_id']);
+            if (isset($params['role'])) unset($params['role']);
             $db = new Model();
             $query = 'SET ';
             foreach ($params as $key => $value) {
@@ -145,13 +136,12 @@ class User extends Model
     }
 
 
-    public function save(string $name, string $last_name, string $email, string $password, int $role, $administrative_unit_id = 0)
+    public function save(string $name, string $last_name, string $email, string $password, string $dependencyId, $role = 0)
     {
         try {
             $passwordHash = $this->getHashedPassword($password);
-            $query = $this->prepare('INSERT INTO users(name, last_name, email, password, role, administrative_unit_id) VALUES (:name, :last_name, :email, :password, :role, :administrative_unit_id)');
-
-            return $query->execute(['name' => $name, 'last_name' => $last_name, 'email' => $email, 'password' => $passwordHash, 'role' => $role, 'administrative_unit_id' => empty($administrative_unit_id) ? NULL : $administrative_unit_id]);
+            $query = $this->prepare('INSERT INTO users(name, last_name, email, password, dependency_id, role) VALUES (:name, :last_name, :email, :password, :dependency_id, :role)');
+            return $query->execute(['name' => $name, 'last_name' => $last_name, 'email' => $email, 'password' => $passwordHash, 'dependency_id' => $dependencyId, 'role' => $role]);
         } catch (\Throwable $th) {
             return false;
         }

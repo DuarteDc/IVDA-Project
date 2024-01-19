@@ -4,8 +4,7 @@ namespace App\controllers;
 
 use App\lib\Controller;
 use App\models\Dependency;
-use App\models\DependencyInventory;
-use App\models\SubSecretary;
+use App\models\User;
 
 class DependencyController extends Controller
 {
@@ -57,11 +56,11 @@ class DependencyController extends Controller
     public function getByUser()
     {
         $dependencyId = $this->auth()->dependency_id;
-        
+
         $dependency = Dependency::findOne($dependencyId);
 
         $this->response(['dependency' => $dependency]);
-    } 
+    }
 
     public function delete(string $id)
     {
@@ -114,5 +113,23 @@ class DependencyController extends Controller
 
         $dependency->UpdateOne($id, ['name' => $name, 'code' => $code]);
         $this->response(['message' => 'La dependencia se actualizo con exito']);
+    }
+
+    public function getDependenciesWithoutUsersAndMyDependency(string $id)
+    {
+
+        $user = User::findOne($id);
+
+        $dependencies = Dependency::withoutUsers();
+        $dependency = Dependency::findOne($user->dependency_id);
+
+        
+        $this->response(['dependencies' => [...$dependencies, $dependency]]);
+    }
+
+    public function getDependenciesWithoutUsers()
+    {
+        $dependencies = Dependency::withoutUsers();
+        $this->response(['dependencies' => $dependencies]);
     }
 }

@@ -3,10 +3,12 @@
 namespace App\controllers;
 
 use App\lib\Controller;
+use App\middlewares\HasAdminRole;
 use App\models\Location;
 
 class LocationController extends Controller
 {
+    
 
     public function index()
     {

@@ -3,9 +3,14 @@
 namespace App\lib;
 
 use App\lib\View;
+use App\lib\Middleware;
 use App\traits\AuthTrait;
 use App\traits\MailTrait;
 use App\traits\PDFTrait;
+use Bramus\Router\Router;
+use ErrorException;
+use ReflectionClass;
+use ReflectionMethod;
 
 class Controller
 {
@@ -32,7 +37,7 @@ class Controller
     {
         $this->view->render($name, $data);
     }
-    
+
     protected function request()
     {
         $data = file_get_contents('php://input');
@@ -69,4 +74,43 @@ class Controller
         echo json_encode($data);
         exit();
     }
+
+    // private function getNamespace()
+    // {
+    //     return get_class($this);
+    // }
+
+    // private function validateMethos($classMethods, $methods) {
+    //     return array_filter($classMethods, fn($method) => in_array($method->name, $methods));
+    // }
+
+    // protected function middleware(array $methods, $middleware)
+    // {
+    //     if(get_parent_class($middleware) != Middleware::class && !class_exists($middleware)) return new ErrorException("Provide a valid class");
+
+    //     $classMethods = $this->validateMethos($this->getClassMethods(), $methods);
+    //     $midd = new $middleware;
+
+    //     $this->response($GLOBALS['router']);
+    //     print_r($GLOBALS);
+
+        
+    //     die();
+
+    // }
+
+    // private function getClassMethods() {
+        
+    //     $namespace = $this->getNamespace();
+    //     $class = new ReflectionClass($namespace);
+    //     $publicMethods = $class->getMethods(ReflectionMethod::IS_PUBLIC);
+
+    //     return array_filter($publicMethods, fn ($method) => $method->class === $namespace);
+    // }
+
+    // public function __call($name, $arguments)
+    // {
+    //     call_user_func_array([$this, $name], $arguments);
+    // }
+
 }

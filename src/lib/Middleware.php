@@ -6,11 +6,13 @@ use App\traits\AuthTrait;
 class Middleware {
     use AuthTrait;
 
-    protected static array $status = [
+ private static array $status = [
         200 => '200 OK',
         400 => '400 Bad Request',
         401 => '401 Unauthorized',
-        422 => 'Unprocessable Entity',
+        422 => '422 Unprocessable Entity',
+        403 => '403 Forbidden',
+        404 => '404 Not Found',
         500 => '500 Internal Server Error'
     ];
 

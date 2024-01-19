@@ -16,11 +16,4 @@ class AuthMiddleware extends Middleware
         if ($session instanceof Exception) return self::response(['message' => $session->getMessage()], 401);
     }
 
-    public static function isAuthenticate()
-    {
-        if (gettype(self::auth()) != 'boolean') {
-            header("HTTP/1.1 307 Temporary Redirect");
-            return header('location: /auth');
-        }
-    }
 }

@@ -66,7 +66,7 @@ class Inventory extends Model
             if ($totalPages < $page) $page = $totalPages;
             $startingLimit = ($page - 1) * $totalRecordPerPage;
 
-            $query = $db->query("SELECT * FROM inventories WHERE user_id = $user_id ORDER BY id ASC LIMIT $totalRecordPerPage OFFSET $startingLimit");
+            $query = $db->query("SELECT * FROM inventories WHERE user_id = $user_id ORDER BY id DESC LIMIT $totalRecordPerPage OFFSET $startingLimit");
             if ($query->rowCount() > 0) return ['inventories' => $query->fetchAll(PDO::FETCH_CLASS, self::class), 'totalPages' =>  $totalPages];
             return ['inventories' => [], 'totalPages' => $totalPages];
         } catch (PDOException $e) {
