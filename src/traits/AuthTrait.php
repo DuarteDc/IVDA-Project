@@ -2,6 +2,7 @@
 
 namespace App\traits;
 
+use App\models\User;
 use Exception;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
@@ -24,7 +25,7 @@ trait AuthTrait
         unset($payload->password);
 
         $data = [
-            'exp' => strtotime('now') + 3600,
+            // 'exp' => strtotime('now') + 3600,
             'user' => $payload,
         ];
         $token = JWT::encode($data, $key, 'HS256');
@@ -36,7 +37,10 @@ trait AuthTrait
         try {
             $key = $_ENV['JWT_SECRET_KEY'];
             $decode = JWT::decode($token, new Key($key, 'HS256'));
-            return self::generateJWT($decode->user);
+
+            $user = User::findOne($decode->user->id);
+
+            return self::generateJWT($user);
         } catch (Exception $e) {
             return new Exception($e->getMessage());
         }

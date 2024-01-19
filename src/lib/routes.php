@@ -1,7 +1,6 @@
 <?php
 
 use App\middlewares\AuthMiddleware;
-use App\middlewares\HasAdminRole;
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../../');
 $dotenv->load();
@@ -46,36 +45,26 @@ $router->mount('/api.*', function () use ($router) {
 
     $router->mount('/auth.*', function () use ($router) {
 
-        $router->get('users/{id}', 'App\controllers\UserController@show');
         $router->get('/dashboard', 'App\controllers\HomeController@getDashboardData');
 
-        $router->before('GET|POST|DELETE|PATCH', '/users.*', function () {
-            HasAdminRole::hasAdminRole();
-        });
-        
-        $router->mount('/users.*', function () use ($router) {
-            $router->get('/', 'App\controllers\UserController@index');
-            $router->post('/save', 'App\controllers\UserController@save');
-            $router->delete('/{id}', 'App\controllers\UserController@delete');
-            $router->post('/active/{id}', 'App\controllers\UserController@active');
-            $router->patch('/{id}', 'App\controllers\UserController@update');
-        });
-        
-        $router->get('/inventories/{id}', 'App\controllers\InventoryController@show');
-        $router->post('/inventories/', 'App\controllers\InventoryController@save');
+        $router->get('/users', 'App\controllers\UserController@index');
+        $router->get('/users/{id}', 'App\controllers\UserController@show');
+        $router->post('/users/save', 'App\controllers\UserController@save');
+        $router->delete('/users/{id}', 'App\controllers\UserController@delete');
+        $router->post('/users/active/{id}', 'App\controllers\UserController@active');
+        $router->patch('/users/{id}', 'App\controllers\UserController@update');
+
+        $router->get('/inventories', 'App\controllers\InventoryController@index');
+        $router->post('/inventories', 'App\controllers\InventoryController@save');
         $router->patch('/inventories/{id}', 'App\controllers\InventoryController@update');
         $router->post('/inventories/add-file/{id}', 'App\controllers\InventoryController@addFile');
         $router->delete('/inventories/remove-file/{id}/{no_file}', 'App\controllers\InventoryController@deleteFile');
         $router->get('/inventories/get/user', 'App\controllers\InventoryController@getInventoriesByUser');
         $router->post('/inventories/finalize/{id}', 'App\controllers\InventoryController@finalizeInventory');
+        $router->get('/inventories', 'App\controllers\InventoryController@index');
+        $router->get('/inventories/{id}', 'App\controllers\InventoryController@show');
+        $router->get('/inventories/user', 'App\controllers\InventoryController@getInventoryByUser');
 
-        $router->before('GET', '/inventories/.*', function () {
-            HasAdminRole::hasAdminRole();
-        });
-        $router->mount('/inventories.*', function () use ($router) {
-            $router->get('/', 'App\controllers\InventoryController@index');
-            $router->get('/inventories/user', 'App\controllers\InventoryController@getInventoryByUser');
-        });
 
 
         $router->get('/dependencies/user', 'App\controllers\DependencyController@getByUser');

@@ -2,9 +2,9 @@
 
 namespace App\controllers;
 
-use App\emuns\TypeAlert;
 use App\lib\Controller;
 use App\models\Dependency;
+use App\models\Inventory;
 use App\models\User;
 
 class UserController extends Controller
@@ -59,13 +59,18 @@ class UserController extends Controller
 
     public function update(string $id)
     {
+
         if (empty($this->request())) return $this->response(['message' => 'El usuario se actualizo correctamente']);
 
         $user = User::findOne($id);
 
         if (!$user) return $this->response(['message' => 'El usuario no es valido o no existe'], 400);
 
-        if ($this->post('role') == '0' && empty($this->post('administrative_unit_id'))) return $this->response(['message' => 'Es necesario asignarle una unidad administrativa al usuario'], 400);
+        $dependencyId = $this->post('dependency_id');
+
+        $dependency = Inventory::Where("user_id = $user->id");
+
+        if ($dependencyId != $user->dependency_id && $dependency) return $this->response(['message' => 'El usuario puede ser actualizado porque ya se han generado inventarios'], 400);
 
         $user->UpdateOne($id, $this->request());
 

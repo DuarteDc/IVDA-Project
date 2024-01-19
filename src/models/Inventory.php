@@ -14,6 +14,7 @@ class Inventory extends Model
     public readonly string  $user_id;
     public readonly string  $start_date;
     public readonly string  $created_at;
+    public $dependency_id;
 
     public function __construct()
     {

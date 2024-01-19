@@ -1445,3 +1445,19 @@ Stack trace:
 [18-Jan-2024 17:22:04 America/Mexico_City] PHP Warning:  Undefined array key "PUT" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
 [18-Jan-2024 17:22:21 America/Mexico_City] PHP Warning:  Undefined array key "PUT" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
 [18-Jan-2024 17:22:41 America/Mexico_City] PHP Warning:  Undefined array key "PUT" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[19-Jan-2024 11:38:56 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: App\controllers\SigninController::generateToken(): Argument #1 ($email) must be of type string, App\models\User given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 42 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php:115
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(42): App\controllers\SigninController->generateToken()
+#1 [internal function]: App\controllers\SigninController->signin()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(104): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 115
+[19-Jan-2024 11:49:47 America/Mexico_City] PHP Warning:  Undefined array key 0 in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 44
+[19-Jan-2024 11:49:47 America/Mexico_City] PHP Warning:  Undefined array key 1 in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 44
+[19-Jan-2024 11:51:28 America/Mexico_City] PHP Warning:  Undefined array key 0 in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 44
+[19-Jan-2024 11:51:28 America/Mexico_City] PHP Warning:  Undefined array key 1 in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 44
+[19-Jan-2024 11:52:08 America/Mexico_City] PHP Warning:  Undefined array key "token" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 44

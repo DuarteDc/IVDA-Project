@@ -75,42 +75,37 @@ class Controller
         exit();
     }
 
-    // private function getNamespace()
-    // {
-    //     return get_class($this);
-    // }
+    private function getNamespace()
+    {
+        return get_class($this);
+    }
 
-    // private function validateMethos($classMethods, $methods) {
-    //     return array_filter($classMethods, fn($method) => in_array($method->name, $methods));
-    // }
+    private function validateMethos($classMethods, $methods) {
+        return array_filter($classMethods, fn($method) => in_array($method->name, $methods));
+    }
 
-    // protected function middleware(array $methods, $middleware)
-    // {
-    //     if(get_parent_class($middleware) != Middleware::class && !class_exists($middleware)) return new ErrorException("Provide a valid class");
+    protected function middleware(array $methods, $middleware)
+    {
+        if(get_parent_class($middleware) != Middleware::class && !class_exists($middleware)) return new ErrorException("Provide a valid class");
 
-    //     $classMethods = $this->validateMethos($this->getClassMethods(), $methods);
-    //     $midd = new $middleware;
+        $classMethods = $this->validateMethos($this->getClassMethods(), $methods);
+        print_r($classMethods);
+    }
 
-    //     $this->response($GLOBALS['router']);
-    //     print_r($GLOBALS);
-
+    private function getClassMethods() {
         
-    //     die();
+        $namespace = $this->getNamespace();
+        $class = new ReflectionClass($namespace);
+        $publicMethods = $class->getMethods(ReflectionMethod::IS_PUBLIC);
 
-    // }
+        return array_filter($publicMethods, fn ($method) => $method->class === $namespace);
+    }
 
-    // private function getClassMethods() {
-        
-    //     $namespace = $this->getNamespace();
-    //     $class = new ReflectionClass($namespace);
-    //     $publicMethods = $class->getMethods(ReflectionMethod::IS_PUBLIC);
-
-    //     return array_filter($publicMethods, fn ($method) => $method->class === $namespace);
-    // }
-
-    // public function __call($name, $arguments)
-    // {
-    //     call_user_func_array([$this, $name], $arguments);
-    // }
+    public function __call($name, $arguments)
+    {
+        print_r($this);
+        die();
+        call_user_func_array([$this, $name], $arguments);
+    }
 
 }

@@ -8,7 +8,9 @@ use App\models\Location;
 
 class LocationController extends Controller
 {
-    
+    public function __construct() {
+        // $this->middleware(['index'], HasAdminRole::class);
+    }
 
     public function index()
     {

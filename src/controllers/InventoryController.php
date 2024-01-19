@@ -3,6 +3,7 @@
 namespace App\controllers;
 
 use App\lib\Controller;
+use App\models\Dependency;
 use App\models\DependencyInventoryLocationTypeFile;
 use App\models\Inventory;
 use App\models\Location;
@@ -21,7 +22,12 @@ class InventoryController extends Controller
     {
         $page = (int) $this->get('page');
         $page == 0 && $page = 1;
-        $data = Inventory::findByUser($page, $this->auth()->id);
+        $data = Inventory::find($page);
+
+        array_map(function ($inventory) {
+            $inventory->dependency_id = Dependency::findOne(DependencyInventoryLocationTypeFile::Where("inventory_id = $inventory->id")->dependency_id);
+        }, $data['inventories']);
+
         $this->response(['inventories' => $data['inventories'], 'page' => $page, 'totalPages' => $data['totalPages']]);
     }
 
@@ -30,6 +36,10 @@ class InventoryController extends Controller
         $page = (int) $this->get('page');
         $page == 0 && $page = 1;
         $data = Inventory::findByUser($page, $this->auth()->id);
+
+        array_map(function ($inventory) {
+            $inventory->dependency_id = Dependency::findOne(DependencyInventoryLocationTypeFile::Where("inventory_id = $inventory->id")->dependency_id);
+        }, $data['inventories']);
         $this->response(['inventories' => $data['inventories'], 'page' => $page, 'totalPages' => $data['totalPages']]);
     }
 

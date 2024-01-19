@@ -7,6 +7,7 @@ use App\emuns\PaperTypes;
 use App\lib\Controller;
 use App\models\DependencyInventoryLocationTypeFile;
 use App\models\Inventory;
+use App\models\User;
 
 class ReportController extends Controller
 {
@@ -21,7 +22,8 @@ class ReportController extends Controller
         try {
             $inventory = Inventory::findOne($id);
             if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
-            if ($this->auth()->id !== $inventory->user_id) return $this->response(['message' => 'No se puede generar el reporte porque no eres el creador del inventario'], 403);   
+
+            if ($this->auth()->role != User::ADMIN &&$this->auth()->id !== $inventory->user_id) return $this->response(['message' => 'No se puede generar el reporte porque no eres el creador del inventario'], 403);   
 
             if (!$inventory->status) return $this->response(['message' => 'El inventario no ha sido finalizado para poder generar el reporte'], 403);
 

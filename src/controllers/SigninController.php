@@ -27,29 +27,40 @@ class SigninController extends Controller
         $email = $this->post('email');
         $password = $this->post('password');
 
-        if (!$email || !$password)
-            return $this->response(['message' => 'El usuario y contraseña son requeridos'], 400);
+        if (!$email || !$password) return $this->response(['message' => 'El usuario y contraseña son requeridos'], 400);
 
         $user = User::findByEmail($email);
 
-        if (!$user || !$user->verifyPassword($password, $user->password) || !$user->status)
-            return $this->response(['message' => 'El usuario o contraseña no son validos'], 400);
+        if (!$user || !$user->verifyPassword($password, $user->password) || !$user->status) return $this->response(['message' => 'El usuario o contraseña no son validos'], 400);
 
         $dependency = Dependency::findOne($user->dependency_id);
-        if(!$dependency) return $this->response(['message' => 'Para poder acceder es necesario estar asociado a una dependencia - Por favor contacta al administrador'], 400);
-        if(!$dependency->status) return $this->response(['message' => 'La dependencia a la perteneces ha sido desactivada - Por favor contacta al administrador'], 400);
+        if (!$dependency) return $this->response(['message' => 'Para poder acceder es necesario estar asociado a una dependencia - Por favor contacta al administrador'], 400);
+        if (!$dependency->status) return $this->response(['message' => 'La dependencia a la perteneces ha sido desactivada - Por favor contacta al administrador'], 400);
 
-        $response = $this::generateJWT($user);
-        return $this->response($response);
+        if ($user->role == User::ADMIN) return $this->response($this->generateJWT($user));
+
+        $dependency = Dependency::findOne($user->dependency_id);
+
+        ['user' => $user, 'session' => $session] = $this->generateJWT($user);
+
+        $user->dependency_id = $dependency;
+        $this->response(['session' => $session, 'user' => $user]);
     }
 
     public function user()
     {
-            $session = $_SERVER['HTTP_SESSION'] ?? '';
-            if (!$session) return $this->response(['message' => "unauthorized - 401"], 401);
-            $session = $this::isValidToken($session);
-            if ($session instanceof Exception) return $this->response(['message' => $session->getMessage()], 401);
-            $this->response($session);
+        $session = $_SERVER['HTTP_SESSION'] ?? '';
+        if (!$session) return $this->response(['message' => "unauthorized - 401"], 401);
+        $session = $this::isValidToken($session);
+        if ($session instanceof Exception) return $this->response(['message' => $session->getMessage()], 401);
+
+        if ($session['user']->role == User::ADMIN) return $this->response($session);
+        $dependency = Dependency::findOne($session['user']->dependency_id);
+
+        ['user' => $user, 'session' => $token] = $session;
+
+        $user->dependency_id = $dependency;
+        $this->response(['session' => $token, 'user' => $user]);
     }
 
     public function recoverPassword()
