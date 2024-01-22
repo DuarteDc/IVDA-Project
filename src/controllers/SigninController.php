@@ -30,14 +30,15 @@ class SigninController extends Controller
         if (!$email || !$password) return $this->response(['message' => 'El usuario y contraseña son requeridos'], 400);
 
         $user = User::findByEmail($email);
-
+        
         if (!$user || !$user->verifyPassword($password, $user->password) || !$user->status) return $this->response(['message' => 'El usuario o contraseña no son validos'], 400);
-
+        
+        if ($user->role == User::ADMIN) return $this->response($this->generateJWT($user));
+        
         $dependency = Dependency::findOne($user->dependency_id);
         if (!$dependency) return $this->response(['message' => 'Para poder acceder es necesario estar asociado a una dependencia - Por favor contacta al administrador'], 400);
         if (!$dependency->status) return $this->response(['message' => 'La dependencia a la perteneces ha sido desactivada - Por favor contacta al administrador'], 400);
 
-        if ($user->role == User::ADMIN) return $this->response($this->generateJWT($user));
 
         $dependency = Dependency::findOne($user->dependency_id);
 
