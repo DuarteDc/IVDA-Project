@@ -166,9 +166,9 @@ class Dependency extends Model
         try {
             $db = new Model;
             $query = $db->query("SELECT * FROM dependencies WHERE id NOT IN (SELECT dependency_id FROM users)");
-            return $query->rowCount() > 0 ? $query->fetchAll(PDO::FETCH_CLASS, static::class) : 0;
+            return $query->rowCount() > 0 ? $query->fetchAll(PDO::FETCH_CLASS, static::class) : [];
         } catch (\Throwable $th) {
-            return 0;
+            return [];
         }
     }
 
