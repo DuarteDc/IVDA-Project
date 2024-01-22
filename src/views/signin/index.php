@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>IVDA</title>
-    <script type="module" crossorigin src="/assets/index-8d7bc033.js"></script>
-    <link rel="stylesheet" href="/assets/index-31771798.css">
+    <script type="module" crossorigin src="/assets/index-2965c102.js"></script>
+    <link rel="stylesheet" href="/assets/index-1cf21c18.css">
   </head>
   <body class="text-foreground bg-background">
     <div id="root"></div>
