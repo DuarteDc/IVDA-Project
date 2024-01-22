@@ -8,6 +8,7 @@ use App\models\DependencyInventoryLocationTypeFile;
 use App\models\Inventory;
 use App\models\Location;
 use App\models\TypeFile;
+use App\models\User;
 use PDOException;
 
 class InventoryController extends Controller
@@ -105,9 +106,10 @@ class InventoryController extends Controller
         $location = $this->post('location');
         $date = $this->post('date');
 
+        $inventory = DependencyInventoryLocationTypeFile::Where("id = $id");
+        if (Inventory::findOne($inventory->inventory_id) !== $this->auth()->id) return $this->response(['message' => 'El inventario no existe o no esta disponible']);
         if (empty($typeFile) && empty($location) && empty($date)) return $this->response(['message' => 'El inventario se actualizó correctamente']);
 
-        $inventory = DependencyInventoryLocationTypeFile::Where("id = $id");
         if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible']);
 
         $newTypeFile = $this->validateNewTypeFile($typeFile);
@@ -123,6 +125,8 @@ class InventoryController extends Controller
     public function show(string $id)
     {
         $inventory = Inventory::findOne($id);
+        if ($this->auth()->id  !== $inventory->user_id && $this->auth()->role != User::ADMIN) return $this->response(['message' => 'El inventario no existe'], 403);
+
         if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
         $inventory = DependencyInventoryLocationTypeFile::Where("inventory_id = {$inventory->id}");
         $inventory->body = json_decode($inventory->body ?? "[]");

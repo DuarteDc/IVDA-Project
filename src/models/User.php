@@ -46,6 +46,18 @@ class User extends Model
         }
     }
 
+    public static function where(string $strQuery)
+    {
+        try {
+            $db = new Model();
+            $query = $db->query("SELECT * FROM users WHERE $strQuery");
+            if ($query->rowCount() > 0) return $query->fetchObject(self::class);
+            return false;
+        } catch (PDOException $e) {
+            return false;
+        }
+    }
+
     public static function find($page = 1)
     {
         try {
@@ -136,7 +148,7 @@ class User extends Model
     }
 
 
-    public function save(string $name, string $last_name, string $email, string $password, string $dependencyId, $role = 0)
+    public function save(string $name, string $last_name, string $email, string $password, string $dependencyId, $role = 1)
     {
         try {
             $passwordHash = $this->getHashedPassword($password);
@@ -186,7 +198,7 @@ class User extends Model
             foreach ($users as $key => $user) {
                 $query .= "('{$user["name"]}','{$user["last_name"]}', '{$user["email"]}', '{$user["password"]}', '{$user["dependency_id"]}', '{$user["role"]}'),";
             }
-            $query = rtrim($query, ', ');        
+            $query = rtrim($query, ', ');
 
             return $db->query($query);
         } catch (PDOException $e) {

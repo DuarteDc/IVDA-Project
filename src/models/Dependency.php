@@ -165,7 +165,10 @@ class Dependency extends Model
     {
         try {
             $db = new Model;
-            $query = $db->query("SELECT * FROM dependencies WHERE id NOT IN (SELECT dependency_id FROM users)");
+            $query = $db->query("SELECT dependencies.* FROM (
+                (SELECT id FROM dependencies d) EXCEPT (SELECT id FROM users u)
+            ) t1_not_in_t2 JOIN dependencies ON t1_not_in_t2.id=dependencies.id;
+            ");
             return $query->rowCount() > 0 ? $query->fetchAll(PDO::FETCH_CLASS, static::class) : [];
         } catch (\Throwable $th) {
             return [];

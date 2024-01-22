@@ -78,7 +78,7 @@ class DependencyInventoryLocationTypeFile extends Model
     {
         try {
             $db = new Model;
-            $inventory->inventory_id = $db->query("SELECT id, status, start_date FROM inventories WHERE id = {$inventory->inventory_id}")->fetchObject(Inventory::class);
+            $inventory->inventory_id = $db->query("SELECT id, status, start_date, user_id FROM inventories WHERE id = {$inventory->inventory_id}")->fetchObject(Inventory::class);
             $inventory->dependency_id = $db->query("SELECT id, name, code FROM dependencies WHERE id = {$inventory->dependency_id}")->fetchObject(Dependency::class);
             $inventory->location_id = $db->query("SELECT id, name FROM locations WHERE id = {$inventory->location_id}")->fetchObject(Location::class);
             $inventory->type_file_id = $db->query("SELECT id, name FROM type_files WHERE id = {$inventory->type_file_id}")->fetchObject(TypeFile::class);

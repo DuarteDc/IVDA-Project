@@ -25,7 +25,7 @@ trait AuthTrait
         unset($payload->password);
 
         $data = [
-            // 'exp' => strtotime('now') + 3600,
+            'exp' => strtotime('now') + 3600,
             'user' => $payload,
         ];
         $token = JWT::encode($data, $key, 'HS256');

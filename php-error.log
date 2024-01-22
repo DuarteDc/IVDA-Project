@@ -1563,3 +1563,39 @@ Stack trace:
 #7 {main}
   thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 175
 [22-Jan-2024 13:25:51 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$no in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 246
+[22-Jan-2024 14:34:19 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:46
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(23): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(37): App\lib\Model->prepare()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(41): App\models\User::findOne()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(55): App\lib\Controller::isValidToken()
+#4 [internal function]: App\controllers\SigninController->user()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(101): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 46
+[22-Jan-2024 14:34:36 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:46
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(23): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(85): App\lib\Model->prepare()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(32): App\models\User::findByEmail()
+#3 [internal function]: App\controllers\SigninController->signin()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(101): Bramus\Router\Router->run()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#9 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 46
+[22-Jan-2024 16:19:16 America/Mexico_City] PHP Warning:  Attempt to read property "user_id" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 127
+[22-Jan-2024 16:48:25 America/Mexico_City] PHP Warning:  Attempt to read property "name" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 160
+[22-Jan-2024 16:48:25 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 160
+[22-Jan-2024 16:48:25 America/Mexico_City] PHP Warning:  Attempt to read property "name" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 165
+[22-Jan-2024 16:48:25 America/Mexico_City] PHP Warning:  Attempt to read property "last_name" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 165
+[22-Jan-2024 16:49:25 America/Mexico_City] PHP Warning:  Undefined array key "name" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 160
+[22-Jan-2024 16:49:25 America/Mexico_City] PHP Warning:  Undefined array key "last_name" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 160
+[22-Jan-2024 16:49:25 America/Mexico_City] PHP Warning:  Undefined array key "name" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 165
+[22-Jan-2024 16:49:25 America/Mexico_City] PHP Warning:  Undefined array key "last_name" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 165

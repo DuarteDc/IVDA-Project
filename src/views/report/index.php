@@ -53,7 +53,7 @@
         <img src="data:image/png;base64, . <?php echo $data->fisrtImage ?>. " width="200px" height="70px" style="position: absolute; left: 0px;" />
         <img src="data:image/png;base64, . <?php echo $data->secondImage ?>. " width="270px" height="65px" style="position: absolute; right: -60px;" />
     </header>
-    <main>
+    <main style="margin-bottom: 60px;">
         <h1 style="text-align: center; font-weight: bold; margin-top: -20px;">INVENTARIO GENERAL DE ARCHIVO</h1>
         <section>
             <div style="padding: 0px 8px; vertical-align: middle; width: 100%; text-align: right; margin-bottom: -2px;">
@@ -155,6 +155,16 @@
             </tbody>
         </table>
     </main>
+    <div style="width: 100%; text-align: center; margin-top: 300px; position: absolute; bottom: -25px; margin-top: 50px;">
+        <div style="width: 40%; display: inline-block;">
+            <p><b><?php echo $data->admin->name . " " . $data->admin->last_name ?></b></p>
+            <p>Responsable de Archivo</p>
+        </div>
+        <div style="width: 40%; display: inline-block;">
+            <p><b><?php echo $data->user->name . " " . $data->user->last_name ?></b></p>
+            <p>Titular</p>
+        </div>
+    </div>
 </body>
 
 </html>
