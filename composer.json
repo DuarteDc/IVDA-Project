@@ -20,6 +20,7 @@
         "tecnickcom/tcpdf": "^6.6",
         "mikehaertl/phpwkhtmltopdf": "^2.5",
         "sendgrid/sendgrid": "~7",
-        "fakerphp/faker": "^1.23"
+        "fakerphp/faker": "^1.23",
+        "rakit/validation": "^1.4"
     }
 }

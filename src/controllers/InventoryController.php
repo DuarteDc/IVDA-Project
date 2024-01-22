@@ -52,7 +52,8 @@ class InventoryController extends Controller
             return $getLocation;
         }
         $name = trim(ucwords($location));
-        if (TypeFile::where("name = '$name'")) return $this->response(['message' => 'Ya existe un typo de archivo con ese nombre'], 400);
+        $location = Location::where("name = '$name'");
+        if ($location) return $location;
         $newLocation = new Location();
         return $newLocation->save($name);
     }
@@ -66,7 +67,8 @@ class InventoryController extends Controller
             return $getTypeFile;
         }
         $name = trim(ucwords($typeFile));
-        if (TypeFile::where("name = '$name'")) return $this->response(['message' => 'Ya existe un typo de archivo con ese nombre'], 400);
+        $typeFile = TypeFile::where("name = '$name'");
+        if ($typeFile) return $typeFile;
         $newFileType = new TypeFile();
         return $newFileType->save($name);
     }
@@ -94,7 +96,7 @@ class InventoryController extends Controller
         $inventory = $inventory->save($this->auth()->id, $date);
         $inventory->attachData($this->auth()->dependency_id, $inventory->id, $newLocation->id, $newTypeFile->id);
 
-        $this->response(['message' => 'El inventario se creo con exito'], 200);
+        $this->response(['message' => 'El inventario se creo con exito', 'inventory_id' => $inventory->id], 200);
     }
 
     public function update(string $id)
@@ -115,7 +117,7 @@ class InventoryController extends Controller
 
         $inventory = Inventory::UpdateOne($inventory->inventory_id, ['start_date' => $date]);
 
-        $this->response(['message' => 'El inventario se creo con exito']);
+        $this->response(['message' => 'El inventario se actualizó con exito']);
     }
 
     public function show(string $id)
@@ -143,27 +145,51 @@ class InventoryController extends Controller
         $inventory = Inventory::findOne($id);
         if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
 
+        if ($inventory->user_id !== $this->auth()->id) return $this->response(['message' => 'El inventario no existe'], 403);
+
         $inventory_body = DependencyInventoryLocationTypeFile::Where("inventory_id = {$inventory->id}");
 
         if (!$inventory_body) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
 
+
         $body = $this->addNewFile($inventory_body->body, $this->request());
+
         $updated = $inventory_body->updateBody($inventory_body->id, $body);
         return $updated ? $this->response(['message' => 'El archivo se guardo correctamente']) :  $this->response(['message' => 'Parece que hubo un error al guardar el archivo'], 400);
     }
 
-    public function deleteFile(string $id, string $no_file)
+    public function updateFile(string $id, string $filedId)
     {
         $inventory = Inventory::findOne($id);
         if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
+        if ($inventory->user_id !== $this->auth()->id) return $this->response(['message' => 'El inventario no existe'], 403);
 
         $inventory_body = DependencyInventoryLocationTypeFile::Where("inventory_id = {$inventory->id}");
 
         if (!$inventory_body) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
 
-        if (!$this->existFile($no_file, $inventory_body->body)) return $this->response(['message' => 'El archivo no existe o ya ha sido eliminado'], 400);
+        if (!$this->existFile($filedId, $inventory_body->body)) return $this->response(['message' => 'El archivo no existe o ya ha sido eliminado'], 400);
 
-        $newBody = $this->removeFile($no_file, $inventory_body->body);
+        $newBody = $this->updateCurrentFile($filedId, $inventory_body->body, $this->request());
+
+        $inventory_body->updateBody($inventory_body->id, json_encode($newBody));
+
+        $this->response(['message' => 'El archivo se actualizo correctamente']);
+    }
+
+    public function deleteFile(string $id, string $filedId)
+    {
+        $inventory = Inventory::findOne($id);
+        if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
+        if ($inventory->user_id !== $this->auth()->id) return $this->response(['message' => 'El inventario no existe'], 403);
+
+        $inventory_body = DependencyInventoryLocationTypeFile::Where("inventory_id = {$inventory->id}");
+
+        if (!$inventory_body) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
+
+        if (!$this->existFile($filedId, $inventory_body->body)) return $this->response(['message' => 'El archivo no existe o ya ha sido eliminado'], 400);
+
+        $newBody = $this->removeFile($filedId, $inventory_body->body);
 
         $inventory_body->updateBody($inventory_body->id, json_encode($newBody));
 
@@ -176,29 +202,33 @@ class InventoryController extends Controller
         $inventory = Inventory::findOne($id);
         if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
         if ($inventory->status) return $this->response(['message' => 'El inventario ya ha sido finalizado'], 400);
+
+        $inventoryBody = DependencyInventoryLocationTypeFile::Where("inventory_id = $inventory->id");
+
+        if ($inventoryBody->body === null || count(json_decode($inventoryBody->body)) <= 0) return $this->response(['message' => 'El inventario no puede ser finalizado porque no ha sido llenado'], 400);
         $inventory->UpdateOne($id, ['status' => true]);
         $this->response(['message' => 'El inventario se finalizo correctamenet']);
     }
 
-    private function addNewFile($body, $file)
+    private function addNewFile($body, $file): string
     {
         if (empty($body)) {
             $body = [];
-            $file = [...$file, 'no' => 1];
+            $file = [...$file, 'no' => 1, 'id' => uniqid()];
             array_push($body, $file);
         } else {
             $body = json_decode($body);
-            $file = [...$file, 'no' => count($body) + 1];
+            $file = [...$file, 'no' => count($body) + 1, 'id' => uniqid()];
             array_push($body, $file);
         }
 
         return json_encode($body);
     }
 
-    private function removeFile($no_file, $body)
+    private function removeFile($id, $body)
     {
         $body = json_decode($body);
-        $newBody = array_filter($body, fn ($file) => $file->no != $no_file, 1);
+        $newBody = array_filter($body, fn ($file) => $file->id != $id, 1);
 
         return array_map(
             function ($file, $index) {
@@ -210,11 +240,19 @@ class InventoryController extends Controller
         );
     }
 
-    private function existFile(string $no_file, $body)
+    private function updateCurrentFile($id, $body, $newBody)
+    {
+        return array_map(function ($file) use ($id, $newBody) {
+            return $file->id == $id ? [...$newBody, 'id' => $file->id, 'no' => $file->no] : $file;
+        }, json_decode($body));
+    }
+
+
+    private function existFile(string $id, $body)
     {
         if (empty($body)) return false;
         $body = json_decode($body);
-        $exist = array_filter($body, fn ($file) => $file->no == $no_file);
+        $exist = array_filter($body, fn ($file) => $file->id == $id);
         return count($exist) == 1;
     }
 }

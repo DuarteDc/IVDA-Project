@@ -56,14 +56,15 @@ $router->mount('/api.*', function () use ($router) {
 
         $router->get('/inventories', 'App\controllers\InventoryController@index');
         $router->post('/inventories', 'App\controllers\InventoryController@save');
-        $router->patch('/inventories/{id}', 'App\controllers\InventoryController@update');
         $router->post('/inventories/add-file/{id}', 'App\controllers\InventoryController@addFile');
-        $router->delete('/inventories/remove-file/{id}/{no_file}', 'App\controllers\InventoryController@deleteFile');
+        $router->put('/inventories/update-file/{id}/{fileId}', 'App\controllers\InventoryController@updateFile');
+        $router->patch('/inventories/{id}', 'App\controllers\InventoryController@update');
         $router->get('/inventories/get/user', 'App\controllers\InventoryController@getInventoriesByUser');
         $router->post('/inventories/finalize/{id}', 'App\controllers\InventoryController@finalizeInventory');
         $router->get('/inventories', 'App\controllers\InventoryController@index');
         $router->get('/inventories/{id}', 'App\controllers\InventoryController@show');
         $router->get('/inventories/user', 'App\controllers\InventoryController@getInventoryByUser');
+        $router->delete('/inventories/remove-file/{id}/{fileId}', 'App\controllers\InventoryController@deleteFile');
 
 
 

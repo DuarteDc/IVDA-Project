@@ -123,8 +123,8 @@ class DependencyController extends Controller
         $dependencies = Dependency::withoutUsers();
         $dependency = Dependency::findOne($user->dependency_id);
 
-        
-        $this->response(['dependencies' => [...$dependencies, $dependency]]);
+        array_push($dependencies, $dependency);
+        $this->response(['dependencies' => $dependencies]);
     }
 
     public function getDependenciesWithoutUsers()

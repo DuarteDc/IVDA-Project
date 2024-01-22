@@ -1461,3 +1461,105 @@ Stack trace:
 [19-Jan-2024 11:51:28 America/Mexico_City] PHP Warning:  Undefined array key 0 in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 44
 [19-Jan-2024 11:51:28 America/Mexico_City] PHP Warning:  Undefined array key 1 in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 44
 [19-Jan-2024 11:52:08 America/Mexico_City] PHP Warning:  Undefined array key "token" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php on line 44
+[19-Jan-2024 16:34:29 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, App\models\Dependency given in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php:127
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php(127): array_merge()
+#1 [internal function]: App\controllers\DependencyController->getDependenciesWithoutUsersAndMyDependency()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(100): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/DependencyController.php on line 127
+[22-Jan-2024 09:59:57 America/Mexico_City] PHP Warning:  Undefined property: App\models\Inventory::$body in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 178
+[22-Jan-2024 10:00:12 America/Mexico_City] PHP Warning:  Undefined property: App\models\Inventory::$body in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 178
+[22-Jan-2024 10:00:21 America/Mexico_City] PHP Warning:  Undefined property: App\models\Inventory::$body in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 178
+[22-Jan-2024 11:09:56 America/Mexico_City] PHP Parse error:  syntax error, unexpected variable "$inventory_body", expecting ";" in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 150
+[22-Jan-2024 11:53:50 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:195
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(195): count()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(155): App\controllers\InventoryController->addNewFile()
+#2 [internal function]: App\controllers\InventoryController->addFile()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(100): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 195
+[22-Jan-2024 11:54:07 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:201
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(201): count()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(155): App\controllers\InventoryController->addNewFile()
+#2 [internal function]: App\controllers\InventoryController->addFile()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(100): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 201
+[22-Jan-2024 11:54:30 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:201
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(201): count()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(155): App\controllers\InventoryController->addNewFile()
+#2 [internal function]: App\controllers\InventoryController->addFile()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(100): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 201
+[22-Jan-2024 11:54:55 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:201
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(201): count()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(155): App\controllers\InventoryController->addNewFile()
+#2 [internal function]: App\controllers\InventoryController->addFile()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(100): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 201
+[22-Jan-2024 12:42:55 America/Mexico_City] PHP Fatal error:  Uncaught Error: Can only throw objects in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php:46
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Model.php(23): App\lib\Database->connect()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/models/User.php(37): App\lib\Model->prepare()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/src/traits/AuthTrait.php(41): App\models\User::findOne()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/SigninController.php(54): App\lib\Controller::isValidToken()
+#4 [internal function]: App\controllers\SigninController->user()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#8 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(100): Bramus\Router\Router->run()
+#9 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#10 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Database.php on line 46
+[22-Jan-2024 13:09:51 America/Mexico_City] PHP Warning:  Undefined array key "PUT" in /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php on line 292
+[22-Jan-2024 13:19:25 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: http_response_code(): Argument #1 ($response_code) must be of type int, array given in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php:70
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php(70): http_response_code()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(175): App\lib\Controller->response()
+#2 [internal function]: App\controllers\InventoryController->updateFile()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(101): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/Controller.php on line 70
+[22-Jan-2024 13:22:38 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php:175
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(175): json_decode()
+#1 [internal function]: App\controllers\InventoryController->updateFile()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(101): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 175
+[22-Jan-2024 13:25:51 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$no in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 246
