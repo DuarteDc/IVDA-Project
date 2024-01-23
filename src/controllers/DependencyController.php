@@ -27,7 +27,7 @@ class DependencyController extends Controller
     public function show(string $id)
     {
         $dependency = Dependency::findOne($id);
-        if (!$dependency) $this->response(['message' => 'La unidad dependencia que intentas buscar no existe'], 400);
+        if (!$dependency) $this->response(['message' => 'La unidad administrativa que intentas buscar no existe'], 400);
         $this->response(['dependency' => $dependency]);
     }
 
@@ -106,7 +106,7 @@ class DependencyController extends Controller
         $name = trim(ucwords($name));
 
         $dependency = Dependency::where("name = '$name' AND id <> $id");
-        if ($dependency) return $this->response(['message' => 'Ya existe una dependencia con ese nombre']);
+        if ($dependency) return $this->response(['message' => 'Ya existe una dependencia con ese nombre'], 400);
 
         $dependency = Dependency::findOne($id);
         if (!$dependency) return $this->response(['message' => 'La dependencia no existe o no es valida'], 400);

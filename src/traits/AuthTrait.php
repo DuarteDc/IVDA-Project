@@ -40,6 +40,8 @@ trait AuthTrait
 
             $user = User::findOne($decode->user->id);
 
+            if(!$user || !$user->status) return new Exception("401 - Unauthorized");
+
             return self::generateJWT($user);
         } catch (Exception $e) {
             return new Exception($e->getMessage());

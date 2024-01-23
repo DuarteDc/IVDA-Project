@@ -140,7 +140,7 @@ class User extends Model
                 }
             }
             $query = rtrim($query, ', ');
-            return $db->query("UPDATE users $query Where id = $id");
+            $db->query("UPDATE users $query Where id = $id");
             return self::findOne($id);
         } catch (\Throwable $th) {
             return $th->getMessage();

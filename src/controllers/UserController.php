@@ -68,9 +68,7 @@ class UserController extends Controller
 
         $dependencyId = $this->post('dependency_id');
 
-        $dependency = Inventory::Where("user_id = $user->id");
-
-        if ($dependencyId != $user->dependency_id && $dependency) return $this->response(['message' => 'El usuario puede ser actualizado porque ya se han generado inventarios'], 400);
+        if ($dependencyId != $user->dependency_id) return $this->response(['message' => 'El usuario puede ser actualizado porque ya se han generado inventarios con la unidad administrativa a la que pertenece'], 400);
 
         $user->UpdateOne($id, $this->request());
 

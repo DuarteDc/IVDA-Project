@@ -22,24 +22,16 @@ class ProfileController extends Controller
     public function update()
     {
 
-        $currentUser = $this->auth();
+        if ($this->auth()->role != User::ADMIN) return $this->response(['message' => 'El usuario no puede ser actualizado'], 403);
+        $email = $this->post('email');
+        $user = User::where("email = $email AND id <> {$this->auth()->id}");
 
-        if ($this->post('email')) {
-            $user = User::findByEmail($this->post('email'));
-            if ($user && $user->id !== $this::auth()->id) {
-                $this->setMessage(TypeAlert::Warning, "Ya existe un usuario con el correo {$this->post('email')}");
-                return header('location: /auth/profile');
-            }
-        }
+        if ($user) return $this->response(['message' => 'Hay existe un usuario con ese correo electronico'], 400);
 
-        $user = User::UpdateOne($currentUser->id, $_POST);
+        $user = User::UpdateOne($this->auth()->id, $this->request());
 
-        if (!$user) {
-            $this->setMessage(TypeAlert::Danger, 'Hubo un error al actualizar la información');
-            return header('location: /auth/profile');
-        }
-        $this::createSession($user);
-        $this->setMessage(TypeAlert::Success, 'El perfil se actualizo correctamente');
-        header('location: /auth/profile');
+        unset($user->password);
+
+        return $user ? $this->response(['message' => 'El perfil se actualizo correctamente', 'user' => $user]) : $this->response(['message' => 'Parece que hubo un error al actualizar el perfil']);
     }
 }

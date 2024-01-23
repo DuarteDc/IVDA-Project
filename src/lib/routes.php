@@ -87,9 +87,7 @@ $router->mount('/api.*', function () use ($router) {
         $router->post('/type-files', 'App\controllers\TypeFileController@save');
 
         $router->get('/report/generate/{id}', 'App\controllers\ReportController@generateReport');
-
-        $router->get('/profile', 'App\controllers\ProfileController@index');
-        $router->post('/profile/update', 'App\controllers\ProfileController@update');
+        $router->patch('/profile/update', 'App\controllers\ProfileController@update');
     });
 });
 

@@ -75,6 +75,26 @@ class Inventory extends Model
         }
     }
 
+    public static function findLastInventories($page = 1)
+    {
+        try {
+            $db = new Model();
+            $page = abs($page);
+
+            $totalRecordPerPage = 10;
+            $count = $db->query('SELECT count(*) FROM inventories')->fetchColumn();
+            $totalPages = ceil($count / $totalRecordPerPage);
+            if ($totalPages < $page) $page = $totalPages;
+            $startingLimit = ($page - 1) * $totalRecordPerPage;
+
+            $query = $db->query("SELECT * FROM inventories ORDER BY id DESC LIMIT $totalRecordPerPage OFFSET $startingLimit");
+            if ($query->rowCount() > 0) return $query->fetchAll(PDO::FETCH_CLASS, self::class);
+            return ['inventories' => []];
+        } catch (PDOException $e) {
+            return ['inventories' => []];
+        }
+    }
+
     public static function Where(string $strQuery)
     {
         try {

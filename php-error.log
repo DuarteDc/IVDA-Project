@@ -1599,3 +1599,56 @@ Stack trace:
 [22-Jan-2024 16:49:25 America/Mexico_City] PHP Warning:  Undefined array key "last_name" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 160
 [22-Jan-2024 16:49:25 America/Mexico_City] PHP Warning:  Undefined array key "name" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 165
 [22-Jan-2024 16:49:25 America/Mexico_City] PHP Warning:  Undefined array key "last_name" in /home/eduardo/Documentos/ICEGEM/IVDA/src/views/report/index.php on line 165
+[23-Jan-2024 09:33:30 America/Mexico_City] PHP Fatal error:  Uncaught TypeError: App\models\DependencyInventoryLocationTypeFile::updateBody(): Argument #2 ($body) must be of type string, array given, called in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 160 and defined in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/DependencyInventoryLocationTypeFile.php:66
+Stack trace:
+#0 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php(160): App\models\DependencyInventoryLocationTypeFile::updateBody()
+#1 [internal function]: App\controllers\InventoryController->addFile()
+#2 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(101): Bramus\Router\Router->run()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#7 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/models/DependencyInventoryLocationTypeFile.php on line 66
+[23-Jan-2024 09:57:11 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 09:57:11 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 09:57:11 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 09:57:11 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 09:57:36 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 09:57:36 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 09:57:36 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 09:57:36 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 09:59:44 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 09:59:44 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 09:59:44 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 09:59:44 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 10:00:18 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 10:00:18 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 10:00:18 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 10:00:18 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 10:00:21 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 10:00:21 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 10:00:21 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 10:00:21 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 10:00:26 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 10:00:26 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 10:00:26 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 10:00:26 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 259
+[23-Jan-2024 10:00:26 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 235
+[23-Jan-2024 10:00:26 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 235
+[23-Jan-2024 10:00:26 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 235
+[23-Jan-2024 10:00:26 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$id in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/InventoryController.php on line 235
+[23-Jan-2024 10:47:47 America/Mexico_City] PHP Warning:  Attempt to read property "id" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 33
+[23-Jan-2024 10:47:47 America/Mexico_City] PHP Warning:  Attempt to read property "dependency_id" on bool in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 33
+[23-Jan-2024 10:47:47 America/Mexico_City] PHP Fatal error:  Uncaught Error: Attempt to assign property "dependency_id" on array in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php:33
+Stack trace:
+#0 [internal function]: App\controllers\HomeController->App\controllers\{closure}()
+#1 /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php(32): array_map()
+#2 [internal function]: App\controllers\HomeController->getDashboardData()
+#3 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(482): call_user_func_array()
+#4 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(440): Bramus\Router\Router->invoke()
+#5 /home/eduardo/Documentos/ICEGEM/IVDA/vendor/bramus/router/src/Bramus/Router/Router.php(287): Bramus\Router\Router->handle()
+#6 /home/eduardo/Documentos/ICEGEM/IVDA/src/lib/routes.php(101): Bramus\Router\Router->run()
+#7 /home/eduardo/Documentos/ICEGEM/IVDA/public/index.php(15): require('...')
+#8 {main}
+  thrown in /home/eduardo/Documentos/ICEGEM/IVDA/src/controllers/HomeController.php on line 33

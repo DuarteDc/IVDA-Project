@@ -107,10 +107,10 @@ class InventoryController extends Controller
         $date = $this->post('date');
 
         $inventory = DependencyInventoryLocationTypeFile::Where("id = $id");
-        if (Inventory::findOne($inventory->inventory_id) !== $this->auth()->id) return $this->response(['message' => 'El inventario no existe o no esta disponible']);
+        if (Inventory::findOne($inventory->inventory_id)->user_id !== $this->auth()->id) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
         if (empty($typeFile) && empty($location) && empty($date)) return $this->response(['message' => 'El inventario se actualizó correctamente']);
 
-        if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible']);
+        if (!$inventory) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
 
         $newTypeFile = $this->validateNewTypeFile($typeFile);
         $newLocation = $this->validateNewLocation($location);
@@ -155,11 +155,10 @@ class InventoryController extends Controller
 
         if (!$inventory_body) return $this->response(['message' => 'El inventario no existe o no esta disponible'], 400);
 
-
-        $body = $this->addNewFile($inventory_body->body, $this->request());
+        ['body' => $body, 'file' => $file] = $this->addNewFile($inventory_body->body, $this->request());
 
         $updated = $inventory_body->updateBody($inventory_body->id, $body);
-        return $updated ? $this->response(['message' => 'El archivo se guardo correctamente']) :  $this->response(['message' => 'Parece que hubo un error al guardar el archivo'], 400);
+        return $updated ? $this->response(['message' => 'El archivo se guardo correctamente', 'file' => $file]) :  $this->response(['message' => 'Parece que hubo un error al guardar el archivo'], 400);
     }
 
     public function updateFile(string $id, string $filedId)
@@ -214,19 +213,20 @@ class InventoryController extends Controller
         $this->response(['message' => 'El inventario se finalizo correctamenet']);
     }
 
-    private function addNewFile($body, $file): string
+    private function addNewFile($body, $file): mixed
     {
+        $newFile = [];
         if (empty($body)) {
             $body = [];
-            $file = [...$file, 'no' => 1, 'id' => uniqid()];
-            array_push($body, $file);
+            $newFile = [...$file, 'no' => 1, 'id' => uniqid()];
+            array_push($body, $newFile);
         } else {
             $body = json_decode($body);
-            $file = [...$file, 'no' => count($body) + 1, 'id' => uniqid()];
-            array_push($body, $file);
+            $newFile = [...$file, 'no' => count($body) + 1, 'id' => uniqid()];
+            array_push($body, $newFile);
         }
 
-        return json_encode($body);
+        return ['body' => json_encode($body), 'file' => $newFile];
     }
 
     private function removeFile($id, $body)
