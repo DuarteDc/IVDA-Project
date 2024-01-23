@@ -7,7 +7,6 @@ use App\lib\Middleware;
 use App\traits\AuthTrait;
 use App\traits\MailTrait;
 use App\traits\PDFTrait;
-use Bramus\Router\Router;
 use ErrorException;
 use ReflectionClass;
 use ReflectionMethod;
