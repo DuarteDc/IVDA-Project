@@ -11,10 +11,11 @@ composer install
 php -S localhost:8000
 ```
 
-__Dependencias__
-
 __PHP v 8.2__
+
 __Composer__
+
 __JWT__
+
 __DOMPDF__
 
