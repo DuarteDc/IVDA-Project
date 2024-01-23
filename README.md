@@ -10,7 +10,7 @@ composer install
 ```
 php -S localhost:8000
 ```
-
+__DEPENDENCIAS PRINCIPALES__
 __PHP v 8.2__
 
 __Composer__
